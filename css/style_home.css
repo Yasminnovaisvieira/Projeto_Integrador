@@ -16,7 +16,8 @@ body {
 }
 
 :root {
-    --duracao: 12s; /* Variável que decreta que todas as mensagens serão mostradas dentro de 12 segundos */
+    --duracao: 12s;
+    /* Variável que decreta que todas as mensagens serão mostradas dentro de 12 segundos */
 }
 
 .aviso-carrossel {
@@ -34,7 +35,8 @@ body {
 
 .mensagens {
     display: flex;
-    animation: slideMensagens var(--duracao) infinite; /* Deslizar infinitamente */
+    animation: slideMensagens var(--duracao) infinite;
+    /* Deslizar infinitamente */
     white-space: nowrap;
     padding: 0;
     margin: 0;
@@ -42,7 +44,8 @@ body {
 }
 
 .mensagem {
-    min-width: 100%; /* Uma mensagem ocupa 100% da página por vez */
+    min-width: 100%;
+    /* Uma mensagem ocupa 100% da página por vez */
     text-align: center;
     font-weight: bold;
     font-size: 0.9rem;
@@ -50,15 +53,18 @@ body {
 }
 
 @keyframes slideMensagens {
+
     /* Como são 3 imagens, o total do tempo (100%) é dividido por 3 */
     0%,
     33% {
         transform: translateX(0%);
     }
+
     34%,
     66% {
         transform: translateX(-100%);
     }
+
     67%,
     100% {
         transform: translateX(-200%);
@@ -78,7 +84,8 @@ body {
     height: 1.5rem;
     align-items: center;
     justify-content: center;
-    z-index: 5; /* Ordem de sobreposição */
+    z-index: 5;
+    /* Ordem de sobreposição */
     border: none;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
@@ -102,9 +109,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.3rem 2rem; /* Preenchimento do elemento (cima,baixo X esquerdo,direito)*/
+    padding: 0.3rem 2rem;
+    /* Preenchimento do elemento (cima,baixo X esquerdo,direito)*/
     background-color: #bbadff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Sombra */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    /* Sombra */
     position: relative;
     z-index: 1000;
 }
@@ -129,7 +138,8 @@ body {
 }
 
 #nome_logo {
-    font-size: 2.5rem; /*18 X 1.5 (Ficar maior que a fonte normal)*/
+    font-size: 2.5rem;
+    /*18 X 1.5 (Ficar maior que a fonte normal)*/
     font-weight: bold;
     color: #222;
     text-decoration: none;
@@ -137,9 +147,11 @@ body {
 
 .nav_menu ul,
 .nav_usuario ul {
-    list-style: none; /* Tira a formatação normal de uma lista */
+    list-style: none;
+    /* Tira a formatação normal de uma lista */
     display: flex;
-    gap: 2rem; /* Espaçamento */
+    gap: 2rem;
+    /* Espaçamento */
 }
 
 .nav_menu a {
@@ -219,18 +231,23 @@ body {
     0% {
         transform: translateX(0);
     }
+
     30% {
         transform: translateX(0);
     }
+
     35% {
         transform: translateX(-100%);
     }
+
     65% {
         transform: translateX(-100%);
     }
+
     70% {
         transform: translateX(-200%);
     }
+
     100% {
         transform: translateX(-200%);
     }
@@ -250,7 +267,8 @@ body {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    z-index: 5; /* Ordem de sobreposição */
+    z-index: 5;
+    /* Ordem de sobreposição */
     transition: background-color 0.3s, transform 0.2s;
 }
 
@@ -288,18 +306,22 @@ body {
     /* Quanto tempo as bolinhas ficarão 'animadas'*/
     animation-delay: 0s;
 }
+
 .bolinha:nth-child(2) {
     animation-delay: 5s;
 }
+
 .bolinha:nth-child(3) {
     animation-delay: 10s;
 }
 
 @keyframes bolinhaAtiva {
+
     0%,
     33.33% {
         box-shadow: 0 0 0 3px #bbadff;
     }
+
     33.34%,
     100% {
         box-shadow: 0 0 0 0 #bbadff;
@@ -320,7 +342,8 @@ body {
 
 .lista_categorias {
     display: flex;
-    flex-wrap: wrap; /* Para deixar responsivo */
+    flex-wrap: wrap;
+    /* Para deixar responsivo */
     justify-content: center;
     gap: 4.5rem;
     padding: 2rem;
@@ -407,7 +430,7 @@ body {
     cursor: pointer;
 }
 
-.card_produto:hover > .botao_carrinho {
+.card_produto:hover>.botao_carrinho {
     background-color: #9383e0;
 }
 
@@ -484,30 +507,37 @@ body {
 }
 
 @keyframes moverCarrosselProdutos {
+
     0%,
     8.33% {
         transform: translateX(0);
     }
+
     16.66%,
     24.99% {
         transform: translateX(-33.33%);
     }
+
     33.33%,
     41.66% {
         transform: translateX(-66.66%);
     }
+
     50%,
     58.33% {
         transform: translateX(0);
     }
+
     66.66%,
     74.99% {
         transform: translateX(-33.33%);
     }
+
     83.33%,
     91.66% {
         transform: translateX(-66.66%);
     }
+
     100% {
         transform: translateX(0);
     }
@@ -525,18 +555,22 @@ body {
 .retangulo:nth-child(1) {
     animation-delay: 0s;
 }
+
 .retangulo:nth-child(2) {
     animation-delay: 5s;
 }
+
 .retangulo:nth-child(3) {
     animation-delay: 10s;
 }
 
 @keyframes retanguloAtivo {
+
     0%,
     33.33% {
         background-color: #bbadff;
     }
+
     33.34%,
     100% {
         background-color: #222;
@@ -590,7 +624,7 @@ body {
     cursor: pointer;
 }
 
-.card_produto:hover > .botao_carrinho {
+.card_produto:hover>.botao_carrinho {
     background-color: #9383e0;
 }
 
@@ -667,30 +701,37 @@ body {
 }
 
 @keyframes moverCarrosselProdutos {
+
     0%,
     8.33% {
         transform: translateX(0);
     }
+
     16.66%,
     24.99% {
         transform: translateX(-33.33%);
     }
+
     33.33%,
     41.66% {
         transform: translateX(-66.66%);
     }
+
     50%,
     58.33% {
         transform: translateX(0);
     }
+
     66.66%,
     74.99% {
         transform: translateX(-33.33%);
     }
+
     83.33%,
     91.66% {
         transform: translateX(-66.66%);
     }
+
     100% {
         transform: translateX(0);
     }
@@ -763,40 +804,51 @@ body {
 .feedback:nth-child(1) {
     animation-delay: 0s;
 }
+
 .feedback:nth-child(2) {
     animation-delay: 6s;
 }
+
 .feedback:nth-child(3) {
     animation-delay: 12s;
 }
+
 .feedback:nth-child(4) {
     animation-delay: 18s;
 }
+
 .feedback:nth-child(5) {
     animation-delay: 24s;
 }
+
 .feedback:nth-child(6) {
     animation-delay: 30s;
 }
+
 .feedback:nth-child(7) {
     animation-delay: 36s;
 }
+
 .feedback:nth-child(8) {
     animation-delay: 42s;
 }
+
 .feedback:nth-child(9) {
     animation-delay: 48s;
 }
+
 .feedback:nth-child(10) {
     animation-delay: 54s;
 }
 
 @keyframes cicloFeedbacks {
+
     0%,
     8.33% {
         opacity: 1;
         z-index: 1;
     }
+
     10%,
     100% {
         opacity: 0;
@@ -851,30 +903,39 @@ body {
 .bolinha_feedbacks:nth-child(1) {
     animation-delay: 0s;
 }
+
 .bolinha_feedbacks:nth-child(2) {
     animation-delay: 6s;
 }
+
 .bolinha_feedbacks:nth-child(3) {
     animation-delay: 12s;
 }
+
 .bolinha_feedbacks:nth-child(4) {
     animation-delay: 18s;
 }
+
 .bolinha_feedbacks:nth-child(5) {
     animation-delay: 24s;
 }
+
 .bolinha_feedbacks:nth-child(6) {
     animation-delay: 30s;
 }
+
 .bolinha_feedbacks:nth-child(7) {
     animation-delay: 36s;
 }
+
 .bolinha_feedbacks:nth-child(8) {
     animation-delay: 42s;
 }
+
 .bolinha_feedbacks:nth-child(9) {
     animation-delay: 48s;
 }
+
 .bolinha_feedbacks:nth-child(10) {
     animation-delay: 54s;
 }
@@ -946,40 +1007,51 @@ body {
 .feedback:nth-child(1) {
     animation-delay: 0s;
 }
+
 .feedback:nth-child(2) {
     animation-delay: 6s;
 }
+
 .feedback:nth-child(3) {
     animation-delay: 12s;
 }
+
 .feedback:nth-child(4) {
     animation-delay: 18s;
 }
+
 .feedback:nth-child(5) {
     animation-delay: 24s;
 }
+
 .feedback:nth-child(6) {
     animation-delay: 30s;
 }
+
 .feedback:nth-child(7) {
     animation-delay: 36s;
 }
+
 .feedback:nth-child(8) {
     animation-delay: 42s;
 }
+
 .feedback:nth-child(9) {
     animation-delay: 48s;
 }
+
 .feedback:nth-child(10) {
     animation-delay: 54s;
 }
 
 @keyframes cicloFeedbacks {
+
     0%,
     8.33% {
         opacity: 1;
         z-index: 1;
     }
+
     10%,
     100% {
         opacity: 0;
@@ -1035,39 +1107,50 @@ body {
 .bolinha_feedbacks:nth-child(1) {
     animation-delay: 0s;
 }
+
 .bolinha_feedbacks:nth-child(2) {
     animation-delay: 6s;
 }
+
 .bolinha_feedbacks:nth-child(3) {
     animation-delay: 12s;
 }
+
 .bolinha_feedbacks:nth-child(4) {
     animation-delay: 18s;
 }
+
 .bolinha_feedbacks:nth-child(5) {
     animation-delay: 24s;
 }
+
 .bolinha_feedbacks:nth-child(6) {
     animation-delay: 30s;
 }
+
 .bolinha_feedbacks:nth-child(7) {
     animation-delay: 36s;
 }
+
 .bolinha_feedbacks:nth-child(8) {
     animation-delay: 42s;
 }
+
 .bolinha_feedbacks:nth-child(9) {
     animation-delay: 48s;
 }
+
 .bolinha_feedbacks:nth-child(10) {
     animation-delay: 54s;
 }
 
 @keyframes destaqueBolinhas {
+
     0%,
     5.99% {
         box-shadow: 0 0 0 3px #bbadff;
     }
+
     6%,
     100% {
         box-shadow: 0 0 0 0px #bbadff;
@@ -1116,24 +1199,22 @@ body {
     line-height: 1.4;
 }
 
-
-
-
-
-
 .rodape {
     background-color: #bbadff;
-    padding: 3rem 5%;
     font-family: "Outfit", sans-serif;
     color: #333;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
     gap: 3rem;
     text-align: left;
+    padding-top: 3rem;
+    justify-content: center;
 }
 
 .rodape img.logo {
     width: 260px;
+    margin-left: 80px;
+    margin-top: -30px;
 }
 
 .rodape h2 {
@@ -1185,7 +1266,8 @@ body {
     margin-top: -12rem;
 }
 
-.pagamentos ul { /* Listas dos meios de pagamentos */
+.pagamentos ul {
+    /* Listas dos meios de pagamentos */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -1193,7 +1275,8 @@ body {
     margin-top: 1.5rem;
 }
 
-.pagamentos li img { /* Imagem dos meios de pagamentos */
+.pagamentos li img {
+    /* Imagem dos meios de pagamentos */
     height: 30px;
 }
 
@@ -1215,9 +1298,11 @@ body {
 .copyright {
     color: #0e0129;
     background-color: #9383e0;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     text-align: center;
     font-family: "Outfit", sans-serif;
-    margin-top: 35px;
+}
+
+.copyrightTexto {
     padding: 0.5rem;
 }
