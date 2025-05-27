@@ -1,591 +1,1166 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Página Inicial | Miaunarquia</title>
-    <link rel="stylesheet" href="../css/style_home.css" />
-  </head>
-  <body>
-    <section class="aviso-carrossel" aria-label="Carrossel de avisos e promoções da plataforma">
-      <button class="setas_aviso seta_esquerda_aviso" aria-hidden="true">❮</button>
-      <ul class="mensagens">
-        <li class="mensagem">NOVO POR AQUI? USE O CUPOM 🐾PRIMEIRACOMPRA🐾</li>
-        <li class="mensagem">FRETE GRÁTIS ACIMA DE R$199 PARA TODO O BRASIL</li>
-        <li class="mensagem">CADASTRE-SE E GANHE 10% DE DESCONTO</li>
-      </ul>
-      <button class="setas_aviso seta_direita_aviso" aria-hidden="true">❯</button> <!-- aria-hidden="true" = Para que não seja considerado por tecnologias assistivas -->
-    </section>
-
-
-    <header class="header_site">
-      <h1 class="logo_site">
-        <a href="/" aria-label="Página inicial - Miaunarquia">
-          <img src="../imagens/imagem_logo.png" alt="Logo de um Gato Preto com Coroa" class="logo_imagem"/>
-          <span id="nome_logo">Miaunarquia</span>
-        </a>
-      </h1>
-
-      <nav class="nav_menu" aria-label="Menu Principal"> <!-- arial-label = Rotular elemento para descreve-lo e deixa-lo mais acessível -->
-        <ul>
-          <li><a href="#">Início</a></li>
-          <li><a href="#">Catálogo</a></li>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Contato</a></li>
-        </ul>
-      </nav>
-
-      <nav class="nav_usuario" aria-label="Menu Usuário">
-        <ul>
-          <li>
-            <a href="#" aria-label="Pesquisar">
-              <figure class="icones_nav">
-                <img src="../imagens/icone_pesquisar.png" class="icones_nav" alt="Ícone de Lupa"/>
-                <figcaption class="legendas_icones">Pesquisar</figcaption>
-              </figure>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" aria-label="Favoritos">
-              <figure class="icones_nav">
-                <img src="../imagens/icone_favoritos.png" class="icones_nav" alt="Ícone de Coração"/>
-                <figcaption class="legendas_icones">Favoritos</figcaption>
-              </figure>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" aria-label="Pefil">
-              <figure class="icones_nav">
-                <img src="../imagens/icone_usuario.png" class="icones_nav" alt="Ícone de Perfil"/>
-                <figcaption class="legendas_icones">Perfil</figcaption>
-              </figure>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" aria-label="Carrinho">
-              <figure class="icones_nav">
-                <img src="../imagens/icone_carrinho.png" class="icones_nav" alt="Ícone de Carrinho"/>
-                <figcaption class="legendas_icones">Carrinho</figcaption>
-              </figure>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-
-
-    <section class="carrossel" aria-label="Carrossel de Imagens">
-      <span class="seta_esquerda_carrossel" aria-hidden="true">❮</span>
-      <ul class="slides">
-        <li class="slide">
-          <figure>
-            <img src="../imagens/slide_um.png" class="imagens_carrossel" alt="Slide com Gato Cinza e Texto Escrito 'Seja bem-vindo'" />
-          </figure>
-        </li>
-
-        <li class="slide">
-          <figure>
-            <img src="../imagens/slide_dois.png" class="imagens_carrossel" alt="Slide com Categorias: Roupas, Petiscos e Brinquedos. Cada uma com gatos realizando as respectivas atividades" />
-          </figure>
-        </li>
-
-        <li class="slide">
-          <figure>
-            <img src="../imagens/slide_tres.png" class="imagens_carrossel" alt="Slide que incentiva a adoção de animais e Avisando que parte das nossas vendas vai para ONGs de resgate e cuidado animal" />
-          </figure>
-        </li>
-      </ul>
-      <span class="seta_direita_carrossel" aria-hidden="true">❯</span>
-
-      <nav class="indicadores_carrossel" aria-label="Indicadores do carrossel de imagens">
-        <span class="bolinha"></span>
-        <span class="bolinha"></span>
-        <span class="bolinha"></span>
-      </nav>
-    </section>
-
-
-    <hr class="divisoes" aria-hidden="true">
-
-
-    <section class="categorias_catalogo" aria-label="Categorias do Catálogo">
-      <h2 id="titulo_categorias">Categorias de Produtos</h2>
-      <ul class="lista_categorias">
-        <li>
-          <a href="#" class="links_categorias">
-            <img src="../imagens/imagem_arranhador.png" alt="Imagem de arranhador preto" class="imagens_categorias" />
-            <span>Arranhadores</span>
-          </a>
-        </li>
-
-        <li>
-          <a href="#" class="links_categorias">
-            <img src="../imagens/imagem_cama.png" alt="Imagem de cama formato tubarão" class="imagens_categorias" />
-            <span>Camas</span>
-          </a>
-        </li>
-
-        <li>
-          <a href="#" class="links_categorias">
-            <img src="../imagens/imagem_limpeza.png " alt="Imagem de Enzimac Gato com Embalagem Rosa" class="imagens_categorias" />
-            <span>Higiene e Limpeza</span>
-          </a>
-        </li>
-
-        <li>
-          <a href="#" class="links_categorias">
-            <img src="../imagens/imagem_roupa.png" alt="Imagem Gato com Fantasia de Dinossauro" class="imagens_categorias" />
-            <span>Roupas</span>
-          </a>
-        </li>
-
-        <li>
-          <a href="#" class="links_categorias">
-            <img src="../imagens/imagem_brinquedo.png" alt="Imagem de brinquedos" class="imagens_categorias" />
-            <span>Brinquedos</span>
-          </a>
-        </li>
-
-        <li>
-          <a href="#" class="links_categorias">
-            <img src="../imagens/imagem_comedouro.png" alt="Ícone de comedouros e bebedouros" class="imagens_categorias" />
-            <span>Comedouros e Bebedouros</span>
-          </a>
-        </li>
-
-        <li>
-          <a href="#" class="links_categorias">
-            <img src="../imagens/imagem_petisco.png" alt="Ícone de petiscos" class="imagens_categorias" />
-            <span>Petiscos</span>
-          </a>
-        </li>
-      </ul>
-    </section>
-
-
-    <hr class="divisoes" aria-hidden="true">
-
-
-    <section class="produtos_lancamentos" aria-label="Carrossel de Lançamentos">
-      <h2 id="titulo_lancamentos">Lançamentos</h2>
-      <span class="setas_lancamento seta_esquerda_lancamento" aria-hidden="true">❮</span>
-      <article class="container_carrossel_lancamentos">
-        <ul class="carrossel_lancamentos">
-          <li class="card_produto">
-            <button class="botao_favorito_cards" aria-label="Adicionar aos favoritos">
-              <img src="../imagens/icone_favoritos.png" alt="Ícone de Coração" aria-hidden="true" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Página Inicial | Miaunarquia</title>
+        <link rel="stylesheet" href="../css/style_home.css" />
+    </head>
+    <body>
+        <section
+            class="aviso-carrossel"
+            aria-label="Carrossel de avisos e promoções da plataforma"
+        >
+            <button class="setas_aviso seta_esquerda_aviso" aria-hidden="true">
+                ❮
             </button>
-            <img src="../imagens/imagem_arranhador_cacto.png" class="imagens_cards" alt="Arranhador em Formato de Cacto" />
-            <h3>Arranhador - Formato de Cacto</h3>
-            <p aria-label="Avaliação: 4 de 5 estrelas">★★★★☆ <span>(34)</span></p>
-            <p>
-              <strong>R$ 263,90</strong>
-            </p>
-            <button class="botao_carrinho">ADICIONAR AO CARRINHO</button>
-          </li>
-
-          <li class="card_produto">
-            <button class="botao_favorito_cards" aria-label="Adicionar aos favoritos">
-              <img src="../imagens/icone_favoritos.png" alt="Ícone de Coração" aria-hidden="true" />
+            <ul class="mensagens">
+                <li class="mensagem">
+                    NOVO POR AQUI? USE O CUPOM 🐾PRIMEIRACOMPRA🐾
+                </li>
+                <li class="mensagem">
+                    FRETE GRÁTIS ACIMA DE R$199 PARA TODO O BRASIL
+                </li>
+                <li class="mensagem">CADASTRE-SE E GANHE 10% DE DESCONTO</li>
+            </ul>
+            <button class="setas_aviso seta_direita_aviso" aria-hidden="true">
+                ❯
             </button>
-            <img src="../imagens/imagem_tigela_antiderrapante.png" class="imagens_cards" alt="Tigela Antiderrapante Quadrada para Gato comer" />
-            <h3>Tigela Antiderrapante - Quadrada</h3>
-            <p aria-label="Avaliação: 5 de 5 estrelas">★★★★★ <span>(12)</span></p>
-            <p>
-              <strong>R$ 159,75</strong>
-            </p>
-            <button class="botao_carrinho">ADICIONAR AO CARRINHO</button>
-          </li>
+            <!-- aria-hidden="true" = Para que não seja considerado por tecnologias assistivas -->
+        </section>
 
-          <li class="card_produto">
-            <button class="botao_favorito_cards" aria-label="Adicionar aos favoritos">
-              <img src="../imagens/icone_favoritos.png" alt="Ícone de Coração" aria-hidden="true" />
-            </button>
-            <img src="../imagens/imagem_fantasia_morcego.png" class="imagens_cards" alt="Gato com Asas de Morcego - Fantasia" />
-            <h3>Fantasia Asa De Morcego</h3>
-            <p aria-label="Avaliação: 4 de 5 estrelas">★★★★☆ <span>(26)</span></p>
-            <p>
-              <strong>R$ 87,45</strong>
-            </p>
-            <button class="botao_carrinho">ADICIONAR AO CARRINHO</button>
-          </li>
+        <header class="header_site">
+            <h1 class="logo_site">
+                <a href="/" aria-label="Página inicial - Miaunarquia">
+                    <img
+                        src="../imagens/imagem_logo.png"
+                        alt="Logo de um Gato Preto com Coroa"
+                        class="logo_imagem"
+                    />
+                    <span id="nome_logo">Miaunarquia</span>
+                </a>
+            </h1>
 
-          <li class="card_produto">
-            <button class="botao_favorito_cards" aria-label="Adicionar aos favoritos">
-              <img src="../imagens/icone_favoritos.png" alt="Ícone de Coração" aria-hidden="true" />
-            </button>
-            <img src="../imagens/imagem_cama_tubarao.png" class="imagens_cards" alt="Cama em Formato de Tubarão para Gatos de Porte Grande" />
-            <h3>Arranhador Formato Cacto</h3>
-            <p aria-label="Avaliação: 5 de 5 estrelas">★★★★★ <span>(55)</span></p>
-            <p>
-              <strong>R$ 119,55</strong>
-            </p>
-            <button class="botao_carrinho">ADICIONAR AO CARRINHO</button>
-          </li>
+            <nav class="nav_menu" aria-label="Menu Principal">
+                <!-- arial-label = Rotular elemento para descreve-lo e deixa-lo mais acessível -->
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Catálogo</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
 
-          <li class="card_produto">
-            <button class="botao_favorito_cards" aria-label="Adicionar aos favoritos">
-              <img src="../imagens/icone_favoritos.png" alt="Ícone de Coração" aria-hidden="true" />
-            </button>
-            <img src="../imagens/imagem_petisco_finotrato.png" class="imagens_cards" alt="Petisco para Gato Sabor de Frango" />
-            <h3>Petisco - Sabor Frango</h3>
-            <p aria-label="Avaliação: 4 de 5 estrelas">★★★★☆ <span>(25)</span></p>
-            <p>
-              <strong>R$ 34,25</strong>
-            </p>
-            <button class="botao_carrinho">ADICIONAR AO CARRINHO</button>
-          </li>
+            <nav class="nav_usuario" aria-label="Menu Usuário">
+                <ul>
+                    <li>
+                        <a href="#" aria-label="Pesquisar">
+                            <figure class="icones_nav">
+                                <img
+                                    src="../imagens/icone_pesquisar.png"
+                                    class="icones_nav"
+                                    alt="Ícone de Lupa"
+                                />
+                                <figcaption class="legendas_icones">
+                                    Pesquisar
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </li>
 
-          <li class="card_produto">
-            <button class="botao_favorito_cards" aria-label="Adicionar aos favoritos">
-              <img src="../imagens/icone_favoritos.png" alt="Ícone de Coração" aria-hidden="true" />
-            </button>
-            <img src="../imagens/imagem_brinquedo_peixe.png" class="imagens_cards" alt="Brinquedo em Formato de Peixe" />
-            <h3>Brinquedo em Formato de Peixe</h3>
-            <p aria-label="Avaliação: 4 de 5 estrelas">★★★★☆ <span>(67)</span></p>
-            <p>
-              <strong>R$ 48,35</strong>
-            </p>
-            <button class="botao_carrinho">ADICIONAR AO CARRINHO</button>
-          </li>
+                    <li>
+                        <a href="#" aria-label="Favoritos">
+                            <figure class="icones_nav">
+                                <img
+                                    src="../imagens/icone_favoritos.png"
+                                    class="icones_nav"
+                                    alt="Ícone de Coração"
+                                />
+                                <figcaption class="legendas_icones">
+                                    Favoritos
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </li>
 
-          <li class="card_produto">
-            <button class="botao_favorito_cards" aria-label="Adicionar aos favoritos">
-              <img src="../imagens/icone_favoritos.png" alt="Ícone de Coração" aria-hidden="true" />
-            </button>
-            <img src="../imagens/imagem_kit_higiene_vermelho.png" class="imagens_cards" alt="Kit de Higiene para Gatos - 3 Peças Vermelhas" />
-            <h3>Kit Higiene (3 Peças) - Vermelho</h3>
-            <p aria-label="Avaliação: 5 de 5 estrelas">★★★★★ <span>(16)</span></p>
-            <p>
-              <strong>R$ 132,16</strong>
-            </p>
-            <button class="botao_carrinho">ADICIONAR AO CARRINHO</button>
-          </li>
+                    <li>
+                        <a href="#" aria-label="Pefil">
+                            <figure class="icones_nav">
+                                <img
+                                    src="../imagens/icone_usuario.png"
+                                    class="icones_nav"
+                                    alt="Ícone de Perfil"
+                                />
+                                <figcaption class="legendas_icones">
+                                    Perfil
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </li>
 
-          <li class="card_produto">
-            <button class="botao_favorito_cards" aria-label="Adicionar aos favoritos">
-              <img src="../imagens/icone_favoritos.png" alt="Ícone de Coração" aria-hidden="true" />
-            </button>
-            <img src="../imagens/imagem_cama_veludo_rosa.png" class="imagens_cards" alt="Cama em Formato de Toca - Rosa" />
-            <h3>Cama em Formato de Toca - Rosa</h3>
-            <p aria-label="Avaliação: 4 de 5 estrelas">★★★★☆ <span>(76)</span></p>
-            <p>
-              <strong>R$ 163,87</strong>
-            </p>
-            <button class="botao_carrinho">ADICIONAR AO CARRINHO</button>
-          </li>
+                    <li>
+                        <a href="#" aria-label="Carrinho">
+                            <figure class="icones_nav">
+                                <img
+                                    src="../imagens/icone_carrinho.png"
+                                    class="icones_nav"
+                                    alt="Ícone de Carrinho"
+                                />
+                                <figcaption class="legendas_icones">
+                                    Carrinho
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
-          <li class="card_produto">
-            <button class="botao_favorito_cards" aria-label="Adicionar aos favoritos">
-              <img src="../imagens/icone_favoritos.png" alt="Ícone de Coração" aria-hidden="true" />
-            </button>
-            <img src="../imagens/imagem_caixa_papelao.png" class="imagens_cards" alt="Caixa de Papelão Labirinto em formato de CuboArranhador em Formato de Cacto" />
-            <h3>Toca Labirinto Cubo - 1 Cubo</h3>
-            <p aria-label="Avaliação: 4 de 5 estrelas">★★★★☆ <span>(29)</span></p>
-            <p>
-              <strong>R$ 39,99</strong>
-            </p>
-            <button class="botao_carrinho">ADICIONAR AO CARRINHO</button>
-          </li>
+        <section class="carrossel" aria-label="Carrossel de Imagens">
+            <span class="seta_esquerda_carrossel" aria-hidden="true">❮</span>
+            <ul class="slides">
+                <li class="slide">
+                    <figure>
+                        <img
+                            src="../imagens/slide_um.png"
+                            class="imagens_carrossel"
+                            alt="Slide com Gato Cinza e Texto Escrito 'Seja bem-vindo'"
+                        />
+                    </figure>
+                </li>
 
-          <li class="card_produto">
-            <button class="botao_favorito_cards" aria-label="Adicionar aos favoritos">
-              <img src="../imagens/icone_favoritos.png" alt="Ícone de Coração" aria-hidden="true" />
-            </button>
-            <img src="../imagens/imagem_bebedouro.png" class="imagens_cards" alt="Gato bebendo de um bebedouro com fonte de água" />
-            <h3>Bebedouro Fonte Água (3L) - Silencioso</h3>
-            <p aria-label="Avaliação: 5 de 5 estrelas">★★★★★ <span>(55)</span></p>
-            <p>
-              <strong>R$ 179,00</strong>
-            </p>
-            <button class="botao_carrinho">ADICIONAR AO CARRINHO</button>
-          </li>
-        </ul>
-      </article>
-      <span class="setas_lancamento seta_direita_lancamento" aria-hidden="true">❯</span>
+                <li class="slide">
+                    <figure>
+                        <img
+                            src="../imagens/slide_dois.png"
+                            class="imagens_carrossel"
+                            alt="Slide com Categorias: Roupas, Petiscos e Brinquedos. Cada uma com gatos realizando as respectivas atividades"
+                        />
+                    </figure>
+                </li>
 
-      <nav class="indicadores_carrossel" aria-label="Indicadores do carrossel de produtos">
-        <span class="retangulo"></span>
-        <span class="retangulo"></span>
-        <span class="retangulo"></span>
-      </nav>
-    </section>
+                <li class="slide">
+                    <figure>
+                        <img
+                            src="../imagens/slide_tres.png"
+                            class="imagens_carrossel"
+                            alt="Slide que incentiva a adoção de animais e Avisando que parte das nossas vendas vai para ONGs de resgate e cuidado animal"
+                        />
+                    </figure>
+                </li>
+            </ul>
+            <span class="seta_direita_carrossel" aria-hidden="true">❯</span>
 
+            <nav
+                class="indicadores_carrossel"
+                aria-label="Indicadores do carrossel de imagens"
+            >
+                <span class="bolinha"></span>
+                <span class="bolinha"></span>
+                <span class="bolinha"></span>
+            </nav>
+        </section>
 
-    <hr class="divisoes" aria-hidden="true" />
+        <hr class="divisoes" aria-hidden="true" />
 
+        <section
+            class="categorias_catalogo"
+            aria-label="Categorias do Catálogo"
+        >
+            <h2 id="titulo_categorias">Categorias de Produtos</h2>
+            <ul class="lista_categorias">
+                <li>
+                    <a href="#" class="links_categorias">
+                        <img
+                            src="../imagens/imagem_arranhador.png"
+                            alt="Imagem de arranhador preto"
+                            class="imagens_categorias"
+                        />
+                        <span>Arranhadores</span>
+                    </a>
+                </li>
 
-    <section class="produtos_mais_vendidos" aria-label="Carrossel de Mais Vendidos">
-      <h2 id="titulo_mais_vendidos">Mais Vendidos</h2>
-      <span class="setas_mais_vendidos seta_esquerda_mais_vendidos" aria-hidden="true">❮</span>
-      <article class="container_carrossel_mais_vendidos">
-        <ul class="carrossel_mais_vendidos">
-          <li class="card_produto">
-            <button class="botao_favorito_cards" aria-label="Adicionar aos favoritos">
-              <img src="../imagens/icone_favoritos.png" alt="Ícone de Coração" aria-hidden="true" />
-            </button>
-            <img src="../imagens/imagem_arranhador_bege.png" class="imagens_cards" alt="Arranhador Chalesco na Cor Bege" />
-            <h3>Arranhador - Chalesco</h3>
-            <p aria-label="Avaliação: 5 de 5 estrelas">★★★★★ <span>(234)</span></p>
-            <p>
-              <strong>R$ 263,90</strong>
-            </p>
-            <button class="botao_carrinho">ADICIONAR AO CARRINHO</button>
-          </li>
+                <li>
+                    <a href="#" class="links_categorias">
+                        <img
+                            src="../imagens/imagem_cama.png"
+                            alt="Imagem de cama formato tubarão"
+                            class="imagens_categorias"
+                        />
+                        <span>Camas</span>
+                    </a>
+                </li>
 
-          <li class="card_produto">
-            <button class="botao_favorito_cards" aria-label="Adicionar aos favoritos">
-              <img src="../imagens/icone_favoritos.png" alt="Ícone de Coração" aria-hidden="true" />
-            </button>
-            <img src="../imagens/imagem_abacate_catnip.png" class="imagens_cards" alt="Brinquedo Catnip em Formato de Abacate" />
-            <h3>Catnip Erva Natural - Formato Abacate</h3>
-            <p aria-label="Avaliação: 5 de 5 estrelas">★★★★★ <span>(424)</span></p>
-            <p>
-              <strong>R$ 19,44</strong>
-            </p>
-            <button class="botao_carrinho">ADICIONAR AO CARRINHO</button>
-          </li>
+                <li>
+                    <a href="#" class="links_categorias">
+                        <img
+                            src="../imagens/imagem_limpeza.png "
+                            alt="Imagem de Enzimac Gato com Embalagem Rosa"
+                            class="imagens_categorias"
+                        />
+                        <span>Higiene e Limpeza</span>
+                    </a>
+                </li>
 
-          <li class="card_produto">
-            <button class="botao_favorito_cards" aria-label="Adicionar aos favoritos">
-              <img src="../imagens/icone_favoritos.png" alt="Ícone de Coração" aria-hidden="true" />
-            </button>
-            <img src="../imagens/imagem_arranhador_4_brinquedos.png" class="imagens_cards" alt="Arranhador Poste com 4 Brinquedos na cor Preto" />
-            <h3>Arranhador Poste com 4 Bolas - Preto</h3>
-            <p aria-label="Avaliação: 5 de 5 estrelas">★★★★★ <span>(236)</span></p>
-            <p>
-              <strong>R$ 54,99</strong>
-            </p>
-            <button class="botao_carrinho">ADICIONAR AO CARRINHO</button>
-          </li>
+                <li>
+                    <a href="#" class="links_categorias">
+                        <img
+                            src="../imagens/imagem_roupa.png"
+                            alt="Imagem Gato com Fantasia de Dinossauro"
+                            class="imagens_categorias"
+                        />
+                        <span>Roupas</span>
+                    </a>
+                </li>
 
-          <li class="card_produto">
-            <button class="botao_favorito_cards" aria-label="Adicionar aos favoritos">
-              <img src="../imagens/icone_favoritos.png" alt="Ícone de Coração" aria-hidden="true" />
-            </button>
-            <img src="../imagens/imagem_fantasia_vaca.png" class="imagens_cards" alt="Gato com Fantasia de Vaca" />
-            <h3>Fantasia de Vaca com Touca</h3>
-            <p aria-label="Avaliação: 5 de 5 estrelas">★★★★★ <span>(455)</span></p>
-            <p>
-              <strong>R$ 136,99</strong>
-            </p>
-            <button class="botao_carrinho">ADICIONAR AO CARRINHO</button>
-          </li>
+                <li>
+                    <a href="#" class="links_categorias">
+                        <img
+                            src="../imagens/imagem_brinquedo.png"
+                            alt="Imagem de brinquedos"
+                            class="imagens_categorias"
+                        />
+                        <span>Brinquedos</span>
+                    </a>
+                </li>
 
-          <li class="card_produto">
-            <button class="botao_favorito_cards" aria-label="Adicionar aos favoritos">
-              <img src="../imagens/icone_favoritos.png" alt="Ícone de Coração" aria-hidden="true" />
-            </button>
-            <img src="../imagens/imagem_fantasia_lagosta.png" class="imagens_cards" alt="Gato com Fantasia de Lagosta com Touca" />
-            <h3>Fantasia de Lagosta com Touca</h3>
-            <p aria-label="Avaliação: 5 de 5 estrelas">★★★★★ <span>(354)</span></p>
-            <p>
-              <strong>R$ 134,44</strong>
-            </p>
-            <button class="botao_carrinho">ADICIONAR AO CARRINHO</button>
-          </li>
+                <li>
+                    <a href="#" class="links_categorias">
+                        <img
+                            src="../imagens/imagem_comedouro.png"
+                            alt="Ícone de comedouros e bebedouros"
+                            class="imagens_categorias"
+                        />
+                        <span>Comedouros e Bebedouros</span>
+                    </a>
+                </li>
 
-          <li class="card_produto">
-            <button class="botao_favorito_cards" aria-label="Adicionar aos favoritos">
-              <img src="../imagens/icone_favoritos.png" alt="Ícone de Coração" aria-hidden="true" />
-            </button>
-            <img src="../imagens/imagem_petisco_whiskas.png" class="imagens_cards" alt="Petisco Whiskas Temptations para Gatos" />
-            <h3>Petisco Whiskas Temptations - Adulto</h3>
-            <p aria-label="Avaliação: 5 de 5 estrelas">★★★★★ <span>(167)</span></p>
-            <p>
-              <strong>R$ 11,26</strong>
-            </p>
-            <button class="botao_carrinho">ADICIONAR AO CARRINHO</button>
-          </li>
+                <li>
+                    <a href="#" class="links_categorias">
+                        <img
+                            src="../imagens/imagem_petisco.png"
+                            alt="Ícone de petiscos"
+                            class="imagens_categorias"
+                        />
+                        <span>Petiscos</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
 
-          <li class="card_produto">
-            <button class="botao_favorito_cards" aria-label="Adicionar aos favoritos">
-              <img src="../imagens/icone_favoritos.png" alt="Ícone de Coração" aria-hidden="true" />
-            </button>
-            <img src="../imagens/imagem_cama_cinza.png" class="imagens_cards" alt="Cama para Gato na Cor Cinza" />
-            <h3>Cama Grande Quadrada - Cinza</h3>
-            <p aria-label="Avaliação: 5 de 5 estrelas">★★★★★ <span>(437)</span></p>
-            <p>
-              <strong>R$ 239,92</strong>
-            </p>
-            <button class="botao_carrinho">ADICIONAR AO CARRINHO</button>
-          </li>
+        <hr class="divisoes" aria-hidden="true" />
 
-          <li class="card_produto">
-            <button class="botao_favorito_cards" aria-label="Adicionar aos favoritos">
-              <img src="../imagens/icone_favoritos.png" alt="Ícone de Coração" aria-hidden="true" />
-            </button>
-            <img src="../imagens/imagem_fantasia_colegial.png" class="imagens_cards" alt="Gato com Fantasia de Colegial" />
-            <h3>Fantasia de Colegial com Saia</h3>
-            <p aria-label="Avaliação: 5 de 5 estrelas">★★★★★ <span>(276)</span></p>
-            <p>
-              <strong>R$ 163,87</strong>
-            </p>
-            <button class="botao_carrinho">ADICIONAR AO CARRINHO</button>
-          </li>
+        <section
+            class="produtos_lancamentos"
+            aria-label="Carrossel de Lançamentos"
+        >
+            <h2 id="titulo_lancamentos">Lançamentos</h2>
+            <span
+                class="setas_lancamento seta_esquerda_lancamento"
+                aria-hidden="true"
+                >❮</span
+            >
+            <article class="container_carrossel_lancamentos">
+                <ul class="carrossel_lancamentos">
+                    <li class="card_produto">
+                        <button
+                            class="botao_favorito_cards"
+                            aria-label="Adicionar aos favoritos"
+                        >
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração"
+                                aria-hidden="true"
+                            />
+                        </button>
+                        <img
+                            src="../imagens/imagem_arranhador_cacto.png"
+                            class="imagens_cards"
+                            alt="Arranhador em Formato de Cacto"
+                        />
+                        <h3>Arranhador - Formato de Cacto</h3>
+                        <p aria-label="Avaliação: 4 de 5 estrelas">
+                            ★★★★☆ <span>(34)</span>
+                        </p>
+                        <p>
+                            <strong>R$ 263,90</strong>
+                        </p>
+                        <button class="botao_carrinho">
+                            ADICIONAR AO CARRINHO
+                        </button>
+                    </li>
 
-          <li class="card_produto">
-            <button class="botao_favorito_cards" aria-label="Adicionar aos favoritos">
-              <img src="../imagens/icone_favoritos.png" alt="Ícone de Coração" aria-hidden="true" />
-            </button>
-            <img src="../imagens/imagem_bebedouro_inox.png" class="imagens_cards" alt="Bebedouro Fonte de 2 litros com Filtro Silencioso em Inox" />
-            <h3>Bebedouro Fonte Água (2L) - Silencioso</h3>
-            <p aria-label="Avaliação: 5 de 5 estrelas">★★★★★ <span>(355)</span></p>
-            <p>
-              <strong>R$ 189,22</strong>
-            </p>
-            <button class="botao_carrinho">ADICIONAR AO CARRINHO</button>
-          </li>
+                    <li class="card_produto">
+                        <button
+                            class="botao_favorito_cards"
+                            aria-label="Adicionar aos favoritos"
+                        >
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração"
+                                aria-hidden="true"
+                            />
+                        </button>
+                        <img
+                            src="../imagens/imagem_tigela_antiderrapante.png"
+                            class="imagens_cards"
+                            alt="Tigela Antiderrapante Quadrada para Gato comer"
+                        />
+                        <h3>Tigela Antiderrapante - Quadrada</h3>
+                        <p aria-label="Avaliação: 5 de 5 estrelas">
+                            ★★★★★ <span>(12)</span>
+                        </p>
+                        <p>
+                            <strong>R$ 159,75</strong>
+                        </p>
+                        <button class="botao_carrinho">
+                            ADICIONAR AO CARRINHO
+                        </button>
+                    </li>
 
-          <li class="card_produto">
-            <button class="botao_favorito_cards" aria-label="Adicionar aos favoritos">
-              <img src="../imagens/icone_favoritos.png" alt="Ícone de Coração" aria-hidden="true" />
-            </button>
-            <img src="../imagens/imagem_caixote_areia_rosa.png" class="imagens_cards" alt="Caixote de Areia para Gatos na Cor Lilás" />
-            <h3>Caixote de Areia - Lilás</h3>
-            <p aria-label="Avaliação: 5 de 5 estrelas">★★★★★ <span>(529)</span></p>
-            <p>
-              <strong>R$ 119,10</strong>
-            </p>
-            <button class="botao_carrinho">ADICIONAR AO CARRINHO</button>
-          </li>
-        </ul>
-      </article>
-      <span class="setas_mais_vendidos seta_direita_mais_vendidos" aria-hidden="true">❯</span>
+                    <li class="card_produto">
+                        <button
+                            class="botao_favorito_cards"
+                            aria-label="Adicionar aos favoritos"
+                        >
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração"
+                                aria-hidden="true"
+                            />
+                        </button>
+                        <img
+                            src="../imagens/imagem_fantasia_morcego.png"
+                            class="imagens_cards"
+                            alt="Gato com Asas de Morcego - Fantasia"
+                        />
+                        <h3>Fantasia Asa De Morcego</h3>
+                        <p aria-label="Avaliação: 4 de 5 estrelas">
+                            ★★★★☆ <span>(26)</span>
+                        </p>
+                        <p>
+                            <strong>R$ 87,45</strong>
+                        </p>
+                        <button class="botao_carrinho">
+                            ADICIONAR AO CARRINHO
+                        </button>
+                    </li>
 
-      <nav class="indicadores_carrossel" aria-label="Indicadores do carrossel de produtos">
-        <span class="retangulo"></span>
-        <span class="retangulo"></span>
-        <span class="retangulo"></span>
-      </nav>
-    </section>
+                    <li class="card_produto">
+                        <button
+                            class="botao_favorito_cards"
+                            aria-label="Adicionar aos favoritos"
+                        >
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração"
+                                aria-hidden="true"
+                            />
+                        </button>
+                        <img
+                            src="../imagens/imagem_cama_tubarao.png"
+                            class="imagens_cards"
+                            alt="Cama em Formato de Tubarão para Gatos de Porte Grande"
+                        />
+                        <h3>Arranhador Formato Cacto</h3>
+                        <p aria-label="Avaliação: 5 de 5 estrelas">
+                            ★★★★★ <span>(55)</span>
+                        </p>
+                        <p>
+                            <strong>R$ 119,55</strong>
+                        </p>
+                        <button class="botao_carrinho">
+                            ADICIONAR AO CARRINHO
+                        </button>
+                    </li>
 
+                    <li class="card_produto">
+                        <button
+                            class="botao_favorito_cards"
+                            aria-label="Adicionar aos favoritos"
+                        >
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração"
+                                aria-hidden="true"
+                            />
+                        </button>
+                        <img
+                            src="../imagens/imagem_petisco_finotrato.png"
+                            class="imagens_cards"
+                            alt="Petisco para Gato Sabor de Frango"
+                        />
+                        <h3>Petisco - Sabor Frango</h3>
+                        <p aria-label="Avaliação: 4 de 5 estrelas">
+                            ★★★★☆ <span>(25)</span>
+                        </p>
+                        <p>
+                            <strong>R$ 34,25</strong>
+                        </p>
+                        <button class="botao_carrinho">
+                            ADICIONAR AO CARRINHO
+                        </button>
+                    </li>
 
-    <hr class="divisoes" aria-hidden="true" />
+                    <li class="card_produto">
+                        <button
+                            class="botao_favorito_cards"
+                            aria-label="Adicionar aos favoritos"
+                        >
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração"
+                                aria-hidden="true"
+                            />
+                        </button>
+                        <img
+                            src="../imagens/imagem_brinquedo_peixe.png"
+                            class="imagens_cards"
+                            alt="Brinquedo em Formato de Peixe"
+                        />
+                        <h3>Brinquedo em Formato de Peixe</h3>
+                        <p aria-label="Avaliação: 4 de 5 estrelas">
+                            ★★★★☆ <span>(67)</span>
+                        </p>
+                        <p>
+                            <strong>R$ 48,35</strong>
+                        </p>
+                        <button class="botao_carrinho">
+                            ADICIONAR AO CARRINHO
+                        </button>
+                    </li>
 
+                    <li class="card_produto">
+                        <button
+                            class="botao_favorito_cards"
+                            aria-label="Adicionar aos favoritos"
+                        >
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração"
+                                aria-hidden="true"
+                            />
+                        </button>
+                        <img
+                            src="../imagens/imagem_kit_higiene_vermelho.png"
+                            class="imagens_cards"
+                            alt="Kit de Higiene para Gatos - 3 Peças Vermelhas"
+                        />
+                        <h3>Kit Higiene (3 Peças) - Vermelho</h3>
+                        <p aria-label="Avaliação: 5 de 5 estrelas">
+                            ★★★★★ <span>(16)</span>
+                        </p>
+                        <p>
+                            <strong>R$ 132,16</strong>
+                        </p>
+                        <button class="botao_carrinho">
+                            ADICIONAR AO CARRINHO
+                        </button>
+                    </li>
 
-    <section class="carrossel_feedbacks">
-      <h2 id="titulo_feedbacks">O que dizem nossos clientes</h2>
-      <span class="setas_feedbacks seta_esquerda_feedbacks" aria-hidden="true">❮</span>
-      <ul class="feedbacks">
-        <li class="feedback">
-          <span class="aspas">“</span>
-          <p>Produtos excelentes, meu gato adorou!</p>
-          <span class="autor_feedback">Ana, RJ</span>
-          <span class="aspas">“</span>
-        </li>
+                    <li class="card_produto">
+                        <button
+                            class="botao_favorito_cards"
+                            aria-label="Adicionar aos favoritos"
+                        >
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração"
+                                aria-hidden="true"
+                            />
+                        </button>
+                        <img
+                            src="../imagens/imagem_cama_veludo_rosa.png"
+                            class="imagens_cards"
+                            alt="Cama em Formato de Toca - Rosa"
+                        />
+                        <h3>Cama em Formato de Toca - Rosa</h3>
+                        <p aria-label="Avaliação: 4 de 5 estrelas">
+                            ★★★★☆ <span>(76)</span>
+                        </p>
+                        <p>
+                            <strong>R$ 163,87</strong>
+                        </p>
+                        <button class="botao_carrinho">
+                            ADICIONAR AO CARRINHO
+                        </button>
+                    </li>
 
-        <li class="feedback">
-          <span class="aspas">“</span>
-          <p>Entrega rápida e produtos de qualidade.</p>
-          <span class="autor_feedback">Carlos, SP</span>
-          <span class="aspas">“</span>
-        </li>
+                    <li class="card_produto">
+                        <button
+                            class="botao_favorito_cards"
+                            aria-label="Adicionar aos favoritos"
+                        >
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração"
+                                aria-hidden="true"
+                            />
+                        </button>
+                        <img
+                            src="../imagens/imagem_caixa_papelao.png"
+                            class="imagens_cards"
+                            alt="Caixa de Papelão Labirinto em formato de CuboArranhador em Formato de Cacto"
+                        />
+                        <h3>Toca Labirinto Cubo - 1 Cubo</h3>
+                        <p aria-label="Avaliação: 4 de 5 estrelas">
+                            ★★★★☆ <span>(29)</span>
+                        </p>
+                        <p>
+                            <strong>R$ 39,99</strong>
+                        </p>
+                        <button class="botao_carrinho">
+                            ADICIONAR AO CARRINHO
+                        </button>
+                    </li>
 
-        <li class="feedback">
-          <span class="aspas">“</span>
-          <p>Atendimento impecável e entrega rápida!</p>
-          <span class="autor_feedback">Marina, MG</span>
-          <span class="aspas">“</span>
-        </li>
+                    <li class="card_produto">
+                        <button
+                            class="botao_favorito_cards"
+                            aria-label="Adicionar aos favoritos"
+                        >
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração"
+                                aria-hidden="true"
+                            />
+                        </button>
+                        <img
+                            src="../imagens/imagem_bebedouro.png"
+                            class="imagens_cards"
+                            alt="Gato bebendo de um bebedouro com fonte de água"
+                        />
+                        <h3>Bebedouro Fonte Água (3L) - Silencioso</h3>
+                        <p aria-label="Avaliação: 5 de 5 estrelas">
+                            ★★★★★ <span>(55)</span>
+                        </p>
+                        <p>
+                            <strong>R$ 179,00</strong>
+                        </p>
+                        <button class="botao_carrinho">
+                            ADICIONAR AO CARRINHO
+                        </button>
+                    </li>
+                </ul>
+            </article>
+            <span
+                class="setas_lancamento seta_direita_lancamento"
+                aria-hidden="true"
+                >❯</span
+            >
 
-        <li class="feedback">
-          <span class="aspas">“</span>
-          <p>Melhor site para quem ama gatos!</p>
-          <span class="autor_feedback">Yasmin, SP</span>
-          <span class="aspas">“</span>
-        </li>
+            <nav
+                class="indicadores_carrossel"
+                aria-label="Indicadores do carrossel de produtos"
+            >
+                <span class="retangulo"></span>
+                <span class="retangulo"></span>
+                <span class="retangulo"></span>
+            </nav>
+        </section>
 
-        <li class="feedback">
-          <span class="aspas">“</span>
-          <p>Amo os produtos da Miaunarquia. Sempre vêm com qualidade!</p>
-          <span class="autor_feedback">Solange, PA</span>
-          <span class="aspas">“</span>
-        </li>
+        <hr class="divisoes" aria-hidden="true" />
 
-        <li class="feedback">
-          <span class="aspas">“</span>
-          <p>Meu gato já virou cliente fiel KKKKK</p>
-          <span class="autor_feedback">Larissa, BA</span>
-          <span class="aspas">“</span>
-        </li>
+        <section
+            class="produtos_mais_vendidos"
+            aria-label="Carrossel de Mais Vendidos"
+        >
+            <h2 id="titulo_mais_vendidos">Mais Vendidos</h2>
+            <span
+                class="setas_mais_vendidos seta_esquerda_mais_vendidos"
+                aria-hidden="true"
+                >❮</span
+            >
+            <article class="container_carrossel_mais_vendidos">
+                <ul class="carrossel_mais_vendidos">
+                    <li class="card_produto">
+                        <button
+                            class="botao_favorito_cards"
+                            aria-label="Adicionar aos favoritos"
+                        >
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração"
+                                aria-hidden="true"
+                            />
+                        </button>
+                        <img
+                            src="../imagens/imagem_arranhador_bege.png"
+                            class="imagens_cards"
+                            alt="Arranhador Chalesco na Cor Bege"
+                        />
+                        <h3>Arranhador - Chalesco</h3>
+                        <p aria-label="Avaliação: 5 de 5 estrelas">
+                            ★★★★★ <span>(234)</span>
+                        </p>
+                        <p>
+                            <strong>R$ 263,90</strong>
+                        </p>
+                        <button class="botao_carrinho">
+                            ADICIONAR AO CARRINHO
+                        </button>
+                    </li>
 
-        <li class="feedback">
-          <span class="aspas">“</span>
-          <p>O Fumaça amou os produtos da Miaunarquia que comprei para ele!</p>
-          <span class="autor_feedback">Daniel, SO</span>
-          <span class="aspas">“</span>
-        </li>
+                    <li class="card_produto">
+                        <button
+                            class="botao_favorito_cards"
+                            aria-label="Adicionar aos favoritos"
+                        >
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração"
+                                aria-hidden="true"
+                            />
+                        </button>
+                        <img
+                            src="../imagens/imagem_abacate_catnip.png"
+                            class="imagens_cards"
+                            alt="Brinquedo Catnip em Formato de Abacate"
+                        />
+                        <h3>Catnip Erva Natural - Formato Abacate</h3>
+                        <p aria-label="Avaliação: 5 de 5 estrelas">
+                            ★★★★★ <span>(424)</span>
+                        </p>
+                        <p>
+                            <strong>R$ 19,44</strong>
+                        </p>
+                        <button class="botao_carrinho">
+                            ADICIONAR AO CARRINHO
+                        </button>
+                    </li>
 
-        <li class="feedback">
-          <span class="aspas">“</span>
-          <p>Não tenho reclamações, apenas elogios!</p>
-          <span class="autor_feedback">José, TO</span>
-          <span class="aspas">“</span>
-        </li>
+                    <li class="card_produto">
+                        <button
+                            class="botao_favorito_cards"
+                            aria-label="Adicionar aos favoritos"
+                        >
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração"
+                                aria-hidden="true"
+                            />
+                        </button>
+                        <img
+                            src="../imagens/imagem_arranhador_4_brinquedos.png"
+                            class="imagens_cards"
+                            alt="Arranhador Poste com 4 Brinquedos na cor Preto"
+                        />
+                        <h3>Arranhador Poste com 4 Bolas - Preto</h3>
+                        <p aria-label="Avaliação: 5 de 5 estrelas">
+                            ★★★★★ <span>(236)</span>
+                        </p>
+                        <p>
+                            <strong>R$ 54,99</strong>
+                        </p>
+                        <button class="botao_carrinho">
+                            ADICIONAR AO CARRINHO
+                        </button>
+                    </li>
 
-        <li class="feedback">
-          <span class="aspas">“</span>
-          <p>Produtos de ótima qualidade!</p>
-          <span class="autor_feedback">Maria, SP</span>
-          <span class="aspas">“</span>
-        </li>
+                    <li class="card_produto">
+                        <button
+                            class="botao_favorito_cards"
+                            aria-label="Adicionar aos favoritos"
+                        >
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração"
+                                aria-hidden="true"
+                            />
+                        </button>
+                        <img
+                            src="../imagens/imagem_fantasia_vaca.png"
+                            class="imagens_cards"
+                            alt="Gato com Fantasia de Vaca"
+                        />
+                        <h3>Fantasia de Vaca com Touca</h3>
+                        <p aria-label="Avaliação: 5 de 5 estrelas">
+                            ★★★★★ <span>(455)</span>
+                        </p>
+                        <p>
+                            <strong>R$ 136,99</strong>
+                        </p>
+                        <button class="botao_carrinho">
+                            ADICIONAR AO CARRINHO
+                        </button>
+                    </li>
 
-        <li class="feedback">
-          <span class="aspas">“</span>
-          <p>Recomendo sempre a Miaunarquia. Nunca me decepcionou!</p>
-          <span class="autor_feedback">Heber, GO</span>
-          <span class="aspas">“</span>
-        </li>
-      </ul>
-      <span class="setas_feedbacks seta_direita_feedbacks" aria-hidden="true">❯</span>
-      <nav class="indicadores_feedbacks" aria-label="Indicadores do carrossel de feedbacks">
-        <span class="bolinha_feedbacks"></span>
-        <span class="bolinha_feedbacks"></span>
-        <span class="bolinha_feedbacks"></span>
-        <span class="bolinha_feedbacks"></span>
-        <span class="bolinha_feedbacks"></span>
-        <span class="bolinha_feedbacks"></span>
-        <span class="bolinha_feedbacks"></span>
-        <span class="bolinha_feedbacks"></span>
-        <span class="bolinha_feedbacks"></span>
-        <span class="bolinha_feedbacks"></span>
-      </nav>
-    </section>
+                    <li class="card_produto">
+                        <button
+                            class="botao_favorito_cards"
+                            aria-label="Adicionar aos favoritos"
+                        >
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração"
+                                aria-hidden="true"
+                            />
+                        </button>
+                        <img
+                            src="../imagens/imagem_fantasia_lagosta.png"
+                            class="imagens_cards"
+                            alt="Gato com Fantasia de Lagosta com Touca"
+                        />
+                        <h3>Fantasia de Lagosta com Touca</h3>
+                        <p aria-label="Avaliação: 5 de 5 estrelas">
+                            ★★★★★ <span>(354)</span>
+                        </p>
+                        <p>
+                            <strong>R$ 134,44</strong>
+                        </p>
+                        <button class="botao_carrinho">
+                            ADICIONAR AO CARRINHO
+                        </button>
+                    </li>
 
+                    <li class="card_produto">
+                        <button
+                            class="botao_favorito_cards"
+                            aria-label="Adicionar aos favoritos"
+                        >
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração"
+                                aria-hidden="true"
+                            />
+                        </button>
+                        <img
+                            src="../imagens/imagem_petisco_whiskas.png"
+                            class="imagens_cards"
+                            alt="Petisco Whiskas Temptations para Gatos"
+                        />
+                        <h3>Petisco Whiskas Temptations - Adulto</h3>
+                        <p aria-label="Avaliação: 5 de 5 estrelas">
+                            ★★★★★ <span>(167)</span>
+                        </p>
+                        <p>
+                            <strong>R$ 11,26</strong>
+                        </p>
+                        <button class="botao_carrinho">
+                            ADICIONAR AO CARRINHO
+                        </button>
+                    </li>
 
-    <hr class="divisoes" aria-hidden="true" />
+                    <li class="card_produto">
+                        <button
+                            class="botao_favorito_cards"
+                            aria-label="Adicionar aos favoritos"
+                        >
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração"
+                                aria-hidden="true"
+                            />
+                        </button>
+                        <img
+                            src="../imagens/imagem_cama_cinza.png"
+                            class="imagens_cards"
+                            alt="Cama para Gato na Cor Cinza"
+                        />
+                        <h3>Cama Grande Quadrada - Cinza</h3>
+                        <p aria-label="Avaliação: 5 de 5 estrelas">
+                            ★★★★★ <span>(437)</span>
+                        </p>
+                        <p>
+                            <strong>R$ 239,92</strong>
+                        </p>
+                        <button class="botao_carrinho">
+                            ADICIONAR AO CARRINHO
+                        </button>
+                    </li>
 
+                    <li class="card_produto">
+                        <button
+                            class="botao_favorito_cards"
+                            aria-label="Adicionar aos favoritos"
+                        >
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração"
+                                aria-hidden="true"
+                            />
+                        </button>
+                        <img
+                            src="../imagens/imagem_fantasia_colegial.png"
+                            class="imagens_cards"
+                            alt="Gato com Fantasia de Colegial"
+                        />
+                        <h3>Fantasia de Colegial com Saia</h3>
+                        <p aria-label="Avaliação: 5 de 5 estrelas">
+                            ★★★★★ <span>(276)</span>
+                        </p>
+                        <p>
+                            <strong>R$ 163,87</strong>
+                        </p>
+                        <button class="botao_carrinho">
+                            ADICIONAR AO CARRINHO
+                        </button>
+                    </li>
 
-    <section class="vantagens">
-      <ul class="lista-vantagens">
-        <li>
-          <img src="../imagens/icone_gato.png" alt="Ícone de um gato" />
-          <p><strong>Produtos pensados<br>milimetricamente para felinos</strong></p>
-        </li>
+                    <li class="card_produto">
+                        <button
+                            class="botao_favorito_cards"
+                            aria-label="Adicionar aos favoritos"
+                        >
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração"
+                                aria-hidden="true"
+                            />
+                        </button>
+                        <img
+                            src="../imagens/imagem_bebedouro_inox.png"
+                            class="imagens_cards"
+                            alt="Bebedouro Fonte de 2 litros com Filtro Silencioso em Inox"
+                        />
+                        <h3>Bebedouro Fonte Água (2L) - Silencioso</h3>
+                        <p aria-label="Avaliação: 5 de 5 estrelas">
+                            ★★★★★ <span>(355)</span>
+                        </p>
+                        <p>
+                            <strong>R$ 189,22</strong>
+                        </p>
+                        <button class="botao_carrinho">
+                            ADICIONAR AO CARRINHO
+                        </button>
+                    </li>
 
-        <li>
-          <img src="../imagens/icone_carteira.png" alt="Ícone carteira" />
-          <p><strong>Parcelamento em até 4x<br>sem juros com parcela mínima de R$ 80</strong></p>
-        </li>
+                    <li class="card_produto">
+                        <button
+                            class="botao_favorito_cards"
+                            aria-label="Adicionar aos favoritos"
+                        >
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração"
+                                aria-hidden="true"
+                            />
+                        </button>
+                        <img
+                            src="../imagens/imagem_caixote_areia_rosa.png"
+                            class="imagens_cards"
+                            alt="Caixote de Areia para Gatos na Cor Lilás"
+                        />
+                        <h3>Caixote de Areia - Lilás</h3>
+                        <p aria-label="Avaliação: 5 de 5 estrelas">
+                            ★★★★★ <span>(529)</span>
+                        </p>
+                        <p>
+                            <strong>R$ 119,10</strong>
+                        </p>
+                        <button class="botao_carrinho">
+                            ADICIONAR AO CARRINHO
+                        </button>
+                    </li>
+                </ul>
+            </article>
+            <span
+                class="setas_mais_vendidos seta_direita_mais_vendidos"
+                aria-hidden="true"
+                >❯</span
+            >
 
-        <li>
-          <img src="../imagens/icone_seguranca.png" alt="Ícone segurança" />
-          <p><strong>Ambiente 100% seguro<br>para suas compras</strong></p>
-        </li>
+            <nav
+                class="indicadores_carrossel"
+                aria-label="Indicadores do carrossel de produtos"
+            >
+                <span class="retangulo"></span>
+                <span class="retangulo"></span>
+                <span class="retangulo"></span>
+            </nav>
+        </section>
 
-        <li>
-          <img src="../imagens/icone_caminhao.png" alt="Ícone caminhão" />
-          <p><strong>Frete grátis para todo o<br>Brasil nas compras acima<br>de R$ 299</strong></p>
-        </li>
+        <hr class="divisoes" aria-hidden="true" />
 
-      </ul>
-    </section>
+        <section class="carrossel_feedbacks">
+            <h2 id="titulo_feedbacks">O que dizem nossos clientes</h2>
+            <span
+                class="setas_feedbacks seta_esquerda_feedbacks"
+                aria-hidden="true"
+                >❮</span
+            >
+            <ul class="feedbacks">
+                <li class="feedback">
+                    <span class="aspas">“</span>
+                    <p>Produtos excelentes, meu gato adorou!</p>
+                    <span class="autor_feedback">Ana, RJ</span>
+                    <span class="aspas">“</span>
+                </li>
 
-    <hr class="divisoes" aria-hidden="true" />
+                <li class="feedback">
+                    <span class="aspas">“</span>
+                    <p>Entrega rápida e produtos de qualidade.</p>
+                    <span class="autor_feedback">Carlos, SP</span>
+                    <span class="aspas">“</span>
+                </li>
 
-  </body>
+                <li class="feedback">
+                    <span class="aspas">“</span>
+                    <p>Atendimento impecável e entrega rápida!</p>
+                    <span class="autor_feedback">Marina, MG</span>
+                    <span class="aspas">“</span>
+                </li>
+
+                <li class="feedback">
+                    <span class="aspas">“</span>
+                    <p>Melhor site para quem ama gatos!</p>
+                    <span class="autor_feedback">Yasmin, SP</span>
+                    <span class="aspas">“</span>
+                </li>
+
+                <li class="feedback">
+                    <span class="aspas">“</span>
+                    <p>
+                        Amo os produtos da Miaunarquia. Sempre vêm com
+                        qualidade!
+                    </p>
+                    <span class="autor_feedback">Solange, PA</span>
+                    <span class="aspas">“</span>
+                </li>
+
+                <li class="feedback">
+                    <span class="aspas">“</span>
+                    <p>Meu gato já virou cliente fiel KKKKK</p>
+                    <span class="autor_feedback">Larissa, BA</span>
+                    <span class="aspas">“</span>
+                </li>
+
+                <li class="feedback">
+                    <span class="aspas">“</span>
+                    <p>
+                        O Fumaça amou os produtos da Miaunarquia que comprei
+                        para ele!
+                    </p>
+                    <span class="autor_feedback">Daniel, SO</span>
+                    <span class="aspas">“</span>
+                </li>
+
+                <li class="feedback">
+                    <span class="aspas">“</span>
+                    <p>Não tenho reclamações, apenas elogios!</p>
+                    <span class="autor_feedback">José, TO</span>
+                    <span class="aspas">“</span>
+                </li>
+
+                <li class="feedback">
+                    <span class="aspas">“</span>
+                    <p>Produtos de ótima qualidade!</p>
+                    <span class="autor_feedback">Maria, SP</span>
+                    <span class="aspas">“</span>
+                </li>
+
+                <li class="feedback">
+                    <span class="aspas">“</span>
+                    <p>Recomendo sempre a Miaunarquia. Nunca me decepcionou!</p>
+                    <span class="autor_feedback">Heber, GO</span>
+                    <span class="aspas">“</span>
+                </li>
+            </ul>
+            <span
+                class="setas_feedbacks seta_direita_feedbacks"
+                aria-hidden="true"
+                >❯</span
+            >
+            <nav
+                class="indicadores_feedbacks"
+                aria-label="Indicadores do carrossel de feedbacks"
+            >
+                <span class="bolinha_feedbacks"></span>
+                <span class="bolinha_feedbacks"></span>
+                <span class="bolinha_feedbacks"></span>
+                <span class="bolinha_feedbacks"></span>
+                <span class="bolinha_feedbacks"></span>
+                <span class="bolinha_feedbacks"></span>
+                <span class="bolinha_feedbacks"></span>
+                <span class="bolinha_feedbacks"></span>
+                <span class="bolinha_feedbacks"></span>
+                <span class="bolinha_feedbacks"></span>
+            </nav>
+        </section>
+
+        <hr class="divisoes" aria-hidden="true" />
+
+        <section class="vantagens">
+            <ul class="lista-vantagens">
+                <li>
+                    <img
+                        src="../imagens/icone_gato.png"
+                        alt="Ícone de um gato"
+                    />
+                    <p>
+                        <strong
+                            >Produtos pensados<br />milimetricamente para
+                            felinos</strong
+                        >
+                    </p>
+                </li>
+
+                <li>
+                    <img
+                        src="../imagens/icone_carteira.png"
+                        alt="Ícone carteira"
+                    />
+                    <p>
+                        <strong
+                            >Parcelamento em até 4x<br />sem juros com parcela
+                            mínima de R$ 80</strong
+                        >
+                    </p>
+                </li>
+
+                <li>
+                    <img
+                        src="../imagens/icone_seguranca.png"
+                        alt="Ícone segurança"
+                    />
+                    <p>
+                        <strong
+                            >Ambiente 100% seguro<br />para suas compras</strong
+                        >
+                    </p>
+                </li>
+
+                <li>
+                    <img
+                        src="../imagens/icone_caminhao.png"
+                        alt="Ícone caminhão"
+                    />
+                    <p>
+                        <strong
+                            >Frete grátis para todo o<br />Brasil nas compras
+                            acima<br />de R$ 299</strong
+                        >
+                    </p>
+                </li>
+            </ul>
+        </section>
+
+        <footer class="rodape">
+            <img
+                src="../imagens/imagem_logo.png"
+                alt="Logo Miaunarquia"
+                class="logo"
+            />
+
+            <nav class="informacoes">
+                <h2>Informações</h2>
+                <ul>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Termos e Condições de Uso</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Direito do Consumidor</a></li>
+                </ul>
+            </nav>
+
+            <address class="contato">
+                <h2>Contato</h2>
+                <p>
+                    <a href="mailto:contato@miauanarquia.com.br"
+                        >contato@miauanarquia.com.br</a
+                    >
+                    <!-- mailto = Identificar como e-mail -->
+                </p>
+            </address>
+
+            <nav class="redes" aria-label="Nos Siga">
+                <h2>Nos siga</h2>
+                <ul class="listaRedesSociais">
+                    <li>
+                        <a href="#"
+                            ><img
+                                src="../imagens/icone_facebook.png"
+                                class="iconesRedesSociais"
+                                alt="Ícone do Facebook"
+                            />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            ><img
+                                src="../imagens/icone_instagram.png"
+                                class="iconesRedesSociais"
+                                alt="Ícone do Instagram"
+                        /></a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            ><img
+                                src="../imagens/icone_linkedin.png"
+                                class="iconesRedesSociais"
+                                alt="Ícone do LinkedIn"
+                        /></a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            ><img
+                                src="../imagens/icone_discord.png"
+                                class="iconesRedesSociais"
+                                alt="Ícone do Discord"
+                        /></a>
+                    </li>
+                </ul>
+            </nav>
+
+            <section class="pagamentos">
+                <h2>Formas de pagamento:</h2>
+                <ul>
+                    <li>
+                        <img
+                            src="../imagens/icone_american_express.png"
+                            alt="Ícone do American Express"
+                        />
+                    </li>
+                    <li>
+                        <img
+                            src="../imagens/icone_visa.png"
+                            alt="Ícone do Visa"
+                        />
+                    </li>
+                    <li>
+                        <img
+                            src="../imagens/icone_mastercard.png"
+                            alt="Ícone do Mastercard"
+                        />
+                    </li>
+                    <li>
+                        <img
+                            src="../imagens/icone_discover.png"
+                            alt="Ícone do Discover"
+                        />
+                    </li>
+                    <li>
+                        <img
+                            src="../imagens/icone_elo.png"
+                            alt="Ícone do Elo"
+                        />
+                    </li>
+                    <li>
+                        <img
+                            src="../imagens/icone_boleto.png"
+                            alt="Ícone do Boleto bancário"
+                        />
+                    </li>
+                    <li>
+                        <img
+                            src="../imagens/icone_pix.png"
+                            alt="Ícone do Pix"
+                        />
+                    </li>
+                </ul>
+                <p class="seguro">
+                    <img
+                        src="../imagens/icone_seguranca_footer.png"
+                        alt="Ícone que simboliza Segurança"
+                    />
+                    PAGAMENTO 100% SEGURO
+                </p>
+                <br />
+                <div class="copyright">
+                    <p>
+                        &copy; 2025 Miau Anarquia. Todos os direitos reservados.
+                    </p>
+                </div>
+            </section>
+        </footer>
+    </body>
 </html>
