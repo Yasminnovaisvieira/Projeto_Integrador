@@ -517,8 +517,8 @@
                     aria-label="Slide anterior do carrossel de produtos mais vendidos">
                     ❮
                 </button>
-                <article class="containerCarrosselMaisVendidos">
-                    <ul class="carrosselMaisVendidos">
+                <article id="containerCarrosselMaisVendidos">
+                    <ul id="carrosselMaisVendidos">
                         <li class="cardProduto">
                             <button
                                 class="botaoFavoritoCards"
@@ -778,110 +778,112 @@
 
             <section id="carrosselFeedbacks">
                 <h2 id="tituloFeedbacks">O que dizem nossos clientes</h2>
-                <span
-                    class="setas_feedbacks seta_esquerda_feedbacks"
-                    aria-hidden="true">❮</span>
+                <button id="setaEsquerdaFeedbacks" class="setasFeedbacks"
+                    aria-label="Slide anterior do carrossel de feedbacks">
+                    ❮
+                </button>
                 <ul class="feedbacks">
                     <li class="feedback">
-                        <span class="aspas">“</span>
+                        <p class="aspas">“</p>
                         <p>Produtos excelentes, meu gato adorou!</p>
-                        <span class="autor_feedback">Ana, RJ</span>
-                        <span class="aspas">“</span>
+                        <p class="autorFeedback">Ana, RJ</p>
+                        <p class="aspas">“</p>
                     </li>
 
                     <li class="feedback">
-                        <span class="aspas">“</span>
+                        <p class="aspas">“</p>
                         <p>Entrega rápida e produtos de qualidade.</p>
-                        <span class="autor_feedback">Carlos, SP</span>
-                        <span class="aspas">“</span>
+                        <p class="autorFeedback">Carlos, SP</p>
+                        <p class="aspas">“</p>
                     </li>
 
                     <li class="feedback">
-                        <span class="aspas">“</span>
+                        <p class="aspas">“</p>
                         <p>Atendimento impecável e entrega rápida!</p>
-                        <span class="autor_feedback">Marina, MG</span>
-                        <span class="aspas">“</span>
+                        <p class="autorFeedback">Marina, MG</p>
+                        <p class="aspas">“</p>
                     </li>
 
                     <li class="feedback">
-                        <span class="aspas">“</span>
+                        <p class="aspas">“</p>
                         <p>Melhor site para quem ama gatos!</p>
-                        <span class="autor_feedback">Yasmin, SP</span>
-                        <span class="aspas">“</span>
+                        <p class="autorFeedback">Yasmin, SP</p>
+                        <p class="aspas">“</p>
                     </li>
 
                     <li class="feedback">
-                        <span class="aspas">“</span>
+                        <p class="aspas">“</p>
                         <p>
                             Amo os produtos da Miaunarquia. Sempre vêm com
                             qualidade!
                         </p>
-                        <span class="autor_feedback">Solange, PA</span>
-                        <span class="aspas">“</span>
+                        <p class="autorFeedback">Solange, PA</p>
+                        <p class="aspas">“</p>
                     </li>
 
                     <li class="feedback">
-                        <span class="aspas">“</span>
+                        <p class="aspas">“</p>
                         <p>Meu gato já virou cliente fiel KKKKK</p>
-                        <span class="autor_feedback">Larissa, BA</span>
-                        <span class="aspas">“</span>
+                        <p class="autorFeedback">Larissa, BA</p>
+                        <p class="aspas">“</p>
                     </li>
 
                     <li class="feedback">
-                        <span class="aspas">“</span>
+                        <p class="aspas">“</p>
                         <p>
                             O Fumaça amou os produtos da Miaunarquia que comprei
                             para ele!
                         </p>
-                        <span class="autor_feedback">Daniel, SO</span>
-                        <span class="aspas">“</span>
+                        <p class="autorFeedback">Daniel, SO</p>
+                        <p class="aspas">“</p>
                     </li>
 
                     <li class="feedback">
-                        <span class="aspas">“</span>
+                        <p class="aspas">“</p>
                         <p>Não tenho reclamações, apenas elogios!</p>
-                        <span class="autor_feedback">José, TO</span>
-                        <span class="aspas">“</span>
+                        <p class="autorFeedback">José, TO</p>
+                        <p class="aspas">“</p>
                     </li>
 
                     <li class="feedback">
-                        <span class="aspas">“</span>
+                        <p class="aspas">“</p>
                         <p>Produtos de ótima qualidade!</p>
-                        <span class="autor_feedback">Maria, SP</span>
-                        <span class="aspas">“</span>
+                        <p class="autorFeedback">Maria, SP</p>
+                        <p class="aspas">“</p>
                     </li>
 
                     <li class="feedback">
-                        <span class="aspas">“</span>
+                        <p class="aspas">“</p>
                         <p>Recomendo sempre a Miaunarquia. Nunca me
                             decepcionou!</p>
-                        <span class="autor_feedback">Heber, GO</span>
-                        <span class="aspas">“</span>
+                        <p class="autorFeedback">Heber, GO</p>
+                        <p class="aspas">“</p>
                     </li>
                 </ul>
-                <span
-                    class="setas_feedbacks seta_direita_feedbacks"
-                    aria-hidden="true">❯</span>
+                <button id="setaDireitaFeedbacks" class="setasFeedbacks"
+                    aria-label="Slide seguinte do carrossel de feedbacks">
+                    ❯
+                </button>
                 <nav
-                    class="indicadores_feedbacks"
+                    class="indicadoresFeedbacks"
                     aria-label="Indicadores do carrossel de feedbacks">
-                    <span class="bolinha_feedbacks"></span>
-                    <span class="bolinha_feedbacks"></span>
-                    <span class="bolinha_feedbacks"></span>
-                    <span class="bolinha_feedbacks"></span>
-                    <span class="bolinha_feedbacks"></span>
-                    <span class="bolinha_feedbacks"></span>
-                    <span class="bolinha_feedbacks"></span>
-                    <span class="bolinha_feedbacks"></span>
-                    <span class="bolinha_feedbacks"></span>
-                    <span class="bolinha_feedbacks"></span>
+                    <p class="bolinhaFeedbacks"></p>
+                    <p class="bolinhaFeedbacks"></p>
+                    <p class="bolinhaFeedbacks"></p>
+                    <p class="bolinhaFeedbacks"></p>
+                    <p class="bolinhaFeedbacks"></p>
+                    <p class="bolinhaFeedbacks"></p>
+                    <p class="bolinhaFeedbacks"></p>
+                    <p class="bolinhaFeedbacks"></p>
+                    <p class="bolinhaFeedbacks"></p>
+                    <p class="bolinhaFeedbacks"></p>
                 </nav>
             </section>
 
             <hr class="divisao" aria-hidden="true" />
 
-            <section class="vantagens">
-                <ul class="lista-vantagens">
+            <section id="vantagens">
+                <ul id="listaVantagens">
                     <li>
                         <img
                             src="../imagens/icone_gato.png"
@@ -927,13 +929,13 @@
             </section>
         </main>
 
-        <footer class="rodape">
+        <footer id="rodape">
             <img
                 src="../imagens/imagem_logo.png"
                 alt="Logo Miaunarquia"
                 class="logo" />
 
-            <nav class="informacoes">
+            <nav id="informacoes" aria-label="Informações da Plataforma">
                 <h2>Informações</h2>
                 <ul>
                     <li><a href="#">Sobre Nós</a></li>
@@ -943,7 +945,7 @@
                 </ul>
             </nav>
 
-            <address class="contato">
+            <address id="contato">
                 <h2>Contato</h2>
                 <p>
                     <a
@@ -952,9 +954,9 @@
                 </p>
             </address>
 
-            <nav class="redes" aria-label="Nos Siga">
+            <nav id="redes" aria-label="Nos Siga">
                 <h2>Nos siga</h2>
-                <ul class="listaRedesSociais">
+                <ul id="listaRedesSociais">
                     <li>
                         <a href="#"><img
                                 src="../imagens/icone_facebook.png"
@@ -983,7 +985,7 @@
                 </ul>
             </nav>
 
-            <section class="pagamentos">
+            <section id="pagamentos">
                 <h2>Formas de pagamento:</h2>
                 <ul>
                     <li>
@@ -1028,8 +1030,8 @@
                         alt="Ícone que simboliza Segurança" />
                     PAGAMENTO 100% SEGURO
                 </p>
-                <ul class="copyright">
-                    <li class="copyrightTexto">
+                <ul id="copyright">
+                    <li id="copyrightTexto">
                         &copy; 2025 Miau Anarquia. Todos os direitos reservados.
                     </li>
                 </ul>

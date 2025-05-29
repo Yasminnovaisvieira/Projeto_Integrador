@@ -550,17 +550,26 @@ body {
     border-radius: 20%;
     display: inline-block;
     animation: retanguloAtivo 15s infinite;
+    width: 25px;
+    height: 4px;
+    background-color: #222;
+    border-radius: 20%;
+    display: inline-block;
+    animation: retanguloAtivo 15s infinite;
 }
 
 .retangulo:nth-child(1) {
+    animation-delay: 0s;
     animation-delay: 0s;
 }
 
 .retangulo:nth-child(2) {
     animation-delay: 5s;
+    animation-delay: 5s;
 }
 
 .retangulo:nth-child(3) {
+    animation-delay: 10s;
     animation-delay: 10s;
 }
 
@@ -575,6 +584,21 @@ body {
     100% {
         background-color: #222;
     }
+
+    0%,
+    33.33% {
+        background-color: #bbadff;
+    }
+
+    33.34%,
+    100% {
+        background-color: #222;
+    }
+}
+
+#carrosselLancamentos {
+    animation: moverCarrosselProdutos 40s infinite;
+    transition: transform 0.6s ease-in-out;
 }
 
 #produtosMaisVendidos {
@@ -591,18 +615,19 @@ body {
     color: #222;
 }
 
-.containerCarrosselMaisVendidos {
+#containerCarrosselMaisVendidos {
     overflow: hidden;
     margin: 0 6rem;
 }
 
-.carrosselMaisVendidos {
+#carrosselMaisVendidos {
     display: flex;
     gap: 1.8rem;
     list-style: none;
     padding: 1rem 0;
     margin: 0;
     animation: moverCarrosselProdutos 40s infinite;
+    transition: transform 1s ease-in-out;
 }
 
 .produtosMaisVendidos span {
@@ -638,43 +663,6 @@ body {
     background-color: rgba(0, 0, 0, 0.6);
 }
 
-@keyframes moverCarrosselProdutos {
-
-    0%,
-    8.33% {
-        transform: translateX(0);
-    }
-
-    16.66%,
-    24.99% {
-        transform: translateX(-33.33%);
-    }
-
-    33.33%,
-    41.66% {
-        transform: translateX(-66.66%);
-    }
-
-    50%,
-    58.33% {
-        transform: translateX(0);
-    }
-
-    66.66%,
-    74.99% {
-        transform: translateX(-33.33%);
-    }
-
-    83.33%,
-    91.66% {
-        transform: translateX(-66.66%);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
-}
-
 #carrosselFeedbacks {
     font-family: "Outfit", sans-serif;
     text-align: center;
@@ -682,7 +670,7 @@ body {
     padding: 3rem 1rem 5rem;
 }
 
-#titulo_feedbacks {
+#tituloFeedbacks {
     margin-bottom: 2rem;
     margin-left: 1.5rem;
     color: #111;
@@ -718,7 +706,7 @@ body {
     text-align: center;
 }
 
-.autor_feedback {
+.autorFeedback {
     font-weight: 600;
     font-style: normal;
     color: #111;
@@ -794,7 +782,7 @@ body {
     }
 }
 
-.setas_feedbacks {
+.setasFeedbacks {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -811,26 +799,26 @@ body {
     z-index: 10;
 }
 
-.seta_esquerda_feedbacks {
+#setaEsquerdaFeedbacks {
     left: 1.5rem;
 }
 
-.seta_direita_feedbacks {
+#setaDireitaFeedbacks {
     right: 1.5rem;
 }
 
-.setas_feedbacks:hover {
+.setasFeedbacks:hover {
     background-color: rgba(0, 0, 0, 0.6);
 }
 
-.indicadores_feedbacks {
+.indicadoresFeedbacks {
     display: flex;
     justify-content: center;
     gap: 0.5rem;
     margin-top: 2rem;
 }
 
-.bolinha_feedbacks {
+.bolinhaFeedbacks {
     width: 12px;
     height: 12px;
     background-color: #222;
@@ -838,53 +826,66 @@ body {
     animation: destaqueBolinhas 60s infinite;
 }
 
-.bolinha_feedbacks:nth-child(1) {
+@keyframes destaqueBolinhas {
+
+    0%,
+    8.33% {
+        box-shadow: 0 0 0 3px #bbadff;
+    }
+
+    10%,
+    100% {
+        box-shadow: 0 0 0 0 #bbadff;
+    }
+}
+
+.bolinhaFeedbacks:nth-child(1) {
     animation-delay: 0s;
 }
 
-.bolinha_feedbacks:nth-child(2) {
+.bolinhaFeedbacks:nth-child(2) {
     animation-delay: 6s;
 }
 
-.bolinha_feedbacks:nth-child(3) {
+.bolinhaFeedbacks:nth-child(3) {
     animation-delay: 12s;
 }
 
-.bolinha_feedbacks:nth-child(4) {
+.bolinhaFeedbacks:nth-child(4) {
     animation-delay: 18s;
 }
 
-.bolinha_feedbacks:nth-child(5) {
+.bolinhaFeedbacks:nth-child(5) {
     animation-delay: 24s;
 }
 
-.bolinha_feedbacks:nth-child(6) {
+.bolinhaFeedbacks:nth-child(6) {
     animation-delay: 30s;
 }
 
-.bolinha_feedbacks:nth-child(7) {
+.bolinhaFeedbacks:nth-child(7) {
     animation-delay: 36s;
 }
 
-.bolinha_feedbacks:nth-child(8) {
+.bolinhaFeedbacks:nth-child(8) {
     animation-delay: 42s;
 }
 
-.bolinha_feedbacks:nth-child(9) {
+.bolinhaFeedbacks:nth-child(9) {
     animation-delay: 48s;
 }
 
-.bolinha_feedbacks:nth-child(10) {
+.bolinhaFeedbacks:nth-child(10) {
     animation-delay: 54s;
 }
 
-.vantagens {
+#vantagens {
     background-color: #0e0129;
     padding: 2rem 1rem;
     font-family: "Outfit", sans-serif;
 }
 
-.lista-vantagens {
+#listaVantagens {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -897,7 +898,7 @@ body {
     align-items: stretch;
 }
 
-.lista-vantagens li {
+#listaVantagens li {
     flex: 1 1 150px;
     text-align: center;
     color: #fff;
@@ -905,22 +906,22 @@ body {
     padding: 0 1rem;
 }
 
-.lista-vantagens li:first-child {
+#listaVantagens li:first-child {
     border-left: none;
 }
 
-.lista-vantagens img {
+#listaVantagens img {
     width: 40px;
     height: auto;
     margin-bottom: 0.5rem;
 }
 
-.lista-vantagens p {
+#listaVantagens p {
     font-size: 0.95rem;
     line-height: 1.4;
 }
 
-.rodape {
+#rodape {
     background-color: #bbadff;
     font-family: "Outfit", sans-serif;
     color: #333;
@@ -932,38 +933,38 @@ body {
     justify-content: center;
 }
 
-.rodape img.logo {
+#rodape img.logo {
     width: 260px;
     margin-left: 80px;
     margin-top: -30px;
 }
 
-.rodape h2 {
+#rodape h2 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
     color: #222;
 }
 
-.rodape ul {
+#rodape ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.rodape li {
+#rodape li {
     margin-bottom: 0.5rem;
 }
 
-.rodape a {
+#rodape a {
     text-decoration: none;
     color: #333;
 }
 
-.rodape a:hover {
+#rodape a:hover {
     text-decoration: underline 1.5px;
 }
 
-.contato {
+#contato {
     font-style: normal;
 }
 
@@ -972,7 +973,7 @@ body {
     height: auto;
 }
 
-.listaRedesSociais {
+#listaRedesSociais {
     display: grid;
     grid-template-columns: repeat(2, 40px);
     gap: 0.5rem 1rem;
@@ -981,13 +982,13 @@ body {
     text-align: center;
 }
 
-.pagamentos {
+#pagamentos {
     grid-column: 1 / -1;
     text-align: center;
     margin-top: -12rem;
 }
 
-.pagamentos ul {
+#pagamentos ul {
     /* Listas dos meios de pagamentos */
     display: flex;
     justify-content: center;
@@ -996,12 +997,12 @@ body {
     margin-top: 1.5rem;
 }
 
-.pagamentos li img {
+#pagamentos li img {
     /* Imagem dos meios de pagamentos */
     height: 30px;
 }
 
-.pagamentos .seguro {
+#pagamentos .seguro {
     margin-top: 1rem;
     font-size: 0.9rem;
     display: flex;
@@ -1012,11 +1013,11 @@ body {
     font-weight: bold;
 }
 
-.pagamentos .seguro img {
+#pagamentos .seguro img {
     height: 20px;
 }
 
-.copyright {
+#copyright {
     color: #0e0129;
     background-color: #9383e0;
     font-size: 0.9rem;
@@ -1024,6 +1025,6 @@ body {
     font-family: "Outfit", sans-serif;
 }
 
-.copyrightTexto {
+#copyrightTexto {
     padding: 0.5rem;
 }
