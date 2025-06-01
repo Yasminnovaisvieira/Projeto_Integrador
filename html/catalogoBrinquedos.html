@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Catálogo - Brinquedos | Miaunarquia</title>
+        <link rel="stylesheet" href="../css/style.css" />
+    </head>
+    <body>
+        <section
+            class="avisoCarrossel"
+            aria-label="Carrossel de avisos e promoções da plataforma">
+            <button id="setaEsquerdaAviso" class="setasAviso"
+                aria-label="Aviso anterior">
+                ❮
+            </button>
+            <ul class="mensagens">
+                <li class="mensagem">
+                    NOVO POR AQUI? USE O CUPOM 🐾PRIMEIRACOMPRA🐾
+                </li>
+                <li class="mensagem">
+                    FRETE GRÁTIS ACIMA DE R$199 PARA TODO O BRASIL
+                </li>
+                <li class="mensagem">CADASTRE-SE E GANHE 10% DE DESCONTO</li>
+            </ul>
+            <button id="setaDireitaAviso" class="setasAviso"
+                aria-label="Aviso seguinte">
+                ❯
+            </button>
+        </section>
+        <header class="headerSite">
+            <h1 class="logoSite">
+                <a href="index.html" aria-label="Página inicial - Miaunarquia">
+                    <img
+                        src="../imagens/imagem_logo.png"
+                        alt="Logo de um Gato Preto com Coroa"
+                        class="logoImagem" />
+                    <span class="nomeLogo">Miaunarquia</span>
+                </a>
+            </h1>
+
+            <nav class="navMenu" aria-label="Menu Principal">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="catalogo.html"
+                            id="catalogoSelecionado">Catálogo</a></li>
+                    <li><a href="sobreNos.html#sobreNos">Sobre Nós</a></li>
+                    <li><a href="sobreNos.html#contato">Contato</a></li>
+                </ul>
+            </nav>
+
+            <nav class="navUsuario" aria-label="Menu do Usuário">
+                <ul>
+                    <li>
+                        <a href="#" aria-label="Pesquisar">
+                            <figure class="iconesNav">
+                                <img
+                                    src="../imagens/icone_pesquisar.png"
+                                    alt="Ícone de Lupa" />
+                                <figcaption class="legendasIcones">
+                                    Pesquisar
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="login.html" aria-label="Favoritos">
+                            <figure class="iconesNav">
+                                <img
+                                    src="../imagens/icone_favoritos.png"
+                                    alt="Ícone de Coração"
+                                    aria-hidden="true" />
+                                <figcaption class="legendasIcones">
+                                    Favoritos
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="login.html" aria-label="Perfil">
+                            <figure class="iconesNav">
+                                <img
+                                    src="../imagens/icone_usuario.png"
+                                    alt="Ícone de Perfil" />
+                                <figcaption class="legendasIcones">
+                                    Entrar
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="carrinho.html" aria-label="Carrinho">
+                            <figure class="iconesNav">
+                                <img
+                                    src="../imagens/icone_carrinho.png"
+                                    alt="Ícone de Carrinho" />
+                                <figcaption class="legendasIcones">
+                                    Carrinho
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2 class="tituloProdutos">Nossos Produtos</h2>
+            <section
+                class="categoriasCatalogo"
+                aria-label="Categorias do Catálogo">
+                <ul class="listaCategorias">
+                    <li>
+                        <a href="catalogo.html" class="linksCategorias">
+                            <img
+                                src="../imagens/imagem_gatoLingua.png"
+                                alt="Gato lambendo seu nariz"
+                                class="imagensCategoriasCatalogo" />
+                            <p>Todos</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="catalogoArranhadores.html"
+                            class="linksCategorias">
+                            <img
+                                src="../imagens/imagem_arranhador.png"
+                                alt="Imagem de arranhador preto"
+                                class="imagensCategoriasCatalogo" />
+                            <p>Arranhadores</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="catalogoCamas.html" class="linksCategorias">
+                            <img
+                                src="../imagens/imagem_cama.png"
+                                alt="Imagem de cama formato tubarão"
+                                class="imagensCategoriasCatalogo" />
+                            <p>Camas</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="catalogoHigiene.html" class="linksCategorias">
+                            <img
+                                src="../imagens/imagem_limpeza.png "
+                                alt="Imagem de Enzimac Gato com Embalagem Rosa"
+                                class="imagensCategoriasCatalogo" />
+                            <p>Higiene e Limpeza</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="catalogoRoupas.html" class="linksCategorias">
+                            <img
+                                src="../imagens/imagem_roupa.png"
+                                alt="Imagem Gato com Fantasia de Dinossauro"
+                                class="imagensCategoriasCatalogo" />
+                            <p>Roupas</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="linksCategorias">
+                            <img
+                                src="../imagens/imagem_brinquedo.png"
+                                alt="Imagem de brinquedos"
+                                class="imagensCategoriasCatalogo"
+                                id="brinquedosSelecionado" />
+                            <p>Brinquedos</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="catalogoComedouros.html"
+                            class="linksCategorias">
+                            <img
+                                src="../imagens/imagem_comedouro.png"
+                                alt="Ícone de comedouros e bebedouros"
+                                class="imagensCategoriasCatalogo" />
+                            <p>Comedouros e Bebedouros</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="catalogoPetiscos.html" class="linksCategorias">
+                            <img
+                                src="../imagens/imagem_petisco.png"
+                                alt="Ícone de petiscos"
+                                class="imagensCategoriasCatalogo" />
+                            <p>Petiscos</p>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <hr class="divisao" />
+
+            <article class="containerProdutos">
+                <ul class="listaProdutos">
+                    <li class="cardProduto">
+                        <a
+                            href="login.html"
+                            class="botaoFavoritoCards"
+                            aria-label="Adicionar aos favoritos"
+                            role="button">
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração" />
+                        </a>
+                        <img
+                            src="../imagens/imagem_brinquedo_peixe.png"
+                            class="imagensCards"
+                            alt="Brinquedo em Formato de Peixe" />
+                        <h3>Brinquedo em Formato de Peixe</h3>
+                        <p aria-label="Avaliação: 4 de 5 estrelas">
+                            ★★★★☆ <span>(67)</span>
+                        </p>
+                        <p>
+                            <strong>R$ 48,35</strong>
+                        </p>
+                        <a href="carrinho.html" class="botaoCarrinho">ADICIONAR
+                            AO CARRINHO</a>
+                    </li>
+
+                    <li class="cardProduto">
+                        <a
+                            href="login.html"
+                            class="botaoFavoritoCards"
+                            aria-label="Adicionar aos favoritos"
+                            role="button">
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração" />
+                        </a>
+                        <img
+                            src="../imagens/imagem_abacate_catnip.png"
+                            class="imagensCards"
+                            alt="Brinquedo Catnip em Formato de Abacate" />
+                        <h3>Catnip Erva Natural - Formato Abacate</h3>
+                        <p aria-label="Avaliação: 5 de 5 estrelas">
+                            ★★★★★ <span>(424)</span>
+                        </p>
+                        <p>
+                            <strong>R$ 19,44</strong>
+                        </p>
+                        <a href="carrinho.html" class="botaoCarrinho">ADICIONAR
+                            AO CARRINHO</a>
+                    </li>
+
+                    <li class="cardProduto">
+                        <a
+                            href="login.html"
+                            class="botaoFavoritoCards"
+                            aria-label="Adicionar aos favoritos"
+                            role="button">
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração" />
+                        </a>
+                        <img
+                            src="../imagens/imagem_brinquedo_bolaLa.png"
+                            class="imagensCards"
+                            alt="Bola de Lã Colorida" />
+                        <h3>Bolinha de Lã - Colorida</h3>
+                        <p aria-label="Avaliação: 4 de 5 estrelas">
+                            ★★★★☆ <span>(29)</span>
+                        </p>
+                        <p>
+                            <strong>R$ 35,45</strong>
+                        </p>
+                        <a href="carrinho.html" class="botaoCarrinho">ADICIONAR
+                            AO CARRINHO</a>
+                    </li>
+
+                    <li class="cardProduto">
+                        <a
+                            href="login.html"
+                            class="botaoFavoritoCards"
+                            aria-label="Adicionar aos favoritos"
+                            role="button">
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração" />
+                        </a>
+                        <img
+                            src="../imagens/imagem_brinquedo.png"
+                            class="imagensCards"
+                            alt="Kong Playgroud na cor Vermelha com Rato de Pelúcia para Gatos." />
+                        <h3>Kong Playgroud - Vermelho</h3>
+                        <p aria-label="Avaliação: 5 de 5 estrelas">
+                            ★★★★★ <span>(34)</span>
+                        </p>
+                        <p>
+                            <strong>R$ 35,90</strong>
+                        </p>
+                        <a href="carrinho.html" class="botaoCarrinho">ADICIONAR
+                            AO CARRINHO</a>
+                    </li>
+
+                    <li class="cardProduto">
+                        <a
+                            href="login.html"
+                            class="botaoFavoritoCards"
+                            aria-label="Adicionar aos favoritos"
+                            role="button">
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração" />
+                        </a>
+                        <img
+                            src="../imagens/imagem_brinquedo_disco.png"
+                            class="imagensCards"
+                            alt="Brinquedo Lambada na Cor Vermelho com Pena na Ponta" />
+                        <h3>Labamba Interativo com Mola e Penas</h3>
+                        <p aria-label="Avaliação: 4 de 5 estrelas">
+                            ★★★★☆ <span>(13)</span>
+                        </p>
+                        <p>
+                            <strong>R$ 26,05</strong>
+                        </p>
+                        <a href="carrinho.html" class="botaoCarrinho">ADICIONAR
+                            AO CARRINHO</a>
+                    </li>
+
+                    <li class="cardProduto">
+                        <a
+                            href="login.html"
+                            class="botaoFavoritoCards"
+                            aria-label="Adicionar aos favoritos"
+                            role="button">
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração" />
+                        </a>
+                        <img
+                            src="../imagens/imagem_brinquedo_joaoBobo.png"
+                            class="imagensCards"
+                            alt="Bolinha com Rato em Formato de João Bobo com Pena" />
+                        <h3>Bolinha/Rato - João Bobo com Pena</h3>
+                        <p aria-label="Avaliação: 4 de 5 estrelas">
+                            ★★★★☆ <span>(38)</span>
+                        </p>
+                        <p>
+                            <strong>R$ 14,99</strong>
+                        </p>
+                        <a href="carrinho.html" class="botaoCarrinho">ADICIONAR
+                            AO CARRINHO</a>
+                    </li>
+
+                    <li class="cardProduto">
+                        <a
+                            href="login.html"
+                            class="botaoFavoritoCards"
+                            aria-label="Adicionar aos favoritos"
+                            role="button">
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração" />
+                        </a>
+                        <img
+                            src="../imagens/imagem_brinquedo_bolinha2.png"
+                            class="imagensCards"
+                            alt="Bola Dispenser Toy em Tons de Roxo " />
+                        <h3>Bola Dispenser Toy - Roxa</h3>
+                        <p aria-label="Avaliação: 5 de 5 estrelas">
+                            ★★★★★ <span>(23)</span>
+                        </p>
+                        <p>
+                            <strong>R$ 37,16</strong>
+                        </p>
+                        <a href="carrinho.html" class="botaoCarrinho">ADICIONAR
+                            AO CARRINHO</a>
+                    </li>
+
+                    <li class="cardProduto">
+                        <a
+                            href="login.html"
+                            class="botaoFavoritoCards"
+                            aria-label="Adicionar aos favoritos"
+                            role="button">
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração" />
+                        </a>
+                        <img
+                            src="../imagens/imagem_brinquedo_lazer.png"
+                            class="imagensCards"
+                            alt="Coleira de Laser - Led de Infravermelho" />
+                        <h3>Coleira de Laser - Led de Infravermelho</h3>
+                        <p aria-label="Avaliação: 4 de 5 estrelas">
+                            ★★★★☆ <span>(65)</span>
+                        </p>
+                        <p>
+                            <strong>R$ 44,87</strong>
+                        </p>
+                        <a href="carrinho.html" class="botaoCarrinho">ADICIONAR
+                            AO CARRINHO</a>
+                    </li>
+
+                    <li class="cardProduto">
+                        <a
+                            href="login.html"
+                            class="botaoFavoritoCards"
+                            aria-label="Adicionar aos favoritos"
+                            role="button">
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração" />
+                        </a>
+                        <img
+                            src="../imagens/imagem_brinquedo_vacaPeruana.png"
+                            class="imagensCards"
+                            alt="Brinquedo de Pelúcia de uma Vaca Peruana" />
+                        <h3>Pelúcia - Vaca Peruana</h3>
+                        <p aria-label="Avaliação: 4 de 5 estrelas">
+                            ★★★★☆ <span>(24)</span>
+                        </p>
+                        <p>
+                            <strong>R$ 32,21</strong>
+                        </p>
+                        <a href="carrinho.html" class="botaoCarrinho">ADICIONAR
+                            AO CARRINHO</a>
+                    </li>
+
+                    <li class="cardProduto">
+                        <a
+                            href="login.html"
+                            class="botaoFavoritoCards"
+                            aria-label="Adicionar aos favoritos"
+                            role="button">
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração" />
+                        </a>
+                        <img
+                            src="../imagens/imagem_caixa_papelao2.png"
+                            class="imagensCards"
+                            alt="Caixa de Papelão Labirinto em formato de CuboArranhador em Formato de Cacto" />
+                        <h3>Toca Labirinto Cubo - 1 Cubo</h3>
+                        <p aria-label="Avaliação: 4 de 5 estrelas">
+                            ★★★★☆ <span>(29)</span>
+                        </p>
+                        <p>
+                            <strong>R$ 39,99</strong>
+                        </p>
+                        <a href="carrinho.html" class="botaoCarrinho">ADICIONAR
+                            AO CARRINHO</a>
+                    </li>
+
+                    <li class="cardProduto">
+                        <a
+                            href="login.html"
+                            class="botaoFavoritoCards"
+                            aria-label="Adicionar aos favoritos"
+                            role="button">
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração" />
+                        </a>
+                        <img
+                            src="../imagens/imagem_brinquedo_giracat.png"
+                            class="imagensCards"
+                            alt="Brinquedo Giratório Jambo na Cor Azul" />
+                        <h3>Brinquedo Giratório Jambo - Azul</h3>
+                        <p aria-label="Avaliação: 5 de 5 estrelas">
+                            ★★★★★ <span>(109)</span>
+                        </p>
+                        <p>
+                            <strong>R$ 83,90</strong>
+                        </p>
+                        <a href="carrinho.html" class="botaoCarrinho">ADICIONAR
+                            AO CARRINHO</a>
+                    </li>
+
+                    <li class="cardProduto">
+                        <a
+                            href="login.html"
+                            class="botaoFavoritoCards"
+                            aria-label="Adicionar aos favoritos"
+                            role="button">
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração" />
+                        </a>
+                        <img
+                            src="../imagens/imagem_brinquedo_ratoRoxo.png"
+                            class="imagensCards"
+                            alt="Rato de Crochê nas Cores Roxo e Branco" />
+                        <h3>Rato de Crochê - Roxo e Branco</h3>
+                        <p aria-label="Avaliação: 5 de 5 estrelas">
+                            ★★★★★ <span>(126)</span>
+                        </p>
+                        <p>
+                            <strong>R$ 44,99</strong>
+                        </p>
+                        <a href="carrinho.html" class="botaoCarrinho">ADICIONAR
+                            AO CARRINHO</a>
+                    </li>
+
+                </ul>
+            </article>
+
+            <section id="vantagens">
+                <ul id="listaVantagens">
+                    <li>
+                        <img
+                            src="../imagens/icone_gato.png"
+                            alt="Ícone de um gato" />
+                        <p>
+                            <strong>Produtos pensados<br />milimetricamente para
+                                felinos</strong>
+                        </p>
+                    </li>
+
+                    <li>
+                        <img
+                            src="../imagens/icone_carteira.png"
+                            alt="Ícone carteira" />
+                        <p>
+                            <strong>Parcelamento em até 4x<br />sem juros com
+                                parcela
+                                mínima de R$ 80</strong>
+                        </p>
+                    </li>
+
+                    <li>
+                        <img
+                            src="../imagens/icone_seguranca.png"
+                            alt="Ícone segurança" />
+                        <p>
+                            <strong>Ambiente 100% seguro<br />para suas
+                                compras</strong>
+                        </p>
+                    </li>
+
+                    <li>
+                        <img
+                            src="../imagens/icone_caminhao.png"
+                            alt="Ícone caminhão" />
+                        <p>
+                            <strong>Frete grátis para todo o<br />Brasil nas
+                                compras
+                                acima<br />de R$ 299</strong>
+                        </p>
+                    </li>
+                </ul>
+            </section>
+        </main>
+
+        <footer id="rodape">
+            <img
+                src="../imagens/imagem_logo.png"
+                alt="Logo Miaunarquia"
+                class="logo" />
+
+            <nav id="informacoes" aria-label="Informações da Plataforma">
+                <h2>Informações</h2>
+                <ul>
+                    <li><a href="sobreNos.html">Sobre Nós</a></li>
+                    <li><a href="sobreNos.html#termosECondicoes">Termos e
+                            Condições de Uso</a></li>
+                    <li><a href="sobreNos.html#politicasPrivacidade">Política de
+                            Privacidade</a></li>
+                    <li><a href="   ">FAQ</a></li>
+                </ul>
+            </nav>
+
+            <address id="contato">
+                <h2>Contato</h2>
+                <p>
+                    <a
+                        href="mailto:contato@miauanarquia.com.br">contato@miauanarquia.com.br</a>
+                </p>
+            </address>
+
+            <nav id="redes" aria-label="Nos Siga">
+                <h2>Nos siga</h2>
+                <ul id="listaRedesSociais">
+                    <li>
+                        <a href="#"><img
+                                src="../imagens/icone_facebook.png"
+                                class="iconesRedesSociais"
+                                alt="Ícone do Facebook" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img
+                                src="../imagens/icone_instagram.png"
+                                class="iconesRedesSociais"
+                                alt="Ícone do Instagram" /></a>
+                    </li>
+                    <li>
+                        <a href="#"><img
+                                src="../imagens/icone_linkedin.png"
+                                class="iconesRedesSociais"
+                                alt="Ícone do LinkedIn" /></a>
+                    </li>
+                    <li>
+                        <a href="#"><img
+                                src="../imagens/icone_discord.png"
+                                class="iconesRedesSociais"
+                                alt="Ícone do Discord" /></a>
+                    </li>
+                </ul>
+            </nav>
+
+            <section id="pagamentos">
+                <h2>Formas de pagamento:</h2>
+                <ul>
+                    <li>
+                        <img
+                            src="../imagens/icone_american_express.png"
+                            alt="Ícone do American Express" />
+                    </li>
+                    <li>
+                        <img
+                            src="../imagens/icone_visa.png"
+                            alt="Ícone do Visa" />
+                    </li>
+                    <li>
+                        <img
+                            src="../imagens/icone_mastercard.png"
+                            alt="Ícone do Mastercard" />
+                    </li>
+                    <li>
+                        <img
+                            src="../imagens/icone_discover.png"
+                            alt="Ícone do Discover" />
+                    </li>
+                    <li>
+                        <img
+                            src="../imagens/icone_elo.png"
+                            alt="Ícone do Elo" />
+                    </li>
+                    <li>
+                        <img
+                            src="../imagens/icone_boleto.png"
+                            alt="Ícone do Boleto bancário" />
+                    </li>
+                    <li>
+                        <img
+                            src="../imagens/icone_pix.png"
+                            alt="Ícone do Pix" />
+                    </li>
+                </ul>
+                <p class="seguro">
+                    <img
+                        src="../imagens/icone_seguranca_footer.png"
+                        alt="Ícone que simboliza Segurança" />
+                    PAGAMENTO 100% SEGURO
+                </p>
+                <ul id="copyright">
+                    <li id="copyrightTexto">
+                        &copy; 2025 Miaunarquia. Todos os direitos reservados.
+                    </li>
+                </ul>
+            </section>
+        </footer>
+    </body>
+</html>

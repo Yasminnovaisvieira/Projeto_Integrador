@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Catálogo - Roupas | Miaunarquia</title>
+        <link rel="stylesheet" href="../css/style.css" />
+    </head>
+    <body>
+        <section
+            class="avisoCarrossel"
+            aria-label="Carrossel de avisos e promoções da plataforma">
+            <button id="setaEsquerdaAviso" class="setasAviso"
+                aria-label="Aviso anterior">
+                ❮
+            </button>
+            <ul class="mensagens">
+                <li class="mensagem">
+                    NOVO POR AQUI? USE O CUPOM 🐾PRIMEIRACOMPRA🐾
+                </li>
+                <li class="mensagem">
+                    FRETE GRÁTIS ACIMA DE R$199 PARA TODO O BRASIL
+                </li>
+                <li class="mensagem">CADASTRE-SE E GANHE 10% DE DESCONTO</li>
+            </ul>
+            <button id="setaDireitaAviso" class="setasAviso"
+                aria-label="Aviso seguinte">
+                ❯
+            </button>
+        </section>
+        <header class="headerSite">
+            <h1 class="logoSite">
+                <a href="index.html" aria-label="Página inicial - Miaunarquia">
+                    <img
+                        src="../imagens/imagem_logo.png"
+                        alt="Logo de um Gato Preto com Coroa"
+                        class="logoImagem" />
+                    <span class="nomeLogo">Miaunarquia</span>
+                </a>
+            </h1>
+
+            <nav class="navMenu" aria-label="Menu Principal">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="catalogo.html"
+                            id="catalogoSelecionado">Catálogo</a></li>
+                    <li><a href="sobreNos.html#sobreNos">Sobre Nós</a></li>
+                    <li><a href="sobreNos.html#contato">Contato</a></li>
+                </ul>
+            </nav>
+
+            <nav class="navUsuario" aria-label="Menu do Usuário">
+                <ul>
+                    <li>
+                        <a href="#" aria-label="Pesquisar">
+                            <figure class="iconesNav">
+                                <img
+                                    src="../imagens/icone_pesquisar.png"
+                                    alt="Ícone de Lupa" />
+                                <figcaption class="legendasIcones">
+                                    Pesquisar
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="login.html" aria-label="Favoritos">
+                            <figure class="iconesNav">
+                                <img
+                                    src="../imagens/icone_favoritos.png"
+                                    alt="Ícone de Coração"
+                                    aria-hidden="true" />
+                                <figcaption class="legendasIcones">
+                                    Favoritos
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="login.html" aria-label="Perfil">
+                            <figure class="iconesNav">
+                                <img
+                                    src="../imagens/icone_usuario.png"
+                                    alt="Ícone de Perfil" />
+                                <figcaption class="legendasIcones">
+                                    Entrar
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="carrinho.html" aria-label="Carrinho">
+                            <figure class="iconesNav">
+                                <img
+                                    src="../imagens/icone_carrinho.png"
+                                    alt="Ícone de Carrinho" />
+                                <figcaption class="legendasIcones">
+                                    Carrinho
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2 class="tituloProdutos">Nossos Produtos</h2>
+            <section
+                class="categoriasCatalogo"
+                aria-label="Categorias do Catálogo">
+                <ul class="listaCategorias">
+                    <li>
+                        <a href="catalogo.html" class="linksCategorias">
+                            <img
+                                src="../imagens/imagem_gatoLingua.png"
+                                alt="Gato lambendo seu nariz"
+                                class="imagensCategoriasCatalogo" />
+                            <p>Todos</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="catalogoArranhadores.html"
+                            class="linksCategorias">
+                            <img
+                                src="../imagens/imagem_arranhador.png"
+                                alt="Imagem de arranhador preto"
+                                class="imagensCategoriasCatalogo" />
+                            <p>Arranhadores</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="catalogoCamas.html" class="linksCategorias">
+                            <img
+                                src="../imagens/imagem_cama.png"
+                                alt="Imagem de cama formato tubarão"
+                                class="imagensCategoriasCatalogo" />
+                            <p>Camas</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="catalogoHigiene.html" class="linksCategorias">
+                            <img
+                                src="../imagens/imagem_limpeza.png "
+                                alt="Imagem de Enzimac Gato com Embalagem Rosa"
+                                class="imagensCategoriasCatalogo" />
+                            <p>Higiene e Limpeza</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="linksCategorias">
+                            <img
+                                src="../imagens/imagem_roupa.png"
+                                alt="Imagem Gato com Fantasia de Dinossauro"
+                                class="imagensCategoriasCatalogo"
+                                id="roupasSelecionado" />
+                            <p>Roupas</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="catalogoBrinquedos.html"
+                            class="linksCategorias">
+                            <img
+                                src="../imagens/imagem_brinquedo.png"
+                                alt="Imagem de brinquedos"
+                                class="imagensCategoriasCatalogo" />
+                            <p>Brinquedos</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="catalogoComedouros.html"
+                            class="linksCategorias">
+                            <img
+                                src="../imagens/imagem_comedouro.png"
+                                alt="Ícone de comedouros e bebedouros"
+                                class="imagensCategoriasCatalogo" />
+                            <p>Comedouros e Bebedouros</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="catalogoPetiscos.html" class="linksCategorias">
+                            <img
+                                src="../imagens/imagem_petisco.png"
+                                alt="Ícone de petiscos"
+                                class="imagensCategoriasCatalogo" />
+                            <p>Petiscos</p>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <hr class="divisao" />
+
+            <article class="containerProdutos">
+                <ul class="listaProdutos">
+                    <li class="cardProduto">
+                        <a
+                            href="login.html"
+                            class="botaoFavoritoCards"
+                            aria-label="Adicionar aos favoritos"
+                            role="button">
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração" />
+                        </a>
+                        <img
+                            src="../imagens/imagem_roupa.png"
+                            class="imagensCards"
+                            alt="Gato com Fantasia de Dinoussauro" />
+                        <h3>Fantasia de Dinoussauro</h3>
+                        <p aria-label="Avaliação: 4 de 5 estrelas">
+                            ★★★★☆ <span>(124)</span>
+                        </p>
+                        <p>
+                            <strong>R$ 143,90</strong>
+                        </p>
+                        <a href="carrinho.html" class="botaoCarrinho">ADICIONAR
+                            AO CARRINHO</a>
+                    </li>
+
+                    <li class="cardProduto">
+                        <a
+                            href="login.html"
+                            class="botaoFavoritoCards"
+                            aria-label="Adicionar aos favoritos"
+                            role="button">
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração" />
+                        </a>
+                        <img
+                            src="../imagens/imagem_touca_unicornio.png"
+                            class="imagensCards"
+                            alt="Gato com Touca Branca de Unicórnio" />
+                        <h3>Touca Branca de Unicórnio</h3>
+                        <p aria-label="Avaliação: 5 de 5 estrelas">
+                            ★★★★★ <span>(112)</span>
+                        </p>
+                        <p>
+                            <strong>R$ 59,75</strong>
+                        </p>
+                        <a href="carrinho.html" class="botaoCarrinho">ADICIONAR
+                            AO CARRINHO</a>
+                    </li>
+
+                    <li class="cardProduto">
+                        <a
+                            href="login.html"
+                            class="botaoFavoritoCards"
+                            aria-label="Adicionar aos favoritos"
+                            role="button">
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração" />
+                        </a>
+                        <img
+                            src="../imagens/imagem_fantasia_morcego.png"
+                            class="imagensCards"
+                            alt="Gato com Asas de Morcego - Fantasia" />
+                        <h3>Asa De Morcego - Preto</h3>
+                        <p aria-label="Avaliação: 4 de 5 estrelas">
+                            ★★★★☆ <span>(26)</span>
+                        </p>
+                        <p>
+                            <strong>R$ 87,45</strong>
+                        </p>
+                        <a href="carrinho.html" class="botaoCarrinho">ADICIONAR
+                            AO CARRINHO</a>
+                    </li>
+
+                    <li class="cardProduto">
+                        <a
+                            href="login.html"
+                            class="botaoFavoritoCards"
+                            aria-label="Adicionar aos favoritos"
+                            role="button">
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração" />
+                        </a>
+                        <img
+                            src="../imagens/imagem_fantasia_medico.png"
+                            class="imagensCards"
+                            alt="Gato Fantasiado de Médico. Jaleco Branco e Traje Azul" />
+                        <h3>Fantasia de Médico - Traje Branco e Azul</h3>
+                        <p aria-label="Avaliação: 5 de 5 estrelas">
+                            ★★★★★ <span>(135)</span>
+                        </p>
+                        <p>
+                            <strong>R$ 129,55</strong>
+                        </p>
+                        <a href="carrinho.html" class="botaoCarrinho">ADICIONAR
+                            AO CARRINHO</a>
+                    </li>
+
+                    <li class="cardProduto">
+                        <a
+                            href="login.html"
+                            class="botaoFavoritoCards"
+                            aria-label="Adicionar aos favoritos"
+                            role="button">
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração" />
+                        </a>
+                        <img
+                            src="../imagens/imagem_roupa_castracao.png"
+                            class="imagensCards"
+                            alt="Gato Com Roupa de Castração na Cor Rosa" />
+                        <h3>Roupa de Castração - Rosa</h3>
+                        <p aria-label="Avaliação: 4 de 5 estrelas">
+                            ★★★★☆ <span>(65)</span>
+                        </p>
+                        <p>
+                            <strong>R$ 44,25</strong>
+                        </p>
+                        <a href="carrinho.html" class="botaoCarrinho">ADICIONAR
+                            AO CARRINHO</a>
+                    </li>
+
+                    <li class="cardProduto">
+                        <a
+                            href="login.html"
+                            class="botaoFavoritoCards"
+                            aria-label="Adicionar aos favoritos"
+                            role="button">
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração" />
+                        </a>
+                        <img
+                            src="../imagens/imagem_touca_leao.png"
+                            class="imagensCards"
+                            alt="Gato com Touca de Juba de Leão na Cor Laranja" />
+                        <h3>Touca de Juba de Leão - Laranja</h3>
+                        <p aria-label="Avaliação: 4 de 5 estrelas">
+                            ★★★★☆ <span>(97)</span>
+                        </p>
+                        <p>
+                            <strong>R$ 58,35</strong>
+                        </p>
+                        <a href="carrinho.html" class="botaoCarrinho">ADICIONAR
+                            AO CARRINHO</a>
+                    </li>
+
+                    <li class="cardProduto">
+                        <a
+                            href="login.html"
+                            class="botaoFavoritoCards"
+                            aria-label="Adicionar aos favoritos"
+                            role="button">
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração" />
+                        </a>
+                        <img
+                            src="../imagens/imagem_fantasia_dinossauroAzul.png"
+                            class="imagensCards"
+                            alt="Gato com Fantasia de Dinoussauro Azul com Bolinhas Espalhadas pelas Costas na Cor Roxa." />
+                        <h3>Fantasia de Dinoussauro - Azul</h3>
+                        <p aria-label="Avaliação: 5 de 5 estrelas">
+                            ★★★★★ <span>(86)</span>
+                        </p>
+                        <p>
+                            <strong>R$ 72,16</strong>
+                        </p>
+                        <a href="carrinho.html" class="botaoCarrinho">ADICIONAR
+                            AO CARRINHO</a>
+                    </li>
+
+                    <li class="cardProduto">
+                        <a
+                            href="login.html"
+                            class="botaoFavoritoCards"
+                            aria-label="Adicionar aos favoritos"
+                            role="button">
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração" />
+                        </a>
+                        <img
+                            src="../imagens/imagem_roupa_frio.png"
+                            class="imagensCards"
+                            alt="Gato Vestido com Roupa de Lã Grossa na Cor Vermelha" />
+                        <h3>Roupa de Lã Grossa - Vermelho</h3>
+                        <p aria-label="Avaliação: 4 de 5 estrelas">
+                            ★★★★☆ <span>(86)</span>
+                        </p>
+                        <p>
+                            <strong>R$ 53,87</strong>
+                        </p>
+                        <a href="carrinho.html" class="botaoCarrinho">ADICIONAR
+                            AO CARRINHO</a>
+                    </li>
+
+                    <li class="cardProduto">
+                        <a
+                            href="login.html"
+                            class="botaoFavoritoCards"
+                            aria-label="Adicionar aos favoritos"
+                            role="button">
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração" />
+                        </a>
+                        <img
+                            src="../imagens/imagem_gatoDeBotas.png"
+                            class="imagensCards"
+                            alt="Gato com Fantasia de 'Gato de Botas'" />
+                        <h3>Fantasia de Gato de Botas</h3>
+                        <p aria-label="Avaliação: 4 de 5 estrelas">
+                            ★★★★☆ <span>(29)</span>
+                        </p>
+                        <p>
+                            <strong>R$ 39,99</strong>
+                        </p>
+                        <a href="carrinho.html" class="botaoCarrinho">ADICIONAR
+                            AO CARRINHO</a>
+                    </li>
+
+                    <li class="cardProduto">
+                        <a
+                            href="login.html"
+                            class="botaoFavoritoCards"
+                            aria-label="Adicionar aos favoritos"
+                            role="button">
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração" />
+                        </a>
+                        <img
+                            src="../imagens/imagem_fantasia_vaca.png"
+                            class="imagensCards"
+                            alt="Gato com Fantasia de Vaca" />
+                        <h3>Fantasia de Vaca com Touca</h3>
+                        <p aria-label="Avaliação: 5 de 5 estrelas">
+                            ★★★★★ <span>(455)</span>
+                        </p>
+                        <p>
+                            <strong>R$ 136,99</strong>
+                        </p>
+                        <a href="carrinho.html" class="botaoCarrinho">ADICIONAR
+                            AO CARRINHO</a>
+                    </li>
+
+                    <li class="cardProduto">
+                        <a
+                            href="login.html"
+                            class="botaoFavoritoCards"
+                            aria-label="Adicionar aos favoritos"
+                            role="button">
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração" />
+                        </a>
+                        <img
+                            src="../imagens/imagem_fantasia_lagosta.png"
+                            class="imagensCards"
+                            alt="Gato com Fantasia de Lagosta com Touca" />
+                        <h3>Fantasia de Lagosta com Touca</h3>
+                        <p aria-label="Avaliação: 5 de 5 estrelas">
+                            ★★★★★ <span>(354)</span>
+                        </p>
+                        <p>
+                            <strong>R$ 134,44</strong>
+                        </p>
+                        <a href="carrinho.html" class="botaoCarrinho">ADICIONAR
+                            AO CARRINHO</a>
+                    </li>
+
+                    <li class="cardProduto">
+                        <a
+                            href="login.html"
+                            class="botaoFavoritoCards"
+                            aria-label="Adicionar aos favoritos"
+                            role="button">
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração" />
+                        </a>
+                        <img
+                            src="../imagens/imagem_fantasia_colegial.png"
+                            class="imagensCards"
+                            alt="Gato com Fantasia de Colegial" />
+                        <h3>Fantasia de Colegial com Saia</h3>
+                        <p aria-label="Avaliação: 5 de 5 estrelas">
+                            ★★★★★ <span>(276)</span>
+                        </p>
+                        <p>
+                            <strong>R$ 163,87</strong>
+                        </p>
+                        <a href="carrinho.html" class="botaoCarrinho">ADICIONAR
+                            AO CARRINHO</a>
+                    </li>
+                </ul>
+            </article>
+
+            <section id="vantagens">
+                <ul id="listaVantagens">
+                    <li>
+                        <img
+                            src="../imagens/icone_gato.png"
+                            alt="Ícone de um gato" />
+                        <p>
+                            <strong>Produtos pensados<br />milimetricamente para
+                                felinos</strong>
+                        </p>
+                    </li>
+
+                    <li>
+                        <img
+                            src="../imagens/icone_carteira.png"
+                            alt="Ícone carteira" />
+                        <p>
+                            <strong>Parcelamento em até 4x<br />sem juros com
+                                parcela
+                                mínima de R$ 80</strong>
+                        </p>
+                    </li>
+
+                    <li>
+                        <img
+                            src="../imagens/icone_seguranca.png"
+                            alt="Ícone segurança" />
+                        <p>
+                            <strong>Ambiente 100% seguro<br />para suas
+                                compras</strong>
+                        </p>
+                    </li>
+
+                    <li>
+                        <img
+                            src="../imagens/icone_caminhao.png"
+                            alt="Ícone caminhão" />
+                        <p>
+                            <strong>Frete grátis para todo o<br />Brasil nas
+                                compras
+                                acima<br />de R$ 299</strong>
+                        </p>
+                    </li>
+                </ul>
+            </section>
+        </main>
+
+        <footer id="rodape">
+            <img
+                src="../imagens/imagem_logo.png"
+                alt="Logo Miaunarquia"
+                class="logo" />
+
+            <nav id="informacoes" aria-label="Informações da Plataforma">
+                <h2>Informações</h2>
+                <ul>
+                    <li><a href="sobreNos.html">Sobre Nós</a></li>
+                    <li><a href="sobreNos.html#termosECondicoes">Termos e
+                            Condições de Uso</a></li>
+                    <li><a href="sobreNos.html#politicasPrivacidade">Política de
+                            Privacidade</a></li>
+                    <li><a href="   ">FAQ</a></li>
+                </ul>
+            </nav>
+
+            <address id="contato">
+                <h2>Contato</h2>
+                <p>
+                    <a
+                        href="mailto:contato@miauanarquia.com.br">contato@miauanarquia.com.br</a>
+                </p>
+            </address>
+
+            <nav id="redes" aria-label="Nos Siga">
+                <h2>Nos siga</h2>
+                <ul id="listaRedesSociais">
+                    <li>
+                        <a href="#"><img
+                                src="../imagens/icone_facebook.png"
+                                class="iconesRedesSociais"
+                                alt="Ícone do Facebook" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img
+                                src="../imagens/icone_instagram.png"
+                                class="iconesRedesSociais"
+                                alt="Ícone do Instagram" /></a>
+                    </li>
+                    <li>
+                        <a href="#"><img
+                                src="../imagens/icone_linkedin.png"
+                                class="iconesRedesSociais"
+                                alt="Ícone do LinkedIn" /></a>
+                    </li>
+                    <li>
+                        <a href="#"><img
+                                src="../imagens/icone_discord.png"
+                                class="iconesRedesSociais"
+                                alt="Ícone do Discord" /></a>
+                    </li>
+                </ul>
+            </nav>
+
+            <section id="pagamentos">
+                <h2>Formas de pagamento:</h2>
+                <ul>
+                    <li>
+                        <img
+                            src="../imagens/icone_american_express.png"
+                            alt="Ícone do American Express" />
+                    </li>
+                    <li>
+                        <img
+                            src="../imagens/icone_visa.png"
+                            alt="Ícone do Visa" />
+                    </li>
+                    <li>
+                        <img
+                            src="../imagens/icone_mastercard.png"
+                            alt="Ícone do Mastercard" />
+                    </li>
+                    <li>
+                        <img
+                            src="../imagens/icone_discover.png"
+                            alt="Ícone do Discover" />
+                    </li>
+                    <li>
+                        <img
+                            src="../imagens/icone_elo.png"
+                            alt="Ícone do Elo" />
+                    </li>
+                    <li>
+                        <img
+                            src="../imagens/icone_boleto.png"
+                            alt="Ícone do Boleto bancário" />
+                    </li>
+                    <li>
+                        <img
+                            src="../imagens/icone_pix.png"
+                            alt="Ícone do Pix" />
+                    </li>
+                </ul>
+                <p class="seguro">
+                    <img
+                        src="../imagens/icone_seguranca_footer.png"
+                        alt="Ícone que simboliza Segurança" />
+                    PAGAMENTO 100% SEGURO
+                </p>
+                <ul id="copyright">
+                    <li id="copyrightTexto">
+                        &copy; 2025 Miaunarquia. Todos os direitos reservados.
+                    </li>
+                </ul>
+            </section>
+        </footer>
+    </body>
+</html>

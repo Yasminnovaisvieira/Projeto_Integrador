@@ -7,32 +7,10 @@
         <link rel="stylesheet" href="../css/style.css" />
     </head>
     <body>
-        <section
-            class="avisoCarrossel"
-            aria-label="Carrossel de avisos e promoções da plataforma">
-            <!-- Carrossel para avisos de promoções -->
-            <button id="setaEsquerdaAviso" class="setasAviso"
-                aria-label="Aviso anterior">
-                ❮
-            </button>
-            <ul class="mensagens">
-                <li class="mensagem">
-                    NOVO POR AQUI? USE O CUPOM 🐾PRIMEIRACOMPRA🐾
-                </li>
-                <li class="mensagem">
-                    FRETE GRÁTIS ACIMA DE R$199 PARA TODO O BRASIL
-                </li>
-                <li class="mensagem">CADASTRE-SE E GANHE 10% DE DESCONTO</li>
-            </ul>
-            <button id="setaDireitaAviso" class="setasAviso"
-                aria-label="Aviso seguinte">
-                ❯
-            </button>
-        </section>
 
         <header class="headerSite"> <!-- Header do site -->
             <h1 class="logoSite">
-                <a href="index.html" aria-label="Página inicial - Miaunarquia">
+                <a href="indexLogado.html" aria-label="Página inicial - Miaunarquia">
                     <img
                         src="../imagens/imagem_logo.png"
                         alt="Logo de um Gato Preto com Coroa"
@@ -44,8 +22,7 @@
             <nav class="navMenu" aria-label="Menu Principal">
                 <!-- arial-label = Rotular elemento para descreve-lo e deixa-lo mais acessível -->
                 <ul>
-                    <li><a href="index.html"
-                            id="inicioSelecionado">Início</a></li>
+                    <li><a href="index.html" id="inicioSelecionado">Início</a></li>
                     <li><a href="catalogo.html">Catálogo</a></li>
                     <li><a href="sobreNos.html#sobreNos">Sobre Nós</a></li>
                     <li><a href="sobreNos.html#contato">Contato</a></li>
@@ -68,7 +45,7 @@
                     </li>
 
                     <li>
-                        <a href="login.html" aria-label="Favoritos">
+                        <a href="perfil.html#favoritos" aria-label="Favoritos">
                             <figure class="iconesNav">
                                 <img
                                     src="../imagens/icone_favoritos.png"
@@ -82,13 +59,13 @@
                     </li>
 
                     <li>
-                        <a href="login.html" aria-label="Perfil">
+                        <a href="perfil.html" aria-label="Perfil">
                             <figure class="iconesNav">
                                 <img
                                     src="../imagens/icone_usuario.png"
                                     alt="Ícone de Perfil" />
                                 <figcaption class="legendasIcones">
-                                    Entrar
+                                    Meu Perfil
                                 </figcaption>
                             </figure>
                         </a>
@@ -102,6 +79,19 @@
                                     alt="Ícone de Carrinho" />
                                 <figcaption class="legendasIcones">
                                     Carrinho
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="index.html" aria-label="Sair da Conta">
+                            <figure class="iconesNav">
+                                <img
+                                    src="../imagens/icone_sair.png"
+                                    alt="Ícone de Sair da Conta" />
+                                <figcaption class="legendasIcones">
+                                    Sair
                                 </figcaption>
                             </figure>
                         </a>
@@ -170,8 +160,7 @@
                 <h2 class="tituloCategorias">Categorias de Produtos</h2>
                 <ul class="listaCategorias">
                     <li>
-                        <a href="catalogoArranhadores.html"
-                            class="linksCategorias">
+                        <a href="catalogoArranhadores.html" class="linksCategorias">
                             <img
                                 src="../imagens/imagem_arranhador.png"
                                 alt="Imagem de arranhador preto"
@@ -181,8 +170,7 @@
                     </li>
 
                     <li>
-                        <a href="catalogoArranhadores.html"
-                            class="linksCategorias">
+                        <a href="catalogoArranhadores.html" class="linksCategorias">
                             <img
                                 src="../imagens/imagem_cama.png"
                                 alt="Imagem de cama formato tubarão"
@@ -212,8 +200,7 @@
                     </li>
 
                     <li>
-                        <a href="catalogoBrinquedos.html"
-                            class="linksCategorias">
+                        <a href="catalogoBrinquedos.html" class="linksCategorias">
                             <img
                                 src="../imagens/imagem_brinquedo.png"
                                 alt="Imagem de brinquedos"
@@ -223,8 +210,7 @@
                     </li>
 
                     <li>
-                        <a href="catalogoComedouros.html"
-                            class="linksCategorias">
+                        <a href="catalogoComedouros.html" class="linksCategorias">
                             <img
                                 src="../imagens/imagem_comedouro.png"
                                 alt="Ícone de comedouros e bebedouros"
@@ -259,15 +245,13 @@
                 <article id="containerCarrosselLancamentos">
                     <ul id="carrosselLancamentos">
                         <li class="cardProduto">
-                            <a
-                                href="login.html"
+                            <button
                                 class="botaoFavoritoCards"
-                                aria-label="Adicionar aos favoritos"
-                                role="button">
+                                aria-label="Adicionar aos favoritos">
                                 <img
                                     src="../imagens/icone_favoritos.png"
                                     alt="Ícone de Coração" />
-                            </a>
+                            </button>
                             <img
                                 src="../imagens/imagem_arranhador_cacto.png"
                                 class="imagensCards"
@@ -279,20 +263,19 @@
                             <p>
                                 <strong>R$ 263,90</strong>
                             </p>
-                            <a href="carrinho.html"
-                                class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
+                            <button class="botaoCarrinho">
+                                ADICIONAR AO CARRINHO
+                            </button>
                         </li>
 
                         <li class="cardProduto">
-                            <a
-                                href="login.html"
+                            <button
                                 class="botaoFavoritoCards"
-                                aria-label="Adicionar aos favoritos"
-                                role="button">
+                                aria-label="Adicionar aos favoritos">
                                 <img
                                     src="../imagens/icone_favoritos.png"
                                     alt="Ícone de Coração" />
-                            </a>
+                            </button>
                             <img
                                 src="../imagens/imagem_tigela_antiderrapante.png"
                                 class="imagensCards"
@@ -304,20 +287,19 @@
                             <p>
                                 <strong>R$ 159,75</strong>
                             </p>
-                            <a href="carrinho.html"
-                                class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
+                            <button class="botaoCarrinho">
+                                ADICIONAR AO CARRINHO
+                            </button>
                         </li>
 
                         <li class="cardProduto">
-                            <a
-                                href="login.html"
+                            <button
                                 class="botaoFavoritoCards"
-                                aria-label="Adicionar aos favoritos"
-                                role="button">
+                                aria-label="Adicionar aos favoritos">
                                 <img
                                     src="../imagens/icone_favoritos.png"
                                     alt="Ícone de Coração" />
-                            </a>
+                            </button>
                             <img
                                 src="../imagens/imagem_fantasia_morcego.png"
                                 class="imagensCards"
@@ -329,45 +311,43 @@
                             <p>
                                 <strong>R$ 87,45</strong>
                             </p>
-                            <a href="carrinho.html"
-                                class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
+                            <button class="botaoCarrinho">
+                                ADICIONAR AO CARRINHO
+                            </button>
                         </li>
 
                         <li class="cardProduto">
-                            <a
-                                href="login.html"
+                            <button
                                 class="botaoFavoritoCards"
-                                aria-label="Adicionar aos favoritos"
-                                role="button">
+                                aria-label="Adicionar aos favoritos">
                                 <img
                                     src="../imagens/icone_favoritos.png"
                                     alt="Ícone de Coração" />
-                            </a>
+                            </button>
                             <img
                                 src="../imagens/imagem_cama_tubarao.png"
                                 class="imagensCards"
                                 alt="Cama em Formato de Tubarão para Gatos de Porte Grande" />
-                            <h3>Cama em Formato de Tubarão - Azul</h3>
+                            <h3>Arranhador Formato Cacto</h3>
                             <p aria-label="Avaliação: 5 de 5 estrelas">
                                 ★★★★★ <span>(55)</span>
                             </p>
                             <p>
                                 <strong>R$ 119,55</strong>
                             </p>
-                            <a href="carrinho.html"
-                                class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
+                            <button class="botaoCarrinho">
+                                ADICIONAR AO CARRINHO
+                            </button>
                         </li>
 
                         <li class="cardProduto">
-                            <a
-                                href="login.html"
+                            <button
                                 class="botaoFavoritoCards"
-                                aria-label="Adicionar aos favoritos"
-                                role="button">
+                                aria-label="Adicionar aos favoritos">
                                 <img
                                     src="../imagens/icone_favoritos.png"
                                     alt="Ícone de Coração" />
-                            </a>
+                            </button>
                             <img
                                 src="../imagens/imagem_petisco_finotrato.png"
                                 class="imagensCards"
@@ -379,20 +359,19 @@
                             <p>
                                 <strong>R$ 34,25</strong>
                             </p>
-                            <a href="carrinho.html"
-                                class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
+                            <button class="botaoCarrinho">
+                                ADICIONAR AO CARRINHO
+                            </button>
                         </li>
 
                         <li class="cardProduto">
-                            <a
-                                href="login.html"
+                            <button
                                 class="botaoFavoritoCards"
-                                aria-label="Adicionar aos favoritos"
-                                role="button">
+                                aria-label="Adicionar aos favoritos">
                                 <img
                                     src="../imagens/icone_favoritos.png"
                                     alt="Ícone de Coração" />
-                            </a>
+                            </button>
                             <img
                                 src="../imagens/imagem_brinquedo_peixe.png"
                                 class="imagensCards"
@@ -404,20 +383,19 @@
                             <p>
                                 <strong>R$ 48,35</strong>
                             </p>
-                            <a href="carrinho.html"
-                                class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
+                            <button class="botaoCarrinho">
+                                ADICIONAR AO CARRINHO
+                            </button>
                         </li>
 
                         <li class="cardProduto">
-                            <a
-                                href="login.html"
+                            <button
                                 class="botaoFavoritoCards"
-                                aria-label="Adicionar aos favoritos"
-                                role="button">
+                                aria-label="Adicionar aos favoritos">
                                 <img
                                     src="../imagens/icone_favoritos.png"
                                     alt="Ícone de Coração" />
-                            </a>
+                            </button>
                             <img
                                 src="../imagens/imagem_kit_higiene_vermelho.png"
                                 class="imagensCards"
@@ -429,20 +407,19 @@
                             <p>
                                 <strong>R$ 132,16</strong>
                             </p>
-                            <a href="carrinho.html"
-                                class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
+                            <button class="botaoCarrinho">
+                                ADICIONAR AO CARRINHO
+                            </button>
                         </li>
 
                         <li class="cardProduto">
-                            <a
-                                href="login.html"
+                            <button
                                 class="botaoFavoritoCards"
-                                aria-label="Adicionar aos favoritos"
-                                role="button">
+                                aria-label="Adicionar aos favoritos">
                                 <img
                                     src="../imagens/icone_favoritos.png"
                                     alt="Ícone de Coração" />
-                            </a>
+                            </button>
                             <img
                                 src="../imagens/imagem_cama_veludo_rosa.png"
                                 class="imagensCards"
@@ -454,20 +431,19 @@
                             <p>
                                 <strong>R$ 163,87</strong>
                             </p>
-                            <a href="carrinho.html"
-                                class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
+                            <button class="botaoCarrinho">
+                                ADICIONAR AO CARRINHO
+                            </button>
                         </li>
 
                         <li class="cardProduto">
-                            <a
-                                href="login.html"
+                            <button
                                 class="botaoFavoritoCards"
-                                aria-label="Adicionar aos favoritos"
-                                role="button">
+                                aria-label="Adicionar aos favoritos">
                                 <img
                                     src="../imagens/icone_favoritos.png"
                                     alt="Ícone de Coração" />
-                            </a>
+                            </button>
                             <img
                                 src="../imagens/imagem_caixa_papelao.png"
                                 class="imagensCards"
@@ -479,20 +455,19 @@
                             <p>
                                 <strong>R$ 39,99</strong>
                             </p>
-                            <a href="carrinho.html"
-                                class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
+                            <button class="botaoCarrinho">
+                                ADICIONAR AO CARRINHO
+                            </button>
                         </li>
 
                         <li class="cardProduto">
-                            <a
-                                href="login.html"
+                            <button
                                 class="botaoFavoritoCards"
-                                aria-label="Adicionar aos favoritos"
-                                role="button">
+                                aria-label="Adicionar aos favoritos">
                                 <img
                                     src="../imagens/icone_favoritos.png"
                                     alt="Ícone de Coração" />
-                            </a>
+                            </button>
                             <img
                                 src="../imagens/imagem_bebedouro.png"
                                 class="imagensCards"
@@ -504,8 +479,9 @@
                             <p>
                                 <strong>R$ 179,00</strong>
                             </p>
-                            <a href="carrinho.html"
-                                class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
+                            <button class="botaoCarrinho">
+                                ADICIONAR AO CARRINHO
+                            </button>
                         </li>
                     </ul>
                 </article>
@@ -537,15 +513,13 @@
                 <article id="containerCarrosselMaisVendidos">
                     <ul id="carrosselMaisVendidos">
                         <li class="cardProduto">
-                            <a
-                                href="login.html"
+                            <button
                                 class="botaoFavoritoCards"
-                                aria-label="Adicionar aos favoritos"
-                                role="button">
+                                aria-label="Adicionar aos favoritos">
                                 <img
                                     src="../imagens/icone_favoritos.png"
                                     alt="Ícone de Coração" />
-                            </a>
+                            </button>
                             <img
                                 src="../imagens/imagem_arranhador_bege.png"
                                 class="imagensCards"
@@ -557,20 +531,19 @@
                             <p>
                                 <strong>R$ 263,90</strong>
                             </p>
-                            <a href="carrinho.html"
-                                class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
+                            <button class="botaoCarrinho">
+                                ADICIONAR AO CARRINHO
+                            </button>
                         </li>
 
                         <li class="cardProduto">
-                            <a
-                                href="login.html"
+                            <button
                                 class="botaoFavoritoCards"
-                                aria-label="Adicionar aos favoritos"
-                                role="button">
+                                aria-label="Adicionar aos favoritos">
                                 <img
                                     src="../imagens/icone_favoritos.png"
                                     alt="Ícone de Coração" />
-                            </a>
+                            </button>
                             <img
                                 src="../imagens/imagem_abacate_catnip.png"
                                 class="imagensCards"
@@ -582,20 +555,19 @@
                             <p>
                                 <strong>R$ 19,44</strong>
                             </p>
-                            <a href="carrinho.html"
-                                class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
+                            <button class="botaoCarrinho">
+                                ADICIONAR AO CARRINHO
+                            </button>
                         </li>
 
                         <li class="cardProduto">
-                            <a
-                                href="login.html"
+                            <button
                                 class="botaoFavoritoCards"
-                                aria-label="Adicionar aos favoritos"
-                                role="button">
+                                aria-label="Adicionar aos favoritos">
                                 <img
                                     src="../imagens/icone_favoritos.png"
                                     alt="Ícone de Coração" />
-                            </a>
+                            </button>
                             <img
                                 src="../imagens/imagem_arranhador_4_brinquedos.png"
                                 class="imagensCards"
@@ -607,20 +579,19 @@
                             <p>
                                 <strong>R$ 54,99</strong>
                             </p>
-                            <a href="carrinho.html"
-                                class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
+                            <button class="botaoCarrinho">
+                                ADICIONAR AO CARRINHO
+                            </button>
                         </li>
 
                         <li class="cardProduto">
-                            <a
-                                href="login.html"
+                            <button
                                 class="botaoFavoritoCards"
-                                aria-label="Adicionar aos favoritos"
-                                role="button">
+                                aria-label="Adicionar aos favoritos">
                                 <img
                                     src="../imagens/icone_favoritos.png"
                                     alt="Ícone de Coração" />
-                            </a>
+                            </button>
                             <img
                                 src="../imagens/imagem_fantasia_vaca.png"
                                 class="imagensCards"
@@ -632,20 +603,19 @@
                             <p>
                                 <strong>R$ 136,99</strong>
                             </p>
-                            <a href="carrinho.html"
-                                class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
+                            <button class="botaoCarrinho">
+                                ADICIONAR AO CARRINHO
+                            </button>
                         </li>
 
                         <li class="cardProduto">
-                            <a
-                                href="login.html"
+                            <button
                                 class="botaoFavoritoCards"
-                                aria-label="Adicionar aos favoritos"
-                                role="button">
+                                aria-label="Adicionar aos favoritos">
                                 <img
                                     src="../imagens/icone_favoritos.png"
                                     alt="Ícone de Coração" />
-                            </a>
+                            </button>
                             <img
                                 src="../imagens/imagem_fantasia_lagosta.png"
                                 class="imagensCards"
@@ -657,20 +627,19 @@
                             <p>
                                 <strong>R$ 134,44</strong>
                             </p>
-                            <a href="carrinho.html"
-                                class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
+                            <button class="botaoCarrinho">
+                                ADICIONAR AO CARRINHO
+                            </button>
                         </li>
 
                         <li class="cardProduto">
-                            <a
-                                href="login.html"
+                            <button
                                 class="botaoFavoritoCards"
-                                aria-label="Adicionar aos favoritos"
-                                role="button">
+                                aria-label="Adicionar aos favoritos">
                                 <img
                                     src="../imagens/icone_favoritos.png"
                                     alt="Ícone de Coração" />
-                            </a>
+                            </button>
                             <img
                                 src="../imagens/imagem_petisco_whiskas.png"
                                 class="imagensCards"
@@ -682,45 +651,43 @@
                             <p>
                                 <strong>R$ 11,26</strong>
                             </p>
-                            <a href="carrinho.html"
-                                class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
+                            <button class="botaoCarrinho">
+                                ADICIONAR AO CARRINHO
+                            </button>
                         </li>
 
                         <li class="cardProduto">
-                            <a
-                                href="login.html"
+                            <button
                                 class="botaoFavoritoCards"
-                                aria-label="Adicionar aos favoritos"
-                                role="button">
+                                aria-label="Adicionar aos favoritos">
                                 <img
                                     src="../imagens/icone_favoritos.png"
                                     alt="Ícone de Coração" />
-                            </a>
+                            </button>
                             <img
                                 src="../imagens/imagem_cama_cinza.png"
                                 class="imagensCards"
-                                alt="Cama Redonda para Gato na Cor Cinza" />
-                            <h3>Cama Grande Redonda - Cinza</h3>
+                                alt="Cama para Gato na Cor Cinza" />
+                            <h3>Cama Grande Quadrada - Cinza</h3>
                             <p aria-label="Avaliação: 5 de 5 estrelas">
                                 ★★★★★ <span>(437)</span>
                             </p>
                             <p>
                                 <strong>R$ 239,92</strong>
                             </p>
-                            <a href="carrinho.html"
-                                class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
+                            <button class="botaoCarrinho">
+                                ADICIONAR AO CARRINHO
+                            </button>
                         </li>
 
                         <li class="cardProduto">
-                            <a
-                                href="login.html"
+                            <button
                                 class="botaoFavoritoCards"
-                                aria-label="Adicionar aos favoritos"
-                                role="button">
+                                aria-label="Adicionar aos favoritos">
                                 <img
                                     src="../imagens/icone_favoritos.png"
                                     alt="Ícone de Coração" />
-                            </a>
+                            </button>
                             <img
                                 src="../imagens/imagem_fantasia_colegial.png"
                                 class="imagensCards"
@@ -732,20 +699,19 @@
                             <p>
                                 <strong>R$ 163,87</strong>
                             </p>
-                            <a href="carrinho.html"
-                                class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
+                            <button class="botaoCarrinho">
+                                ADICIONAR AO CARRINHO
+                            </button>
                         </li>
 
                         <li class="cardProduto">
-                            <a
-                                href="login.html"
+                            <button
                                 class="botaoFavoritoCards"
-                                aria-label="Adicionar aos favoritos"
-                                role="button">
+                                aria-label="Adicionar aos favoritos">
                                 <img
                                     src="../imagens/icone_favoritos.png"
                                     alt="Ícone de Coração" />
-                            </a>
+                            </button>
                             <img
                                 src="../imagens/imagem_bebedouro_inox.png"
                                 class="imagensCards"
@@ -757,20 +723,19 @@
                             <p>
                                 <strong>R$ 189,22</strong>
                             </p>
-                            <a href="carrinho.html"
-                                class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
+                            <button class="botaoCarrinho">
+                                ADICIONAR AO CARRINHO
+                            </button>
                         </li>
 
                         <li class="cardProduto">
-                            <a
-                                href="login.html"
+                            <button
                                 class="botaoFavoritoCards"
-                                aria-label="Adicionar aos favoritos"
-                                role="button">
+                                aria-label="Adicionar aos favoritos">
                                 <img
                                     src="../imagens/icone_favoritos.png"
                                     alt="Ícone de Coração" />
-                            </a>
+                            </button>
                             <img
                                 src="../imagens/imagem_caixote_areia_rosa.png"
                                 class="imagensCards"
@@ -782,8 +747,9 @@
                             <p>
                                 <strong>R$ 119,10</strong>
                             </p>
-                            <a href="carrinho.html"
-                                class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
+                            <button class="botaoCarrinho">
+                                ADICIONAR AO CARRINHO
+                            </button>
                         </li>
                     </ul>
                 </article>
@@ -928,7 +894,7 @@
                         <input type="email" id="emailReceberNovidades"
                             name="email"
                             id="inputReceberNovidades"
-                            placeholder="Digite seu email aqui" />
+                            placeholder="Digite seu email aqui" required>
                         <button type="submit" id="botaoReceberNovidades">VAMOS
                             MIAR</button>
                     </form>
@@ -992,12 +958,10 @@
             <nav id="informacoes" aria-label="Informações da Plataforma">
                 <h2>Informações</h2>
                 <ul>
-                    <li><a href="sobreNos.html">Sobre Nós</a></li>
-                    <li><a href="sobreNos.html#termosECondicoes">Termos e
-                            Condições de Uso</a></li>
-                    <li><a href="sobreNos.html#politicasPrivacidade">Política de
-                            Privacidade</a></li>
-                    <li><a href="   ">FAQ</a></li>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Termos e Condições de Uso</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Direito do Consumidor</a></li>
                 </ul>
             </nav>
 

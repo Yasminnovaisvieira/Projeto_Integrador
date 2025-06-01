@@ -7,13 +7,24 @@
     box-sizing: border-box;
 }
 
-/* HOME */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 
 body {
-    font-family: "Courier New", Courier, monospace;
+    font-family: "Outfit", sans-serif;
     background-color: #e6e6fa;
     font-size: 18px;
 }
+
+
+
+
+
+/* HOME */
 
 :root {
     --duracao: 12s;
@@ -104,7 +115,7 @@ body {
     background-color: rgba(0, 0, 0, 0.6);
 }
 
-#headerSite {
+.headerSite {
     font-family: "Cal Sans", sans-serif;
     display: flex;
     justify-content: space-between;
@@ -118,13 +129,13 @@ body {
     z-index: 1000;
 }
 
-#logoSite {
+.logoSite {
     margin: 0;
     font-size: 2.5rem;
     font-weight: bold;
 }
 
-#logoSite a {
+.logoSite a {
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -132,12 +143,12 @@ body {
     color: #222;
 }
 
-#logoImagem {
+.logoImagem {
     height: 70px;
     width: auto;
 }
 
-#nomeLogo {
+.nomeLogo {
     font-size: 2.5rem;
     /*18 X 1.5 (Ficar maior que a fonte normal)*/
     font-weight: bold;
@@ -145,8 +156,8 @@ body {
     text-decoration: none;
 }
 
-#navMenu ul,
-#navUsuario ul {
+.navMenu ul,
+.navUsuario ul {
     list-style: none;
     /* Tira a formatação normal de uma lista */
     display: flex;
@@ -154,7 +165,7 @@ body {
     /* Espaçamento */
 }
 
-#navMenu a {
+.navMenu a {
     text-decoration: none;
     color: #222;
     font-weight: 500;
@@ -162,13 +173,17 @@ body {
     display: inline-block;
 }
 
-#navMenu a:hover,
-#navMenu a:focus {
+.navMenu a:hover,
+.navMenu a:focus {
     outline: none;
     transform: scale(1.05);
 }
 
-#navUsuario li a {
+#inicioSelecionado {
+    color: #3b2994;
+}
+
+.navUsuario li a {
     color: #222;
     font-size: 1.1rem;
     display: flex;
@@ -187,8 +202,8 @@ body {
     gap: 0.25rem;
 }
 
-#navUsuario a:hover,
-#navUsuario a:focus {
+.navUsuario a:hover,
+.navUsuario a:focus {
     transform: scale(1.05);
     outline: none;
 }
@@ -333,14 +348,14 @@ body {
     opacity: 0.1;
 }
 
-#tituloCategorias {
+.tituloCategorias {
     font-family: "Outfit", sans-serif;
     margin-top: 15px;
     margin-left: 30px;
     color: #222;
 }
 
-#listaCategorias {
+.listaCategorias {
     display: flex;
     flex-wrap: wrap;
     /* Para deixar responsivo */
@@ -350,7 +365,7 @@ body {
     list-style: none;
 }
 
-#listaCategorias li {
+.listaCategorias li {
     text-align: center;
 }
 
@@ -370,7 +385,7 @@ body {
 }
 
 .imagensCategorias {
-    background-color: #bbadff;
+    background-color: #9383e0;
     border-radius: 50%;
     padding: 1rem;
     width: 165px;
@@ -380,7 +395,7 @@ body {
 }
 
 .imagensCategorias:hover {
-    background-color: #9383e0;
+    background-color: #6958c0;
 }
 
 #produtosLancamentos {
@@ -391,7 +406,7 @@ body {
 
 #tituloLancamentos {
     font-family: "Outfit", sans-serif;
-    margin-top: 15px;
+    margin-top: -5px;
     margin-left: 30px;
     margin-bottom: 15px;
     color: #222;
@@ -431,7 +446,7 @@ body {
 }
 
 .cardProduto:hover>.botaoCarrinho {
-    background-color: #9383e0;
+    background-color: #6958c0;
 }
 
 .botaoFavoritoCards {
@@ -463,18 +478,21 @@ body {
 
 .botaoCarrinho {
     display: block;
-    background-color: #c6b6f8;
-    color: #fff;
+    background-color: #9383e0;
+    color: #ffffff;
     font-weight: bold;
     font-family: "Outfit", sans-serif;
-    border: none;
     border-radius: 0.5rem;
-    padding: 12px;
+    padding: 13px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     margin: 1rem auto 0;
     cursor: pointer;
-    width: 80%;
+    width: 100%;
     text-align: center;
+    text-decoration: none;
     transition: background-color 0.3s ease;
+    font-size: 15px;
 }
 
 .setasLancamento {
@@ -609,7 +627,7 @@ body {
 
 #tituloMaisVendidos {
     font-family: "Outfit", sans-serif;
-    margin-top: 15px;
+    margin-top: -5px;
     margin-left: 30px;
     margin-bottom: 15px;
     color: #222;
@@ -671,13 +689,14 @@ body {
 }
 
 #tituloFeedbacks {
-    margin-bottom: 2rem;
+    margin-bottom: 4.5rem;
     margin-left: 1.5rem;
     color: #111;
     text-align: left;
     font-weight: 700;
     font-size: 2rem;
     text-align: center;
+    margin-top: -5px;
 }
 
 .feedbacks {
@@ -879,8 +898,81 @@ body {
     animation-delay: 54s;
 }
 
+#receberNovidades {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    margin: auto;
+}
+
+#LogoReceberNovidades {
+    width: 260px;
+    height: auto;
+}
+
+#tituloReceberNovidades {
+    font-family: "Outfit", sans-serif;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#containerReceberNovidades {
+    max-width: 500px;
+    text-align: justify;
+    color: #333;
+}
+
+#descricaoReceberNovidades {
+    font-family: "Outfit", sans-serif;
+    margin-bottom: 1.5rem;
+}
+
+#formReceberNovidades {
+    display: flex;
+}
+
+#emailReceberNovidades {
+    flex: 1;
+    /*Ocupar todo o espaço*/
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid #ffffff;
+    border-radius: 0.5rem 0 0 0.5rem;
+    outline: none;
+    transition: border-color 0.5s ease;
+    background-color: #ffffff;
+    color: #333;
+}
+
+#emailReceberNovidades:focus {
+    /*Ao label ser clicado*/
+    border-color: #bbadff;
+}
+
+#botaoReceberNovidades {
+    padding: 0.75rem 2rem;
+    background-color: #9383e0;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    /*Espaço entre as letras*/
+    border: none;
+    border-radius: 0 0.5rem 0.5rem 0;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#botaoReceberNovidades:hover {
+    background-color: #6958c0;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
 #vantagens {
-    background-color: #0e0129;
+    background-color: #9383e0;
     padding: 2rem 1rem;
     font-family: "Outfit", sans-serif;
 }
@@ -901,7 +993,7 @@ body {
 #listaVantagens li {
     flex: 1 1 150px;
     text-align: center;
-    color: #fff;
+    color: #222;
     border-left: 1px solid #333;
     padding: 0 1rem;
 }
@@ -1027,4 +1119,356 @@ body {
 
 #copyrightTexto {
     padding: 0.5rem;
+}
+
+
+
+
+
+/*CATÁLOGO E VARIANTES*/
+
+#catalogoSelecionado {
+    color: #3b2994;
+}
+
+.tituloProdutos {
+    color: #333;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 35px;
+}
+
+#todosSelecionado,
+#arranhadoresSelecionado,
+#brinquedosSelecionado,
+#camasSelecionado,
+#comedourosSelecionado,
+#higieneSelecionado,
+#petiscosSelecionado,
+#roupasSelecionado {
+    background-color: #48398f;
+}
+
+.imagensCategoriasCatalogo {
+    background-color: #9383e0;
+    border-radius: 50%;
+    padding: 1rem;
+    width: 145px;
+    height: 145px;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+}
+
+.imagensCategoriasCatalogo:hover {
+    background-color: #6958c0;
+}
+
+.containerProdutos {
+    padding: 2rem;
+}
+
+.listaProdutos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+
+
+
+
+
+/* LOGIN E CADASTRO*/
+
+.fundoLoginCadastro {
+    min-height: 100vh;
+    background: linear-gradient(to top, #3b2994, #48398f, #9383e0);
+}
+
+.containerPagina {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 100px);
+    /* Centralizar no meio da página */
+    padding: 1.5rem;
+}
+
+.navMenu {
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.btnVoltar {
+    background-color: #28177c;
+    color: #ffffff !important;
+    padding: 0.8rem 1.4rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 0.6rem;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btnVoltar:hover {
+    background-color: #190c58;
+}
+
+#containerLogin {
+    background-color: #bbadff;
+    padding: 3rem 2.5rem;
+    border-radius: 1rem;
+    width: 100%;
+    max-width: 480px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.logoSiteLoginCadastro {
+    text-align: center;
+}
+
+.logoImagemLoginCadastro {
+    height: auto;
+    width: 80px;
+}
+
+.tituloLoginCadastro {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.formularioGrupo {
+    margin-bottom: 1.5rem;
+    border: 0;
+}
+
+.camposLogin {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #222;
+    font-weight: 600;
+}
+
+#emailLogin {
+    margin-bottom: 10px;
+}
+
+input[type="email"],
+input[type="password"] {
+    font-family: "Outfit", sans-serif;
+    width: 100%;
+    padding: 0.9rem;
+    font-size: 1rem;
+    background-color: #ffffff;
+    border: 2px solid #bbadff;
+    border-radius: 0.8rem;
+    color: #222;
+    outline: none;
+    transition: border-color 0.5s ease;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #6958c0;
+}
+
+.opcoesFormulario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.esqueceuSenha {
+    color: #190c58;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.esqueceuSenha:hover {
+    text-decoration: underline 1.5px;
+}
+
+.btnLogin {
+    font-family: "Outfit", sans-serif;
+    width: 100%;
+    padding: 1rem;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #28177c;
+    border: none;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btnLogin:hover {
+    background-color: #190c58;
+}
+
+.registrarSe {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 16px;
+    color: #222;
+    font-weight: 600;
+}
+
+.registrarSe a {
+    color: #28177c;
+    text-decoration: none;
+}
+
+.registrarSe a:hover {
+    text-decoration: underline 1.5px;
+}
+
+.LembrarDeMim {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 0.95rem;
+    color: #222;
+    position: relative;
+    padding-left: 30px;
+    font-weight: 600;
+}
+
+.LembrarDeMim input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.LembrarDeMim .checkmark {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 18px;
+    width: 18px;
+    background-color: #f1ecff;
+    border: 2px solid #3b2994;
+    border-radius: 4px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.LembrarDeMim input:checked~.checkmark::after {
+    /* Criando o 'check' dentro da caixinha */
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid #28177c;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.LembrarDeMim:hover .checkmark {
+    background-color: #e6ddff;
+}
+
+#email {
+    margin-bottom: 15px;
+}
+
+#containerCadastro {
+  max-width: 600px;
+  padding: 2rem 3rem;
+  background-color: #bbadff;
+  border-radius: 1.2rem;
+  width: 100%;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.grupoCampos {
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.rotulo {
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 0.2rem;
+}
+
+.campo {
+  padding: 0.8rem;
+  border-radius: 0.6rem;
+  border: 2px solid #bbadff;
+  background-color: #ffffff;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+  font-family: "Outfit", sans-serif;
+  margin-bottom: 10px;  
+}
+
+.campo:focus {
+  border-color: #6958c0;
+  outline: none;
+}
+
+.linhaDupla {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+
+.campoContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.btnCadastrar {
+  margin-top: 1rem;
+  background-color: #28177c;
+  color: white;
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  font-family: "Outfit", sans-serif;
+}
+
+.btnCadastrar:hover {
+  background-color: #190c58;
+}
+
+.linkLogin {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.linkLogin a {
+  color: #28177c;
+  text-decoration: none;
+}
+
+.linkLogin a:hover {
+  text-decoration: underline 1.5px;
 }

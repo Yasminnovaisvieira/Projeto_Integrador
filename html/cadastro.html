@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cadastro | Miaunarquia</title>
+        <link rel="stylesheet" href="../css/style.css" />
+    </head>
+    <body class="fundoLoginCadastro">
+        <header>
+            <nav class="navMenu" aria-label="Menu Principal">
+                <a href="index.html" class="btnVoltar">Voltar para Página
+                    Inicial</a>
+            </nav>
+        </header>
+
+        <main class="containerPagina">
+            <section id="containerCadastro">
+                <h1 class="logoSiteLoginCadastro">
+                    <img src="../imagens/imagem_logo.png" alt="Logo Miaunarquia"
+                        class="logoImagemLoginCadastro" />
+                </h1>
+
+                <form class="formularioCadastro" method="POST" action="indexLogado.html">
+                    <fieldset class="grupoCampos">
+                        <legend class="tituloLoginCadastro">Crie sua
+                            conta</legend>
+
+                        <label for="nome" class="rotulo">Insira o Nome
+                            Completo</label>
+                        <input type="text" id="nome" name="nome" class="campo"/>
+
+                        <label for="email" class="rotulo">Insira o
+                            E-mail</label>
+                        <input type="email" id="email" name="email"
+                            class="campo"/>
+
+                        <section class="linhaDupla">
+                            <section class="campoContainer">
+                                <label for="nascimento" class="rotulo"> Insira a
+                                    Data de Nascimento</label>
+                                <input type="date" id="nascimento"
+                                    name="nascimento" class="campo" />
+                            </section>
+
+                            <section class="campoContainer">
+                                <label for="genero" class="rotulo">Selecione o
+                                    Gênero</label>
+                                <select id="genero" name="genero" class="campo">
+                                    <option value disabled
+                                        selected>Selecione</option>
+                                    <option value="feminino">Feminino</option>
+                                    <option value="masculino">Masculino</option>
+                                    <option value="outro">Outro</option>
+                                    <option value="naoInformar">Prefiro não
+                                        informar</option>
+                                </select>
+                            </section>
+                        </section>
+
+                        <section class="linhaDupla">
+                            <section class="campoContainer">
+                                <label for="senha" class="rotulo">Insira a
+                                    Senha</label>
+                                <input type="password" id="senha" name="senha"
+                                    class="campo" />
+                            </section>
+
+                            <section class="campoContainer">
+                                <label for="confirmar" class="rotulo">Confirme a
+                                    Senha</label>
+                                <input type="password" id="confirmar"
+                                    name="confirmar" class="campo" />
+                            </section>
+                        </section>
+
+                        <button type="submit"
+                            class="btnCadastrar">Cadastrar</button>
+                    </fieldset>
+
+                    <p class="linkLogin">
+                        Já tem conta? <a href="login.html">Entre agora</a>
+                    </p>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>

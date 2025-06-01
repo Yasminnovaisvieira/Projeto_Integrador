@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Catálogo - Higiene e Limpeza | Miaunarquia</title>
+        <link rel="stylesheet" href="../css/style.css" />
+    </head>
+    <body>
+        <section
+            class="avisoCarrossel"
+            aria-label="Carrossel de avisos e promoções da plataforma">
+            <button id="setaEsquerdaAviso" class="setasAviso"
+                aria-label="Aviso anterior">
+                ❮
+            </button>
+            <ul class="mensagens">
+                <li class="mensagem">
+                    NOVO POR AQUI? USE O CUPOM 🐾PRIMEIRACOMPRA🐾
+                </li>
+                <li class="mensagem">
+                    FRETE GRÁTIS ACIMA DE R$199 PARA TODO O BRASIL
+                </li>
+                <li class="mensagem">CADASTRE-SE E GANHE 10% DE DESCONTO</li>
+            </ul>
+            <button id="setaDireitaAviso" class="setasAviso"
+                aria-label="Aviso seguinte">
+                ❯
+            </button>
+        </section>
+        <header class="headerSite">
+            <h1 class="logoSite">
+                <a href="index.html" aria-label="Página inicial - Miaunarquia">
+                    <img
+                        src="../imagens/imagem_logo.png"
+                        alt="Logo de um Gato Preto com Coroa"
+                        class="logoImagem" />
+                    <span class="nomeLogo">Miaunarquia</span>
+                </a>
+            </h1>
+
+            <nav class="navMenu" aria-label="Menu Principal">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="catalogo.html"
+                            id="catalogoSelecionado">Catálogo</a></li>
+                    <li><a href="sobreNos.html#sobreNos">Sobre Nós</a></li>
+                    <li><a href="sobreNos.html#contato">Contato</a></li>
+                </ul>
+            </nav>
+
+            <nav class="navUsuario" aria-label="Menu do Usuário">
+                <ul>
+                    <li>
+                        <a href="#" aria-label="Pesquisar">
+                            <figure class="iconesNav">
+                                <img
+                                    src="../imagens/icone_pesquisar.png"
+                                    alt="Ícone de Lupa" />
+                                <figcaption class="legendasIcones">
+                                    Pesquisar
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="login.html" aria-label="Favoritos">
+                            <figure class="iconesNav">
+                                <img
+                                    src="../imagens/icone_favoritos.png"
+                                    alt="Ícone de Coração"
+                                    aria-hidden="true" />
+                                <figcaption class="legendasIcones">
+                                    Favoritos
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="login.html" aria-label="Perfil">
+                            <figure class="iconesNav">
+                                <img
+                                    src="../imagens/icone_usuario.png"
+                                    alt="Ícone de Perfil" />
+                                <figcaption class="legendasIcones">
+                                    Entrar
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="carrinho.html" aria-label="Carrinho">
+                            <figure class="iconesNav">
+                                <img
+                                    src="../imagens/icone_carrinho.png"
+                                    alt="Ícone de Carrinho" />
+                                <figcaption class="legendasIcones">
+                                    Carrinho
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2 class="tituloProdutos">Nossos Produtos</h2>
+            <section
+                class="categoriasCatalogo"
+                aria-label="Categorias do Catálogo">
+                <ul class="listaCategorias">
+                    <li>
+                        <a href="catalogo.html" class="linksCategorias">
+                            <img
+                                src="../imagens/imagem_gatoLingua.png"
+                                alt="Gato lambendo seu nariz"
+                                class="imagensCategoriasCatalogo" />
+                            <p>Todos</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="catalogoArranhadores.html"
+                            class="linksCategorias">
+                            <img
+                                src="../imagens/imagem_arranhador.png"
+                                alt="Imagem de arranhador preto"
+                                class="imagensCategoriasCatalogo" />
+                            <p>Arranhadores</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="catalogoCamas.html" class="linksCategorias">
+                            <img
+                                src="../imagens/imagem_cama.png"
+                                alt="Imagem de cama formato tubarão"
+                                class="imagensCategoriasCatalogo" />
+                            <p>Camas</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="linksCategorias">
+                            <img
+                                src="../imagens/imagem_limpeza.png "
+                                alt="Imagem de Enzimac Gato com Embalagem Rosa"
+                                class="imagensCategoriasCatalogo"
+                                id="higieneSelecionado" />
+                            <p>Higiene e Limpeza</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="catalogoRoupas.html" class="linksCategorias">
+                            <img
+                                src="../imagens/imagem_roupa.png"
+                                alt="Imagem Gato com Fantasia de Dinossauro"
+                                class="imagensCategoriasCatalogo" />
+                            <p>Roupas</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="catalogoBrinquedos.html"
+                            class="linksCategorias">
+                            <img
+                                src="../imagens/imagem_brinquedo.png"
+                                alt="Imagem de brinquedos"
+                                class="imagensCategoriasCatalogo" />
+                            <p>Brinquedos</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="catalogoComedouros.html"
+                            class="linksCategorias">
+                            <img
+                                src="../imagens/imagem_comedouro.png"
+                                alt="Ícone de comedouros e bebedouros"
+                                class="imagensCategoriasCatalogo" />
+                            <p>Comedouros e Bebedouros</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="catalogoPetiscos.html" class="linksCategorias">
+                            <img
+                                src="../imagens/imagem_petisco.png"
+                                alt="Ícone de petiscos"
+                                class="imagensCategoriasCatalogo" />
+                            <p>Petiscos</p>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <hr class="divisao" />
+
+            <article class="containerProdutos">
+                <ul class="listaProdutos">
+                    <li class="cardProduto">
+                        <a
+                            href="login.html"
+                            class="botaoFavoritoCards"
+                            aria-label="Adicionar aos favoritos"
+                            role="button">
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração" />
+                        </a>
+                        <img
+                            src="../imagens/imagem_kit_higiene_vermelho.png"
+                            class="imagensCards"
+                            alt="Kit de Higiene para Gatos - 3 Peças Vermelhas" />
+                        <h3>Kit Higiene (3 Peças) - Vermelho</h3>
+                        <p aria-label="Avaliação: 5 de 5 estrelas">
+                            ★★★★★ <span>(16)</span>
+                        </p>
+                        <p>
+                            <strong>R$ 132,16</strong>
+                        </p>
+                        <a href="carrinho.html" class="botaoCarrinho">ADICIONAR
+                            AO CARRINHO</a>
+                    </li>
+
+                    <li class="cardProduto">
+                        <a
+                            href="login.html"
+                            class="botaoFavoritoCards"
+                            aria-label="Adicionar aos favoritos"
+                            role="button">
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração" />
+                        </a>
+                        <img
+                            src="../imagens/imagem_caixote_areia_rosa.png"
+                            class="imagensCards"
+                            alt="Caixote de Areia para Gatos na Cor Lilás" />
+                        <h3>Caixote de Areia - Lilás</h3>
+                        <p aria-label="Avaliação: 5 de 5 estrelas">
+                            ★★★★★ <span>(529)</span>
+                        </p>
+                        <p>
+                            <strong>R$ 119,10</strong>
+                        </p>
+                        <a href="carrinho.html" class="botaoCarrinho">ADICIONAR
+                            AO CARRINHO</a>
+                    </li>
+
+                    <li class="cardProduto">
+                        <a
+                            href="login.html"
+                            class="botaoFavoritoCards"
+                            aria-label="Adicionar aos favoritos"
+                            role="button">
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração" />
+                        </a>
+                        <img
+                            src="../imagens/imagem_limpeza.png"
+                            class="imagensCards"
+                            alt="Eliminador de Odores e Manchas com Embalhagem Rosa." />
+                        <h3>Eliminador de Odores e Manchas - Enzimac</h3>
+                        <p aria-label="Avaliação: 5 de 5 estrelas">
+                            ★★★★★ <span>(124)</span>
+                        </p>
+                        <p>
+                            <strong>R$ 23,90</strong>
+                        </p>
+                        <a href="carrinho.html" class="botaoCarrinho">ADICIONAR
+                            AO CARRINHO</a>
+                    </li>
+
+                    <li class="cardProduto">
+                        <a
+                            href="login.html"
+                            class="botaoFavoritoCards"
+                            aria-label="Adicionar aos favoritos"
+                            role="button">
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração" />
+                        </a>
+                        <img
+                            src="../imagens/imagem_luva_azul.png"
+                            class="imagensCards"
+                            alt="Luva com Serdas de Silicone para Limpar Pelos de Gatos na Cor Azul." />
+                        <h3>Luva com Serdas de Silicone - Azul</h3>
+                        <p aria-label="Avaliação: 5 de 5 estrelas">
+                            ★★★★★ <span>(65)</span>
+                        </p>
+                        <p>
+                            <strong>R$ 69,22</strong>
+                        </p>
+                        <a href="carrinho.html" class="botaoCarrinho">ADICIONAR
+                            AO CARRINHO</a>
+                    </li>
+
+                    <li class="cardProduto">
+                        <a
+                            href="login.html"
+                            class="botaoFavoritoCards"
+                            aria-label="Adicionar aos favoritos"
+                            role="button">
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração" />
+                        </a>
+                        <img
+                            src="../imagens/imagem_shampoo.png"
+                            class="imagensCards"
+                            alt="Shampoo Hidrantante de Mingau de Aveia para Gatos" />
+                        <h3>Shampoo - Mingau de Aveia</h3>
+                        <p aria-label="Avaliação: 5 de 5 estrelas">
+                            ★★★★★ <span>(94)</span>
+                        </p>
+                        <p>
+                            <strong>R$ 31,44</strong>
+                        </p>
+                        <a href="carrinho.html" class="botaoCarrinho">ADICIONAR
+                            AO CARRINHO</a>
+                    </li>
+
+                    <li class="cardProduto">
+                        <a
+                            href="login.html"
+                            class="botaoFavoritoCards"
+                            aria-label="Adicionar aos favoritos"
+                            role="button">
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração" />
+                        </a>
+                        <img
+                            src="../imagens/imagem_lencoUmidecido.png"
+                            class="imagensCards"
+                            alt="Lenço Umedecido para Gatos com 100 unidades em Embalagem Ciano." />
+                        <h3>Lenço Umedecido - 100 unidades</h3>
+                        <p aria-label="Avaliação: 5 de 5 estrelas">
+                            ★★★★★ <span>(86)</span>
+                        </p>
+                        <p>
+                            <strong>R$ 25,11</strong>
+                        </p>
+                        <a href="carrinho.html" class="botaoCarrinho">ADICIONAR
+                            AO CARRINHO</a>
+                    </li>
+
+                    <li class="cardProduto">
+                        <a
+                            href="login.html"
+                            class="botaoFavoritoCards"
+                            aria-label="Adicionar aos favoritos"
+                            role="button">
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração" />
+                        </a>
+                        <img
+                            src="../imagens/imagem_rasqueadeira.png"
+                            class="imagensCards"
+                            alt="Rasqueadeira para Usar em Pelos de Gatos na Cor Preta e Destalhes da Cor Ciano." />
+                        <h3>Rasqueadeira para Pelos - Preta</h3>
+                        <p aria-label="Avaliação: 5 de 5 estrelas">
+                            ★★★★★ <span>(115)</span>
+                        </p>
+                        <p>
+                            <strong>R$ 26,91</strong>
+                        </p>
+                        <a href="carrinho.html" class="botaoCarrinho">ADICIONAR
+                            AO CARRINHO</a>
+                    </li>
+
+                    <li class="cardProduto">
+                        <a
+                            href="login.html"
+                            class="botaoFavoritoCards"
+                            aria-label="Adicionar aos favoritos"
+                            role="button">
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração" />
+                        </a>
+                        <img
+                            src="../imagens/imagem_paColetora.png"
+                            class="imagensCards"
+                            alt="Pá Coletora e Higiênica para Gatos na Cor Azul." />
+                        <h3>Pá Coletora e Higiênica - Azul</h3>
+                        <p aria-label="Avaliação: 5 de 5 estrelas">
+                            ★★★★★ <span>(94)</span>
+                        </p>
+                        <p>
+                            <strong>R$ 8,90</strong>
+                        </p>
+                        <a href="carrinho.html" class="botaoCarrinho">ADICIONAR
+                            AO CARRINHO</a>
+                    </li>
+
+                    <li class="cardProduto">
+                        <a
+                            href="login.html"
+                            class="botaoFavoritoCards"
+                            aria-label="Adicionar aos favoritos"
+                            role="button">
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração" />
+                        </a>
+                        <img
+                            src="../imagens/imagem_malaLimpeza.png"
+                            class="imagensCards"
+                            alt="Kit Mala de Limpeza e Higiene para Gatos na Cor Azul com Detalhes Amarelo." />
+                        <h3>Kit Mala de Limpeza e Higiene - Azul</h3>
+                        <p aria-label="Avaliação: 5 de 5 estrelas">
+                            ★★★★★ <span>(157)</span>
+                        </p>
+                        <p>
+                            <strong>R$ 49,90</strong>
+                        </p>
+                        <a href="carrinho.html" class="botaoCarrinho">ADICIONAR
+                            AO CARRINHO</a>
+                    </li>
+
+                    <li class="cardProduto">
+                        <a
+                            href="login.html"
+                            class="botaoFavoritoCards"
+                            aria-label="Adicionar aos favoritos"
+                            role="button">
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração" />
+                        </a>
+                        <img
+                            src="../imagens/imagem_escovaRasqueadeira.png"
+                            class="imagensCards"
+                            alt="Escova Rasqueadeira para Tirar Excesso de Pelo de Gato." />
+                        <h3>Escova Rasqueadeira para Pelos - Branco</h3>
+                        <p aria-label="Avaliação: 5 de 5 estrelas">
+                            ★★★★★ <span>(237)</span>
+                        </p>
+                        <p>
+                            <strong>R$ 149,92</strong>
+                        </p>
+                        <a href="carrinho.html" class="botaoCarrinho">ADICIONAR
+                            AO CARRINHO</a>
+                    </li>
+
+                    <li class="cardProduto">
+                        <a
+                            href="login.html"
+                            class="botaoFavoritoCards"
+                            aria-label="Adicionar aos favoritos"
+                            role="button">
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração" />
+                        </a>
+                        <img
+                            src="../imagens/imagem_perfumeColonia.png"
+                            class="imagensCards"
+                            alt="Colônia dePerfume para Gatos com Fragrância Floral em Embalhagem Roxa" />
+                        <h3>Colônia/Perfume de Fragrância Floral</h3>
+                        <p aria-label="Avaliação: 5 de 5 estrelas">
+                            ★★★★★ <span>(46)</span>
+                        </p>
+                        <p>
+                            <strong>R$ 72,87</strong>
+                        </p>
+                        <a href="carrinho.html" class="botaoCarrinho">ADICIONAR
+                            AO CARRINHO</a>
+                    </li>
+
+                    <li class="cardProduto">
+                        <a
+                            href="login.html"
+                            class="botaoFavoritoCards"
+                            aria-label="Adicionar aos favoritos"
+                            role="button">
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração" />
+                        </a>
+                        <img
+                            src="../imagens/imagem_banheiroPortatil.png"
+                            class="imagensCards"
+                            alt="Caixa Quadrada que Serve para ser Banheiro Portátil de Gatos, na Cor Cinza." />
+                        <h3>Banheiro Portátil - Cinza</h3>
+                        <p aria-label="Avaliação: 5 de 5 estrelas">
+                            ★★★★★ <span>(149)</span>
+                        </p>
+                        <p>
+                            <strong>R$ 189,10</strong>
+                        </p>
+                        <a href="carrinho.html" class="botaoCarrinho">ADICIONAR
+                            AO CARRINHO</a>
+                    </li>
+                </ul>
+            </article>
+
+            <section id="vantagens">
+                <ul id="listaVantagens">
+                    <li>
+                        <img
+                            src="../imagens/icone_gato.png"
+                            alt="Ícone de um gato" />
+                        <p>
+                            <strong>Produtos pensados<br />milimetricamente para
+                                felinos</strong>
+                        </p>
+                    </li>
+
+                    <li>
+                        <img
+                            src="../imagens/icone_carteira.png"
+                            alt="Ícone carteira" />
+                        <p>
+                            <strong>Parcelamento em até 4x<br />sem juros com
+                                parcela
+                                mínima de R$ 80</strong>
+                        </p>
+                    </li>
+
+                    <li>
+                        <img
+                            src="../imagens/icone_seguranca.png"
+                            alt="Ícone segurança" />
+                        <p>
+                            <strong>Ambiente 100% seguro<br />para suas
+                                compras</strong>
+                        </p>
+                    </li>
+
+                    <li>
+                        <img
+                            src="../imagens/icone_caminhao.png"
+                            alt="Ícone caminhão" />
+                        <p>
+                            <strong>Frete grátis para todo o<br />Brasil nas
+                                compras
+                                acima<br />de R$ 299</strong>
+                        </p>
+                    </li>
+                </ul>
+            </section>
+        </main>
+
+        <footer id="rodape">
+            <img
+                src="../imagens/imagem_logo.png"
+                alt="Logo Miaunarquia"
+                class="logo" />
+
+            <nav id="informacoes" aria-label="Informações da Plataforma">
+                <h2>Informações</h2>
+                <ul>
+                    <li><a href="sobreNos.html">Sobre Nós</a></li>
+                    <li><a href="sobreNos.html#termosECondicoes">Termos e
+                            Condições de Uso</a></li>
+                    <li><a href="sobreNos.html#politicasPrivacidade">Política de
+                            Privacidade</a></li>
+                    <li><a href="   ">FAQ</a></li>
+                </ul>
+            </nav>
+
+            <address id="contato">
+                <h2>Contato</h2>
+                <p>
+                    <a
+                        href="mailto:contato@miauanarquia.com.br">contato@miauanarquia.com.br</a>
+                </p>
+            </address>
+
+            <nav id="redes" aria-label="Nos Siga">
+                <h2>Nos siga</h2>
+                <ul id="listaRedesSociais">
+                    <li>
+                        <a href="#"><img
+                                src="../imagens/icone_facebook.png"
+                                class="iconesRedesSociais"
+                                alt="Ícone do Facebook" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img
+                                src="../imagens/icone_instagram.png"
+                                class="iconesRedesSociais"
+                                alt="Ícone do Instagram" /></a>
+                    </li>
+                    <li>
+                        <a href="#"><img
+                                src="../imagens/icone_linkedin.png"
+                                class="iconesRedesSociais"
+                                alt="Ícone do LinkedIn" /></a>
+                    </li>
+                    <li>
+                        <a href="#"><img
+                                src="../imagens/icone_discord.png"
+                                class="iconesRedesSociais"
+                                alt="Ícone do Discord" /></a>
+                    </li>
+                </ul>
+            </nav>
+
+            <section id="pagamentos">
+                <h2>Formas de pagamento:</h2>
+                <ul>
+                    <li>
+                        <img
+                            src="../imagens/icone_american_express.png"
+                            alt="Ícone do American Express" />
+                    </li>
+                    <li>
+                        <img
+                            src="../imagens/icone_visa.png"
+                            alt="Ícone do Visa" />
+                    </li>
+                    <li>
+                        <img
+                            src="../imagens/icone_mastercard.png"
+                            alt="Ícone do Mastercard" />
+                    </li>
+                    <li>
+                        <img
+                            src="../imagens/icone_discover.png"
+                            alt="Ícone do Discover" />
+                    </li>
+                    <li>
+                        <img
+                            src="../imagens/icone_elo.png"
+                            alt="Ícone do Elo" />
+                    </li>
+                    <li>
+                        <img
+                            src="../imagens/icone_boleto.png"
+                            alt="Ícone do Boleto bancário" />
+                    </li>
+                    <li>
+                        <img
+                            src="../imagens/icone_pix.png"
+                            alt="Ícone do Pix" />
+                    </li>
+                </ul>
+                <p class="seguro">
+                    <img
+                        src="../imagens/icone_seguranca_footer.png"
+                        alt="Ícone que simboliza Segurança" />
+                    PAGAMENTO 100% SEGURO
+                </p>
+                <ul id="copyright">
+                    <li id="copyrightTexto">
+                        &copy; 2025 Miaunarquia. Todos os direitos reservados.
+                    </li>
+                </ul>
+            </section>
+        </footer>
+    </body>
+</html>
