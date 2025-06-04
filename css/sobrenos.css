@@ -1,0 +1,79 @@
+#mainSobreNos {
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+#tituloSobreNos {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+#secaoHistoria .conteudoHistoria {
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: justify;
+  font-size: 1.1rem;
+  color: #413478;
+}
+
+#tituloHistoria {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #4e3b8d;
+  text-align: center;
+}
+
+/* Missão, Visão e Valores lado a lado */
+#secaoMvv {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9rem;
+  justify-content: center;
+  align-items: stretch; /* força altura igual */
+}
+
+.blocoMvv {
+  flex: 1 1 300px;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+.blocoMvv figure {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* ocupa toda a altura possível */
+}
+
+
+.blocoMvv img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.blocoMvv figcaption {
+  padding: 1rem;
+}
+
+.tituloMvv {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #4e3b8d;
+  text-align: center;
+}
+
+.blocoMvv p {
+  font-size: 1rem;
+  color: #413478;
+  text-align: justify;
+}

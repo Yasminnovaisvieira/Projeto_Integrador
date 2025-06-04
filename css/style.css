@@ -1146,8 +1146,9 @@ body {
 #comedourosSelecionado,
 #higieneSelecionado,
 #petiscosSelecionado,
-#roupasSelecionado {
-    background-color: #48398f;
+#roupasSelecionado,
+#SobreNosSelecionado {
+    color: #48398f;
 }
 
 .imagensCategoriasCatalogo {

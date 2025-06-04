@@ -1,184 +1,284 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Sobre Nós | Miaunarquia</title>
-<style>
-  /* Reset básico */
-  *, *::before, *::after {
-    box-sizing: border-box;
-  }
-  body, h1, h2, h3, p, header, main, section, footer, figure {
-    margin: 0;
-    padding: 0;
-    font-weight: normal;
-  }
-  body {
-    font-family: 'Poppins', sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #f5f1fb;
-    color: #3e2c72;
-    line-height: 1.6;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  /* Cabeçalho */
-  header {
-    width: 100%;
-    background: linear-gradient(135deg, #7e57c2, #512da8);
-    color: white;
-    padding: 3rem 1.5rem;
-    text-align: center;
-    box-shadow: 0 6px 20px rgba(125, 81, 176, 0.6);
-    user-select: none;
-  }
-  header .logo {
-    font-size: 2.8rem;
-    font-weight: 800;
-    letter-spacing: 4px;
-    margin-bottom: 0.5rem;
-    text-shadow: 0 2px 8px rgba(0,0,0,0.3);
-  }
-  header p {
-    font-size: 1.4rem;
-    font-style: italic;
-    opacity: 0.85;
-    max-width: 600px;
-    margin: 0 auto;
-    user-select: none;
-  }
-  main {
-    max-width: 1100px;
-    width: 100%;
-    padding: 3rem 2rem;
-    background: white;
-    margin: -3rem 1rem 3rem;
-    border-radius: 20px;
-    box-shadow: 0 12px 36px rgba(80, 63, 205, 0.15);
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-  }
-  h1, h2 {
-    color: #5e3aab;
-    user-select: none;
-  }
-  h1 {
-    font-size: 3rem;
-    text-align: center;
-    margin-bottom: 1rem;
-  }
-  h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  section {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-  }
-  section:nth-child(even) {
-    flex-direction: row-reverse;
-  }
-  section figure {
-    flex: 1 1 300px;
-    max-width: 400px;
-    border-radius: 18px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(125,81,176,0.3);
-    transition: transform 0.3s ease;
-    cursor: default;
-  }
-  section figure:hover {
-    transform: scale(1.05);
-  }
-  section img {
-    width: 100%;
-    display: block;
-    object-fit: cover;
-    aspect-ratio: 4 / 3;
-  }
-  section div.text-content {
-    flex: 1 1 350px;
-  }
-  section div.text-content p {
-    font-size: 1.1rem;
-    color: #413478;
-    text-align: justify;
-  }
-  footer {
-    width: 100%;
-    background: #512da8;
-    color: white;
-    text-align: center;
-    padding: 1.25rem 1rem;
-    user-select: none;
-    font-size: 0.95rem;
-    box-shadow: inset 0 2px 8px rgba(0,0,0,0.2);
-  }
-  @media (max-width: 900px) {
-    main {
-      padding: 2rem 1.5rem;
-      margin: 2rem 1rem 2rem;
-    }
-    section {
-      flex-direction: column !important;
-      gap: 2rem;
-    }
-    section figure, section div.text-content {
-      max-width: 100%;
-      flex: 1 1 100%;
-    }
-  }
-</style>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet">
-</head>
-<body>
-<header>
-  <div class="logo">Miaunarquia</div>
-  <p>Seu reino, seu gato. Estilo e conforto para felinos exigentes.</p>
-</header>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre Nós | Miaunarquia</title>
+    <link rel="stylesheet" href="../css/sobrenos.css">
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body>
+    <section
+      class="avisoCarrossel"
+      aria-label="Carrossel de avisos e promoções da plataforma">
+      <button id="setaEsquerdaAviso" class="setasAviso"
+        aria-label="Aviso anterior">
+        ❮
+      </button>
+      <ul class="mensagens">
+        <li class="mensagem">
+          NOVO POR AQUI? USE O CUPOM 🐾PRIMEIRACOMPRA🐾
+        </li>
+        <li class="mensagem">
+          FRETE GRÁTIS ACIMA DE R$199 PARA TODO O BRASIL
+        </li>
+        <li class="mensagem">CADASTRE-SE E GANHE 10% DE DESCONTO</li>
+      </ul>
+      <button id="setaDireitaAviso" class="setasAviso"
+        aria-label="Aviso seguinte">
+        ❯
+      </button>
+    </section>
+    <header class="headerSite">
+      <h1 class="logoSite">
+        <a href="index.html" aria-label="Página inicial - Miaunarquia">
+          <img
+            src="../imagens/imagem_logo.png"
+            alt="Logo de um Gato Preto com Coroa"
+            class="logoImagem" />
+          <span class="nomeLogo">Miaunarquia</span>
+        </a>
+      </h1>
 
-<main role="main" aria-labelledby="sobre-nos">
-  <h1 id="sobre-nos">Sobre Nós</h1>
+      <nav class="navMenu" aria-label="Menu Principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="sobreNos.html#sobreNos" id="SobreNosSelecionado">Sobre Nós</a></li>
+          <li><a href="sobreNos.html#contato">Contato</a></li>
+        </ul>
+      </nav>
 
-  <section aria-labelledby="nossa-missao">
-    <figure>
-      <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=800&q=80" alt="Gato relaxando em arranhador moderno" />
-    </figure>
-    <div class="text-content">
-      <h2 id="nossa-missao">Nossa Missão</h2>
-      <p>Nossa missão é oferecer produtos premium que garantam conforto, estilo e diversão para o seu gato, ao mesmo tempo que proporcionam praticidade e beleza para o seu lar. Valorizamos a qualidade, sustentabilidade e a felicidade dos nossos clientes e seus felinos.</p>
+      <nav class="navUsuario" aria-label="Menu do Usuário">
+        <ul>
+          <li>
+            <a href="#" aria-label="Pesquisar">
+              <figure class="iconesNav">
+                <img
+                  src="../imagens/icone_pesquisar.png"
+                  alt="Ícone de Lupa" />
+                <figcaption class="legendasIcones">
+                  Pesquisar
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+
+          <li>
+            <a href="login.html" aria-label="Favoritos">
+              <figure class="iconesNav">
+                <img
+                  src="../imagens/icone_favoritos.png"
+                  alt="Ícone de Coração"
+                  aria-hidden="true" />
+                <figcaption class="legendasIcones">
+                  Favoritos
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+
+          <li>
+            <a href="login.html" aria-label="Perfil">
+              <figure class="iconesNav">
+                <img
+                  src="../imagens/icone_usuario.png"
+                  alt="Ícone de Perfil" />
+                <figcaption class="legendasIcones">
+                  Entrar
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+
+          <li>
+            <a href="carrinho.html" aria-label="Carrinho">
+              <figure class="iconesNav">
+                <img
+                  src="../imagens/icone_carrinho.png"
+                  alt="Ícone de Carrinho" />
+                <figcaption class="legendasIcones">
+                  Carrinho
+                </figcaption>
+              </figure>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="mainSobreNos">
+  <h2 id="tituloSobreNos">Sobre Nós</h2>
+
+  <!-- Seção: História -->
+  <section id="secaoHistoria" aria-labelledby="tituloHistoria">
+    <div class="conteudoHistoria">
+      <h3 id="tituloHistoria">Nossa História</h3>
+      <p>
+        A ideia do nosso e-commerce surgiu da paixão por gatos e da dificuldade
+        de encontrar produtos que unissem qualidade, estética e bem-estar para
+        os felinos. Desde o início, buscamos soluções que agradem tanto os
+        bichanos quanto seus tutores, valorizando cada detalhe do dia a dia.
+      </p>
     </div>
   </section>
 
-  <section aria-labelledby="nossa-visao">
-    <figure>
-      <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=800&q=80" alt="Gato curioso explorando" />
-    </figure>
-    <div class="text-content">
-      <h2 id="nossa-visao">Nossa Visão</h2>
-      <p>Visamos ser a principal referência nacional em produtos para gatos, reconhecida pela inovação, sustentabilidade e compromisso com o bem-estar animal. Queremos criar uma comunidade apaixonada e consciente, onde cada gato viva em um ambiente feliz e saudável.</p>
-    </div>
-  </section>
+  <!-- Seção: Missão, Visão e Valores -->
+  <section id="secaoMvv" aria-label="Missão, Visão e Valores">
+    <article class="blocoMvv">
+      <figure>
+        <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=800&q=80" alt="Gato relaxando em arranhador moderno" />
+        <figcaption>
+          <h3 class="tituloMvv">Nossa Missão</h3>
+          <p>
+            Oferecer produtos premium que garantam conforto, estilo e diversão
+            para o seu gato, com praticidade e beleza para o seu lar. Valorizamos
+            qualidade, sustentabilidade e felicidade dos felinos e seus tutores.
+          </p>
+        </figcaption>
+      </figure>
+    </article>
 
-  <section aria-labelledby="nossos-valores">
-    <figure>
-      <img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?auto=format&fit=crop&w=800&q=80" alt="Gato feliz olhando para câmera" />
-    </figure>
-    <div class="text-content">
-      <h2 id="nossos-valores">Nossos Valores</h2>
-      <p>Paixão pelos gatos, ética, qualidade, inovação, respeito ao meio ambiente e atendimento personalizado. Trabalhamos diariamente para garantir a satisfação dos nossos clientes e o bem-estar dos seus felinos.</p>
-    </div>
+    <article class="blocoMvv">
+      <figure>
+        <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=800&q=80" alt="Gato curioso explorando" />
+        <figcaption>
+          <h3 class="tituloMvv">Nossa Visão</h3>
+          <p>
+            Ser referência nacional em produtos para gatos, com inovação,
+            sustentabilidade e compromisso com o bem-estar animal, criando uma
+            comunidade apaixonada e consciente.
+          </p>
+        </figcaption>
+      </figure>
+    </article>
+
+    <article class="blocoMvv">
+      <figure>
+        <img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?auto=format&fit=crop&w=800&q=80" alt="Gato feliz olhando para câmera" />
+        <figcaption>
+          <h3 class="tituloMvv">Nossos Valores</h3>
+          <p>
+            Paixão por gatos, ética, qualidade, inovação, respeito ao meio
+            ambiente e atendimento personalizado. Foco na satisfação dos clientes
+            e bem-estar dos felinos.
+          </p>
+        </figcaption>
+      </figure>
+    </article>
   </section>
 </main>
+<footer id="rodape">
+                <img
+                    src="../imagens/imagem_logo.png"
+                    alt="Logo Miaunarquia"
+                    class="logo" />
 
-<footer>
-  &copy; 2024 Miaunarquia - Todos os direitos reservados.
-</footer>
-</body>
+                <nav id="informacoes" aria-label="Informações da Plataforma">
+                    <h2>Informações</h2>
+                    <ul>
+                        <li><a href="sobreNos.html">Sobre Nós</a></li>
+                        <li><a href="sobreNos.html#termosECondicoes">Termos e
+                                Condições de Uso</a></li>
+                        <li><a
+                                href="sobreNos.html#politicasPrivacidade">Política
+                                de
+                                Privacidade</a></li>
+                        <li><a href="   ">FAQ</a></li>
+                    </ul>
+                </nav>
+
+                <address id="contato">
+                    <h2>Contato</h2>
+                    <p>
+                        <a
+                            href="mailto:contato@miauanarquia.com.br">contato@miauanarquia.com.br</a>
+                    </p>
+                </address>
+
+                <nav id="redes" aria-label="Nos Siga">
+                    <h2>Nos siga</h2>
+                    <ul id="listaRedesSociais">
+                        <li>
+                            <a href="#"><img
+                                    src="../imagens/icone_facebook.png"
+                                    class="iconesRedesSociais"
+                                    alt="Ícone do Facebook" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"><img
+                                    src="../imagens/icone_instagram.png"
+                                    class="iconesRedesSociais"
+                                    alt="Ícone do Instagram" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img
+                                    src="../imagens/icone_linkedin.png"
+                                    class="iconesRedesSociais"
+                                    alt="Ícone do LinkedIn" /></a>
+                        </li>
+                        <li>
+                            <a href="#"><img
+                                    src="../imagens/icone_discord.png"
+                                    class="iconesRedesSociais"
+                                    alt="Ícone do Discord" /></a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <section id="pagamentos">
+                    <h2>Formas de pagamento:</h2>
+                    <ul>
+                        <li>
+                            <img
+                                src="../imagens/icone_american_express.png"
+                                alt="Ícone do American Express" />
+                        </li>
+                        <li>
+                            <img
+                                src="../imagens/icone_visa.png"
+                                alt="Ícone do Visa" />
+                        </li>
+                        <li>
+                            <img
+                                src="../imagens/icone_mastercard.png"
+                                alt="Ícone do Mastercard" />
+                        </li>
+                        <li>
+                            <img
+                                src="../imagens/icone_discover.png"
+                                alt="Ícone do Discover" />
+                        </li>
+                        <li>
+                            <img
+                                src="../imagens/icone_elo.png"
+                                alt="Ícone do Elo" />
+                        </li>
+                        <li>
+                            <img
+                                src="../imagens/icone_boleto.png"
+                                alt="Ícone do Boleto bancário" />
+                        </li>
+                        <li>
+                            <img
+                                src="../imagens/icone_pix.png"
+                                alt="Ícone do Pix" />
+                        </li>
+                    </ul>
+                    <p class="seguro">
+                        <img
+                            src="../imagens/icone_seguranca_footer.png"
+                            alt="Ícone que simboliza Segurança" />
+                        PAGAMENTO 100% SEGURO
+                    </p>
+                    <ul id="copyright">
+                        <li id="copyrightTexto">
+                            &copy; 2025 Miaunarquia. Todos os direitos
+                            reservados.
+                        </li>
+                    </ul>
+                </section>
+            </footer>
+  </body>
 </html>
-
