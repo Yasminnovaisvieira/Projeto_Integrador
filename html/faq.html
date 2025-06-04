@@ -1,111 +1,188 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Catálogo | Miaunarquia</title>
-        <link rel="stylesheet" href="../css/style.css" />
-    </head>
-    <body>
-        <section
-            class="avisoCarrossel"
-            aria-label="Carrossel de avisos e promoções da plataforma">
-            <button id="setaEsquerdaAviso" class="setasAviso"
-                aria-label="Aviso anterior">
-                ❮
-            </button>
-            <ul class="mensagens">
-                <li class="mensagem">
-                    NOVO POR AQUI? USE O CUPOM 🐾PRIMEIRACOMPRA🐾
-                </li>
-                <li class="mensagem">
-                    FRETE GRÁTIS ACIMA DE R$199 PARA TODO O BRASIL
-                </li>
-                <li class="mensagem">CADASTRE-SE E GANHE 10% DE DESCONTO</li>
-            </ul>
-            <button id="setaDireitaAviso" class="setasAviso"
-                aria-label="Aviso seguinte">
-                ❯
-            </button>
-        </section>
-        <header class="headerSite">
-            <h1 class="logoSite">
-                <a href="index.html" aria-label="Página inicial - Miaunarquia">
-                    <img
-                        src="../imagens/imagem_logo.png"
-                        alt="Logo de um Gato Preto com Coroa"
-                        class="logoImagem" />
-                    <span class="nomeLogo">Miaunarquia</span>
-                </a>
-            </h1>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>FAQ | Miaunarquia</title>
+<style>
+  /* Reset básico */
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  body, h1, h2, h3, p, header, main, section, footer, button {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  body {
+    font-family: 'Poppins', sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f1fb;
+    color: #3e2c72;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* Cabeçalho */
+  header {
+    width: 100%;
+    background: linear-gradient(135deg, #7e57c2, #512da8);
+    color: white;
+    padding: 3rem 1.5rem;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(125, 81, 176, 0.6);
+    user-select: none;
+  }
+  header .logo {
+    font-size: 2.8rem;
+    font-weight: 800;
+    letter-spacing: 4px;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  }
+  main {
+    max-width: 900px;
+    width: 100%;
+    padding: 3rem 2rem;
+    background: white;
+    margin: -3rem 1rem 3rem;
+    border-radius: 20px;
+    box-shadow: 0 12px 36px rgba(80, 63, 205, 0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  h1 {
+    color: #5e3aab;
+    user-select: none;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  section {
+    border-left: 5px solid #7e57c2;
+    padding-left: 1rem;
+  }
+  h2 {
+    font-size: 1.8rem;
+    color: #5e3aab;
+    margin-bottom: 0.7rem;
+    user-select: none;
+  }
+  button.accordion {
+    background-color: #7e57c2;
+    color: white;
+    cursor: pointer;
+    padding: 1rem 1.5rem;
+    width: 100%;
+    text-align: left;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(125, 81, 176, 0.4);
+    transition: background-color 0.3s ease;
+    user-select: none;
+  }
+  button.accordion:hover {
+    background-color: #512da8;
+  }
+  button.accordion.active {
+    background-color: #512da8;
+  }
+  div.panel {
+    background: #ede9fb;
+    padding: 1rem 1.5rem;
+    border-radius: 0 0 12px 12px;
+    font-size: 1rem;
+    color: #3e2c72;
+    display: none;
+    user-select: text;
+  }
+  div.panel.show {
+    display: block;
+  }
+  footer {
+    width: 100%;
+    background: #512da8;
+    color: white;
+    text-align: center;
+    padding: 1.25rem 1rem;
+    user-select: none;
+    font-size: 0.95rem;
+    box-shadow: inset 0 2px 8px rgba(0,0,0,0.2);
+  }
+  @media (max-width: 600px) {
+    main {
+      padding: 2rem 1.5rem;
+      margin: 2rem 1rem;
+    }
+    h1 {
+      font-size: 2rem;
+    }
+    h2 {
+      font-size: 1.4rem;
+    }
+  }
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+<header>
+  <div class="logo">Miaunarquia</div>
+</header>
 
-            <nav class="navMenu" aria-label="Menu Principal">
-                <ul>
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="catalogo.html">Catálogo</a></li>
-                    <li><a href="sobreNos.html#sobreNos">Sobre Nós</a></li>
-                    <li><a href="sobreNos.html#contato">Contato</a></li>
-                </ul>
-            </nav>
+<main role="main" aria-labelledby="faq-title">
+  <h1 id="faq-title">Perguntas Frequentes (FAQ)</h1>
 
-            <nav class="navUsuario" aria-label="Menu do Usuário">
-                <ul>
-                    <li>
-                        <a href="#" aria-label="Pesquisar">
-                            <figure class="iconesNav">
-                                <img
-                                    src="../imagens/icone_pesquisar.png"
-                                    alt="Ícone de Lupa" />
-                                <figcaption class="legendasIcones">
-                                    Pesquisar
-                                </figcaption>
-                            </figure>
-                        </a>
-                    </li>
+  <section>
+    <h2>Sobre Pedidos & Entregas</h2>
+    <button class="accordion" aria-expanded="false" aria-controls="panel1" id="accordion1">Como faço para acompanhar meu pedido?</button>
+    <div class="panel" id="panel1" role="region" aria-labelledby="accordion1">
+      Você pode acompanhar seu pedido acessando sua conta no Miaunarquia e clicando em "Meus Pedidos". Lá, você encontrará o status atualizado em tempo real.
+    </div>
 
-                    <li>
-                        <a href="login.html" aria-label="Favoritos">
-                            <figure class="iconesNav">
-                                <img
-                                    src="../imagens/icone_favoritos.png"
-                                    alt="Ícone de Coração"
-                                    aria-hidden="true" />
-                                <figcaption class="legendasIcones">
-                                    Favoritos
-                                </figcaption>
-                            </figure>
-                        </a>
-                    </li>
+    <button class="accordion" aria-expanded="false" aria-controls="panel2" id="accordion2">Qual o prazo de entrega?</button>
+    <div class="panel" id="panel2" role="region" aria-labelledby="accordion2">
+      O prazo varia conforme sua região, mas geralmente a entrega ocorre entre 3 a 7 dias úteis.
+    </div>
 
-                    <li>
-                        <a href="login.html" aria-label="Perfil">
-                            <figure class="iconesNav">
-                                <img
-                                    src="../imagens/icone_usuario.png"
-                                    alt="Ícone de Perfil" />
-                                <figcaption class="legendasIcones">
-                                    Entrar
-                                </figcaption>
-                            </figure>
-                        </a>
-                    </li>
+    <button class="accordion" aria-expanded="false" aria-controls="panel3" id="accordion3">Posso alterar o endereço de entrega após o pedido?</button>
+    <div class="panel" id="panel3" role="region" aria-labelledby="accordion3">
+      Sim, desde que entre em contato com nosso suporte antes do envio do pedido.
+    </div>
+  </section>
 
-                    <li>
-                        <a href="carrinho.html" aria-label="Carrinho">
-                            <figure class="iconesNav">
-                                <img
-                                    src="../imagens/icone_carrinho.png"
-                                    alt="Ícone de Carrinho" />
-                                <figcaption class="legendasIcones">
-                                    Carrinho
-                                </figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-        </main>
-    </body>
+  <section>
+    <h2>Sobre Produtos</h2>
+    <button class="accordion" aria-expanded="false" aria-controls="panel4" id="accordion4">Os produtos Miaunarquia são seguros para gatos?</button>
+    <div class="panel" id="panel4" role="region" aria-labelledby="accordion4">
+      Sim! Todos os nossos produtos são testados e feitos com materiais seguros e de alta qualidade, especialmente para o conforto e segurança dos felinos.
+    </div>
+
+    <button class="accordion" aria-expanded="false" aria-controls="panel5" id="accordion5">Há garantia nos produtos?</button>
+    <div class="panel" id="panel5" role="region" aria-labelledby="accordion5">
+      Garantimos 90 dias de garantia para defeitos de fabricação em todos os produtos.
+    </div>
+  </section>
+
+  <section>
+    <h2>Sobre Pagamento</h2>
+    <button class="accordion" aria-expanded="false" aria-controls="panel6" id="accordion6">Quais formas de pagamento aceitam?</button>
+    <div class="panel" id="panel6" role="region" aria-labelledby="accordion6">
+      Aceitamos cartões de crédito, boleto bancário e Pix.
+    </div>
+
+    <button class="accordion" aria-expanded="false" aria-controls="panel7" id="accordion7">O pagamento é seguro?</button>
+    <div class="panel" id="panel7" role="region" aria-labelledby="accordion7">
+      Sim, utilizamos tecnologias avançadas de criptografia para garantir a segurança de suas informações.
+    </div>
+  </section>
+</main>
+
+<footer>
+  &copy; 2024 Miaunarquia - Todos os direitos reservados.
+</footer>
+</body>
 </html>

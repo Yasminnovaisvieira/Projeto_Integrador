@@ -1,674 +1,184 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Nossa História - Sobre Nós</title>
-    <style>
-        /* Reset básico */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
-            color: #374151;
-            background: #fff;
-        }
-
-        /* Hero Section */
-        .hero {
-            min-height: 100vh;
-            background: linear-gradient(135deg, #fdf2f8 0%, #fef3c7 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            text-align: center;
-            padding: 0 1.5rem;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: rgba(0, 0, 0, 0.1);
-            pointer-events: none;
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 10;
-            max-width: 64rem;
-        }
-
-        .hero h1 {
-            font-size: 4rem;
-            font-weight: 300;
-            color: #111827;
-            margin-bottom: 1.5rem;
-            letter-spacing: 0.05em;
-        }
-
-        .hero p {
-            font-size: 1.25rem;
-            color: #374151;
-            margin-bottom: 2rem;
-            font-weight: 300;
-            line-height: 1.75;
-        }
-
-        .hero-divider {
-            width: 6rem;
-            height: 2px;
-            background: #fb7185;
-            margin: 0 auto;
-        }
-
-        .scroll-indicator {
-            position: absolute;
-            bottom: 2.5rem;
-            left: 50%;
-            transform: translateX(-50%);
-            animation: bounce 2.5s infinite;
-        }
-
-        .scroll-mouse {
-            width: 1.5rem;
-            height: 2.5rem;
-            border: 2px solid #9ca3af;
-            border-radius: 999px;
-            display: flex;
-            justify-content: center;
-        }
-
-        .scroll-wheel {
-            width: 4px;
-            height: 12px;
-            background: #9ca3af;
-            border-radius: 999px;
-            margin-top: 8px;
-            animation: pulse 2.5s infinite;
-        }
-
-        /* Story Section */
-        .story {
-            padding: 5rem 1.5rem;
-            background: #fff;
-        }
-
-        .container {
-            max-width: 80rem;
-            margin: 0 auto;
-        }
-
-        .story-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            align-items: center;
-        }
-
-        .story-content {
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-        }
-
-        .section-label {
-            color: #f43f5e;
-            font-weight: 500;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            font-size: 0.875rem;
-        }
-
-        .story h2 {
-            font-size: 3rem;
-            font-weight: 300;
-            color: #111827;
-            line-height: 1.1;
-        }
-
-        .story h2 .highlight {
-            color: #f43f5e;
-        }
-
-        .story p {
-            font-size: 1.125rem;
-            color: #4b5563;
-            line-height: 1.75;
-        }
-
-        .stats {
-            display: flex;
-            gap: 2rem;
-            margin-top: 1rem;
-        }
-
-        .stat {
-            text-align: center;
-        }
-
-        .stat-number {
-            font-size: 1.875rem;
-            font-weight: 300;
-            color: #f43f5e;
-        }
-
-        .stat-label {
-            font-size: 0.75rem;
-            color: #6b7280;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-        }
-
-        .story-image {
-            position: relative;
-            border-radius: 1rem;
-            overflow: hidden;
-        }
-
-        .image-container {
-            aspect-ratio: 1 / 1;
-            background: linear-gradient(135deg, #fce7f3 0%, #fef3c7 100%);
-            border-radius: 1rem;
-            overflow: hidden;
-        }
-
-        .story-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.7s ease;
-            display: block;
-        }
-
-        .story-image:hover img {
-            transform: scale(1.05);
-        }
-
-        .floating-icon {
-            position: absolute;
-            bottom: -1.5rem;
-            right: -1.5rem;
-            width: 8rem;
-            height: 8rem;
-            background: #fff;
-            border-radius: 50%;
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2rem;
-            user-select: none;
-        }
-
-        /* Mission Section */
-        .mission {
-            padding: 5rem 1.5rem;
-            background: linear-gradient(90deg, #fdf2f8 0%, #fff 50%, #fef3c7 100%);
-        }
-
-        .mission-container {
-            max-width: 72rem;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .mission-container .section-label {
-            display: block;
-            margin-bottom: 0.5rem;
-        }
-
-        .mission h2 {
-            font-size: 3rem;
-            font-weight: 300;
-            color: #111827;
-            margin-bottom: 4rem;
-        }
-
-        .mission-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 3rem;
-        }
-
-        .mission-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 1rem;
-        }
-
-        .mission-icon {
-            width: 5rem;
-            height: 5rem;
-            margin-bottom: 1.5rem;
-            background: #fce7f3;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.875rem;
-            transition: background-color 0.3s ease;
-            user-select: none;
-        }
-
-        .mission-item:nth-child(2) .mission-icon {
-            background: #fef3c7;
-        }
-
-        .mission-item:hover .mission-icon {
-            background: #fda4af;
-        }
-
-        .mission-item:nth-child(2):hover .mission-icon {
-            background: #fbbf24;
-        }
-
-        .mission h3 {
-            font-size: 1.5rem;
-            font-weight: 300;
-            color: #111827;
-            margin-bottom: 1rem;
-        }
-
-        .mission p {
-            color: #4b5563;
-            line-height: 1.75;
-        }
-
-        /* Values Section */
-        .values {
-            padding: 5rem 1.5rem;
-            background: #fff;
-        }
-
-        .values > div:first-child {
-            text-align: center;
-            margin-bottom: 4rem;
-        }
-
-        .values h2 {
-            font-size: 3rem;
-            font-weight: 300;
-            color: #111827;
-            margin-top: 1rem;
-            margin-bottom: 0;
-        }
-
-        .values-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 2rem;
-            max-width: 80rem;
-            margin: 0 auto;
-        }
-
-        .value-card {
-            text-align: center;
-            padding: 2rem;
-            border-radius: 1rem;
-            transition: all 0.3s ease;
-            cursor: default;
-            user-select: none;
-        }
-
-        .value-card:hover {
-            background: #fdf2f8;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-        }
-
-        .value-card .icon {
-            font-size: 2.5rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .value-card h3 {
-            font-size: 1.25rem;
-            font-weight: 500;
-            color: #111827;
-            margin-bottom: 1rem;
-            transition: color 0.3s ease;
-        }
-
-        .value-card:hover h3 {
-            color: #dc2626;
-        }
-
-        .value-card p {
-            color: #4b5563;
-            line-height: 1.75;
-        }
-
-        /* Team Section */
-        .team {
-            padding: 5rem 1.5rem;
-            background: linear-gradient(135deg, #f9fafb 0%, #fdf2f8 100%);
-        }
-
-        .team > div:first-child {
-            text-align: center;
-            margin-bottom: 4rem;
-        }
-
-        .team h2 {
-            font-size: 3rem;
-            font-weight: 300;
-            color: #111827;
-            margin-top: 1rem;
-            margin-bottom: 0;
-        }
-
-        .team-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 3rem;
-            max-width: 80rem;
-            margin: 0 auto;
-        }
-
-        .team-member {
-            text-align: center;
-            cursor: default;
-            user-select: none;
-        }
-
-        .member-image {
-            position: relative;
-            margin-bottom: 1.5rem;
-            overflow: hidden;
-            border-radius: 1rem;
-        }
-
-        .member-image img {
-            width: 100%;
-            aspect-ratio: 1 / 1;
-            object-fit: cover;
-            transition: transform 0.5s ease;
-            display: block;
-        }
-
-        .team-member:hover .member-image img {
-            transform: scale(1.05);
-        }
-
-        .member-image::after {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(to top, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
-            opacity: 0;
-            transition: opacity 0.3s ease;
-            pointer-events: none;
-        }
-
-        .team-member:hover .member-image::after {
-            opacity: 1;
-        }
-
-        .member-name {
-            font-size: 1.5rem;
-            font-weight: 300;
-            color: #111827;
-            margin-bottom: 0.5rem;
-        }
-
-        .member-role {
-            color: #f43f5e;
-            font-weight: 500;
-            margin-bottom: 1rem;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            font-size: 0.875rem;
-        }
-
-        .member-description {
-            color: #4b5563;
-            line-height: 1.75;
-        }
-
-        .team-cta {
-            text-align: center;
-            margin-top: 4rem;
-        }
-
-        .cta-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 1rem;
-            background: #fff;
-            padding: 1rem 2rem;
-            border-radius: 999px;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-            user-select: none;
-            cursor: pointer;
-        }
-
-        .cta-text {
-            color: #4b5563;
-            font-weight: 500;
-            font-size: 1rem;
-        }
-
-        .pulse-dot {
-            width: 0.5rem;
-            height: 0.5rem;
-            background: #fb7185;
-            border-radius: 50%;
-            animation: pulse 2.5s infinite;
-        }
-
-        /* Animations */
-        @keyframes bounce {
-            0%, 20%, 53%, 80%, 100% {
-                transform: translateX(-50%) translateY(0);
-            }
-            40%, 43% {
-                transform: translateX(-50%) translateY(-10px);
-            }
-            70% {
-                transform: translateX(-50%) translateY(-5px);
-            }
-            90% {
-                transform: translateX(-50%) translateY(-2px);
-            }
-        }
-
-        @keyframes pulse {
-            0%, 100% {
-                opacity: 1;
-                transform: scale(1);
-            }
-            50% {
-                opacity: 0.5;
-                transform: scale(1.2);
-            }
-        }
-
-        /* Responsividade */
-        @media (max-width: 1024px) {
-            .story-grid {
-                grid-template-columns: 1fr;
-                gap: 3rem;
-            }
-
-            .mission-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .values-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .team-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        @media (max-width: 640px) {
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-
-            .story h2,
-            .mission h2,
-            .values h2,
-            .team h2 {
-                font-size: 2rem;
-            }
-        }
-    </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sobre Nós | Miaunarquia</title>
+<style>
+  /* Reset básico */
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  body, h1, h2, h3, p, header, main, section, footer, figure {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  body {
+    font-family: 'Poppins', sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f1fb;
+    color: #3e2c72;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* Cabeçalho */
+  header {
+    width: 100%;
+    background: linear-gradient(135deg, #7e57c2, #512da8);
+    color: white;
+    padding: 3rem 1.5rem;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(125, 81, 176, 0.6);
+    user-select: none;
+  }
+  header .logo {
+    font-size: 2.8rem;
+    font-weight: 800;
+    letter-spacing: 4px;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  }
+  header p {
+    font-size: 1.4rem;
+    font-style: italic;
+    opacity: 0.85;
+    max-width: 600px;
+    margin: 0 auto;
+    user-select: none;
+  }
+  main {
+    max-width: 1100px;
+    width: 100%;
+    padding: 3rem 2rem;
+    background: white;
+    margin: -3rem 1rem 3rem;
+    border-radius: 20px;
+    box-shadow: 0 12px 36px rgba(80, 63, 205, 0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  h1, h2 {
+    color: #5e3aab;
+    user-select: none;
+  }
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  section {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  section:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  section figure {
+    flex: 1 1 300px;
+    max-width: 400px;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(125,81,176,0.3);
+    transition: transform 0.3s ease;
+    cursor: default;
+  }
+  section figure:hover {
+    transform: scale(1.05);
+  }
+  section img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    aspect-ratio: 4 / 3;
+  }
+  section div.text-content {
+    flex: 1 1 350px;
+  }
+  section div.text-content p {
+    font-size: 1.1rem;
+    color: #413478;
+    text-align: justify;
+  }
+  footer {
+    width: 100%;
+    background: #512da8;
+    color: white;
+    text-align: center;
+    padding: 1.25rem 1rem;
+    user-select: none;
+    font-size: 0.95rem;
+    box-shadow: inset 0 2px 8px rgba(0,0,0,0.2);
+  }
+  @media (max-width: 900px) {
+    main {
+      padding: 2rem 1.5rem;
+      margin: 2rem 1rem 2rem;
+    }
+    section {
+      flex-direction: column !important;
+      gap: 2rem;
+    }
+    section figure, section div.text-content {
+      max-width: 100%;
+      flex: 1 1 100%;
+    }
+  }
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Hero Section -->
-    <section class="hero" aria-label="Seção principal da nossa história">
-        <div class="hero-content">
-            <h1>Nossa história</h1>
-            <p>Veja um pouco da nossa jornada, missão e valores.</p>
-            <div class="hero-divider" aria-hidden="true"></div>
-        </div>
-        <div class="scroll-indicator" aria-hidden="true">
-            <div class="scroll-mouse">
-                <div class="scroll-wheel"></div>
-            </div>
-        </div>
-    </section>
+<header>
+  <div class="logo">Miaunarquia</div>
+  <p>Seu reino, seu gato. Estilo e conforto para felinos exigentes.</p>
+</header>
 
-    <!-- Story Section -->
-    <section class="story" aria-labelledby="story-title">
-        <div class="container story-grid">
-            <article class="story-content">
-                <span class="section-label">Nossa história</span>
-                <h2 id="story-title">
-                    Dedicados ao <span class="highlight">desenvolvimento sustentável</span> e ao 
-                    <span class="highlight">respeito ao meio ambiente</span>.
-                </h2>
-                <p>
-                    Fundada em 2003, a Aro Verde nasceu com a missão de promover práticas sustentáveis, 
-                    respeitando o meio ambiente e garantindo um futuro melhor para as próximas gerações.
-                </p>
-                <div class="stats" aria-label="Estatísticas sobre a empresa">
-                    <div class="stat">
-                        <div class="stat-number">20+</div>
-                        <div class="stat-label">Anos de experiência</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-number">+500</div>
-                        <div class="stat-label">Clientes satisfeitos</div>
-                    </div>
-                </div>
-            </article>
+<main role="main" aria-labelledby="sobre-nos">
+  <h1 id="sobre-nos">Sobre Nós</h1>
 
-            <div class="story-image" aria-hidden="true">
-                <div class="image-container">
-                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" alt="Paisagem natural mostrando árvores e natureza preservada" />
-                </div>
-                <div class="floating-icon">🌿</div>
-            </div>
-        </div>
-    </section>
+  <section aria-labelledby="nossa-missao">
+    <figure>
+      <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=800&q=80" alt="Gato relaxando em arranhador moderno" />
+    </figure>
+    <div class="text-content">
+      <h2 id="nossa-missao">Nossa Missão</h2>
+      <p>Nossa missão é oferecer produtos premium que garantam conforto, estilo e diversão para o seu gato, ao mesmo tempo que proporcionam praticidade e beleza para o seu lar. Valorizamos a qualidade, sustentabilidade e a felicidade dos nossos clientes e seus felinos.</p>
+    </div>
+  </section>
 
-    <!-- Mission Section -->
-    <section class="mission" aria-labelledby="mission-title">
-        <div class="mission-container">
-            <span class="section-label">Missão</span>
-            <h2 id="mission-title">Nossa missão</h2>
-            <div class="mission-grid">
-                <article class="mission-item" aria-label="Promover a sustentabilidade ambiental">
-                    <div class="mission-icon" aria-hidden="true">🌎</div>
-                    <h3>Preservação ambiental</h3>
-                    <p>Promover práticas que minimizem o impacto ambiental e protejam os recursos naturais.</p>
-                </article>
-                <article class="mission-item" aria-label="Conectar clientes a produtos sustentáveis">
-                    <div class="mission-icon" aria-hidden="true">🤝</div>
-                    <h3>Relacionamento</h3>
-                    <p>Construir parcerias duradouras com clientes e fornecedores baseadas na confiança e ética.</p>
-                </article>
-                <article class="mission-item" aria-label="Inovar para um futuro sustentável">
-                    <div class="mission-icon" aria-hidden="true">💡</div>
-                    <h3>Inovação</h3>
-                    <p>Investir em soluções criativas e tecnológicas para promover o desenvolvimento sustentável.</p>
-                </article>
-            </div>
-        </div>
-    </section>
+  <section aria-labelledby="nossa-visao">
+    <figure>
+      <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=800&q=80" alt="Gato curioso explorando" />
+    </figure>
+    <div class="text-content">
+      <h2 id="nossa-visao">Nossa Visão</h2>
+      <p>Visamos ser a principal referência nacional em produtos para gatos, reconhecida pela inovação, sustentabilidade e compromisso com o bem-estar animal. Queremos criar uma comunidade apaixonada e consciente, onde cada gato viva em um ambiente feliz e saudável.</p>
+    </div>
+  </section>
 
-    <!-- Values Section -->
-    <section class="values" aria-labelledby="values-title">
-        <div>
-            <span class="section-label">Valores</span>
-            <h2 id="values-title">Nossos valores</h2>
-        </div>
-        <div class="values-grid">
-            <article class="value-card" aria-label="Valor: Respeito">
-                <div class="icon" aria-hidden="true">🤝</div>
-                <h3>Respeito</h3>
-                <p>Valorizamos todas as pessoas e a natureza, mantendo um ambiente inclusivo e sustentável.</p>
-            </article>
-            <article class="value-card" aria-label="Valor: Transparência">
-                <div class="icon" aria-hidden="true">🔍</div>
-                <h3>Transparência</h3>
-                <p>Praticamos a honestidade e clareza em todas as nossas ações e comunicação.</p>
-            </article>
-            <article class="value-card" aria-label="Valor: Inovação">
-                <div class="icon" aria-hidden="true">⚡</div>
-                <h3>Inovação</h3>
-                <p>Buscamos constantemente novas ideias e tecnologias para melhorar nosso impacto.</p>
-            </article>
-            <article class="value-card" aria-label="Valor: Sustentabilidade">
-                <div class="icon" aria-hidden="true">🌱</div>
-                <h3>Sustentabilidade</h3>
-                <p>Nos comprometemos com práticas que garantam o equilíbrio entre o meio ambiente e a economia.</p>
-            </article>
-        </div>
-    </section>
+  <section aria-labelledby="nossos-valores">
+    <figure>
+      <img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?auto=format&fit=crop&w=800&q=80" alt="Gato feliz olhando para câmera" />
+    </figure>
+    <div class="text-content">
+      <h2 id="nossos-valores">Nossos Valores</h2>
+      <p>Paixão pelos gatos, ética, qualidade, inovação, respeito ao meio ambiente e atendimento personalizado. Trabalhamos diariamente para garantir a satisfação dos nossos clientes e o bem-estar dos seus felinos.</p>
+    </div>
+  </section>
+</main>
 
-    <!-- Team Section -->
-    <section class="team" aria-labelledby="team-title">
-        <div>
-            <span class="section-label">Time</span>
-            <h2 id="team-title">Nosso time</h2>
-        </div>
-        <div class="team-grid">
-            <article class="team-member" aria-label="Perfil de Joana Silva, CEO">
-                <div class="member-image">
-                    <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=400&q=80" alt="Joana Silva, CEO da empresa" />
-                </div>
-                <h3 class="member-name">Joana Silva</h3>
-                <p class="member-role">CEO</p>
-                <p class="member-description">Líder visionária com 15 anos de experiência em sustentabilidade e gestão empresarial.</p>
-            </article>
-
-            <article class="team-member" aria-label="Perfil de Carlos Mendes, Diretor de Operações">
-                <div class="member-image">
-                    <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=400&q=80" alt="Carlos Mendes, Diretor de Operações da empresa" />
-                </div>
-                <h3 class="member-name">Carlos Mendes</h3>
-                <p class="member-role">Diretor de Operações</p>
-                <p class="member-description">Especialista em logística e processos sustentáveis, garantindo eficiência operacional.</p>
-            </article>
-
-            <article class="team-member" aria-label="Perfil de Ana Souza, Gerente de Marketing">
-                <div class="member-image">
-                    <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=400&q=80" alt="Ana Souza, Gerente de Marketing da empresa" />
-                </div>
-                <h3 class="member-name">Ana Souza</h3>
-                <p class="member-role">Gerente de Marketing</p>
-                <p class="member-description">Focada em estratégias que comunicam os valores sustentáveis da empresa ao mercado.</p>
-            </article>
-        </div>
-
-        <div class="team-cta">
-            <div class="cta-badge" role="button" tabindex="0" aria-label="Conheça toda nossa equipe">
-                <span class="cta-text">Conheça toda nossa equipe</span>
-                <span class="pulse-dot" aria-hidden="true"></span>
-            </div>
-        </div>
-    </section>
+<footer>
+  &copy; 2024 Miaunarquia - Todos os direitos reservados.
+</footer>
 </body>
 </html>
+

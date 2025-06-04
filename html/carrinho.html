@@ -1,112 +1,228 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Carrinho | Miaunarquia</title>
-        <link rel="stylesheet" href="../css/style.css" />
-    </head>
-    <body>
-        <section
-            class="avisoCarrossel"
-            aria-label="Carrossel de avisos e promoções da plataforma">
-            <!-- Carrossel para avisos de promoções -->
-            <button id="setaEsquerdaAviso" class="setasAviso"
-                aria-label="Aviso anterior">
-                ❮
-            </button>
-            <ul class="mensagens">
-                <li class="mensagem">
-                    NOVO POR AQUI? USE O CUPOM 🐾PRIMEIRACOMPRA🐾
-                </li>
-                <li class="mensagem">
-                    FRETE GRÁTIS ACIMA DE R$199 PARA TODO O BRASIL
-                </li>
-                <li class="mensagem">CADASTRE-SE E GANHE 10% DE DESCONTO</li>
-            </ul>
-            <button id="setaDireitaAviso" class="setasAviso"
-                aria-label="Aviso seguinte">
-                ❯
-            </button>
-        </section>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Carrinho | Miaunarquia</title>
+<style>
+  /* Reset básico */
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  body, h1, h2, h3, p, header, main, section, footer, table, figure {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  body {
+    font-family: 'Poppins', sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f1fb;
+    color: #3e2c72;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* Cabeçalho */
+  header {
+    width: 100%;
+    background: linear-gradient(135deg, #7e57c2, #512da8);
+    color: white;
+    padding: 3rem 1.5rem;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(125, 81, 176, 0.6);
+    user-select: none;
+  }
+  header .logo {
+    font-size: 2.8rem;
+    font-weight: 800;
+    letter-spacing: 4px;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  }
+  main {
+    max-width: 1100px;
+    width: 100%;
+    padding: 3rem 2rem;
+    background: white;
+    margin: -3rem 1rem 3rem;
+    border-radius: 20px;
+    box-shadow: 0 12px 36px rgba(80, 63, 205, 0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  h1 {
+    color: #5e3aab;
+    user-select: none;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 10px 30px rgba(125,81,176,0.1);
+  }
+  thead {
+    background: #7e57c2;
+    color: white;
+  }
+  th, td {
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    vertical-align: middle;
+  }
+  tbody tr:hover {
+    background-color: #ede9fb;
+  }
+  tbody tr td:first-child {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  tbody tr td:first-child img {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 4px 15px rgba(125, 81, 176, 0.3);
+  }
+  .quantity-input {
+    width: 60px;
+    padding: 0.4rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 1rem;
+    color: #3e2c72;
+  }
+  .btn {
+    background-color: #7e57c2;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+    align-self: flex-end;
+    user-select: none;
+    box-shadow: 0 8px 20px rgba(125, 81, 176, 0.2);
+  }
+  .btn:hover {
+    background-color: #512da8;
+  }
+  .summary {
+    margin-top: 2rem;
+    text-align: right;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #5e3aab;
+    user-select: none;
+  }
+  .empty-cart {
+    text-align: center;
+    padding: 3rem 1rem;
+    font-size: 1.4rem;
+    color: #7e57c2;
+    user-select: none;
+  }
+  @media (max-width: 900px) {
+    main {
+      padding: 2rem 1.5rem;
+      margin: 2rem 1rem;
+      border-radius: 16px;
+    }
+    tbody tr td:first-child {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+    tbody tr td:first-child img {
+      width: 100%;
+      height: auto;
+      max-width: 180px;
+      border-radius: 16px;
+    }
+    th, td {
+      padding: 0.8rem 0.6rem;
+      font-size: 0.9rem;
+    }
+    .btn {
+      width: 100%;
+      font-size: 1.1rem;
+    }
+    .summary {
+      text-align: center;
+      font-size: 1.2rem;
+    }
+  }
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+<header>
+  <div class="logo">Miaunarquia</div>
+</header>
 
-        <header class="headerSite"> <!-- Header do site -->
-            <h1 class="logoSite">
-                <a href="index.html" aria-label="Página inicial - Miaunarquia">
-                    <img
-                        src="../imagens/imagem_logo.png"
-                        alt="Logo de um Gato Preto com Coroa"
-                        class="logoImagem" />
-                    <span class="nomeLogo">Miaunarquia</span>
-                </a>
-            </h1>
+<main role="main" aria-labelledby="carrinho-title">
+  <h1 id="carrinho-title">Seu Carrinho</h1>
 
-            <nav class="navMenu" aria-label="Menu Principal">
-                <!-- arial-label = Rotular elemento para descreve-lo e deixa-lo mais acessível -->
-                <ul>
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="catalogo.html">Catálogo</a></li>
-                    <li><a href="sobreNos.html#sobreNos">Sobre Nós</a></li>
-                    <li><a href="sobreNos.html#contato">Contato</a></li>
-                </ul>
-            </nav>
+  <table aria-describedby="descricao-carrinho">
+    <caption id="descricao-carrinho" style="position:absolute; left:-9999px; height:1px; overflow:hidden;">
+      Lista dos produtos adicionados ao carrinho, com fotos, preços, quantidades e total.
+    </caption>
+    <thead>
+      <tr>
+        <th>Produto</th>
+        <th>Preço Unit.</th>
+        <th>Quantidade</th>
+        <th>Subtotal</th>
+        <th>Remover</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=80&q=80" alt="Arranhador Luxo" />
+          Arranhador Luxo
+        </td>
+        <td>R$ 199,00</td>
+        <td>
+          <input class="quantity-input" type="number" min="1" max="50" value="2" aria-label="Quantidade do Arranhador Luxo" />
+        </td>
+        <td>R$ 398,00</td>
+        <td><button class="btn-remove" aria-label="Remover Arranhador Luxo do carrinho" title="Remover">✕</button></td>
+      </tr>
+      <tr>
+        <td>
+          <img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?auto=format&fit=crop&w=80&q=80" alt="Comedouro Inteligente" />
+          Comedouro Inteligente
+        </td>
+        <td>R$ 299,00</td>
+        <td>
+          <input class="quantity-input" type="number" min="1" max="20" value="1" aria-label="Quantidade do Comedouro Inteligente" />
+        </td>
+        <td>R$ 299,00</td>
+        <td><button class="btn-remove" aria-label="Remover Comedouro Inteligente do carrinho" title="Remover">✕</button></td>
+      </tr>
+    </tbody>
+  </table>
 
-            <nav class="navUsuario" aria-label="Menu do Usuário">
-                <ul>
-                    <li>
-                        <a href="#" aria-label="Pesquisar">
-                            <figure class="iconesNav">
-                                <img
-                                    src="../imagens/icone_pesquisar.png"
-                                    alt="Ícone de Lupa" />
-                                <figcaption class="legendasIcones">
-                                    Pesquisar
-                                </figcaption>
-                            </figure>
-                        </a>
-                    </li>
+  <div class="summary" aria-live="polite">
+    Total: R$ 697,00
+  </div>
 
-                    <li>
-                        <a href="login.html" aria-label="Favoritos">
-                            <figure class="iconesNav">
-                                <img
-                                    src="../imagens/icone_favoritos.png"
-                                    alt="Ícone de Coração"
-                                    aria-hidden="true" />
-                                <figcaption class="legendasIcones">
-                                    Favoritos
-                                </figcaption>
-                            </figure>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="login.html" aria-label="Perfil">
-                            <figure class="iconesNav">
-                                <img
-                                    src="../imagens/icone_usuario.png"
-                                    alt="Ícone de Perfil" />
-                                <figcaption class="legendasIcones">
-                                    Entrar
-                                </figcaption>
-                            </figure>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="carrinho.html" aria-label="Carrinho">
-                            <figure class="iconesNav">
-                                <img
-                                    src="../imagens/icone_carrinho.png"
-                                    alt="Ícone de Carrinho" />
-                                <figcaption class="legendasIcones">
-                                    Carrinho
-                                </figcaption>
-                            </figure>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-    </body>
+  <button class="btn" type="button">Finalizar Compra</button>
+</main>
+<footer>
+  &copy; 2024 Miaunarquia - Todos os direitos reservados.
+</footer>
+</body>
 </html>
+

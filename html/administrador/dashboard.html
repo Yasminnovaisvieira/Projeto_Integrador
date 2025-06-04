@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin | Dashboard</title>
+  <style>
+    /* Reset básico */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    body, h1, h2, h3, p, ul, li, nav, section, article, footer, table {
+      margin: 0;
+      padding: 0;
+      font-weight: normal;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9fafc;
+      color: #222;
+      display: flex;
+      min-height: 100vh;
+      line-height: 1.5;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 260px;
+      background: linear-gradient(135deg, #4a90e2, #357abd);
+      color: white;
+      padding: 2rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      box-shadow: 2px 0 8px rgba(0,0,0,0.1);
+    }
+
+    .sidebar .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
+      letter-spacing: 2px;
+      user-select: none;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+      display: block;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      background-color: rgba(255, 255, 255, 0.25);
+      font-weight: bold;
+    }
+
+    /* Main content */
+    .main-content {
+      margin-left: 260px;
+      padding: 2rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background: #fff;
+      box-shadow: inset 0 0 10px #e0e0e0;
+    }
+
+    .main-content > h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: #333;
+      user-select: none;
+    }
+
+    /* Cards container */
+    .cards {
+      display: flex;
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+
+    /* Card */
+    article.card {
+      flex: 1;
+      background: #4a90e2;
+      color: white;
+      border-radius: 12px;
+      padding: 1.5rem 2rem;
+      box-shadow: 0 4px 8px rgb(74 144 226 / 0.4);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: background-color 0.3s ease;
+      cursor: default;
+    }
+    article.card:hover {
+      background: #357abd;
+      box-shadow: 0 6px 15px rgb(53 122 189 / 0.6);
+    }
+    article.card h3 {
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      font-size: 1.4rem;
+      user-select: none;
+    }
+    article.card p {
+      font-size: 2.8rem;
+      font-weight: 700;
+      user-select: text;
+      margin: 0;
+    }
+
+    /* Financial summary section */
+    .financial-summary {
+      background: #fff;
+      box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 3rem;
+    }
+    .financial-summary h3 {
+      margin-bottom: 1rem;
+      color: #4a90e2;
+    }
+    .financial-summary dl {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem 2rem;
+    }
+    .financial-summary dt {
+      font-weight: 600;
+      color: #555;
+      user-select: none;
+    }
+    .financial-summary dd {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #222;
+      margin-left: 0;
+      user-select: text;
+    }
+
+    /* Recent orders table */
+    .recent-orders {
+      overflow-x: auto;
+      background: #fff;
+      box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
+      border-radius: 12px;
+      padding: 1.5rem 2rem;
+    }
+
+    .recent-orders h3 {
+      color: #4a90e2;
+      margin-bottom: 1rem;
+      user-select: none;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+    }
+
+    thead {
+      background: #4a90e2;
+      color: white;
+    }
+
+    th, td {
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid #ddd;
+      text-align: left;
+      vertical-align: middle;
+      white-space: nowrap;
+    }
+
+    tbody tr:hover {
+      background-color: #e6f0fa;
+    }
+
+    /* Notifications section */
+    .notifications {
+      margin-top: 3rem;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
+      padding: 1.5rem 2rem;
+    }
+
+    .notifications h3 {
+      color: #4a90e2;
+      margin-bottom: 1rem;
+      user-select: none;
+    }
+
+    .notification-item {
+      border-left: 4px solid #4a90e2;
+      background: #f0f6fc;
+      margin-bottom: 1rem;
+      padding: 0.75rem 1rem;
+      border-radius: 6px;
+      font-size: 0.95rem;
+      color: #333;
+      user-select: text;
+      transition: background-color 0.3s ease;
+      cursor: default;
+    }
+    .notification-item:last-child {
+      margin-bottom: 0;
+    }
+    .notification-item:hover {
+      background-color: #d9e7ff;
+    }
+
+    /* Responsividade */
+    @media (max-width: 900px) {
+      .main-content {
+        margin-left: 0;
+        padding: 1rem;
+      }
+      .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+      }
+      nav ul {
+        flex-direction: row;
+        gap: 1.5rem;
+      }
+      .cards {
+        flex-direction: column;
+      }
+      article.card {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <aside class="sidebar">
+    <h1 class="logo">Miaunarquia</h1>
+    <nav>
+      <ul>
+        <li><a href="dashboard.html" class="active" aria-current="page">Dashboard</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="usuarios.html">Usuários</a></li>
+        <li><a href="pedidos.html">Pedidos</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main class="main-content" role="main">
+    <h2>Painel de Controle</h2>
+
+    <section class="cards" aria-label="Resumo rápido">
+      <article class="card" aria-labelledby="produtos-title">
+        <h3 id="produtos-title">Produtos</h3>
+        <p><strong>120</strong></p>
+      </article>
+      <article class="card" aria-labelledby="usuarios-title">
+        <h3 id="usuarios-title">Usuários</h3>
+        <p><strong>340</strong></p>
+      </article>
+      <article class="card" aria-labelledby="pedidos-title">
+        <h3 id="pedidos-title">Pedidos</h3>
+        <p><strong>76</strong></p>
+      </article>
+    </section>
+
+    <section class="financial-summary" aria-labelledby="financeiro-title">
+      <h3 id="financeiro-title">Resumo Financeiro</h3>
+      <dl>
+        <div>
+          <dt>Receita Mensal</dt>
+          <dd>R$ 34.500,00</dd>
+        </div>
+        <div>
+          <dt>Despesas</dt>
+          <dd>R$ 12.200,00</dd>
+        </div>
+        <div>
+          <dt>Lucro</dt>
+          <dd>R$ 22.300,00</dd>
+        </div>
+        <div>
+          <dt>Meta</dt>
+          <dd>R$ 40.000,00</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="recent-orders" aria-labelledby="pedidos-recentes-title">
+      <h3 id="pedidos-recentes-title">Pedidos Recentes</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Pedido</th>
+            <th>Cliente</th>
+            <th>Status</th>
+            <th>Data</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>#1001</td>
+            <td>João Silva</td>
+            <td>Enviado</td>
+            <td>21/06/2024</td>
+            <td>R$ 1.200,00</td>
+          </tr>
+          <tr>
+            <td>#1002</td>
+            <td>Maria Oliveira</td>
+            <td>Processando</td>
+            <td>20/06/2024</td>
+            <td>R$ 850,00</td>
+          </tr>
+          <tr>
+            <td>#1003</td>
+            <td>Lucas Santos</td>
+            <td>Cancelado</td>
+            <td>19/06/2024</td>
+            <td>R$ 450,00</td>
+          </tr>
+          <tr>
+            <td>#1004</td>
+            <td>Ana Costa</td>
+            <td>Enviado</td>
+            <td>18/06/2024</td>
+            <td>R$ 1.500,00</td>
+          </tr>
+          <tr>
+            <td>#1005</td>
+            <td>Carlos Almeida</td>
+            <td>Processando</td>
+            <td>17/06/2024</td>
+            <td>R$ 950,00</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="notifications" aria-labelledby="notificacoes-title">
+      <h3 id="notificacoes-title">Notificações</h3>
+      <div class="notification-item" role="alert">
+        Novo pedido #1006 foi colocado por Fernanda Lima.
+      </div>
+      <div class="notification-item" role="alert">
+        Estoque do produto "Camisa Azul" está baixo.
+      </div>
+      <div class="notification-item" role="alert">
+        Usuário "Paulo" solicitou redefinição de senha.
+      </div>
+    </section>
+  </main>
+</body>
+</html>
+

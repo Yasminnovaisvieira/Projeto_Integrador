@@ -1,0 +1,337 @@
+/* admin.css */
+
+/* Variáveis de cores */
+:root {
+  --cor-fundo: #f9fafb;
+  --cor-primaria: #6b46c1; /* roxo */
+  --cor-primaria-claro: #9f7aea;
+  --cor-texto: #2d3748;
+  --cor-texto-claro: #718096;
+  --cor-secundaria: #edf2f7;
+  --cor-verde: #48bb78;
+  --cor-vermelho: #f56565;
+  --cor-cinza-claro: #e2e8f0;
+  --cor-cinza: #a0aec0;
+  --cor-branco: #ffffff;
+  --sombra-suave: rgba(0, 0, 0, 0.05);
+  --sombra-media: rgba(0, 0, 0, 0.1);
+  --transicao: 0.3s ease;
+}
+
+/* Reset e base */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  margin: 0;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Container principal */
+.admin-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.admin-sidebar {
+  width: 250px;
+  background-color: var(--cor-primaria);
+  color: var(--cor-branco);
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem;
+  box-shadow: 3px 0 8px var(--sombra-media);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.admin-sidebar h2 {
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+  user-select: none;
+}
+
+.admin-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.admin-nav li {
+  margin-bottom: 1.25rem;
+}
+
+.admin-nav a {
+  color: var(--cor-branco);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  display: block;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  transition: background-color var(--transicao);
+}
+
+.admin-nav a:hover,
+.admin-nav a.active {
+  background-color: var(--cor-primaria-claro);
+}
+
+/* Conteúdo principal */
+.admin-main {
+  margin-left: 250px;
+  flex-grow: 1;
+  padding: 2rem 3rem;
+  background-color: var(--cor-secundaria);
+  min-height: 100vh;
+}
+
+/* Cabeçalhos principais */
+.admin-main h1,
+.admin-main h2 {
+  margin-top: 0;
+  color: var(--cor-primaria);
+  font-weight: 700;
+}
+
+/* Botões padrão */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem 1.25rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background-color var(--transicao);
+  text-decoration: none;
+  user-select: none;
+  white-space: nowrap;
+  gap: 0.5rem;
+}
+
+.btn-primary {
+  background-color: var(--cor-primaria);
+  color: var(--cor-branco);
+}
+
+.btn-primary:hover {
+  background-color: var(--cor-primaria-claro);
+}
+
+.btn-secondary {
+  background-color: var(--cor-cinza);
+  color: var(--cor-texto-claro);
+}
+
+.btn-secondary:hover {
+  background-color: var(--cor-cinza-claro);
+  color: var(--cor-texto);
+}
+
+/* Tabelas */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--cor-branco);
+  box-shadow: 0 2px 8px var(--sombra-suave);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.table thead {
+  background-color: var(--cor-primaria);
+  color: var(--cor-branco);
+  text-align: left;
+}
+
+.table th,
+.table td {
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid var(--cor-cinza-claro);
+  vertical-align: middle;
+}
+
+.table tbody tr:hover {
+  background-color: var(--cor-primaria-claro);
+  color: var(--cor-branco);
+  cursor: pointer;
+}
+
+.table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Formulários */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--cor-texto);
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.6rem 1rem;
+  border: 1.5px solid var(--cor-cinza);
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color var(--transicao);
+  background-color: var(--cor-branco);
+  color: var(--cor-texto);
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="password"]:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--cor-primaria);
+  outline: none;
+}
+
+/* Textarea */
+.form-group textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Flex para formulários lado a lado */
+.form-row {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.form-row > .form-group {
+  flex: 1;
+  min-width: 200px;
+}
+
+/* Mensagens */
+.msg-sucesso {
+  background-color: var(--cor-verde);
+  color: var(--cor-branco);
+  padding: 0.75rem 1.25rem;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.msg-erro {
+  background-color: var(--cor-vermelho);
+  color: var(--cor-branco);
+  padding: 0.75rem 1.25rem;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+/* Layout de botões de ação */
+.actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+/* Ícones pequenos para ações (editar, excluir) */
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--cor-primaria);
+  transition: color var(--transicao);
+  font-size: 1.2rem;
+}
+
+.icon-btn:hover {
+  color: var(--cor-primaria-claro);
+}
+
+/* Responsividade básica */
+@media (max-width: 768px) {
+  .admin-sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    box-shadow: none;
+    flex-direction: row;
+    padding: 1rem;
+    justify-content: space-between;
+  }
+
+  .admin-nav {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .admin-main {
+    margin-left: 0;
+    padding: 1rem;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .table thead {
+    display: none;
+  }
+
+  .table tbody tr {
+    display: block;
+    margin-bottom: 1rem;
+    border: 1px solid var(--cor-cinza-claro);
+    border-radius: 8px;
+    padding: 1rem;
+  }
+
+  .table tbody tr:hover {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+  }
+
+  .table tbody td {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-bottom: 1px solid var(--cor-cinza-claro);
+  }
+
+  .table tbody td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: var(--cor-cinza);
+    flex-basis: 40%;
+  }
+}

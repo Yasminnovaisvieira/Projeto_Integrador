@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Painel Admin - Miaunarquia</title>
+  <link rel="stylesheet" href="admin.css" />
+  <style>
+    :root {
+      --roxo-principal: #7e3ff2;
+      --roxo-claro: #ede9fe;
+      --cinza-claro: #f9f9f9;
+      --cinza: #dcdcdc;
+      --branco: #ffffff;
+      --preto: #1e1e1e;
+      --azul-suave: #e0f2fe;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      color: var(--preto);
+      background-color: var(--cinza-claro);
+      display: flex;
+      height: 100vh;
+    }
+
+    .sidebar {
+      width: 250px;
+      background-color: var(--roxo-principal);
+      padding: 2rem 1.5rem;
+      color: var(--branco);
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .logo {
+      font-size: 1.75rem;
+      font-weight: bold;
+    }
+
+    .sidebar nav ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .sidebar nav a {
+      color: var(--branco);
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .sidebar nav a:hover,
+    .sidebar nav a.active {
+      color: var(--roxo-claro);
+    }
+
+    .admin-main {
+      flex: 1;
+      padding: 2rem;
+      overflow-y: auto;
+    }
+
+    .admin-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+
+    .admin-header h2 {
+      font-size: 1.5rem;
+    }
+
+    .btn-novo {
+      background-color: var(--roxo-principal);
+      color: var(--branco);
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn-novo:hover {
+      background-color: #5c27b0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: var(--branco);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 1rem;
+      text-align: left;
+      border-bottom: 1px solid var(--cinza);
+    }
+
+    th {
+      background-color: var(--roxo-claro);
+      color: var(--preto);
+      font-weight: 600;
+    }
+
+    td {
+      background-color: var(--branco);
+    }
+
+    .btn-editar, .btn-excluir {
+      padding: 0.4rem 0.8rem;
+      border: none;
+      border-radius: 4px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn-editar {
+      background-color: #2563eb;
+      color: var(--branco);
+    }
+
+    .btn-editar:hover {
+      background-color: #1e40af;
+    }
+
+    .btn-excluir {
+      background-color: #dc2626;
+      color: var(--branco);
+      margin-left: 0.5rem;
+    }
+
+    .btn-excluir:hover {
+      background-color: #991b1b;
+    }
+
+    .admin-form {
+      margin-top: 3rem;
+      background-color: var(--branco);
+      padding: 2rem;
+      border-radius: 8px;
+      max-width: 600px;
+    }
+
+    .admin-form h3 {
+      margin-bottom: 1.5rem;
+    }
+
+    .admin-form form {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .admin-form label {
+      font-weight: 600;
+    }
+
+    .admin-form input,
+    .admin-form textarea {
+      padding: 0.75rem;
+      border: 1px solid var(--cinza);
+      border-radius: 6px;
+      width: 100%;
+    }
+
+    .btn-salvar {
+      background-color: #16a34a;
+      color: var(--branco);
+      padding: 0.6rem 1rem;
+      border: none;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+
+    .btn-salvar:hover {
+      background-color: #15803d;
+    }
+  </style>
+</head>
+<body>
+  <aside class="sidebar">
+    <h1 class="logo">Miaunarquia</h1>
+    <nav>
+      <ul>
+        <li><a href="#" class="active">Dashboard</a></li>
+        <li><a href="#">Produtos</a></li>
+        <li><a href="#">Usuários</a></li>
+        <li><a href="#">Pedidos</a></li>
+        <li><a href="#">Sair</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main class="admin-main">
+    <header class="admin-header">
+      <h2>Gestão de Produtos</h2>
+      <button class="btn-novo">+ Novo Produto</button>
+    </header>
+
+    <section class="admin-table">
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Categoria</th>
+            <th>Preço</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>001</td>
+            <td>Arranhador Luxo</td>
+            <td>Acessórios</td>
+            <td>R$ 199,90</td>
+            <td>
+              <button class="btn-editar">Editar</button>
+              <button class="btn-excluir">Excluir</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="admin-form">
+      <h3>Cadastrar Produto</h3>
+      <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <label for="categoria">Categoria:</label>
+        <input type="text" id="categoria" name="categoria" required />
+
+        <label for="preco">Preço:</label>
+        <input type="number" id="preco" name="preco" step="0.01" required />
+
+        <label for="descricao">Descrição:</label>
+        <textarea id="descricao" name="descricao" rows="4"></textarea>
+
+        <button type="submit" class="btn-salvar">Salvar</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

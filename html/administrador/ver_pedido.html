@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Visualizar Pedido #102</title>
+  <style>
+    /* Reset básico */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    body, h1, h2, h3, p, nav, ul, li, table, th, td, a, button, section {
+      margin: 0;
+      padding: 0;
+      font-weight: normal;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9fafc;
+      color: #222;
+      display: flex;
+      min-height: 100vh;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 260px;
+      background: linear-gradient(135deg, #4a90e2, #357abd);
+      color: white;
+      padding: 2rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      box-shadow: 2px 0 8px rgba(0,0,0,0.1);
+    }
+
+    .sidebar .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
+      letter-spacing: 2px;
+      user-select: none;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+      display: block;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      background-color: rgba(255, 255, 255, 0.25);
+      font-weight: bold;
+    }
+
+    /* Main content */
+    .main-content {
+      margin-left: 260px;
+      padding: 2rem 3rem;
+      flex: 1;
+      background: #fff;
+      box-shadow: inset 0 0 10px #e0e0e0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: #333;
+      user-select: none;
+    }
+
+    /* Section styles */
+    section {
+      background: #f9faff;
+      border-radius: 12px;
+      padding: 1.5rem 2rem;
+      box-shadow: 0 4px 12px rgb(0 0 0 / 0.05);
+    }
+
+    section h3 {
+      margin-bottom: 1rem;
+      color: #4a90e2;
+      user-select: none;
+    }
+
+    /* Table styles */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 1rem;
+    }
+
+    thead {
+      background: #4a90e2;
+      color: white;
+    }
+
+    th, td {
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid #ddd;
+      text-align: left;
+      vertical-align: middle;
+    }
+
+    tbody tr:hover {
+      background-color: #e6f0fa;
+    }
+
+    /* Buttons */
+    .btn {
+      background-color: #4a90e2;
+      border: none;
+      border-radius: 6px;
+      color: white;
+      font-size: 1rem;
+      padding: 0.75rem 1.5rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      user-select: none;
+    }
+    .btn:hover {
+      background-color: #357abd;
+    }
+    .btn-secondary {
+      background-color: #777;
+    }
+    .btn-secondary:hover {
+      background-color: #555;
+    }
+
+    /* Flex row for action buttons */
+    .actions {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .main-content {
+        margin-left: 0;
+        padding: 1.5rem;
+      }
+      .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+      }
+      nav ul {
+        flex-direction: row;
+        gap: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <aside class="sidebar">
+    <h1 class="logo">Miaunarquia</h1>
+    <nav>
+      <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="usuarios.html">Usuários</a></li>
+        <li><a href="pedidos.html" class="active" aria-current="page">Pedidos</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main class="main-content" role="main" aria-label="Detalhes do Pedido">
+    <h2>Detalhes do Pedido #102</h2>
+
+    <section aria-labelledby="info-pedido">
+      <h3 id="info-pedido">Informações do Pedido</h3>
+      <p><strong>Cliente:</strong> João Santos</p>
+      <p><strong>Status:</strong> Enviado</p>
+      <p><strong>Data do Pedido:</strong> 02/06/2025</p>
+      <p><strong>Valor Total:</strong> R$ 299,00</p>
+    </section>
+
+    <section aria-labelledby="itens-pedido">
+      <h3 id="itens-pedido">Itens do Pedido</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Produto</th>
+            <th>Quantidade</th>
+            <th>Preço Unitário</th>
+            <th>Subtotal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Camisa Polo Azul</td>
+            <td>2</td>
+            <td>R$ 75,00</td>
+            <td>R$ 150,00</td>
+          </tr>
+          <tr>
+            <td>Calça Jeans</td>
+            <td>1</td>
+            <td>R$ 149,00</td>
+            <td>R$ 149,00</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section aria-label="Ações do Pedido">
+      <h3>Ações</h3>
+      <div class="actions">
+        <button class="btn" type="button">Marcar como Enviado</button>
+        <button class="btn btn-secondary" type="button">Cancelar Pedido</button>
+        <a href="pedidos.html" class="btn btn-secondary" role="button" style="text-align:center;line-height:1.7;">Voltar</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
