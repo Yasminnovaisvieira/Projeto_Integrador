@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login | Miaunarquia</title>
+        <link rel="stylesheet" href="../../css/style.css" />
+    </head>
+    <body class="fundoLoginCadastro">
+        
+        <main class="containerPagina">
+            <section id="containerLogin">
+                <h1 class="logoSiteLoginCadastro">
+                    <img
+                        src="../../imagens/imagem_logo.png"
+                        alt="Logo de um Rosto de Gato com Coroa Acima da Cabeça"
+                        class="logoImagemLoginCadastro" />
+                </h1>
+
+                <form class="formularioLogin">
+                    <fieldset class="formularioGrupo">
+                        <legend class="tituloLoginCadastro">Olá, Administrador! Acesse sua
+                            conta</legend>
+ 
+                        <label for="email" id="emailLogin"
+                            class="camposLogin">Insira seu
+                            E-mail</label>
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="exemplo@email.com"
+                            required
+                            autocomplete="email" class="campo" />
+
+                        <label for="password" class="camposLogin">Insira sua
+                            Senha</label>
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="••••••••"
+                            required
+                            autocomplete="current-password" class="campo" />
+                    </fieldset>
+
+                    <section class="opcoesFormulario"
+                        aria-label="Opções de Login">
+                        <label class="LembrarDeMim">
+                            <input type="checkbox" name="lembrar" />
+                            <span class="checkmark"></span>
+                            Lembrar de mim
+                        </label>
+                        <a href="#" class="esqueceuSenha">Esqueceu a senha?</a>
+                    </section>
+
+                    <a href="indexLogado.html" class="btnLogin">Entrar</a>
+
+                </form>
+            </section>
+        </main>
+    </body>
+</html>

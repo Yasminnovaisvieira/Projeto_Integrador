@@ -1525,3 +1525,222 @@ input[type="password"]:focus {
     opacity: 0.2;
     margin-bottom: 8px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ARRUMARRRRRRRRRRRRRRRRRRR */
+
+
+
+
+/* SOBRE NÓS*/
+
+#mainSobreNos {
+    max-width: 1200px;
+    margin: 2rem auto 4rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding: 0 1rem;
+}
+
+#tituloSobreNos {
+    color: #333;
+    margin-top: -15px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 35px;
+}
+
+#secaoHistoria {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.imagemPrincipalSobreNos {
+    width: 300px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+#tituloHistoria {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    color: #5d4aa3;
+    margin-bottom: 1rem;
+}
+
+#secaoHistoria p {
+    font-size: 1.1rem;
+    color: #4b3d77;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+#secaoMvv {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.blocoMvv {
+    flex: 1 1 320px;
+    max-width: 360px;
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.07);
+    transition: transform 0.3s ease;
+}
+
+.blocoMvv:hover {
+    transform: translateY(-3px);
+}
+
+.blocoMvv img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.blocoMvv figcaption {
+    padding: 1.5rem;
+}
+
+.tituloMvv {
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+    color: #4e3b8d;
+    margin-bottom: 0.8rem;
+}
+
+.blocoMvv p {
+    font-size: 1rem;
+    color: #4b3d77;
+    text-align: justify;
+}
+
+#secaoFaq {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+#secaoFaq h3 {
+    font-size: 2rem;
+    text-align: center;
+    color: #5d4aa3;
+    margin-bottom: 2rem;
+}
+
+#secaoFaq details {
+    background-color: #fff;
+    border-radius: 14px;
+    padding: 1.5rem 2rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+#secaoFaq details[open] {
+    background-color: #f0ebff;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+#secaoFaq summary {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #3f3275;
+    margin-bottom: 0.8rem;
+    list-style: none;
+    position: relative;
+    padding-right: 1.2rem;
+}
+
+#secaoFaq summary::after {
+    content: "+";
+    position: absolute;
+    right: 0;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+#secaoFaq details[open] summary::after {
+    content: "–";
+    transform: rotate(180deg);
+}
+
+#secaoFaq p {
+    font-size: 1rem;
+    color: #4b3d77;
+    line-height: 1.6;
+    margin-top: 0.5rem;
+    text-align: justify;
+}
+
+#secaoContato {
+    max-width: 900px;
+    margin: 4rem auto 0 auto;
+    text-align: center;
+}
+
+#secaoContato h3 {
+    font-size: 2rem;
+    color: #5d4aa3;
+    margin-bottom: 1rem;
+}
+
+#secaoContato address {
+    font-style: normal;
+    font-size: 1.1rem;
+    color: #4b3d77;
+    background-color: #fff;
+    display: inline-block;
+    padding: 2rem 2.5rem;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    line-height: 1.8;
+}
+
+#secaoContato a {
+    color: #6a55d3;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#secaoContato a:hover {
+    text-decoration: underline;
+}
+
+
+
