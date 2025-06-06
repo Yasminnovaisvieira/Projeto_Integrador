@@ -7,6 +7,11 @@ PORT = 8080  # Porta em que o servidor vai rodar
 DIRECTORY = "."
 
 
+# Está bem completo, ficou muito bom o site e o server
+# Acho q a unica coisa que eu faria de diferente é usar container para a aplicação em sí
+# E criar mais arquivos CSS para não ficar no código
+# Usar modularização seria uma boa
+
 class MyHttpRequestHandler(http.server.SimpleHTTPRequestHandler):
     def do_GET(self):
         if self.path == '/':
