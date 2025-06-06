@@ -1573,31 +1573,23 @@ input[type="password"]:focus {
     font-size: 35px;
 }
 
-#secaoHistoria {
+#sobreNos {
     max-width: 1200px;
     margin: 0 auto;
     text-align: justify;
 }
 
-.imagemPrincipalSobreNos {
+#imagemPrincipalSobreNos {
     width: 300px;
     text-align: center;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 20px;
+    margin-bottom: 3rem;
 }
 
-#tituloHistoria {
-    font-size: 2rem;
-    font-weight: 600;
-    text-align: center;
-    color: #5d4aa3;
-    margin-bottom: 1rem;
-}
-
-#secaoHistoria p {
-    font-size: 1.1rem;
+#textoSobreNos {
+    font-size: 1.3rem;
     color: #4b3d77;
     background-color: #fff;
     padding: 1.5rem;
@@ -1605,14 +1597,14 @@ input[type="password"]:focus {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-#secaoMvv {
+#missaoVisaoValores {
     display: flex;
     flex-wrap: wrap;
     gap: 3rem;
     justify-content: center;
 }
 
-.blocoMvv {
+.blocosMvv {
     flex: 1 1 320px;
     max-width: 360px;
     background-color: #fff;
@@ -1622,17 +1614,17 @@ input[type="password"]:focus {
     transition: transform 0.3s ease;
 }
 
-.blocoMvv:hover {
+.blocosMvv:hover {
     transform: translateY(-3px);
 }
 
-.blocoMvv img {
+.blocosMvv img {
     width: 100%;
     height: 240px;
     object-fit: cover;
 }
 
-.blocoMvv figcaption {
+.blocosMvv figcaption {
     padding: 1.5rem;
 }
 
@@ -1640,30 +1632,31 @@ input[type="password"]:focus {
     font-size: 1.6rem;
     font-weight: 600;
     text-align: center;
-    color: #4e3b8d;
+    color: #3b2994;
     margin-bottom: 0.8rem;
 }
 
-.blocoMvv p {
-    font-size: 1rem;
-    color: #4b3d77;
+.textoMvv {
+    font-size: 1.2rem;
+    color: #333;
     text-align: justify;
 }
 
-#secaoFaq {
+#faq {
     width: 1160px;
     margin: 0 auto;
 }
 
-#secaoFaq h3 {
-    font-size: 2rem;
+#tituloPerguntasFrequentes {
+    color: #333;
+    margin-bottom: 40px;
+    margin-top: -35px;
     text-align: center;
-    color: #5d4aa3;
-    margin-bottom: 2rem;
+    font-size: 35px;
 }
 
-#secaoFaq details {
-    background-color: #fff;
+.detailsFaq {
+    background-color: #ffffff;
     border-radius: 14px;
     padding: 1.5rem 2rem;
     margin-bottom: 1.5rem;
@@ -1672,14 +1665,14 @@ input[type="password"]:focus {
     cursor: pointer;
 }
 
-#secaoFaq details[open] {
+.detailsFaq [open] {
     background-color: #f0ebff;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
 }
 
-#secaoFaq summary {
+.tituloPergunta {
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: #3f3275;
     margin-bottom: 0.8rem;
     list-style: none;
@@ -1687,7 +1680,7 @@ input[type="password"]:focus {
     padding-right: 1.2rem;
 }
 
-#secaoFaq summary::after {
+.tituloPergunta::after {
     content: "+";
     position: absolute;
     right: 0;
@@ -1695,52 +1688,15 @@ input[type="password"]:focus {
     transition: transform 0.3s ease;
 }
 
-#secaoFaq details[open] summary::after {
+detailsFaq[open] tituloPergunta::after {
     content: "–";
     transform: rotate(180deg);
 }
 
-#secaoFaq p {
-    font-size: 1rem;
-    color: #4b3d77;
+.textoAparecer {
+    font-size: 1.3rem;
+    color: #3f3275;
     line-height: 1.6;
     margin-top: 0.5rem;
     text-align: justify;
 }
-
-#secaoContato {
-    max-width: 900px;
-    margin: 4rem auto 0 auto;
-    text-align: center;
-}
-
-#secaoContato h3 {
-    font-size: 2rem;
-    color: #5d4aa3;
-    margin-bottom: 1rem;
-}
-
-#secaoContato address {
-    font-style: normal;
-    font-size: 1.1rem;
-    color: #4b3d77;
-    background-color: #fff;
-    display: inline-block;
-    padding: 2rem 2.5rem;
-    border-radius: 14px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-    line-height: 1.8;
-}
-
-#secaoContato a {
-    color: #6a55d3;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-#secaoContato a:hover {
-    text-decoration: underline;
-}
-
-
-
