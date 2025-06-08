@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Editar Perfil - E-commerce</title>
+<style>
+  :root {
+    --color-bg: #ffffff;
+    --color-text: #6b7280;
+    --color-text-dark: #111827;
+    --color-primary: #111827;
+    --color-primary-hover: #333c57;
+    --color-border: #d1d5db;
+    --color-shadow: rgba(0,0,0,0.05);
+    --border-radius: 0.75rem;
+    --spacing-unit: 1.5rem;
+    --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --transition-speed: 0.3s;
+  }
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-family);
+    font-size: 18px;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  header[role="banner"] {
+    position: sticky;
+    top: 0;
+    background: var(--color-bg);
+    border-bottom: 1px solid var(--color-border);
+    padding: 1rem calc(var(--spacing-unit));
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 6px var(--color-shadow);
+  }
+
+  header[role="banner"] a.logo {
+    font-weight: 800;
+    font-size: 1.75rem;
+    color: var(--color-primary);
+    text-decoration: none;
+    user-select: none;
+  }
+
+  nav[role="navigation"] ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  nav[role="navigation"] a {
+    color: var(--color-text);
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 0.5rem 0;
+    position: relative;
+    transition: color var(--transition-speed);
+  }
+
+  nav[role="navigation"] a:hover,
+  nav[role="navigation"] a:focus-visible {
+    color: var(--color-primary);
+    outline: none;
+  }
+
+  main[role="main"] {
+    flex-grow: 1;
+    max-width: 720px;
+    margin: 3rem auto 4rem;
+    padding: 0 1rem;
+    width: 100%;
+  }
+
+  header.main-header {
+    margin-bottom: calc(var(--spacing-unit) * 3);
+  }
+
+  header.main-header h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    color: var(--color-text-dark);
+    margin: 0;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+
+  section.card {
+    background-color: var(--color-bg);
+    border-radius: var(--border-radius);
+    box-shadow: 0 6px 16px var(--color-shadow);
+    padding: calc(var(--spacing-unit) * 2);
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--spacing-unit) * 2);
+  }
+
+  fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem 2rem;
+  }
+
+  /* For smaller widths, make fieldset single column */
+  @media (max-width: 600px) {
+    fieldset {
+      grid-template-columns: 1fr;
+      gap: 1.5rem 0;
+    }
+  }
+
+  legend {
+    grid-column: 1 / -1;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--color-text-dark);
+    margin-bottom: 1rem;
+  }
+
+  label {
+    display: block;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--color-text-dark);
+    margin-bottom: 0.5rem;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="password"],
+  input[type="date"] {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+    border: 1.5px solid var(--color-border);
+    border-radius: calc(var(--border-radius) / 2);
+    background-color: #f9fafb;
+    color: var(--color-text-dark);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="tel"]:focus,
+  input[type="password"]:focus,
+  input[type="date"]:focus {
+    border-color: var(--color-primary);
+    outline: none;
+    box-shadow: 0 0 6px var(--color-primary);
+  }
+
+  button[type="submit"] {
+    background-color: var(--color-primary);
+    color: white;
+    font-weight: 700;
+    font-size: 1.25rem;
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    align-self: flex-start;
+    box-shadow: 0 4px 8px rgba(17,24,39,0.3);
+  }
+
+  button[type="submit"]:hover,
+  button[type="submit"]:focus {
+    background-color: var(--color-primary-hover);
+    transform: scale(1.04);
+    outline: none;
+  }
+</style>
+</head>
+<body>
+<header role="banner" aria-label="Navegação principal">
+  <a href="#" class="logo" aria-label="Página inicial do site">E-commerce</a>
+  <nav role="navigation" aria-label="Menu principal">
+    <ul>
+      <li><a href="#">Perfil</a></li>
+      <li><a href="#" aria-current="page">Editar Perfil</a></li>
+      <li><a href="#">Loja</a></li>
+      <li><a href="#">Sair</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main role="main" aria-label="Editar perfil do usuário">
+  <header class="main-header">
+    <h1>Editar Perfil</h1>
+  </header>
+
+  <section class="card" aria-labelledby="form-heading">
+    <form novalidate>
+      <fieldset>
+        <legend>Informações Pessoais</legend>
+
+        <label for="name">Nome completo *</label>
+        <input type="text" id="name" name="name" placeholder="Seu nome completo" required autocomplete="name" value="João da Silva" />
+
+        <label for="username">Nome de usuário *</label>
+        <input type="text" id="username" name="username" placeholder="Seu nome de usuário" required autocomplete="username" value="joaodasilva" />
+
+        <label for="dob">Data de nascimento</label>
+        <input type="date" id="dob" name="dob" max="2006-12-31" autocomplete="bday" value="1990-05-15" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Contato</legend>
+
+        <label for="email">E-mail *</label>
+        <input type="email" id="email" name="email" placeholder="seu@email.com" required autocomplete="email" value="joaosilva@email.com" />
+
+        <label for="phone">Telefone</label>
+        <input type="tel" id="phone" name="phone" placeholder="(00) 00000-0000" autocomplete="tel" value="(11) 90000-0000" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Endereço</legend>
+
+        <label for="address">Endereço</label>
+        <input type="text" id="address" name="address" placeholder="Rua, número, complemento" autocomplete="street-address" value="Rua da Esperança, 123" />
+
+        <label for="city">Cidade</label>
+        <input type="text" id="city" name="city" placeholder="Cidade" autocomplete="address-level2" value="São Paulo" />
+
+        <label for="state">Estado</label>
+        <input type="text" id="state" name="state" placeholder="Estado" autocomplete="address-level1" value="SP" />
+
+        <label for="zip">CEP</label>
+        <input type="text" id="zip" name="zip" placeholder="00000-000" autocomplete="postal-code" pattern="[0-9]{5}-?[0-9]{3}" value="12345-678" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Segurança</legend>
+
+        <label for="password">Nova senha</label>
+        <input type="password" id="password" name="password" placeholder="Digite uma nova senha" autocomplete="new-password" />
+
+        <label for="password-confirm">Confirmar senha</label>
+        <input type="password" id="password-confirm" name="password-confirm" placeholder="Confirme a nova senha" autocomplete="new-password" />
+      </fieldset>
+
+      <button type="submit">Salvar alterações</button>
+    </form>
+  </section>
+</main>
+</body>
+</html>

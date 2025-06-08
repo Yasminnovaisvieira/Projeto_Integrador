@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Dados Cartão | Miaunarquia</title>
+        <link rel="stylesheet" href="../css/style.css" />
+    </head>
+    <body id="bodyCartaoCredito">
+        <main id="mainCartaoCredito">
+            <figure id="containerImagemCartaoCredito">
+                <img src="../imagens/imagem_cartao.png"
+                    alt="Imagem do cartão de crédito grande para pagamento"
+                    id="imagemCartaoCredito" />
+            </figure>
+
+            <section id="secaoDadosCartao"
+                aria-label="Formulário para Inserir Dados do Cartão de Crédito">
+                <h2 id="tituloDadosCartaoCredito">Pagamento <br> Cartão de
+                    Crédito</h2>
+
+                <form novalidate id="formularioCartaoCredito">
+                    <fieldset>
+                        <legend id="legendCartaoCredito">Detalhes do
+                            Cartão</legend>
+
+                        <label class="labelsCartaoCredito">Nome do
+                            Titular</label>
+                        <input
+                            type="text"
+                            class="inputsCartaoCredito"
+                            placeholder="Nome como no cartão" />
+
+                        <label class="labelsCartaoCredito">Número do
+                            Cartão</label>
+                        <input
+                            type="tel"
+                            class="inputsCartaoCredito"
+                            placeholder="•••• •••• •••• ••••"
+                            maxlength="19" />
+                        <p id="InsiraNumeroCartaoCredito">Insira o número
+                            completo do
+                            seu cartão</p>
+
+                        <label
+                            class="labelsCartaoCredito">Validade</label>
+                        <input
+                            type="text"
+                            class="inputsCartaoCredito"
+                            placeholder="MM/AA"
+                            maxlength="5" />
+
+                        <label class="labelsCartaoCredito">CVC</label>
+                        <input
+                            type="password"
+                            class="inputsCartaoCredito"
+                            placeholder="•••"
+                            maxlength="3" />
+
+                    </fieldset>
+
+                    <section id="sectionBotoesCartaoCredito">
+                        <a href="carrinho.html"
+                            id="botaoCancelarCartaoCredito">Cancelar</a>
+                        <a href="revisarPedido.html"
+                            id="botaoConfirmarCartaoCredito">Adicionar
+                            Cartão</a>
+                    </section>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>

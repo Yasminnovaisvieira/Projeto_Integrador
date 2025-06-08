@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Carrinho | Miaunarquia</title>
+        <title>Contato | Miaunarquia</title>
         <link rel="stylesheet" href="../css/style.css" />
     </head>
     <body>
@@ -44,7 +44,8 @@
                     <li><a href="index.html">Início</a></li>
                     <li><a href="catalogo.html">Catálogo</a></li>
                     <li><a href="sobreNos.html#sobreNos">Sobre Nós</a></li>
-                    <li><a href="sobreNos.html#contato">Contato</a></li>
+                    <li><a href="contato.html"
+                            id="contatoSelecionado">Contato</a></li>
                 </ul>
             </nav>
 
@@ -106,101 +107,46 @@
             </nav>
         </header>
 
-        <main id="mainCarrinho">
-            <h2 id="tituloCarrinho">Seu Carrinho</h2>
+        <main id="mainContato" aria-label="Formulário de Contato">
+            <h2 id="tituloContato">Contato</h1>
+            <p id="descricaoContato">Tem alguma dúvida ou quer falar conosco?
+                Envie sua mensagem preenchendo o formulário abaixo.</p>
 
-            <section class="itensCarrinho" aria-label="Itens no Carrinho">
-                <article class="itemCarrinho">
-                    <figure>
-                        <img
-                            src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=80&q=80"
-                            alt="..."
-                            class="fotoProduto" />
-                    </figure>
+            <p id="SugestaoContatarEmail">Você também pode nos contatar pelo
+                nosso e-mail:</p>
+            <address id="contatoFormulario">
+                <p>
+                    <a
+                        href="mailto:contato@miauanarquia.com.br">contato@miauanarquia.com.br</a>
+                </p>
+            </address>
 
-                    <section class="informacoesProduto">
-                        <p class="nomeProduto">Arranhador Luxo</p>
-                    </section>
+            <hr class="divisao" />
 
-                    <section class="QuantidadeERemover">
-                        <div class="blocoQuantidade">
-                            <label class="labelQuantidade">Quantidade</label>
-                            <input type="number" id="QuantidadeProd1"
-                                class="quantidadeProduto" min="1" max="10"
-                                value="1" />
-                        </div>
+            <form novalidate id="formularioContato">
+                <!-- Curiosidade: Esse tipo de formulário desativa a validação padrão (se os dados estão corretos)-->
+                <fieldset class="fieldsetsContato">
+                    <legend class="legendContato">Nome</legend>
+                    <label class="labelContato">Seu nome completo</label>
+                    <input type="text" placeholder="Ex: Yasmin Vieira" />
+                </fieldset>
 
-                        <output class="subtotal">R$ 299,00</output>
-                        <button class="botaoRemover">Remover</button>
-                    </section>
-                </article>
+                <fieldset class="fieldsetsContato">
+                    <legend class="legendContato">Email</legend>
+                    <label class="labelContato">Seu endereço de email</label>
+                    <input type="email" id="emailContato" placeholder="exemplo@email.com" />
+                </fieldset>
 
-                <article class="itemCarrinho">
-                    <figure>
-                        <img
-                            src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=80&q=80"
-                            alt="..."
-                            class="fotoProduto" />
-                    </figure>
+                <fieldset class="fieldsetsContato">
+                    <legend class="legendContato">Mensagem</legend>
+                    <label class="labelContato">Sua mensagem</label>
+                    <textarea id="mensagemContato"
+                        placeholder="Escreva sua mensagem aqui..."></textarea>
+                </fieldset>
 
-                    <section class="informacoesProduto">
-                        <p class="nomeProduto">Arranhador Luxo</p>
-                    </section>
-
-                    <section class="QuantidadeERemover">
-                        <div class="blocoQuantidade">
-                            <label class="labelQuantidade">Quantidade</label>
-                            <input type="number" id="QuantidadeProd2"
-                                class="quantidadeProduto" min="1" max="10"
-                                value="1" />
-                        </div>
-
-                        <output class="subtotal">R$ 299,00</output>
-                        <button class="botaoRemover">Remover</button>
-                    </section>
-                </article>
-
-                <article class="itemCarrinho">
-                    <figure>
-                        <img
-                            src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?auto=format&fit=crop&w=80&q=80"
-                            alt="..."
-                            class="fotoProduto" />
-                    </figure>
-
-                    <section class="informacoesProduto">
-                        <p class="nomeProduto">Comedouro Inteligente</p>
-                    </section>
-
-                    <section class="QuantidadeERemover">
-                        <div class="blocoQuantidade">
-                            <label class="labelQuantidade">Quantidade</label>
-                            <input type="number" id="QuantidadeProd3"
-                                class="quantidadeProduto" min="1" max="10"
-                                value="1" />
-                        </div>
-
-                        <output class="subtotal">R$ 299,00</output>
-                        <button class="botaoRemover">Remover</button>
-                    </section>
-                </article>
-            </section>
-
-            <aside id="resumoCarrinho" aria-label="Resumo do Carrinho">
-                <h3 id="tituloResumoCarrinho">Resumo do pedido</h3>
-                <dl class="detalhesResumo">
-                    <dt>Subtotal</dt>
-                    <dd class="informacoesSubtotal">R$ 697,00</dd>
-                    <dt>Frete</dt>
-                    <dd class="informacoesSubtotal">Grátis</dd>
-                    <dt>Total</dt>
-                    <dd class="informacoesSubtotal">R$ 697,00</dd>
-                </dl>
-
-                <label id="labelDescontoCarrinho">Código de desconto:</label>
-                <input type="text" id="inputDesconto" placeholder="Digite o código de desconto aqui" />
-                <a class="botaoFinalizarCompra" href="login.html" aria-label="Finalizar Compra">Finalizar Compra</a>
-            </aside>
+                <button type="submit" id="botaoEnviarContato">Enviar
+                    Mensagem</button>
+            </form>
         </main>
 
         <footer id="rodape">
