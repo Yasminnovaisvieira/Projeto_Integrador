@@ -1582,7 +1582,6 @@ select:focus {
     font-size: 35px;
 }
 
-<<<<<<< HEAD
 #tituloFaq {
     color: #333;
     margin-top: -45px;
@@ -1601,9 +1600,12 @@ select:focus {
 }
 
 #secaoHistoria {
-=======
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
 #sobreNos {
->>>>>>> 6a16a5cfd365c26ac434de2205c8d53d395920c1
     max-width: 1200px;
     margin: 0 auto;
     text-align: justify;
@@ -1618,15 +1620,18 @@ select:focus {
     margin-bottom: 3rem;
 }
 
-<<<<<<< HEAD
 #secaoHistoria p {
     font-size: 1.1rem;
-    color: #333;
-=======
+    color: #4b3d77;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
 #textoSobreNos {
     font-size: 1.3rem;
     color: #4b3d77;
->>>>>>> 6a16a5cfd365c26ac434de2205c8d53d395920c1
     background-color: #fff;
     padding: 1.5rem;
     border-radius: 12px;
@@ -1672,32 +1677,18 @@ select:focus {
     margin-bottom: 0.8rem;
 }
 
-<<<<<<< HEAD
-.blocoMvv p {
-    font-size: 1rem;
-=======
-.textoMvv {
-    font-size: 1.2rem;
->>>>>>> 6a16a5cfd365c26ac434de2205c8d53d395920c1
-    color: #333;
-    text-align: justify;
-}
-
-#faq {
+#secaoFaq {
     width: 1160px;
-<<<<<<< HEAD
     margin-bottom: -45px;
-=======
     margin: 0 auto;
 }
 
-#tituloPerguntasFrequentes {
+#tituloFaq {
     color: #333;
     margin-bottom: 40px;
     margin-top: -35px;
     text-align: center;
     font-size: 35px;
->>>>>>> 6a16a5cfd365c26ac434de2205c8d53d395920c1
 }
 
 .detailsFaq {
@@ -1733,14 +1724,13 @@ select:focus {
     transition: transform 0.3s ease;
 }
 
-detailsFaq[open] tituloPergunta::after {
+.detailsFaq[open] .tituloPergunta::after {
     content: "–";
     transform: rotate(180deg);
     /*Girar durante a mudança de ícone*/
 }
 
-<<<<<<< HEAD
-#secaoFaq p {
+.textoFaq {
     font-size: 1rem;
     color: #333;
     line-height: 1.6;
@@ -2495,18 +2485,18 @@ fieldset {
 }
 
 #formularioCartaoCredito {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 #mainCartaoCredito fieldset {
-  border: none;
-  padding: 0;
-  margin-bottom: 0.5px;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+    border: none;
+    padding: 0;
+    margin-bottom: 0.5px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 #mainCartaoCredito input[type="password"],
@@ -2528,18 +2518,18 @@ fieldset {
 }
 
 #legendCartaoCredito {
-  font-weight: 600;
-  font-size: 1.5rem;
-  color: #190c58;
-  margin-bottom: 1rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #190c58;
+    margin-bottom: 1rem;
 }
 
 .labelsCartaoCredito {
-  font-weight: 600;
-  font-size: 1rem;
-  color: #28177c;
-  margin-bottom: -0.5rem;
-  display: inline-block;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #28177c;
+    margin-bottom: -0.5rem;
+    display: inline-block;
 }
 
 #sectionBotoesCartaoCredito {
@@ -2587,10 +2577,10 @@ fieldset {
 
 
 #InsiraNumeroCartaoCredito {
-  color: #6b7280;
-  font-size: 1rem;
-  margin-top: -0.5rem;
-  display: block;
+    color: #6b7280;
+    font-size: 1rem;
+    margin-top: -0.5rem;
+    display: block;
 }
 
 
@@ -2598,7 +2588,6 @@ fieldset {
 
 
 /* EDIÇÃO DE PERFIL */
-=======
 .textoAparecer {
     font-size: 1.3rem;
     color: #3f3275;
@@ -2606,4 +2595,3 @@ fieldset {
     margin-top: 0.5rem;
     text-align: justify;
 }
->>>>>>> 6a16a5cfd365c26ac434de2205c8d53d395920c1
