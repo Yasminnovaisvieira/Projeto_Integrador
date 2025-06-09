@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Configurar Produto</title>
+  <link rel="stylesheet" href="../css/yy.css" />
+</head>
+<body>
+  <header role="banner" aria-label="Navegação principal">
+    <a href="#" class="logo" aria-label="Logo da Loja">E-Shop</a>
+    <nav role="navigation" aria-label="Menu principal">
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Produtos</a></li>
+        <li><a href="#">Carrinho</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80" alt="Imagem do Produto Smartphone X" class="product-image" />
+
+    <section class="product-info" aria-labelledby="product-title">
+      <h1 id="product-title" class="product-title">Smartphone X</h1>
+      <p class="product-price" aria-live="polite">R$ 3.499,00</p>
+      <p class="product-description">
+        O Smartphone X oferece desempenho excepcional, tela AMOLED vibrante e sistema de câmeras avançado para capturar seus melhores momentos com qualidade profissional.
+      </p>
+
+      <form aria-label="Configuração do produto">
+        <fieldset class="spec-group">
+          <legend class="section-label">Cor</legend>
+          <div class="option-list">
+            <input type="radio" id="color-black" name="color" value="Preto" checked />
+            <label class="option-label" for="color-black" tabindex="0" aria-checked="true" role="radio">Preto</label>
+
+            <input type="radio" id="color-white" name="color" value="Branco" />
+            <label class="option-label" for="color-white" tabindex="0" aria-checked="false" role="radio">Branco</label>
+
+            <input type="radio" id="color-blue" name="color" value="Azul" />
+            <label class="option-label" for="color-blue" tabindex="0" aria-checked="false" role="radio">Azul</label>
+          </div>
+        </fieldset>
+
+        <fieldset class="spec-group">
+          <legend class="section-label">Armazenamento</legend>
+          <div class="option-list">
+            <input type="radio" id="storage-64gb" name="storage" value="64GB" checked />
+            <label class="option-label" for="storage-64gb" tabindex="0" aria-checked="true" role="radio">64GB</label>
+
+            <input type="radio" id="storage-128gb" name="storage" value="128GB" />
+            <label class="option-label" for="storage-128gb" tabindex="0" aria-checked="false" role="radio">128GB</label>
+
+            <input type="radio" id="storage-256gb" name="storage" value="256GB" />
+            <label class="option-label" for="storage-256gb" tabindex="0" aria-checked="false" role="radio">256GB</label>
+          </div>
+        </fieldset>
+
+        <div class="spec-group quantity-control">
+          <label for="quantity">Quantidade</label>
+          <input
+            type="number"
+            id="quantity"
+            name="quantity"
+            min="1"
+            max="10"
+            value="1"
+            aria-live="polite"
+            aria-label="Quantidade do produto"
+          />
+        </div>
+
+        <button type="submit" class="btn-add-cart">Adicionar ao Carrinho</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

@@ -2668,20 +2668,36 @@ fieldset {
 }
 
 #botaoEditarPerfil {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
     background-color: #6958c0;
     color: #ffffff;
-    font-weight: 500;
-    font-size: 22px;
-    padding: 1rem 0;
     border: none;
     border-radius: 12px;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: 500;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    box-shadow: 0 8px 24px rgba(17, 24, 39, 0.25);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
     font-family: "Outfit", sans-serif;
+    width: 100%;
 }
 
 #botaoEditarPerfil:hover,
 #botaoEditarPerfil:focus {
     background-color: #48398f;
     outline: none;
+}
+
+#inputPesquisa {
+    font-family: "Outfit", sans-serif;
+    width: 80%;
+    padding: 0.9rem;
+    font-size: 1rem;
+    border-radius: 0.8rem;
+    color: #222;
+    outline: none;
+    transition: border-color 0.5s ease;
 }
