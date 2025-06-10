@@ -3,34 +3,11 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>... | Miaunarquia</title>
+        <title>Fantasia de Dinossauro | Miaunarquia</title>
         <link rel="stylesheet" href="../css/style.css" />
     </head>
     <body>
-        <section
-            class="avisoCarrossel"
-            aria-label="Carrossel de avisos e promoções da plataforma">
-            <!-- Carrossel para avisos de promoções -->
-            <button id="setaEsquerdaAviso" class="setasAviso"
-                aria-label="Aviso anterior">
-                ❮
-            </button>
-            <ul class="mensagens">
-                <li class="mensagem">
-                    NOVO POR AQUI? USE O CUPOM 🐾PRIMEIRACOMPRA🐾
-                </li>
-                <li class="mensagem">
-                    FRETE GRÁTIS ACIMA DE R$199 PARA TODO O BRASIL
-                </li>
-                <li class="mensagem">CADASTRE-SE E GANHE 10% DE DESCONTO</li>
-            </ul>
-            <button id="setaDireitaAviso" class="setasAviso"
-                aria-label="Aviso seguinte">
-                ❯
-            </button>
-        </section>
-
-        <header class="headerSite"> <!-- Header do site -->
+        <header class="headerSite">
             <h1 class="logoSite">
                 <a href="index.html" aria-label="Página inicial - Miaunarquia">
                     <img
@@ -42,11 +19,10 @@
             </h1>
 
             <nav class="navMenu" aria-label="Menu Principal">
-                <!-- arial-label = Rotular elemento para descreve-lo e deixa-lo mais acessível -->
                 <ul>
                     <li><a href="index.html">Início</a></li>
                     <li><a href="catalogo.html">Catálogo</a></li>
-                    <li><a href="sobreNos.html#sobreNos">Sobre Nós</a></li>
+                    <li><a href="sobreNos.html">Sobre Nós</a></li>
                     <li><a href="sobreNos.html#contato">Contato</a></li>
                 </ul>
             </nav>
@@ -67,7 +43,7 @@
                     </li>
 
                     <li>
-                        <a href="perfil.html#favoritos" aria-label="Favoritos">
+                        <a href="login.html" aria-label="Favoritos">
                             <figure class="iconesNav">
                                 <img
                                     src="../imagens/icone_favoritos.png"
@@ -81,7 +57,7 @@
                     </li>
 
                     <li>
-                        <a href="perfil.html" aria-label="Perfil">
+                        <a href="login.html" aria-label="Perfil">
                             <figure class="iconesNav">
                                 <img
                                     src="../imagens/icone_usuario.png"
@@ -108,5 +84,212 @@
                 </ul>
             </nav>
         </header>
+
+        <section class="voltarCatalogo">
+            <nav class="navMenu" aria-label="Voltar para Catálogo">
+                <a href="catalogo.html"
+                    class="btnVoltarProdutoEspecifico">Voltar para
+                    Catálogo</a>
+            </nav>
+        </section>
+
+        <main class="mainProdutos">
+
+            <figure class="imagensProduto">
+                <button aria-label="Imagem Anterior"
+                    class="setas setaAnterior">‹</button>
+
+                <img src="../imagens/imagem_fantasiaDinossauro_produto2_1.png"
+                    alt="Gato com fantasia de coelho"
+                    class="imagemPrincipal" />
+
+                <button aria-label="Próxima Imagem"
+                    class="setas setaProximo"> › </button>
+
+                <figcaption class="fotosPequenas">
+                    <img
+                        src="../imagens/imagem_fantasiaDinossauro_produto2_1.png"
+                        alt class="imagemSelecionada fotosProduto" />
+                    <img
+                        src="../imagens/imagem_fantasiaDinossauro_produto2_2.png"
+                        alt class="fotosProduto" />
+                    <img
+                        src="../imagens/imagem_fantasiaDinossauro_produto2_3.png"
+                        alt class="fotosProduto" />
+                    <img
+                        src="../imagens/imagem_fantasiaDinossauro_produto2_4.png"
+                        alt class="fotosProduto" />
+                </figcaption>
+            </figure>
+
+            <article class="produto">
+                <h2 class="nomeProdutoEspecifico">Fantasia de Dinossauro</h2>
+
+                <p class="codigoProduto"><strong>Código:</strong> AJGYY276H</p>
+
+                <section>
+                    <p class="corProduto">Selecione a opção de
+                        <strong>Tamanho</strong>:</p>
+                    <form class="tamanhos">
+                        <label class="labelTamanhos">
+                            <input type="radio" name="tamanho"
+                                class="opcaoTamanho" />
+                            <span class="etiqueta">PP</span>
+                        </label>
+                        <label class="labelTamanhos">
+                            <input type="radio" name="tamanho"
+                                class="opcaoTamanho" />
+                            <span class="etiqueta">P</span>
+                        </label>
+                        <label class="labelTamanhos">
+                            <input type="radio" name="tamanho"
+                                class="opcaoTamanho" />
+                            <span class="etiqueta">G</span>
+                        </label>
+                        <label class="labelTamanhos">
+                            <input type="radio" name="tamanho"
+                                class="opcaoTamanho" />
+                            <span class="etiqueta">GG</span>
+                        </label>
+                    </form>
+                </section>
+
+                <p class="precoProdutoEspecifico">R$ 143,90</p>
+                <p class="precoParcelar">3x sem juros de R$ 47,96</p>
+
+                <section class="botoesCarrinhoFavoritos">
+                    <a class="botaoAdicionarCarrinho" href="carrinho.html"
+                        aria-label="Adicionar Produto ao Carrinho">ADICIONAR AO
+                        CARRINHO</a>
+                    <a class="botaoAdicionarFavoritos" href="#"
+                        aria-label="Adicionar Produto aos Favoritos"><img
+                            src="../imagens/icone_favoritos_branco.png" alt
+                            class="iconeFavoritosProduto"></a>
+                </section>
+
+                <hr class="divisaoProdutoEspecifico" />
+
+                <details class="detailsProduto">
+                    <summary class="summaryProduto">DETALHES DO
+                        PRODUTO</summary>
+                    <p class="detalhesProduto">Feita em tecido macio de fleece,
+                        ela oferece conforto térmico ideal para dias mais frios.
+                        Os detalhes em feltro nas costas imitam espinhos de
+                        dinossauro em amarelo vibrante, enquanto o capuz com
+                        crista deixa o look ainda mais divertido. Fácil de
+                        vestir, leve e resistente.</p>
+                </details>
+            </article>
+        </main>
+
+        <footer id="rodape">
+            <img
+                src="../imagens/imagem_logo.png"
+                alt="Logo Miaunarquia"
+                class="logo" />
+
+            <nav id="informacoes" aria-label="Informações da Plataforma">
+                <h2>Informações</h2>
+                <ul>
+                    <li><a href="sobreNos.html">Sobre Nós</a></li>
+                    <li><a href="sobreNos.html#termosECondicoes">Termos e
+                            Condições de Uso</a></li>
+                    <li><a href="sobreNos.html#politicasPrivacidade">Política de
+                            Privacidade</a></li>
+                    <li><a href="   ">FAQ</a></li>
+                </ul>
+            </nav>
+
+            <address id="contato">
+                <h2>Contato</h2>
+                <p>
+                    <a
+                        href="mailto:contato@miauanarquia.com.br">contato@miauanarquia.com.br</a>
+                </p>
+            </address>
+
+            <nav id="redes" aria-label="Nos Siga">
+                <h2>Nos siga</h2>
+                <ul id="listaRedesSociais">
+                    <li>
+                        <a href="#"><img
+                                src="../imagens/icone_facebook.png"
+                                class="iconesRedesSociais"
+                                alt="Ícone do Facebook" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img
+                                src="../imagens/icone_instagram.png"
+                                class="iconesRedesSociais"
+                                alt="Ícone do Instagram" /></a>
+                    </li>
+                    <li>
+                        <a href="#"><img
+                                src="../imagens/icone_linkedin.png"
+                                class="iconesRedesSociais"
+                                alt="Ícone do LinkedIn" /></a>
+                    </li>
+                    <li>
+                        <a href="#"><img
+                                src="../imagens/icone_discord.png"
+                                class="iconesRedesSociais"
+                                alt="Ícone do Discord" /></a>
+                    </li>
+                </ul>
+            </nav>
+
+            <section id="pagamentos">
+                <h2>Formas de pagamento:</h2>
+                <ul>
+                    <li>
+                        <img
+                            src="../imagens/icone_american_express.png"
+                            alt="Ícone do American Express" />
+                    </li>
+                    <li>
+                        <img
+                            src="../imagens/icone_visa.png"
+                            alt="Ícone do Visa" />
+                    </li>
+                    <li>
+                        <img
+                            src="../imagens/icone_mastercard.png"
+                            alt="Ícone do Mastercard" />
+                    </li>
+                    <li>
+                        <img
+                            src="../imagens/icone_discover.png"
+                            alt="Ícone do Discover" />
+                    </li>
+                    <li>
+                        <img
+                            src="../imagens/icone_elo.png"
+                            alt="Ícone do Elo" />
+                    </li>
+                    <li>
+                        <img
+                            src="../imagens/icone_boleto.png"
+                            alt="Ícone do Boleto bancário" />
+                    </li>
+                    <li>
+                        <img
+                            src="../imagens/icone_pix.png"
+                            alt="Ícone do Pix" />
+                    </li>
+                </ul>
+                <p class="seguro">
+                    <img
+                        src="../imagens/icone_seguranca_footer.png"
+                        alt="Ícone que simboliza Segurança" />
+                    PAGAMENTO 100% SEGURO
+                </p>
+                <ul id="copyright">
+                    <li id="copyrightTexto">
+                        &copy; 2025 Miaunarquia. Todos os direitos reservados.
+                    </li>
+                </ul>
+            </section>
+        </footer>
     </body>
 </html>
