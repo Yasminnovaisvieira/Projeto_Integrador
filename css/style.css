@@ -2779,10 +2779,10 @@ fieldset {
     color: #333;    
 }
 
-.corProduto {
+.corProduto, tamanhoProduto {
     font-size: 1.2rem;
     margin-top: 1rem;
-    color: #333;  
+    color: #333; 
 }
 
 .circulo {
@@ -2958,3 +2958,41 @@ fieldset {
 .etiqueta:focus, .etiqueta:hover {
     border: 2px solid #48398f;
 }
+
+.tituloQuantidadeProdutoEspecifico {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #333;  
+}
+
+.QuantidadeProdutoEspecifico input[type="number"] {
+    font-family: "Outfit", sans-serif;
+    width: 12%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    background-color: #ffffff;
+    border: 2px solid #6958c0;
+    border-radius: 0.8rem;
+    color: #222;
+    outline: none;
+    text-align: center;
+    transition: border-color 0.5s ease;
+}
+
+.QuantidadeProdutoEspecifico input[type="number"]:focus {
+    outline: none;
+    border-color: #48398f;
+}
+
+
+
+
+
+
+
+
+
+
+/* ADMINISTRADOR */
+
