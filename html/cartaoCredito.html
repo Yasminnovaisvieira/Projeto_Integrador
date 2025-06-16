@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Dados Cartão | Miaunarquia</title>
         <link rel="stylesheet" href="../css/style.css" />
     </head>
     <body id="bodyCartaoCredito">
+        <!-- Formulário para Dados Cartão de Crédito -->
         <main id="mainCartaoCredito">
             <figure id="containerImagemCartaoCredito">
                 <img src="../imagens/imagem_cartao.png"
@@ -19,51 +20,57 @@
                 <h2 id="tituloDadosCartaoCredito">Pagamento <br> Cartão de
                     Crédito</h2>
 
+                <!-- Inserir dados do Cartão de Crédito -->
                 <form novalidate id="formularioCartaoCredito">
                     <fieldset>
                         <legend id="legendCartaoCredito">Detalhes do
                             Cartão</legend>
 
-                        <label class="labelsCartaoCredito">Nome do
+                        <label class="labelsCartaoCredito" for="nome">Nome do
                             Titular</label>
                         <input
                             type="text"
                             class="inputsCartaoCredito"
-                            placeholder="Nome como no cartão" />
+                            placeholder="Nome como no cartão" name="nome" />
 
-                        <label class="labelsCartaoCredito">Número do
+                        <label class="labelsCartaoCredito"
+                            for="numeroCartao">Número do
                             Cartão</label>
                         <input
                             type="tel"
                             class="inputsCartaoCredito"
                             placeholder="•••• •••• •••• ••••"
-                            maxlength="19" />
+                            maxlength="19" name="numeroCartao"
+                            id="inputNumCartao" />
                         <p id="InsiraNumeroCartaoCredito">Insira o número
                             completo do
                             seu cartão</p>
 
                         <label
-                            class="labelsCartaoCredito">Validade</label>
+                            class="labelsCartaoCredito"
+                            for="validadeCarta">Validade</label>
                         <input
                             type="text"
                             class="inputsCartaoCredito"
                             placeholder="MM/AA"
-                            maxlength="5" />
+                            maxlength="5" name="validadeCartao" />
 
-                        <label class="labelsCartaoCredito">CVC</label>
+                        <label class="labelsCartaoCredito" for="cvc">CVC</label>
                         <input
                             type="password"
                             class="inputsCartaoCredito"
                             placeholder="•••"
-                            maxlength="3" />
+                            maxlength="3" name="cvc" />
 
                     </fieldset>
 
                     <section id="sectionBotoesCartaoCredito">
                         <a href="carrinho.html"
-                            id="botaoCancelarCartaoCredito">Cancelar</a>
+                            id="botaoCancelarCartaoCredito"
+                            aria-label="Botão para Cancelar Pedido">Cancelar</a>
                         <a href="revisarPedido.html"
-                            id="botaoConfirmarCartaoCredito">Adicionar
+                            id="botaoConfirmarCartaoCredito"
+                            aria-label="Botão para Adicionar Cartão e Continuar com a Compra">Adicionar
                             Cartão</a>
                     </section>
                 </form>

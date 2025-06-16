@@ -4,17 +4,17 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Página Inicial | Miaunarquia</title>
-        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/style.css">
     </head>
     <body>
-
-        <header class="headerSite"> <!-- Header do site -->
+        <!-- Header do site -->
+        <header class="headerSite">
             <h1 class="logoSite">
                 <a href="indexLogado.html"
                     aria-label="Página inicial - Miaunarquia">
                     <img
                         src="../imagens/imagem_logo.png"
-                        alt="Logo de um Gato Preto com Coroa"
+                        alt="Logo do Site (Desenho de rosto de um gato preto com uma coroa)"
                         class="logoImagem" />
                     <span class="nomeLogo">Miaunarquia</span>
                 </a>
@@ -23,11 +23,14 @@
             <nav class="navMenu" aria-label="Menu Principal">
                 <!-- arial-label = Rotular elemento para descreve-lo e deixa-lo mais acessível -->
                 <ul>
-                    <li><a href="index.html"
-                            id="inicioSelecionado">Início</a></li>
-                    <li><a href="catalogo.html">Catálogo</a></li>
-                    <li><a href="sobreNos.html">Sobre Nós</a></li>
-                    <li><a href="sobreNos.html#contato">Contato</a></li>
+                    <li><a href="indexLogado.html" class="inicioSelecionado"
+                            aria-label="Ir para Início">Início</a></li>
+                    <li><a href="catalogo.html"
+                            aria-label="Ir para Catálogo">Catálogo</a></li>
+                    <li><a href="sobreNos.html"
+                            aria-label="Ir para Sobre Nós">Sobre Nós</a></li>
+                    <li><a href="contato.html"
+                            aria-label="Ir para Contato (Contate-nos)">Contato</a></li>
                 </ul>
             </nav>
 
@@ -47,7 +50,7 @@
                     </li>
 
                     <li>
-                        <a href="perfil.html#favoritos" aria-label="Favoritos">
+                        <a href="#" aria-label="Ir para Favoritos">
                             <figure class="iconesNav">
                                 <img
                                     src="../imagens/icone_favoritos.png"
@@ -61,7 +64,7 @@
                     </li>
 
                     <li>
-                        <a href="perfil.html" aria-label="Perfil">
+                        <a href="#" aria-label="Ir para Perfil">
                             <figure class="iconesNav">
                                 <img
                                     src="../imagens/icone_usuario.png"
@@ -74,7 +77,7 @@
                     </li>
 
                     <li>
-                        <a href="carrinho.html" aria-label="Carrinho">
+                        <a href="carrinho.html" aria-label="Ir para Carrinho">
                             <figure class="iconesNav">
                                 <img
                                     src="../imagens/icone_carrinho.png"
@@ -103,8 +106,8 @@
         </header>
 
         <main>
+            <!-- Carrossel de Boas Vindas -->
             <section class="carrossel" aria-label="Carrossel de Imagens">
-                <!-- Carrossel de Boas Vindas -->
                 <button id="setaEsquerdaCarrossel" class="setaEsquerdaCarrossel"
                     aria-label="Slide anterior do carrossel">
                     ❮
@@ -155,15 +158,17 @@
             <hr class="divisao" aria-hidden="true" />
             <!-- Aria-hidden serve para esconder o elemento de tecnologias assistivas -->
 
+            <!-- Categorias do Catálogo de Produtos -->
             <section
                 class="categoriasCatalogo"
                 aria-label="Categorias do Catálogo">
-                <!-- Categorias do Catálogo -->
                 <h2 class="tituloCategorias">Categorias de Produtos</h2>
+
                 <ul class="listaCategorias">
                     <li>
                         <a href="catalogoArranhadores.html"
-                            class="linksCategorias">
+                            class="linksCategorias"
+                            aria-label="Ir para Categoria de Arranhadores">
                             <img
                                 src="../imagens/imagem_arranhador.png"
                                 alt="Imagem de arranhador preto"
@@ -174,7 +179,8 @@
 
                     <li>
                         <a href="catalogoArranhadores.html"
-                            class="linksCategorias">
+                            class="linksCategorias"
+                            aria-label="Ir para Categoria de Camas">
                             <img
                                 src="../imagens/imagem_cama.png"
                                 alt="Imagem de cama formato tubarão"
@@ -184,7 +190,8 @@
                     </li>
 
                     <li>
-                        <a href="catalogoHigiene.html" class="linksCategorias">
+                        <a href="catalogoHigiene.html" class="linksCategorias"
+                            aria-label="Ir para Categoria de Higiene e Limpeza">
                             <img
                                 src="../imagens/imagem_limpeza.png "
                                 alt="Imagem de Enzimac Gato com Embalagem Rosa"
@@ -194,7 +201,8 @@
                     </li>
 
                     <li>
-                        <a href="catalogoRoupas.html" class="linksCategorias">
+                        <a href="catalogoRoupas.html" class="linksCategorias"
+                            aria-label="Ir para Categoria de Roupas">
                             <img
                                 src="../imagens/imagem_roupa.png"
                                 alt="Imagem Gato com Fantasia de Dinossauro"
@@ -205,7 +213,8 @@
 
                     <li>
                         <a href="catalogoBrinquedos.html"
-                            class="linksCategorias">
+                            class="linksCategorias"
+                            aria-label="Ir para Categoria de Brinquedos">
                             <img
                                 src="../imagens/imagem_brinquedo.png"
                                 alt="Imagem de brinquedos"
@@ -216,7 +225,8 @@
 
                     <li>
                         <a href="catalogoComedouros.html"
-                            class="linksCategorias">
+                            class="linksCategorias"
+                            aria-label="Ir para Categoria de Comedouros e Bebedouros">
                             <img
                                 src="../imagens/imagem_comedouro.png"
                                 alt="Ícone de comedouros e bebedouros"
@@ -226,7 +236,8 @@
                     </li>
 
                     <li>
-                        <a href="catalogoPetiscos.html" class="linksCategorias">
+                        <a href="catalogoPetiscos.html" class="linksCategorias"
+                            aria-label="Ir para Categoria de Petiscos">
                             <img
                                 src="../imagens/imagem_petisco.png"
                                 alt="Ícone de petiscos"
@@ -239,29 +250,32 @@
 
             <hr class="divisao" aria-hidden="true" />
 
+            <!-- Produtos Lançados Recentemente -->
             <section
-                id="produtosLancamentos"
+                class="produtosLancamentos"
                 aria-label="Carrossel de Lançamentos">
-                <!-- Produtos Lançados Recentemente -->
-                <h2 id="tituloLancamentos">Lançamentos</h2>
+                <h2 class="tituloLancamentos">Lançamentos</h2>
+
                 <button id="setaEsquerdaLancamento" class="setasLancamento"
                     aria-label="Slide anterior do carrossel de produtos recém lançados">
                     ❮
                 </button>
-                <article id="containerCarrosselLancamentos">
-                    <ul id="carrosselLancamentos">
+
+                <article class="containerCarrosselLancamentos">
+                    <ul class="carrosselLancamentos">
                         <li class="cardProduto">
-                            <button
+                            <a
+                                href="#"
                                 class="botaoFavoritoCards"
                                 aria-label="Adicionar aos favoritos">
                                 <img
                                     src="../imagens/icone_favoritos.png"
                                     alt="Ícone de Coração" />
-                            </button>
+                            </a>
                             <img
                                 src="../imagens/imagem_arranhador_cacto.png"
                                 class="imagensCards"
-                                alt="Arranhador em Formato de Cacto" />
+                                alt="Arranhador em Formato de Cacto para Gatos" />
                             <h3>Arranhador - Formato de Cacto</h3>
                             <p aria-label="Avaliação: 4 de 5 estrelas">
                                 ★★★★☆ <span>(34)</span>
@@ -269,19 +283,19 @@
                             <p>
                                 <strong>R$ 263,90</strong>
                             </p>
-                            <button class="botaoCarrinho">
-                                ADICIONAR AO CARRINHO
-                            </button>
+                            <a href="carrinho.html"
+                                class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
                         </li>
 
                         <li class="cardProduto">
-                            <button
+                            <a
+                                href="#"
                                 class="botaoFavoritoCards"
                                 aria-label="Adicionar aos favoritos">
                                 <img
                                     src="../imagens/icone_favoritos.png"
                                     alt="Ícone de Coração" />
-                            </button>
+                            </a>
                             <img
                                 src="../imagens/imagem_tigela_antiderrapante.png"
                                 class="imagensCards"
@@ -293,23 +307,23 @@
                             <p>
                                 <strong>R$ 159,75</strong>
                             </p>
-                            <button class="botaoCarrinho">
-                                ADICIONAR AO CARRINHO
-                            </button>
+                            <a href="carrinho.html"
+                                class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
                         </li>
 
                         <li class="cardProduto">
-                            <button
+                            <a
+                                href="#"
                                 class="botaoFavoritoCards"
                                 aria-label="Adicionar aos favoritos">
                                 <img
                                     src="../imagens/icone_favoritos.png"
                                     alt="Ícone de Coração" />
-                            </button>
+                            </a>
                             <img
                                 src="../imagens/imagem_fantasia_morcego.png"
                                 class="imagensCards"
-                                alt="Gato com Asas de Morcego - Fantasia" />
+                                alt="Gato preto com uma fantasia de Asas de Morcego" />
                             <h3>Fantasia Asa De Morcego</h3>
                             <p aria-label="Avaliação: 4 de 5 estrelas">
                                 ★★★★☆ <span>(26)</span>
@@ -317,43 +331,43 @@
                             <p>
                                 <strong>R$ 87,45</strong>
                             </p>
-                            <button class="botaoCarrinho">
-                                ADICIONAR AO CARRINHO
-                            </button>
+                            <a href="carrinho.html"
+                                class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
                         </li>
 
                         <li class="cardProduto">
-                            <button
+                            <a
+                                href="#"
                                 class="botaoFavoritoCards"
                                 aria-label="Adicionar aos favoritos">
                                 <img
                                     src="../imagens/icone_favoritos.png"
                                     alt="Ícone de Coração" />
-                            </button>
+                            </a>
                             <img
                                 src="../imagens/imagem_cama_tubarao.png"
                                 class="imagensCards"
                                 alt="Cama em Formato de Tubarão para Gatos de Porte Grande" />
-                            <h3>Arranhador Formato Cacto</h3>
+                            <h3>Cama em Formato de Tubarão - Azul</h3>
                             <p aria-label="Avaliação: 5 de 5 estrelas">
                                 ★★★★★ <span>(55)</span>
                             </p>
                             <p>
                                 <strong>R$ 119,55</strong>
                             </p>
-                            <button class="botaoCarrinho">
-                                ADICIONAR AO CARRINHO
-                            </button>
+                            <a href="carrinho.html"
+                                class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
                         </li>
 
                         <li class="cardProduto">
-                            <button
+                            <a
+                                href="#"
                                 class="botaoFavoritoCards"
                                 aria-label="Adicionar aos favoritos">
                                 <img
                                     src="../imagens/icone_favoritos.png"
                                     alt="Ícone de Coração" />
-                            </button>
+                            </a>
                             <img
                                 src="../imagens/imagem_petisco_finotrato.png"
                                 class="imagensCards"
@@ -365,23 +379,23 @@
                             <p>
                                 <strong>R$ 34,25</strong>
                             </p>
-                            <button class="botaoCarrinho">
-                                ADICIONAR AO CARRINHO
-                            </button>
+                            <a href="carrinho.html"
+                                class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
                         </li>
 
                         <li class="cardProduto">
-                            <button
+                            <a
+                                href="#"
                                 class="botaoFavoritoCards"
                                 aria-label="Adicionar aos favoritos">
                                 <img
                                     src="../imagens/icone_favoritos.png"
                                     alt="Ícone de Coração" />
-                            </button>
+                            </a>
                             <img
                                 src="../imagens/imagem_brinquedo_peixe.png"
                                 class="imagensCards"
-                                alt="Brinquedo em Formato de Peixe" />
+                                alt="Brinquedo em Formato de Peixe para Gatos" />
                             <h3>Brinquedo em Formato de Peixe</h3>
                             <p aria-label="Avaliação: 4 de 5 estrelas">
                                 ★★★★☆ <span>(67)</span>
@@ -389,23 +403,23 @@
                             <p>
                                 <strong>R$ 48,35</strong>
                             </p>
-                            <button class="botaoCarrinho">
-                                ADICIONAR AO CARRINHO
-                            </button>
+                            <a href="carrinho.html"
+                                class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
                         </li>
 
                         <li class="cardProduto">
-                            <button
+                            <a
+                                href="#"
                                 class="botaoFavoritoCards"
                                 aria-label="Adicionar aos favoritos">
                                 <img
                                     src="../imagens/icone_favoritos.png"
                                     alt="Ícone de Coração" />
-                            </button>
+                            </a>
                             <img
                                 src="../imagens/imagem_kit_higiene_vermelho.png"
                                 class="imagensCards"
-                                alt="Kit de Higiene para Gatos - 3 Peças Vermelhas" />
+                                alt="Kit de 3 Peças Vermelhas para Higiene de Gatos" />
                             <h3>Kit Higiene (3 Peças) - Vermelho</h3>
                             <p aria-label="Avaliação: 5 de 5 estrelas">
                                 ★★★★★ <span>(16)</span>
@@ -413,23 +427,23 @@
                             <p>
                                 <strong>R$ 132,16</strong>
                             </p>
-                            <button class="botaoCarrinho">
-                                ADICIONAR AO CARRINHO
-                            </button>
+                            <a href="carrinho.html"
+                                class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
                         </li>
 
                         <li class="cardProduto">
-                            <button
+                            <a
+                                href="#"
                                 class="botaoFavoritoCards"
                                 aria-label="Adicionar aos favoritos">
                                 <img
                                     src="../imagens/icone_favoritos.png"
                                     alt="Ícone de Coração" />
-                            </button>
+                            </a>
                             <img
                                 src="../imagens/imagem_cama_veludo_rosa.png"
                                 class="imagensCards"
-                                alt="Cama em Formato de Toca - Rosa" />
+                                alt="Cama em Formato de Toca na cor rosa para Gatos" />
                             <h3>Cama em Formato de Toca - Rosa</h3>
                             <p aria-label="Avaliação: 4 de 5 estrelas">
                                 ★★★★☆ <span>(76)</span>
@@ -437,23 +451,23 @@
                             <p>
                                 <strong>R$ 163,87</strong>
                             </p>
-                            <button class="botaoCarrinho">
-                                ADICIONAR AO CARRINHO
-                            </button>
+                            <a href="carrinho.html"
+                                class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
                         </li>
 
                         <li class="cardProduto">
-                            <button
+                            <a
+                                href="#"
                                 class="botaoFavoritoCards"
                                 aria-label="Adicionar aos favoritos">
                                 <img
                                     src="../imagens/icone_favoritos.png"
                                     alt="Ícone de Coração" />
-                            </button>
+                            </a>
                             <img
                                 src="../imagens/imagem_caixa_papelao.png"
                                 class="imagensCards"
-                                alt="Caixa de Papelão Labirinto em formato de CuboArranhador em Formato de Cacto" />
+                                alt="Caixa de Papelão Labirinto em formato de Cubo para Gatos" />
                             <h3>Toca Labirinto Cubo - 1 Cubo</h3>
                             <p aria-label="Avaliação: 4 de 5 estrelas">
                                 ★★★★☆ <span>(29)</span>
@@ -461,19 +475,19 @@
                             <p>
                                 <strong>R$ 39,99</strong>
                             </p>
-                            <button class="botaoCarrinho">
-                                ADICIONAR AO CARRINHO
-                            </button>
+                            <a href="carrinho.html"
+                                class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
                         </li>
 
                         <li class="cardProduto">
-                            <button
+                            <a
+                                href="#"
                                 class="botaoFavoritoCards"
                                 aria-label="Adicionar aos favoritos">
                                 <img
                                     src="../imagens/icone_favoritos.png"
                                     alt="Ícone de Coração" />
-                            </button>
+                            </a>
                             <img
                                 src="../imagens/imagem_bebedouro.png"
                                 class="imagensCards"
@@ -485,12 +499,12 @@
                             <p>
                                 <strong>R$ 179,00</strong>
                             </p>
-                            <button class="botaoCarrinho">
-                                ADICIONAR AO CARRINHO
-                            </button>
+                            <a href="carrinho.html"
+                                class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
                         </li>
                     </ul>
                 </article>
+
                 <button id="setaDireitaLancamento" class="setasLancamento"
                     aria-label="Slide seguinte do carrossel de produtos recém lançados">
                     ❯
@@ -507,29 +521,32 @@
 
             <hr class="divisao" aria-hidden="true" />
 
+            <!-- Produtos Mais Vendidos -->
             <section
-                id="produtosMaisVendidos"
+                class="produtosMaisVendidos"
                 aria-label="Carrossel de Mais Vendidos">
-                <!-- Produtos Mais Vendidos -->
-                <h2 id="tituloMaisVendidos">Mais Vendidos</h2>
+                <h2 class="tituloMaisVendidos">Mais Vendidos</h2>
+
                 <button id="setaEsquerdaMaisVendidos" class="setasMaisVendidos"
                     aria-label="Slide anterior do carrossel de produtos mais vendidos">
                     ❮
                 </button>
-                <article id="containerCarrosselMaisVendidos">
-                    <ul id="carrosselMaisVendidos">
+
+                <article class="containerCarrosselMaisVendidos">
+                    <ul class="carrosselMaisVendidos">
                         <li class="cardProduto">
-                            <button
+                            <a
+                                href="#"
                                 class="botaoFavoritoCards"
                                 aria-label="Adicionar aos favoritos">
                                 <img
                                     src="../imagens/icone_favoritos.png"
                                     alt="Ícone de Coração" />
-                            </button>
+                            </a>
                             <img
                                 src="../imagens/imagem_arranhador_bege.png"
                                 class="imagensCards"
-                                alt="Arranhador Chalesco na Cor Bege" />
+                                alt="Arranhador Chalesco na Cor Bege para Gatos" />
                             <h3>Arranhador - Chalesco</h3>
                             <p aria-label="Avaliação: 5 de 5 estrelas">
                                 ★★★★★ <span>(234)</span>
@@ -537,23 +554,23 @@
                             <p>
                                 <strong>R$ 263,90</strong>
                             </p>
-                            <button class="botaoCarrinho">
-                                ADICIONAR AO CARRINHO
-                            </button>
+                            <a href="carrinho.html"
+                                class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
                         </li>
 
                         <li class="cardProduto">
-                            <button
+                            <a
+                                href="#"
                                 class="botaoFavoritoCards"
                                 aria-label="Adicionar aos favoritos">
                                 <img
                                     src="../imagens/icone_favoritos.png"
                                     alt="Ícone de Coração" />
-                            </button>
+                            </a>
                             <img
                                 src="../imagens/imagem_abacate_catnip.png"
                                 class="imagensCards"
-                                alt="Brinquedo Catnip em Formato de Abacate" />
+                                alt="Brinquedo Catnip em Formato de Abacate para Gatos" />
                             <h3>Catnip Erva Natural - Formato Abacate</h3>
                             <p aria-label="Avaliação: 5 de 5 estrelas">
                                 ★★★★★ <span>(424)</span>
@@ -561,23 +578,23 @@
                             <p>
                                 <strong>R$ 19,44</strong>
                             </p>
-                            <button class="botaoCarrinho">
-                                ADICIONAR AO CARRINHO
-                            </button>
+                            <a href="carrinho.html"
+                                class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
                         </li>
 
                         <li class="cardProduto">
-                            <button
+                            <a
+                                href="#"
                                 class="botaoFavoritoCards"
                                 aria-label="Adicionar aos favoritos">
                                 <img
                                     src="../imagens/icone_favoritos.png"
                                     alt="Ícone de Coração" />
-                            </button>
+                            </a>
                             <img
                                 src="../imagens/imagem_arranhador_4_brinquedos.png"
                                 class="imagensCards"
-                                alt="Arranhador Poste com 4 Brinquedos na cor Preto" />
+                                alt="Arranhador Poste com 4 Brinquedos na cor Preto para Gatos" />
                             <h3>Arranhador Poste com 4 Bolas - Preto</h3>
                             <p aria-label="Avaliação: 5 de 5 estrelas">
                                 ★★★★★ <span>(236)</span>
@@ -585,23 +602,23 @@
                             <p>
                                 <strong>R$ 54,99</strong>
                             </p>
-                            <button class="botaoCarrinho">
-                                ADICIONAR AO CARRINHO
-                            </button>
+                            <a href="carrinho.html"
+                                class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
                         </li>
 
                         <li class="cardProduto">
-                            <button
+                            <a
+                                href="#"
                                 class="botaoFavoritoCards"
                                 aria-label="Adicionar aos favoritos">
                                 <img
                                     src="../imagens/icone_favoritos.png"
                                     alt="Ícone de Coração" />
-                            </button>
+                            </a>
                             <img
                                 src="../imagens/imagem_fantasia_vaca.png"
                                 class="imagensCards"
-                                alt="Gato com Fantasia de Vaca" />
+                                alt="Gato com Fantasia de Vaca Malhada" />
                             <h3>Fantasia de Vaca com Touca</h3>
                             <p aria-label="Avaliação: 5 de 5 estrelas">
                                 ★★★★★ <span>(455)</span>
@@ -609,19 +626,19 @@
                             <p>
                                 <strong>R$ 136,99</strong>
                             </p>
-                            <button class="botaoCarrinho">
-                                ADICIONAR AO CARRINHO
-                            </button>
+                            <a href="carrinho.html"
+                                class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
                         </li>
 
                         <li class="cardProduto">
-                            <button
+                            <a
+                                href="#"
                                 class="botaoFavoritoCards"
                                 aria-label="Adicionar aos favoritos">
                                 <img
                                     src="../imagens/icone_favoritos.png"
                                     alt="Ícone de Coração" />
-                            </button>
+                            </a>
                             <img
                                 src="../imagens/imagem_fantasia_lagosta.png"
                                 class="imagensCards"
@@ -633,19 +650,19 @@
                             <p>
                                 <strong>R$ 134,44</strong>
                             </p>
-                            <button class="botaoCarrinho">
-                                ADICIONAR AO CARRINHO
-                            </button>
+                            <a href="carrinho.html"
+                                class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
                         </li>
 
                         <li class="cardProduto">
-                            <button
+                            <a
+                                href="#"
                                 class="botaoFavoritoCards"
                                 aria-label="Adicionar aos favoritos">
                                 <img
                                     src="../imagens/icone_favoritos.png"
                                     alt="Ícone de Coração" />
-                            </button>
+                            </a>
                             <img
                                 src="../imagens/imagem_petisco_whiskas.png"
                                 class="imagensCards"
@@ -657,43 +674,43 @@
                             <p>
                                 <strong>R$ 11,26</strong>
                             </p>
-                            <button class="botaoCarrinho">
-                                ADICIONAR AO CARRINHO
-                            </button>
+                            <a href="carrinho.html"
+                                class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
                         </li>
 
                         <li class="cardProduto">
-                            <button
+                            <a
+                                href="#"
                                 class="botaoFavoritoCards"
                                 aria-label="Adicionar aos favoritos">
                                 <img
                                     src="../imagens/icone_favoritos.png"
                                     alt="Ícone de Coração" />
-                            </button>
+                            </a>
                             <img
                                 src="../imagens/imagem_cama_cinza.png"
                                 class="imagensCards"
-                                alt="Cama para Gato na Cor Cinza" />
-                            <h3>Cama Grande Quadrada - Cinza</h3>
+                                alt="Cama Redonda para Gato na Cor Cinza" />
+                            <h3>Cama Grande Redonda - Cinza</h3>
                             <p aria-label="Avaliação: 5 de 5 estrelas">
                                 ★★★★★ <span>(437)</span>
                             </p>
                             <p>
                                 <strong>R$ 239,92</strong>
                             </p>
-                            <button class="botaoCarrinho">
-                                ADICIONAR AO CARRINHO
-                            </button>
+                            <a href="carrinho.html"
+                                class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
                         </li>
 
                         <li class="cardProduto">
-                            <button
+                            <a
+                                href="#"
                                 class="botaoFavoritoCards"
                                 aria-label="Adicionar aos favoritos">
                                 <img
                                     src="../imagens/icone_favoritos.png"
                                     alt="Ícone de Coração" />
-                            </button>
+                            </a>
                             <img
                                 src="../imagens/imagem_fantasia_colegial.png"
                                 class="imagensCards"
@@ -705,23 +722,23 @@
                             <p>
                                 <strong>R$ 163,87</strong>
                             </p>
-                            <button class="botaoCarrinho">
-                                ADICIONAR AO CARRINHO
-                            </button>
+                            <a href="carrinho.html"
+                                class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
                         </li>
 
                         <li class="cardProduto">
-                            <button
+                            <a
+                                href="#"
                                 class="botaoFavoritoCards"
                                 aria-label="Adicionar aos favoritos">
                                 <img
                                     src="../imagens/icone_favoritos.png"
                                     alt="Ícone de Coração" />
-                            </button>
+                            </a>
                             <img
                                 src="../imagens/imagem_bebedouro_inox.png"
                                 class="imagensCards"
-                                alt="Bebedouro Fonte de 2 litros com Filtro Silencioso em Inox" />
+                                alt="Bebedouro Fonte de 2 litros com Filtro Silencioso em Inox para Gatos" />
                             <h3>Bebedouro Fonte Água (2L) - Silencioso</h3>
                             <p aria-label="Avaliação: 5 de 5 estrelas">
                                 ★★★★★ <span>(355)</span>
@@ -729,19 +746,19 @@
                             <p>
                                 <strong>R$ 189,22</strong>
                             </p>
-                            <button class="botaoCarrinho">
-                                ADICIONAR AO CARRINHO
-                            </button>
+                            <a href="carrinho.html"
+                                class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
                         </li>
 
                         <li class="cardProduto">
-                            <button
+                            <a
+                                href="#"
                                 class="botaoFavoritoCards"
                                 aria-label="Adicionar aos favoritos">
                                 <img
                                     src="../imagens/icone_favoritos.png"
                                     alt="Ícone de Coração" />
-                            </button>
+                            </a>
                             <img
                                 src="../imagens/imagem_caixote_areia_rosa.png"
                                 class="imagensCards"
@@ -753,12 +770,12 @@
                             <p>
                                 <strong>R$ 119,10</strong>
                             </p>
-                            <button class="botaoCarrinho">
-                                ADICIONAR AO CARRINHO
-                            </button>
+                            <a href="carrinho.html"
+                                class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
                         </li>
                     </ul>
                 </article>
+
                 <button id="setaDireitaMaisVendidos" class="setasMaisVendidos"
                     aria-label="Slide seguinte do carrossel de produtos mais vendidos">
                     ❯
@@ -775,12 +792,16 @@
 
             <hr class="divisao" aria-hidden="true" />
 
-            <section id="carrosselFeedbacks"> <!-- Feedbacks dos Clientes -->
-                <h2 id="tituloFeedbacks">O que dizem nossos clientes</h2>
+            <!-- Carrossel de Feedbacks de Clientes -->
+            <section class="carrosselFeedbacks"
+                aria-label="Carrossel de Mais Vendidos">
+                <h2 class="tituloFeedbacks">O que dizem nossos clientes</h2>
+
                 <button id="setaEsquerdaFeedbacks" class="setasFeedbacks"
                     aria-label="Slide anterior do carrossel de feedbacks">
                     ❮
                 </button>
+
                 <ul class="feedbacks">
                     <li class="feedback">
                         <p class="aspas">“</p>
@@ -859,10 +880,12 @@
                         <p class="aspas">“</p>
                     </li>
                 </ul>
+
                 <button id="setaDireitaFeedbacks" class="setasFeedbacks"
                     aria-label="Slide seguinte do carrossel de feedbacks">
                     ❯
                 </button>
+
                 <nav
                     class="indicadoresFeedbacks"
                     aria-label="Indicadores do carrossel de feedbacks">
@@ -881,35 +904,38 @@
 
             <hr class="divisao" aria-hidden="true" />
 
-            <section id="receberNovidades"> <!-- Sobre Nós-->
+            <!-- Sobre Nós-->
+            <section class="receberNovidades">
                 <figure>
                     <img src="../imagens/imagem_gatinho_pequeno.png"
                         alt="Filhote de gato com os olhos fechados e parecendo que está sorrindo"
-                        id="LogoReceberNovidades" />
+                        class="LogoReceberNovidades" />
                 </figure>
 
-                <article id="containerReceberNovidades">
-                    <h2 id="tituloReceberNovidades">🐾Receba Nossas
+                <article class="containerReceberNovidades">
+                    <h2 class="tituloReceberNovidades">🐾Receba Nossas
                         Novidades🐾</h2>
-                    <p id="descricaoReceberNovidades">
+                    <p class="descricaoReceberNovidades">
                         Temos um monte de novidade chegando e queremos contar
                         primeiro para você (e pro seu gato).
                     </p>
 
-                    <form id="formReceberNovidades">
-                        <input type="email" id="emailReceberNovidades"
+                    <form class="formReceberNovidades">
+                        <input type="email"
                             name="email"
-                            id="inputReceberNovidades"
-                            placeholder="Digite seu email aqui" required>
-                        <button type="submit" id="botaoReceberNovidades">VAMOS
+                            class="emailReceberNovidades"
+                            placeholder="Digite seu email aqui" />
+                        <button type="submit"
+                            class="botaoReceberNovidades">VAMOS
                             MIAR</button>
                     </form>
                 </article>
             </section>
 
-            <section id="vantagens">
-                <!-- Vantagens do Cliente Consumir Nossos Produtos -->
-                <ul id="listaVantagens">
+            <!-- Vantagens/Informações para Clientes -->
+            <section class="vantagensInformacoes"
+                aria-label="Vantagens/Informações para o Cliente que Consume Nossos Produtos">
+                <ul class="listaVantagens">
                     <li>
                         <img
                             src="../imagens/icone_gato.png"
@@ -955,13 +981,15 @@
             </section>
         </main>
 
-        <footer id="rodape"> <!-- Rodapé do Site -->
+        <!-- Rodapé do Site -->
+        <footer class="rodape">
             <img
                 src="../imagens/imagem_logo.png"
-                alt="Logo Miaunarquia"
+                alt="Logo do Site (Desenho de rosto de um gato preto com uma coroa)"
                 class="logo" />
 
-            <nav id="informacoes" aria-label="Informações da Plataforma">
+            <nav class="informacoesRodape"
+                aria-label="Informações da Plataforma">
                 <h2>Informações</h2>
                 <ul>
                     <li><a href="sobreNos.html">Sobre Nós</a></li>
@@ -973,7 +1001,7 @@
                 </ul>
             </nav>
 
-            <address id="contato">
+            <address class="contatoRodape" aria-label="Nossos Meios de Contato">
                 <h2>Contato</h2>
                 <p>
                     <a
@@ -982,38 +1010,39 @@
                 </p>
             </address>
 
-            <nav id="redes" aria-label="Nos Siga">
+            <nav class="redesRodape" aria-label="Nossas Redes Sociais">
                 <h2>Nos siga</h2>
-                <ul id="listaRedesSociais">
+                <ul class="listaRedesSociaisRodape">
                     <li>
                         <a href="#"><img
                                 src="../imagens/icone_facebook.png"
-                                class="iconesRedesSociais"
+                                class="iconesRedesSociaisRodape"
                                 alt="Ícone do Facebook" />
                         </a>
                     </li>
                     <li>
                         <a href="#"><img
                                 src="../imagens/icone_instagram.png"
-                                class="iconesRedesSociais"
+                                class="iconesRedesSociaisRodape"
                                 alt="Ícone do Instagram" /></a>
                     </li>
                     <li>
                         <a href="#"><img
                                 src="../imagens/icone_linkedin.png"
-                                class="iconesRedesSociais"
+                                class="iconesRedesSociaisRodape"
                                 alt="Ícone do LinkedIn" /></a>
                     </li>
                     <li>
                         <a href="#"><img
                                 src="../imagens/icone_discord.png"
-                                class="iconesRedesSociais"
+                                class="iconesRedesSociaisRodape"
                                 alt="Ícone do Discord" /></a>
                     </li>
                 </ul>
             </nav>
 
-            <section id="pagamentos">
+            <section class="pagamentosRodape"
+                aria-label="Nossos Meios de Pagamentos">
                 <h2>Formas de pagamento:</h2>
                 <ul>
                     <li>
@@ -1052,14 +1081,18 @@
                             alt="Ícone do Pix" />
                     </li>
                 </ul>
-                <p class="seguro">
+
+                <p class="seguroRodape"
+                    aria-label="Informação que nossos meios de pagamentos são 100% seguros">
                     <img
                         src="../imagens/icone_seguranca_footer.png"
                         alt="Ícone que simboliza Segurança" />
                     PAGAMENTO 100% SEGURO
                 </p>
-                <ul id="copyright">
-                    <li id="copyrightTexto">
+
+                <ul class="copyrightRodape"
+                    aria-label="CopyRight da Plataforma">
+                    <li class="copyrightTextoRodape">
                         &copy; 2025 Miaunarquia. Todos os direitos reservados.
                     </li>
                 </ul>

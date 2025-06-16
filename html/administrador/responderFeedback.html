@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Responder Feedback | Miaunarquia</title>
+        <link rel="stylesheet" href="../../css/style.css" />
+        <link rel="stylesheet" href="../../css/dashboard.css" />
+    </head>
+    <body class="fundoFormulariosAdm">
+        <!-- Formulário para responder feedacks de clientes -->
+        <main class="mainFormulariosAdm"
+            aria-label="Formulário de resposta ao feedback">
+            <h1 class="titulosFormulariosAdm">Responder Feedback</h1>
+
+            <form>
+                <fieldset>
+                    <label class="labelsFormulariosAdm" for="nomeCliente">Nome
+                        do Cliente</label>
+                    <input class="inputsFormulariosAdm inputsDesabilitados"
+                        type="text" name="nomeCliente"
+                        value="João Silva" disabled />
+                </fieldset>
+
+                <fieldset>
+                    <label class="labelsFormulariosAdm"
+                        for="emailCliente">Email</label>
+                    <input class="inputsFormulariosAdm inputsDesabilitados"
+                        type="email" id="emailCliente" name="emailCliente"
+                        value="joao@email.com" disabled />
+                </fieldset>
+
+                <fieldset>
+                    <label class="labelsFormulariosAdm"
+                        for="mensagemFeedback">Mensagem Recebida</label>
+                    <textarea
+                        class="inputsFormulariosAdm inputsDesabilitados textareaFormulariosAdm"
+                        name="mensagemFeedback"
+                        disabled>Gostei muito do atendimento, mas achei a entrega um pouco demorada.</textarea>
+                </fieldset>
+
+                <fieldset>
+                    <label class="labelsFormulariosAdm"
+                        for="respostaFeedback">Sua Resposta</label>
+                    <textarea
+                        class="inputsFormulariosAdm textareaFormulariosAdm"
+                        name="respostaFeedback"
+                        placeholder="Escreva sua resposta para o cliente aqui..."
+                        required aria-required="true"></textarea>
+                </fieldset>
+
+                <nav class="navBotoesFormulariosAdm">
+                    <a href="feedbacksContato.html"
+                        class="botoesFormulariosAdm botaoCancelarFormulariosAdm"
+                        aria-label="Cancelar resposta">Cancelar</a>
+                    <a href="feedbacksContato.html"
+                        class="botoesFormulariosAdm botaoSalvarFormulariosAdm"
+                        aria-label="Enviar resposta">Enviar Resposta</a>
+                </nav>
+            </form>
+        </main>
+    </body>
+</html>

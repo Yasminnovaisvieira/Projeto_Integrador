@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pedidos | Miaunarquia</title>
+        <link rel="stylesheet" href="../../css/style.css" />
+    </head>
+    <body class="bodysAdministrador">
+        <!-- Menu Lateral do Administrador -->
+        <nav class="menuLateralAdministrador"
+            aria-label="Menu principal do Painel Administrativo">
+            <h1 class="logoAdministrador"
+                aria-label="Logo do painel administrativo">
+                <img
+                    src="../../imagens/imagem_logo.png"
+                    alt="Logo do Site (Desenho de rosto de um gato preto com uma coroa)"
+                    class="logoImagemAdministrador" />
+                <span>Miaunarquia</span></h1>
+
+            <ul class="linksNavegacaoAdministrador">
+                <li><a href="dashboard.html">
+                        <img
+                            src="../../imagens/icone_dashboard.png"
+                            alt="Ícone de Dashboard"
+                            class="iconesMenuLateralAdm" />
+                        <p class="opcoesMenuLateralAdm">Dashboard</p>
+                    </a></li>
+
+                <li><a href="produtosAdm.html">
+                        <img
+                            src="../../imagens/icone_produtos.png"
+                            alt="Ícone de Produtos"
+                            class="iconesMenuLateralAdm" />
+                        <p class="opcoesMenuLateralAdm">Produtos</p>
+                    </a></li>
+
+                <li><a href="#">
+                        <img
+                            src="../../imagens/icone_pedidos.png"
+                            alt="Ícone de Pedidos"
+                            class="iconesMenuLateralAdm" />
+                        <p class="opcoesMenuLateralAdm">Pedidos</p>
+                    </a></li>
+
+                <li><a href="usuariosAdm.html">
+                        <img
+                            src="../../imagens/icone_Grupousuarios.png"
+                            alt="Ícone de Usuários"
+                            class="iconesMenuLateralAdm" />
+                        <p class="opcoesMenuLateralAdm">Usuários</p>
+                    </a></li>
+
+                <li><a href="dashboard.html#usuariosAdmAdministradores">
+                        <img
+                            src="../../imagens/icone_administradores.png"
+                            alt="Ícone de Administradores"
+                            class="iconesMenuLateralAdm" />
+                        <p class="opcoesMenuLateralAdm">Administradores</p>
+                    </a></li>
+
+                <li><a href="feedbacksContato.html">
+                        <img
+                            src="../../imagens/icone_contato.png"
+                            alt="Ícone de Contato e Feedbacks"
+                            class="iconesMenuLateralAdm" />
+                        <p class="opcoesMenuLateralAdm">Feedbacks e Contato</p>
+                    </a></li>
+
+                <li><a href="loginAdministrador.html">
+                        <img
+                            src="../../imagens/icone_sair.png"
+                            alt="Ícone de Sair"
+                            class="iconesMenuLateralAdm" />
+                        <p class="opcoesMenuLateralAdm">Sair</p>
+                    </a></li>
+            </ul>
+        </nav>
+
+        <main class="conteudoPrincipal">
+            <!-- Pedidos de Clientes -->
+            <section id="pedidosAdministrador" aria-label="Lista de pedidos">
+                <header class="cabecalhoPagina">
+                    <h2 class="titulosAdministrador">Gerenciar Pedidos</h2>
+                    <nav class="actionsAdministrador">
+                        <button type="button" class="botoesSecoesDashboardAdm"
+                            aria-label="Atualizar lista de pedidos">Atualizar</button>
+                    </nav>
+                </header>
+
+                <!-- Tabela de Pedidos Realizados no Sistema -->
+                <table class="tabelasDashboardAdm"
+                    aria-label="Tabela de Pedidos Realizados Recentemente no Sistema">
+                    <caption class="captionsDashboardAdm">Lista dos
+                        pedidos recentemente recebidos</caption>
+
+                    <thead aria-label="Colunas da Tabela">
+                        <tr>
+                            <th class="colunasProdutosAdm">Pedido</th>
+                            <th class="colunasProdutosAdm">Cliente</th>
+                            <th class="colunasProdutosAdm">Data</th>
+                            <th class="colunasProdutosAdm">Status</th>
+                            <th class="colunasProdutosAdm">Total</th>
+                            <th class="colunasProdutosAdm">Ações</th>
+                        </tr>
+                    </thead>
+
+                    <tbody aria-label="Pedidos Realizados pelos Clientes">
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#78901</td>
+                            <td class="inforTabelasDashboardAdm">Ana Silva</td>
+                            <td class="inforTabelasDashboardAdm">18/04/2024</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <span class="statusPedidoAdm pendente"
+                                    aria-label="Pedido pendente">Pendente</span></td>
+                            <td class="inforTabelasDashboardAdm">R$ 420,00</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="verPedido.html" class="botaoTabela"
+                                    aria-label="Ver detalhes do pedido">Detalhes</a>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#78902</td>
+                            <td class="inforTabelasDashboardAdm">Carlos
+                                Mendes</td>
+                            <td class="inforTabelasDashboardAdm">20/04/2024</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <span class="statusPedidoAdm pendente"
+                                    aria-label="Pedido pendente">Pendente</span>
+                            </td>
+                            <td class="inforTabelasDashboardAdm">R$ 259,90</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="verPedido.html" class="botaoTabela"
+                                    aria-label="Ver detalhes do pedido">Detalhes</a>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#78903</td>
+                            <td class="inforTabelasDashboardAdm">Juliana
+                                Costa</td>
+                            <td class="inforTabelasDashboardAdm">21/04/2024</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <span class="statusPedidoAdm pendente"
+                                    aria-label="Pedido pendente">Pendente</span>
+                            </td>
+                            <td class="inforTabelasDashboardAdm">R$ 188,75</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="verPedido.html" class="botaoTabela"
+                                    aria-label="Ver detalhes do pedido">Detalhes</a>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#78906</td>
+                            <td class="inforTabelasDashboardAdm">Luiz
+                                Henrique</td>
+                            <td class="inforTabelasDashboardAdm">24/04/2024</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <span class="statusPedidoAdm pendente"
+                                    aria-label="Pedido pendente">Pendente</span>
+                            </td>
+                            <td class="inforTabelasDashboardAdm">R$ 99,99</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="verPedido.html" class="botaoTabela"
+                                    aria-label="Ver detalhes do pedido">Detalhes</a>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#78902</td>
+                            <td class="inforTabelasDashboardAdm">Bruno
+                                Costa</td>
+                            <td class="inforTabelasDashboardAdm">15/04/2024</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <span class="statusPedidoAdm processando"
+                                    aria-label="Pedido em processamento">Processando</span></td>
+                            <td class="inforTabelasDashboardAdm">R$
+                                1.250,00</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="verPedido.html" class="botaoTabela"
+                                    aria-label="Ver detalhes do pedido">Detalhes</a>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#76452</td>
+                            <td class="inforTabelasDashboardAdm">Carla
+                                Menezes</td>
+                            <td class="inforTabelasDashboardAdm">06/04/2024</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <span class="statusPedidoAdm processando"
+                                    aria-label="Pedido em processamento">Processando</span>
+                            </td>
+                            <td class="inforTabelasDashboardAdm">R$ 875,90</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="verPedido.html" class="botaoTabela"
+                                    aria-label="Ver detalhes do pedido">Detalhes</a>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#79834</td>
+                            <td class="inforTabelasDashboardAdm">Eduardo
+                                Pereira</td>
+                            <td class="inforTabelasDashboardAdm">18/05/2024</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <span class="statusPedidoAdm processando"
+                                    aria-label="Pedido em processamento">Processando</span>
+                            </td>
+                            <td class="inforTabelasDashboardAdm">R$ 324,45</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="verPedido.html" class="botaoTabela"
+                                    aria-label="Ver detalhes do pedido">Detalhes</a>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#77961</td>
+                            <td class="inforTabelasDashboardAdm">Helena
+                                Cardoso</td>
+                            <td class="inforTabelasDashboardAdm">01/06/2024</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <span class="statusPedidoAdm processando"
+                                    aria-label="Pedido em processamento">Processando</span>
+                            </td>
+                            <td class="inforTabelasDashboardAdm">R$ 690,00</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="verPedido.html" class="botaoTabela"
+                                    aria-label="Ver detalhes do pedido">Detalhes</a>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#78644</td>
+                            <td class="inforTabelasDashboardAdm">João Victor
+                                Lima</td>
+                            <td class="inforTabelasDashboardAdm">29/03/2024</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <span class="statusPedidoAdm processando"
+                                    aria-label="Pedido em processamento">Processando</span>
+                            </td>
+                            <td class="inforTabelasDashboardAdm">R$
+                                1.120,00</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="verPedido.html" class="botaoTabela"
+                                    aria-label="Ver detalhes do pedido">Detalhes</a>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#79078</td>
+                            <td class="inforTabelasDashboardAdm">Vitória
+                                Nunes</td>
+                            <td class="inforTabelasDashboardAdm">23/04/2024</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <span class="statusPedidoAdm processando"
+                                    aria-label="Pedido em processamento">Processando</span>
+                            </td>
+                            <td class="inforTabelasDashboardAdm">R$ 274,30</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="verPedido.html" class="botaoTabela"
+                                    aria-label="Ver detalhes do pedido">Detalhes</a>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#78132</td>
+                            <td class="inforTabelasDashboardAdm">Matheus
+                                Ramos</td>
+                            <td class="inforTabelasDashboardAdm">11/05/2024</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <span class="statusPedidoAdm processando"
+                                    aria-label="Pedido em processamento">Processando</span>
+                            </td>
+                            <td class="inforTabelasDashboardAdm">R$ 502,80</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="verPedido.html" class="botaoTabela"
+                                    aria-label="Ver detalhes do pedido">Detalhes</a>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#78903</td>
+                            <td class="inforTabelasDashboardAdm">Clara
+                                Fernandes</td>
+                            <td class="inforTabelasDashboardAdm">10/04/2024</td>
+                            <td class="inforTabelasDashboardAdm"><span
+                                    class="statusPedidoAdm concluido"
+                                    aria-label="Pedido concluído">Concluído</span></td>
+                            <td class="inforTabelasDashboardAdm">R$ 350,00</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="verPedido.html" class="botaoTabela"
+                                    aria-label="Ver detalhes do pedido">Detalhes</a>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#79015</td>
+                            <td class="inforTabelasDashboardAdm">Lucas
+                                Andrade</td>
+                            <td class="inforTabelasDashboardAdm">05/04/2024</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <span class="statusPedidoAdm concluido"
+                                    aria-label="Pedido concluído">Concluído</span>
+                            </td>
+                            <td class="inforTabelasDashboardAdm">R$ 214,60</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="verPedido.html" class="botaoTabela"
+                                    aria-label="Ver detalhes do pedido">Detalhes</a>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#78502</td>
+                            <td class="inforTabelasDashboardAdm">Juliana
+                                Costa</td>
+                            <td class="inforTabelasDashboardAdm">02/05/2024</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <span class="statusPedidoAdm concluido"
+                                    aria-label="Pedido concluído">Concluído</span>
+                            </td>
+                            <td class="inforTabelasDashboardAdm">R$ 497,20</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="verPedido.html" class="botaoTabela"
+                                    aria-label="Ver detalhes do pedido">Detalhes</a>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#79987</td>
+                            <td class="inforTabelasDashboardAdm">Thiago
+                                Martins</td>
+                            <td class="inforTabelasDashboardAdm">11/03/2024</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <span class="statusPedidoAdm concluido"
+                                    aria-label="Pedido concluído">Concluído</span>
+                            </td>
+                            <td class="inforTabelasDashboardAdm">R$ 108,90</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="verPedido.html" class="botaoTabela"
+                                    aria-label="Ver detalhes do pedido">Detalhes</a>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#78319</td>
+                            <td class="inforTabelasDashboardAdm">Débora
+                                Lima</td>
+                            <td class="inforTabelasDashboardAdm">28/02/2024</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <span class="statusPedidoAdm concluido"
+                                    aria-label="Pedido concluído">Concluído</span>
+                            </td>
+                            <td class="inforTabelasDashboardAdm">R$ 369,00</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="verPedido.html" class="botaoTabela"
+                                    aria-label="Ver detalhes do pedido">Detalhes</a>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#79230</td>
+                            <td class="inforTabelasDashboardAdm">Murilo
+                                Barbosa</td>
+                            <td class="inforTabelasDashboardAdm">15/04/2024</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <span class="statusPedidoAdm concluido"
+                                    aria-label="Pedido concluído">Concluído</span>
+                            </td>
+                            <td class="inforTabelasDashboardAdm">R$ 289,75</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="verPedido.html" class="botaoTabela"
+                                    aria-label="Ver detalhes do pedido">Detalhes</a>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#77584</td>
+                            <td class="inforTabelasDashboardAdm">Isabela
+                                Rocha</td>
+                            <td class="inforTabelasDashboardAdm">12/03/2024</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <span class="statusPedidoAdm concluido"
+                                    aria-label="Pedido concluído">Concluído</span>
+                            </td>
+                            <td class="inforTabelasDashboardAdm">R$ 198,40</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="verPedido.html" class="botaoTabela"
+                                    aria-label="Ver detalhes do pedido">Detalhes</a>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#78111</td>
+                            <td class="inforTabelasDashboardAdm">Gabriel
+                                Souza</td>
+                            <td class="inforTabelasDashboardAdm">29/03/2024</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <span class="statusPedidoAdm concluido"
+                                    aria-label="Pedido concluído">Concluído</span>
+                            </td>
+                            <td class="inforTabelasDashboardAdm">R$ 425,10</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="verPedido.html" class="botaoTabela"
+                                    aria-label="Ver detalhes do pedido">Detalhes</a>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#79561</td>
+                            <td class="inforTabelasDashboardAdm">Renata
+                                Dias</td>
+                            <td class="inforTabelasDashboardAdm">07/04/2024</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <span class="statusPedidoAdm concluido"
+                                    aria-label="Pedido concluído">Concluído</span>
+                            </td>
+                            <td class="inforTabelasDashboardAdm">R$ 346,80</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="verPedido.html" class="botaoTabela"
+                                    aria-label="Ver detalhes do pedido">Detalhes</a>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#78904</td>
+                            <td class="inforTabelasDashboardAdm">Diego
+                                Rocha</td>
+                            <td class="inforTabelasDashboardAdm">09/04/2024</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <span class="statusPedidoAdm cancelado"
+                                    aria-label="Pedido cancelado">Cancelado</span></td>
+                            <td class="inforTabelasDashboardAdm">R$ 180,00</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="verPedido.html" class="botaoTabela"
+                                    aria-label="Ver detalhes do pedido">Detalhes</a>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#56573</td>
+                            <td class="inforTabelasDashboardAdm">Rafael
+                                Oliveira</td>
+                            <td class="inforTabelasDashboardAdm">22/04/2024</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <span class="statusPedidoAdm cancelado"
+                                    aria-label="Pedido cancelado">Cancelado</span>
+                            </td>
+                            <td class="inforTabelasDashboardAdm">R$ 312,40</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="verPedido.html" class="botaoTabela"
+                                    aria-label="Ver detalhes do pedido">Detalhes</a>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#56574</td>
+                            <td class="inforTabelasDashboardAdm">Marcela
+                                Lima</td>
+                            <td class="inforTabelasDashboardAdm">26/04/2024</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <span class="statusPedidoAdm cancelado"
+                                    aria-label="Pedido cancelado">Cancelado</span>
+                            </td>
+                            <td class="inforTabelasDashboardAdm">R$ 278,90</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="verPedido.html" class="botaoTabela"
+                                    aria-label="Ver detalhes do pedido">Detalhes</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </body>
+</html>

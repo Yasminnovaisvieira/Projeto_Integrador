@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Visualizar Pedido - Painel Administrativo</title>
+        <link rel="stylesheet" href="../../css/style.css" />
+    </head>
+    <body class="fundoFormulariosAdm">
+        <!-- Formulário para visualizar pedido de cliente -->
+        <main class="mainFormulariosAdm"
+            aria-label="Visualizar pedido específico">
+            <h1 class="titulosFormulariosAdm">Detalhes do Pedido #78901</h1>
+
+            <!-- Informações do Pedido -->
+            <section id="infoPedido"
+                aria-label="Informações do Pedido do Cliente">
+                <h2 class="titulosSecundariosFormulariosAdm">Informações do
+                    Pedido</h2>
+                <dl class="listasFormulariosAdm">
+                    <dt class="dtListasFormulariosAdm">ID do Pedido:</dt>
+                    <dd class="ddListasFormulariosAdm">#78901</dd>
+                    <dt class="dtListasFormulariosAdm">Data:</dt>
+                    <dd class="ddListasFormulariosAdm">18/04/2024</dd>
+                    <dt class="dtListasFormulariosAdm">Status:</dt>
+                    <dd class="ddListasFormulariosAdm"><span
+                            class="etiquetaStatus pendente"
+                            aria-live="polite">Pendente</span></dd>
+                    <dt class="dtListasFormulariosAdm">Total:</dt>
+                    <dd class="ddListasFormulariosAdm">R$ 420,00</dd>
+                    <dt class="dtListasFormulariosAdm">Pagamento:</dt>
+                    <dd class="ddListasFormulariosAdm">Cartão de Crédito</dd>
+                    <dt class="dtListasFormulariosAdm">Envio:</dt>
+                    <dd class="ddListasFormulariosAdm">Correios - PAC</dd>
+                </dl>
+            </section>
+
+            <hr class="divisaoAdministrador" aria-hidden="true" />
+
+            <!-- Informações de Entrega -->
+            <section id="infoEntrega"
+                aria-label="Informações de Entrega em relação ao Pedido do Cliente">
+                <h2 class="titulosSecundariosFormulariosAdm">Informações de
+                    Entrega</h2>
+                <dl class="listasFormulariosAdm">
+                    <dt class="dtListasFormulariosAdm">Nome:</dt>
+                    <dd class="ddListasFormulariosAdm">Yasmin Vieira</dd>
+                    <dt class="dtListasFormulariosAdm">Endereço:</dt>
+                    <dd class="ddListasFormulariosAdm">Rua das Flores, 123, Apto
+                        45-B</dd>
+                    <dt class="dtListasFormulariosAdm">Bairro:</dt>
+                    <dd class="ddListasFormulariosAdm">Jardim Primavera</dd>
+                    <dt class="dtListasFormulariosAdm">Cidade:</dt>
+                    <dd class="ddListasFormulariosAdm">Hortolândia</dd>
+                    <dt class="dtListasFormulariosAdm">Estado:</dt>
+                    <dd class="ddListasFormulariosAdm">SP</dd>
+                    <dt class="dtListasFormulariosAdm">CEP:</dt>
+                    <dd class="ddListasFormulariosAdm">01234-567</dd>
+                    <dt class="dtListasFormulariosAdm">Telefone:</dt>
+                    <dd class="ddListasFormulariosAdm">(11) 99999-1234</dd>
+                </dl>
+            </section>
+
+            <hr class="divisaoAdministrador" aria-hidden="true" />
+
+            <!-- Tabela com os produtos que o usuário comprou -->
+            <section class="listaProdutos"
+                aria-label="Produtos escolhidos pelo usuário">
+                <h2 id="tituloListaProdutos">Produtos no Pedido</h2>
+                <table class="tabelasFormulariosAdm"
+                    aria-label="Tabela de Produtos do Pedido">
+                    <caption class="captionsFormulariosAdm">Lista de produtos
+                        comprados
+                        no pedido #78901</caption>
+                    <thead>
+                        <tr class="trsTabelasFormulariosAdm">
+                            <th class="colunasTabelaFormularioAdm">Produto</th>
+                            <th
+                                class="colunasTabelaFormularioAdm">Quantidade</th>
+                            <th class="colunasTabelaFormularioAdm">Preço
+                                Unitário</th>
+                            <th class="colunasTabelaFormularioAdm">Subtotal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="linhasTabelasFormulariosAdm">
+                            <td class="conteudoFormulariosAdm">Fantasia de
+                                Dinossauro - Azul</td>
+                            <td class="conteudoFormulariosAdm">2</td>
+                            <td class="conteudoFormulariosAdm">R$ 59,90</td>
+                            <td class="conteudoFormulariosAdm">R$ 119,80</td>
+                        </tr>
+
+                        <tr class="linhasTabelasFormulariosAdm">
+                            <td class="conteudoFormulariosAdm">Calça Jeans
+                                Slim</td>
+                            <td class="conteudoFormulariosAdm">1</td>
+                            <td class="conteudoFormulariosAdm">R$ 125,50</td>
+                            <td class="conteudoFormulariosAdm">R$ 125,50</td>
+                        </tr>
+
+                        <tr class="linhasTabelasFormulariosAdm">
+                            <td class="conteudoFormulariosAdm">Moletom com
+                                Capuz</td>
+                            <td class="conteudoFormulariosAdm">1</td>
+                            <td class="conteudoFormulariosAdm">R$ 199,00</td>
+                            <td class="conteudoFormulariosAdm">R$ 199,00</td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot class="footerTabelasFormulariosAdm">
+                        <tr>
+                            <th colspan="3">Total Geral:</th>
+                            <th>R$ 444,30</th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+
+            <hr class="divisaoAdministrador" aria-hidden="true" />
+
+            <!-- Método de pagamentos utilizado pelo usuário-->
+            <section class="infoPagamento"
+                aria-label="Método de Pagamento escolhido pelo usuário">
+                <h2 class="titulosSecundariosFormulariosAdm">Informações de
+                    Pagamento</h2>
+                <dl class="listasFormulariosAdm">
+                    <dt class="dtListasFormulariosAdm">Status:</dt>
+                    <dd class="ddListasFormulariosAdm">Pendente</dd>
+                    <dt class="dtListasFormulariosAdm">Data de Pagamento:</dt>
+                    <dd class="ddListasFormulariosAdm">Não efetuado</dd>
+                    <dt class="dtListasFormulariosAdm">ID da Transação:</dt>
+                    <dd class="ddListasFormulariosAdm">---</dd>
+                </dl>
+            </section>
+
+            <!-- Botões para Marcar como Processamento, Cancelar, Registrar Pagamento e Emitir Nota Fiscal -->
+            <nav class="acoesRodape" aria-label="Ações sobre o pedido">
+                <a href="pedidosAdm.html" aria-label="Marcar como processando"
+                    class="botaoProcessamentoFormulariosAdm botoesFormularioPedidoAdm">Marcar
+                    como
+                    Processando</a>
+                <a href="pedidosAdm.html" aria-label="Cancelar pedido"
+                    class="botaoCancelarFormulariosAdm botoesFormularioPedidoAdm">Cancelar
+                    Pedido</a>
+                <a href="pedidosAdm.html" aria-label="Registrar pagamento"
+                    class="botaoRegistrarFormulariosAdm botoesFormularioPedidoAdm">Registrar
+                    Pagamento</a>
+                <a href="pedidosAdm.html" aria-label="Emitir nota fiscal"
+                    class="botaoEmitirFormulariosAdm botoesFormularioPedidoAdm">Emitir
+                    Nota Fiscal</a>
+            </nav>
+        </main>
+    </body>
+</html>

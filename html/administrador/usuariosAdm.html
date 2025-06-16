@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Usuários Cadastrados | Miaunarquia</title>
+        <link rel="stylesheet" href="../../css/style.css" />
+    </head>
+    <body class="bodysAdministrador">
+        <!-- Menu Lateral do Administrador -->
+        <nav class="menuLateralAdministrador"
+            aria-label="Menu principal do Painel Administrativo">
+            <h1 class="logoAdministrador"
+                aria-label="Logo do painel administrativo">
+                <img
+                    src="../../imagens/imagem_logo.png"
+                    alt="Logo do Site (Desenho de rosto de um gato preto com uma coroa)"
+                    class="logoImagemAdministrador" />
+                <span>Miaunarquia</span></h1>
+
+            <ul class="linksNavegacaoAdministrador">
+                <li><a href="dashboard.html">
+                        <img
+                            src="../../imagens/icone_dashboard.png"
+                            alt="Ícone de Dashboard"
+                            class="iconesMenuLateralAdm" />
+                        <p class="opcoesMenuLateralAdm">Dashboard</p>
+                    </a></li>
+
+                <li><a href="produtosAdm.html">
+                        <img
+                            src="../../imagens/icone_produtos.png"
+                            alt="Ícone de Produtos"
+                            class="iconesMenuLateralAdm" />
+                        <p class="opcoesMenuLateralAdm">Produtos</p>
+                    </a></li>
+
+                <li><a href="pedidosAdm.html">
+                        <img
+                            src="../../imagens/icone_pedidos.png"
+                            alt="Ícone de Pedidos"
+                            class="iconesMenuLateralAdm" />
+                        <p class="opcoesMenuLateralAdm">Pedidos</p>
+                    </a></li>
+
+                <li><a href="#">
+                        <img
+                            src="../../imagens/icone_Grupousuarios.png"
+                            alt="Ícone de Usuários"
+                            class="iconesMenuLateralAdm" />
+                        <p class="opcoesMenuLateralAdm">Usuários</p>
+                    </a></li>
+
+                <li><a href="dashboard.html#usuariosAdmAdministrador">
+                        <img
+                            src="../../imagens/icone_administradores.png"
+                            alt="Ícone de Administradores"
+                            class="iconesMenuLateralAdm" />
+                        <p class="opcoesMenuLateralAdm">Administradores</p>
+                    </a></li>
+
+                <li><a href="feedbacksContato.html">
+                        <img
+                            src="../../imagens/icone_contato.png"
+                            alt="Ícone de Contato e Feedbacks"
+                            class="iconesMenuLateralAdm" />
+                        <p class="opcoesMenuLateralAdm">Feedbacks e Contato</p>
+                    </a></li>
+
+                <li><a href="loginAdministrador.html">
+                        <img
+                            src="../../imagens/icone_sair.png"
+                            alt="Ícone de Sair"
+                            class="iconesMenuLateralAdm" />
+                        <p class="opcoesMenuLateralAdm">Sair</p>
+                    </a></li>
+            </ul>
+        </nav>
+
+        <main class="conteudoPrincipal">
+            <!-- Usuários Cadastrados no Sistema -->
+            <section id="usuariosAdministrador" aria-label="Lista de usuários">
+                <header class="cabecalhoPagina">
+                    <h2 class="titulosAdministrador">Gerenciar Usuários</h2>
+                    <nav class="actionsAdministrador">
+                        <button type="button" class="botoesSecoesDashboardAdm"
+                            aria-label="Atualizar lista de usuários">Atualizar</button>
+                    </nav>
+                </header>
+
+                <table class="tabelasDashboardAdm"
+                    aria-label="Tabela de Usuários Cadastrados Recentemente no Sistema">
+                    <caption class="captionsDashboardAdm">Lista dos
+                        usuários registrados</caption>
+                    <thead aria-label="Colunas da Tabela">
+                        <tr>
+                            <th class="colunasProdutosAdm">ID</th>
+                            <th class="colunasProdutosAdm">Nome</th>
+                            <th class="colunasProdutosAdm">Email</th>
+                            <th class="colunasProdutosAdm">Telefone</th>
+                            <th class="colunasProdutosAdm">Ações</th>
+                        </tr>
+                    </thead>
+
+                    <tbody aria-label="Usuários Cadastrados e suas Informações">
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#501</td>
+                            <td class="inforTabelasDashboardAdm">Lucas
+                                Martins</td>
+                            <td
+                                class="inforTabelasDashboardAdm">lucas.martins@email.com</td>
+                            <td class="inforTabelasDashboardAdm">(11)
+                                99999-1234</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir Usuário">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#502</td>
+                            <td class="inforTabelasDashboardAdm">Fernanda
+                                Lopes</td>
+                            <td
+                                class="inforTabelasDashboardAdm">fernanda.lopes@email.com</td>
+                            <td class="inforTabelasDashboardAdm">(21)
+                                98888-4321</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir Usuário">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#503</td>
+                            <td class="inforTabelasDashboardAdm">Eduardo
+                                Silva</td>
+                            <td
+                                class="inforTabelasDashboardAdm">eduardo.silva@email.com</td>
+                            <td class="inforTabelasDashboardAdm">(31)
+                                97777-5678</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir Usuário">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#504</td>
+                            <td class="inforTabelasDashboardAdm">Juliana
+                                Castro</td>
+                            <td
+                                class="inforTabelasDashboardAdm">juliana.castro@email.com</td>
+                            <td class="inforTabelasDashboardAdm">(41)
+                                96666-1122</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir Usuário">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#505</td>
+                            <td class="inforTabelasDashboardAdm">Marcelo
+                                Nogueira</td>
+                            <td
+                                class="inforTabelasDashboardAdm">marcelo.nogueira@email.com</td>
+                            <td class="inforTabelasDashboardAdm">(81)
+                                95555-7788</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir Usuário">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#506</td>
+                            <td class="inforTabelasDashboardAdm">Bianca
+                                Ferreira</td>
+                            <td
+                                class="inforTabelasDashboardAdm">bianca.ferreira@email.com</td>
+                            <td class="inforTabelasDashboardAdm">(51)
+                                94444-3333</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir Usuário">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#507</td>
+                            <td class="inforTabelasDashboardAdm">Rogério
+                                Almeida</td>
+                            <td
+                                class="inforTabelasDashboardAdm">rogerio.almeida@email.com</td>
+                            <td class="inforTabelasDashboardAdm">(61)
+                                92222-8899</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir Usuário">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#508</td>
+                            <td class="inforTabelasDashboardAdm">Camila
+                                Rocha</td>
+                            <td
+                                class="inforTabelasDashboardAdm">camila.rocha@email.com</td>
+                            <td class="inforTabelasDashboardAdm">(85)
+                                93333-6677</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir Usuário">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#509</td>
+                            <td class="inforTabelasDashboardAdm">Thiago
+                                Souza</td>
+                            <td
+                                class="inforTabelasDashboardAdm">thiago.souza@email.com</td>
+                            <td class="inforTabelasDashboardAdm">(91)
+                                90000-1234</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir Usuário">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#510</td>
+                            <td class="inforTabelasDashboardAdm">Patrícia
+                                Lima</td>
+                            <td
+                                class="inforTabelasDashboardAdm">patricia.lima@email.com</td>
+                            <td class="inforTabelasDashboardAdm">(71)
+                                98888-4455</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir Usuário">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#511</td>
+                            <td class="inforTabelasDashboardAdm">Diego
+                                Ribeiro</td>
+                            <td
+                                class="inforTabelasDashboardAdm">diego.ribeiro@email.com</td>
+                            <td class="inforTabelasDashboardAdm">(31)
+                                97777-8899</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir Usuário">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#512</td>
+                            <td class="inforTabelasDashboardAdm">Marina
+                                Dias</td>
+                            <td
+                                class="inforTabelasDashboardAdm">marina.dias@email.com</td>
+                            <td class="inforTabelasDashboardAdm">(19)
+                                96666-7788</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir Usuário">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#513</td>
+                            <td class="inforTabelasDashboardAdm">André
+                                Carvalho</td>
+                            <td
+                                class="inforTabelasDashboardAdm">andre.carvalho@email.com</td>
+                            <td class="inforTabelasDashboardAdm">(62)
+                                98888-6677</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir Usuário">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#514</td>
+                            <td class="inforTabelasDashboardAdm">Lívia
+                                Almeida</td>
+                            <td
+                                class="inforTabelasDashboardAdm">livia.almeida@email.com</td>
+                            <td class="inforTabelasDashboardAdm">(27)
+                                94444-2211</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir Usuário">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#515</td>
+                            <td class="inforTabelasDashboardAdm">Renato
+                                Barros</td>
+                            <td
+                                class="inforTabelasDashboardAdm">renato.barros@email.com</td>
+                            <td class="inforTabelasDashboardAdm">(95)
+                                97777-3344</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir Usuário">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#516</td>
+                            <td class="inforTabelasDashboardAdm">Larissa
+                                Gomes</td>
+                            <td
+                                class="inforTabelasDashboardAdm">larissa.gomes@email.com</td>
+                            <td class="inforTabelasDashboardAdm">(67)
+                                98888-5566</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir Usuário">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#517</td>
+                            <td class="inforTabelasDashboardAdm">Vinícius
+                                Teixeira</td>
+                            <td
+                                class="inforTabelasDashboardAdm">vinicius.teixeira@email.com</td>
+                            <td class="inforTabelasDashboardAdm">(51)
+                                95555-6677</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir Usuário">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#518</td>
+                            <td class="inforTabelasDashboardAdm">Tatiane
+                                Monteiro</td>
+                            <td
+                                class="inforTabelasDashboardAdm">tatiane.monteiro@email.com</td>
+                            <td class="inforTabelasDashboardAdm">(63)
+                                91111-7788</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir Usuário">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#519</td>
+                            <td class="inforTabelasDashboardAdm">Felipe
+                                Martins</td>
+                            <td
+                                class="inforTabelasDashboardAdm">felipe.martins@email.com</td>
+                            <td class="inforTabelasDashboardAdm">(85)
+                                92222-3344</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir Usuário">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#520</td>
+                            <td class="inforTabelasDashboardAdm">Simone
+                                Azevedo</td>
+                            <td
+                                class="inforTabelasDashboardAdm">simone.azevedo@email.com</td>
+                            <td class="inforTabelasDashboardAdm">(11)
+                                93333-4455</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir Usuário">Excluir</button>
+                            </td>
+                        </tr>
+                        <!-- Coloquei esses como exemplo -->
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </body>
+</html>

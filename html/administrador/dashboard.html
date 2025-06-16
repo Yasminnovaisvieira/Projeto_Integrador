@@ -1,134 +1,583 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard | Miaunarquia</title>
-    <link rel="stylesheet" href="../../css/dashbord.css" />
-    <link rel="stylesheet" href="../../css/style.css" />
-  </head>
-  <body class="bodyAdministradr">
-    <aside class="sidebar">
-      <img
-        src="../../imagens/imagem_logo.png"
-        alt="Logo de um Gato Preto com Coroa"
-        class="logoImagemAdministrador" />
-      <h1 class="logo">Miaunarquia</h1>
-      <nav>
-        <ul>
-          <li><a href="dashboard.html" class="active"
-              aria-current="page">Dashboard</a></li>
-          <li><a href="produtos.html">Produtos</a></li>
-          <li><a href="usuarios.html">Usuários</a></li>
-          <li><a href="pedidos.html">Pedidos</a></li>
-        </ul>
-      </nav>
-    </aside>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboard | Miaunarquia</title>
+        <link rel="stylesheet" href="../../css/style.css" />
+    </head>
+    <body class="bodysAdministrador">
+        <!-- Menu Lateral do Administrador -->
+        <nav class="menuLateralAdministrador"
+            aria-label="Menu principal do Painel Administrativo">
+            <h1 class="logoAdministrador"
+                aria-label="Logo do painel administrativo">
+                <img
+                    src="../../imagens/imagem_logo.png"
+                    alt="Logo do Site (Desenho de rosto de um gato preto com uma coroa)"
+                    class="logoImagemAdministrador" />
+                <span>Miaunarquia</span></h1>
 
-    <main class="main-content" role="main">
-      <h2>Painel de Controle</h2>
+            <ul class="linksNavegacaoAdministrador">
+                <li><a href="#">
+                        <img
+                            src="../../imagens/icone_dashboard.png"
+                            alt="Ícone de Dashboard"
+                            class="iconesMenuLateralAdm" />
+                        <p class="opcoesMenuLateralAdm">Dashboard</p>
+                    </a></li>
 
-      <section class="cards" aria-label="Resumo rápido">
-        <article class="card" aria-labelledby="produtos-title">
-          <h3 id="produtos-title">Produtos</h3>
-          <p><strong>120</strong></p>
-        </article>
-        <article class="card" aria-labelledby="usuarios-title">
-          <h3 id="usuarios-title">Usuários</h3>
-          <p><strong>340</strong></p>
-        </article>
-        <article class="card" aria-labelledby="pedidos-title">
-          <h3 id="pedidos-title">Pedidos</h3>
-          <p><strong>76</strong></p>
-        </article>
-      </section>
+                <li><a href="produtosAdm.html">
+                        <img
+                            src="../../imagens/icone_produtos.png"
+                            alt="Ícone de Produtos"
+                            class="iconesMenuLateralAdm" />
+                        <p class="opcoesMenuLateralAdm">Produtos</p>
+                    </a></li>
 
-      <section class="financial-summary" aria-labelledby="financeiro-title">
-        <h3 id="financeiro-title">Resumo Financeiro</h3>
-        <dl>
-          <div>
-            <dt>Receita Mensal</dt>
-            <dd>R$ 34.500,00</dd>
-          </div>
-          <div>
-            <dt>Despesas</dt>
-            <dd>R$ 12.200,00</dd>
-          </div>
-          <div>
-            <dt>Lucro</dt>
-            <dd>R$ 22.300,00</dd>
-          </div>
-          <div>
-            <dt>Meta</dt>
-            <dd>R$ 40.000,00</dd>
-          </div>
-        </dl>
-      </section>
+                <li><a href="pedidosAdm.html">
+                        <img
+                            src="../../imagens/icone_pedidos.png"
+                            alt="Ícone de Pedidos"
+                            class="iconesMenuLateralAdm" />
+                        <p class="opcoesMenuLateralAdm">Pedidos</p>
+                    </a></li>
 
-      <section class="recent-orders" aria-labelledby="pedidos-recentes-title">
-        <h3 id="pedidos-recentes-title">Pedidos Recentes</h3>
-        <table>
-          <thead>
-            <tr>
-              <th>Pedido</th>
-              <th>Cliente</th>
-              <th>Status</th>
-              <th>Data</th>
-              <th>Total</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>#1001</td>
-              <td>João Silva</td>
-              <td>Enviado</td>
-              <td>21/06/2024</td>
-              <td>R$ 1.200,00</td>
-            </tr>
-            <tr>
-              <td>#1002</td>
-              <td>Maria Oliveira</td>
-              <td>Processando</td>
-              <td>20/06/2024</td>
-              <td>R$ 850,00</td>
-            </tr>
-            <tr>
-              <td>#1003</td>
-              <td>Lucas Santos</td>
-              <td>Cancelado</td>
-              <td>19/06/2024</td>
-              <td>R$ 450,00</td>
-            </tr>
-            <tr>
-              <td>#1004</td>
-              <td>Ana Costa</td>
-              <td>Enviado</td>
-              <td>18/06/2024</td>
-              <td>R$ 1.500,00</td>
-            </tr>
-            <tr>
-              <td>#1005</td>
-              <td>Carlos Almeida</td>
-              <td>Processando</td>
-              <td>17/06/2024</td>
-              <td>R$ 950,00</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
+                <li><a href="usuariosAdm.html">
+                        <img
+                            src="../../imagens/icone_Grupousuarios.png"
+                            alt="Ícone de Usuários"
+                            class="iconesMenuLateralAdm" />
+                        <p class="opcoesMenuLateralAdm">Usuários</p>
+                    </a></li>
 
-      <section class="notifications" aria-labelledby="notificacoes-title">
-        <h3 id="notificacoes-title">Notificações</h3>
-        <div class="notification-item" role="alert">
-          Novo pedido #1006 foi colocado por Fernanda Lima.
-        </div>
-        <div class="notification-item" role="alert">
-          Estoque do produto "Camisa Azul" está baixo.
-        </div>
-        <div class="notification-item" role="alert">
-          Usuário "Paulo" solicitou redefinição de senha.
-        </div>
-      </section>
-    </main>
-  </body>
+                <li><a href="#usuariosAdmAdministrador">
+                        <img
+                            src="../../imagens/icone_administradores.png"
+                            alt="Ícone de Administradores"
+                            class="iconesMenuLateralAdm" />
+                        <p class="opcoesMenuLateralAdm">Administradores</p>
+                    </a></li>
+
+                <li><a href="feedbacksContato.html">
+                        <img
+                            src="../../imagens/icone_contato.png"
+                            alt="Ícone de Contato e Feedbacks"
+                            class="iconesMenuLateralAdm" />
+                        <p class="opcoesMenuLateralAdm">Feedbacks e Contato</p>
+                    </a></li>
+
+                <li><a href="loginAdministrador.html">
+                        <img
+                            src="../../imagens/icone_sair.png"
+                            alt="Ícone de Sair"
+                            class="iconesMenuLateralAdm" />
+                        <p class="opcoesMenuLateralAdm">Sair</p>
+                    </a></li>
+            </ul>
+        </nav>
+
+        <main class="conteudoPrincipal">
+            <!-- Painel de Controle - Dados -->
+            <section id="dashboardAdministrador"
+                aria-label="Resumo do painel administrativo">
+                <header class="cabecalhoPagina">
+                    <h2 class="titulosAdministrador">Painel de Controle</h2>
+
+                    <nav class="actionsAdministrador">
+                        <button type="button" class="botoesSecoesDashboardAdm"
+                            aria-label="Atualizar dados">Atualizar</button>
+                    </nav>
+                </header>
+
+                <section class="informacoesPainel">
+                    <article class="cartaoInforAdministrador"
+                        aria-label="Total de vendas">
+                        <h3 class="titulosInforPainelAdm">Vendas</h3>
+                        <p class="dadosInforPainelAdm">52</p>
+                    </article>
+
+                    <article class="cartaoInforAdministrador"
+                        aria-label="Pedidos pendentes">
+                        <h3 class="titulosInforPainelAdm">Pedidos Pendentes</h3>
+                        <p class="dadosInforPainelAdm">23</p>
+                    </article>
+
+                    <article class="cartaoInforAdministrador"
+                        aria-label="Produtos ativos">
+                        <h3 class="titulosInforPainelAdm">Produtos</h3>
+                        <p class="dadosInforPainelAdm">84</p>
+                    </article>
+
+                    <article class="cartaoInforAdministrador"
+                        aria-label="Usuários cadastrados">
+                        <h3 class="titulosInforPainelAdm">Usuários</h3>
+                        <p class="dadosInforPainelAdm">58</p>
+                    </article>
+                </section>
+            </section>
+
+            <hr class="divisaoAdministrador" aria-hidden="true" />
+
+            <!-- Produtos do Site -->
+            <section id="produtosAdministrador" aria-label="Lista de produtos">
+                <header class="cabecalhoPagina">
+                    <h2 class="titulosAdministrador">Gerenciar Produtos</h2>
+                    <nav class="actionsAdministrador">
+                        <a href="adicionarProduto.html"
+                            class="botoesSecoesDashboardAdm"
+                            aria-label="Adicionar novo produto">
+                            Adicionar Produto
+                        </a>
+                    </nav>
+                </header>
+
+                <form aria-label="Filtro de pesquisa de produtos">
+                    <label class="labelsDashboardAdm"
+                        for="procurarProduto">Buscar produtos:</label>
+                    <input type="text" id="procurarProdutoAdm"
+                        name="procurarProduto"
+                        placeholder="Nome ou código do produto" />
+                </form>
+
+                <!-- Tabela de Produtos Adicionados Recentemente no Sistema-->
+                <table class="tabelasDashboardAdm"
+                    aria-label="Tabela de Produtos Adicionados Recentemente no Sistema">
+                    <caption class="captionsDashboardAdm">Lista dos
+                        produtos cadastrados recentemente no sistema</caption>
+
+                    <thead aria-label="Colunas da Tabela">
+                        <tr>
+                            <th class="colunasProdutosAdm">ID</th>
+                            <th class="colunasProdutosAdm">Nome</th>
+                            <th class="colunasProdutosAdm">Preço</th>
+                            <th class="colunasProdutosAdm">Status</th>
+                            <th class="colunasProdutosAdm">Estoque</th>
+                            <th class="colunasProdutosAdm">Ações</th>
+                        </tr>
+                    </thead>
+
+                    <tbody aria-label="Produtos e suas Informações">
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#1028</td>
+                            <td class="inforTabelasDashboardAdm">Bolinha/Rato -
+                                João Bobo com Pena</td>
+                            <td class="inforTabelasDashboardAdm">R$ 14,99</td>
+                            <td class="inforTabelasDashboardAdm">38</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <span
+                                    class="statusProdutoAdm ativo">Ativo</span></td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="editarProduto.html" class="botaoTabela"
+                                    aria-label="Editar Produto">Editar</a>
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir Produto">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#1029</td>
+                            <td class="inforTabelasDashboardAdm">Bola Dispenser
+                                Toy - Roxa</td>
+                            <td class="inforTabelasDashboardAdm">R$ 37,16</td>
+                            <td class="inforTabelasDashboardAdm">23</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <span
+                                    class="statusProdutoAdm ativo">Ativo</span></td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="editarProduto.html" class="botaoTabela"
+                                    aria-label="Editar Produto">Editar</a>
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir Produto">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#1030</td>
+                            <td class="inforTabelasDashboardAdm">Coleira de
+                                Laser - Led de Infravermelho</td>
+                            <td class="inforTabelasDashboardAdm">R$ 44,87</td>
+                            <td class="inforTabelasDashboardAdm">65</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <span
+                                    class="statusProdutoAdm ativo">Ativo</span></td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="editarProduto.html" class="botaoTabela"
+                                    aria-label="Editar Produto">Editar</a>
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir Produto">Excluir</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Botão Ver mais Produtos -->
+                <nav class="navVerMaisProdutosAdm">
+                    <a href="produtosAdm.html" class="botaoMaisProdutosAdm"
+                        aria-label="Visualizar mais Produtos">
+                        Ver Mais Produtos
+                    </a>
+                </nav>
+            </section>
+
+            <hr class="divisaoAdministrador" aria-hidden="true" />
+
+            <!-- Pedidos de Clientes -->
+            <section id="pedidosAdministrador" aria-label="Lista de pedidos">
+                <header class="cabecalhoPagina">
+                    <h2 class="titulosAdministrador">Gerenciar Pedidos</h2>
+                    <nav class="actionsAdministrador">
+                        <button type="button" class="botoesSecoesDashboardAdm"
+                            aria-label="Atualizar lista de pedidos">Atualizar</button>
+                    </nav>
+                </header>
+
+                <!-- Tabela de Pedidos Realizados Recentemente no Sistema -->
+                <table class="tabelasDashboardAdm"
+                    aria-label="Tabela de Pedidos Realizados Recentemente no Sistema">
+                    <caption class="captionsDashboardAdm">Lista dos
+                        pedidos recentemente recebidos</caption>
+
+                    <thead aria-label="Colunas da Tabela">
+                        <tr>
+                            <th class="colunasProdutosAdm">Pedido</th>
+                            <th class="colunasProdutosAdm">Cliente</th>
+                            <th class="colunasProdutosAdm">Data</th>
+                            <th class="colunasProdutosAdm">Status</th>
+                            <th class="colunasProdutosAdm">Total</th>
+                            <th class="colunasProdutosAdm">Ações</th>
+                        </tr>
+                    </thead>
+
+                    <tbody aria-label="Pedidos Realizados pelos Clientes">
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#78901</td>
+                            <td class="inforTabelasDashboardAdm">Ana Silva</td>
+                            <td class="inforTabelasDashboardAdm">18/04/2024</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <span class="statusPedidoAdm pendente"
+                                    aria-label="Pedido pendente">Pendente</span></td>
+                            <td class="inforTabelasDashboardAdm">R$ 420,00</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="verPedido.html" class="botaoTabela"
+                                    aria-label="Ver detalhes do pedido">Detalhes</a>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#78902</td>
+                            <td class="inforTabelasDashboardAdm">Bruno
+                                Costa</td>
+                            <td class="inforTabelasDashboardAdm">15/04/2024</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <span class="statusPedidoAdm processando"
+                                    aria-label="Pedido em processamento">Processando</span></td>
+                            <td class="inforTabelasDashboardAdm">R$
+                                1.250,00</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="verPedido.html" class="botaoTabela"
+                                    aria-label="Ver detalhes do pedido">Detalhes</a>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#78903</td>
+                            <td class="inforTabelasDashboardAdm">Clara
+                                Fernandes</td>
+                            <td class="inforTabelasDashboardAdm">10/04/2024</td>
+                            <td class="inforTabelasDashboardAdm"><span
+                                    class="statusPedidoAdm concluido"
+                                    aria-label="Pedido concluído">Concluído</span></td>
+                            <td class="inforTabelasDashboardAdm">R$ 350,00</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="verPedido.html" class="botaoTabela"
+                                    aria-label="Ver detalhes do pedido">Detalhes</a>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#78904</td>
+                            <td class="inforTabelasDashboardAdm">Diego
+                                Rocha</td>
+                            <td class="inforTabelasDashboardAdm">09/04/2024</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <span class="statusPedidoAdm cancelado"
+                                    aria-label="Pedido cancelado">Cancelado</span></td>
+                            <td class="inforTabelasDashboardAdm">R$ 180,00</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="verPedido.html" class="botaoTabela"
+                                    aria-label="Ver detalhes do pedido">Detalhes</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Botão Ver mais Pedidos -->
+                <nav class="navVerMaisPedidosAdm">
+                    <a href="pedidosAdm.html" class="botaoMaisPedidosAdm"
+                        aria-label="Visualizar mais Produtos">
+                        Ver Mais Pedidos
+                    </a>
+                </nav>
+            </section>
+
+            <hr class="divisaoAdministrador" aria-hidden="true" />
+
+            <!-- Usuários Cadastrados no Sistema -->
+            <section id="usuariosAdministrador" aria-label="Lista de usuários">
+                <header class="cabecalhoPagina">
+                    <h2 class="titulosAdministrador">Gerenciar Usuários</h2>
+                    <nav class="actionsAdministrador">
+                        <button type="button" class="botoesSecoesDashboardAdm"
+                            aria-label="Atualizar lista de usuários">Atualizar</button>
+                    </nav>
+                </header>
+
+                <table class="tabelasDashboardAdm"
+                    aria-label="Tabela de Usuários Cadastrados Recentemente no Sistema">
+                    <caption class="captionsDashboardAdm">Lista dos
+                        usuários registrados</caption>
+                    <thead aria-label="Colunas da Tabela">
+                        <tr>
+                            <th class="colunasProdutosAdm">ID</th>
+                            <th class="colunasProdutosAdm">Nome</th>
+                            <th class="colunasProdutosAdm">Email</th>
+                            <th class="colunasProdutosAdm">Telefone</th>
+                            <th class="colunasProdutosAdm">Ações</th>
+                        </tr>
+                    </thead>
+
+                    <tbody aria-label="Usuários Cadastrados e suas Informações">
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#501</td>
+                            <td class="inforTabelasDashboardAdm">Lucas
+                                Martins</td>
+                            <td
+                                class="inforTabelasDashboardAdm">lucas.martins@email.com</td>
+                            <td class="inforTabelasDashboardAdm">(11)
+                                99999-1234</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir Usuário">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#502</td>
+                            <td class="inforTabelasDashboardAdm">Fernanda
+                                Lopes</td>
+                            <td
+                                class="inforTabelasDashboardAdm">fernanda.lopes@email.com</td>
+                            <td class="inforTabelasDashboardAdm">(21)
+                                98888-4321</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir Usuário">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#503</td>
+                            <td class="inforTabelasDashboardAdm">Eduardo
+                                Silva</td>
+                            <td
+                                class="inforTabelasDashboardAdm">eduardo.silva@email.com</td>
+                            <td class="inforTabelasDashboardAdm">(31)
+                                97777-5678</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir Usuário">Excluir</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Botão Ver mais Usuários -->
+                <nav class="navVerMaisPedidosAdm">
+                    <a href="usuariosAdm.html" class="botaoMaisPedidosAdm"
+                        aria-label="Visualizar mais Produtos">
+                        Ver Mais Usuários
+                    </a>
+                </nav>
+            </section>
+
+            <hr class="divisaoAdministrador" aria-hidden="true" />
+
+            <!-- Administradores Cadastrados no Sistema -->
+            <section id="usuariosAdmAdministrador"
+                aria-label="Lista de administradores">
+                <header class="cabecalhoPagina">
+                    <h2 class="titulosAdministrador">Gerenciar
+                        Administradores</h2>
+                    <nav class="actionsAdministrador">
+                        <a href="cadastrarAdministrador.html">
+                            <button type="button"
+                                class="botoesSecoesDashboardAdm"
+                                aria-label="Adicionar Administrador">Adicionar
+                                Administrador</button>
+                        </a>
+                    </nav>
+                </header>
+
+                <table class="tabelasDashboardAdm"
+                    aria-label="Tabela de Usuários Cadastrados Recentemente no Sistema">
+                    <caption class="captionsDashboardAdm">Lista dos
+                        administradores registrados</caption>
+                    <thead aria-label="Colunas da Tabela">
+                        <tr>
+                            <th class="colunasProdutosAdm">Código de Acesso</th>
+                            <th class="colunasProdutosAdm">Nome</th>
+                            <th class="colunasProdutosAdm">Email</th>
+                            <th class="colunasProdutosAdm">Poder</th>
+                            <th class="colunasProdutosAdm">Ações</th>
+                        </tr>
+                    </thead>
+
+                    <tbody aria-label="Usuários Cadastrados e suas Informações">
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">901</td>
+                            <td class="inforTabelasDashboardAdm">Yasmin
+                                Vieira</td>
+                            <td
+                                class="inforTabelasDashboardAdm">yasmin.miaunarquia@gmail.com</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <span class="tipoAdministrador"
+                                    aria-label="Tipo de Administrador">Super
+                                    Administrador</span></td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="editarAdministrador.html" class="botaoTabela"
+                                    aria-label="Editar Administrador">Editar</a>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">789</td>
+                            <td class="inforTabelasDashboardAdm">Julya
+                                Jacometti</td>
+                            <td
+                                class="inforTabelasDashboardAdm">julya.miaunarquia@gmail.com</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <span class="tipoAdministrador"
+                                    aria-label="Tipo de Administrador">Administrador</span></td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="editarAdministrador.html" class="botaoTabela"
+                                    aria-label="Editar Administrador">Editar</a>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">703</td>
+                            <td class="inforTabelasDashboardAdm">Solange
+                                COnceição</td>
+                            <td
+                                class="inforTabelasDashboardAdm">solange.miaunarquia@gmail.com</td>
+                            <td class="inforTabelasDashboardAdm"><span
+                                    class="tipoAdministrador"
+                                    aria-label="Tipo de Administrador">Administrador</span></td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="editarAdministrador.html" class="botaoTabela"
+                                    aria-label="Editar Administrador">Editar</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <hr class="divisaoAdministrador" aria-hidden="true" />
+
+            <!-- Feedbacks e Tentativas de Contato dos Clientes -->
+            <section id="feedbacksContatoAdministrador"
+                aria-label="Lista de feedbacks e contatos dos clientes">
+                <header class="cabecalhoPagina">
+                    <h2 class="titulosAdministrador">Gerenciar Feedbacks e
+                        Contato</h2>
+                    <nav class="actionsAdministrador">
+                        <button type="button" class="botoesSecoesDashboardAdm"
+                            aria-label="Atualizar lista de feedback dos clientes">Atualizar</button>
+                    </nav>
+                </header>
+                <header class="cabecalhoPagina">
+                    <h2 class="titulosAdministrador"></h2>
+                </header>
+
+                <!-- Tabela de Feedbacks e Mensagem Recentes dos Clientes -->
+                <table class="tabelasDashboardAdm">
+                    <caption class="captionsDashboardAdm">
+                        Lista dos feedbacks e mensagens enviados pelos clientes
+                    </caption>
+
+                    <thead aria-label="Colunas da Tabela">
+                        <tr>
+                            <th class="colunasProdutosAdm">Cliente</th>
+                            <th class="colunasProdutosAdm">Email</th>
+                            <th class="colunasProdutosAdm">Mensagem</th>
+                            <th class="colunasProdutosAdm">Data</th>
+                            <th class="colunasProdutosAdm">Ações</th>
+                        </tr>
+                    </thead>
+
+                    <tbody
+                        aria-label="Feedbacks dos Usuários e suas Informações">
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">Ana Souza</td>
+                            <td
+                                class="inforTabelasDashboardAdm">ana.souza@email.com</td>
+                            <td class="inforTabelasDashboardAdm">Adorei a
+                                qualidade dos produtos!</td>
+                            <td class="inforTabelasDashboardAdm">12/06/2025</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="responderFeedback.html"
+                                    class="botaoTabela"
+                                    aria-label="Responder Usuário">Responder</a>
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir feedback do Usuário">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">Pedro Lima</td>
+                            <td
+                                class="inforTabelasDashboardAdm">pedro.lima@email.com</td>
+                            <td class="inforTabelasDashboardAdm">O pedido chegou
+                                com atraso.</td>
+                            <td class="inforTabelasDashboardAdm">11/06/2025</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="responderFeedback.html"
+                                    class="botaoTabela"
+                                    aria-label="Responder Usuário">Responder</a>
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir feedback do Usuário">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">Juliana
+                                Castro</td>
+                            <td
+                                class="inforTabelasDashboardAdm">juliana.castro@email.com</td>
+                            <td class="inforTabelasDashboardAdm">Atendimento
+                                excelente! Parabéns!</td>
+                            <td class="inforTabelasDashboardAdm">10/06/2025</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="responderFeedback.html"
+                                    class="botaoTabela"
+                                    aria-label="Responder Usuário">Responder</a>
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir feedback do Usuário">Excluir</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Botão Ver mais Feedbacks -->
+                <nav class="navMaisFeedbacksAdm">
+                    <a href="feedbacksContato.html"
+                        class="botaoMaisFeedbacksAdm"
+                        aria-label="Ver todos os feedbacks e mensagens dos clientes">
+                        Ver Todos os Feedbacks e Mensagens
+                    </a>
+                </nav>
+            </section>
+        </main>
+    </body>
 </html>

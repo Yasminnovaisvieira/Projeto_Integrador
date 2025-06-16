@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Adicionar Produto | Miaunarquia</title>
+        <link rel="stylesheet" href="../../css/style.css" />
+    </head>
+    <body class="fundoFormulariosAdm">
+        <!-- Formulário para Adicionar o Produto -->
+        <main class="mainFormulariosAdm" aria-label="Adicionar produto">
+            <h1 class="titulosFormulariosAdm">Adicionar Produto</h1>
+
+            <form novalidate>
+                <fieldset>
+                    <legend class="legendsFormulariosAdm">Informações do
+                        Produto</legend>
+
+                    <label class="labelsFormulariosAdm"
+                        for="nomeProduto">Nome</label>
+                    <input class="inputsFormulariosAdm" type="text"
+                        name="nomeProduto"
+                        placeholder="Digite o nome do produto" />
+
+                    <label class="labelsFormulariosAdm" for="precoProduto">Preço
+                        (R$)</label>
+                    <input class="inputsFormulariosAdm" type="number"
+                        name="precoProduto" placeholder="0.00" step="0.01"
+                        min="0" />
+
+                    <label class="labelsFormulariosAdm"
+                        for="estoqueProduto">Estoque</label>
+                    <input class="inputsFormulariosAdm" type="number"
+                        name="estoqueProduto"
+                        placeholder="Digite a quantidade disponível" min="0" />
+
+                    <label class="labelsFormulariosAdm"
+                        for="statusProduto">Status</label>
+                    <select class="inputsFormulariosAdm" name="statusProduto">
+                        <option value="ativo" selected>Ativo</option>
+                        <option value="inativo">Inativo</option>
+                    </select>
+
+                    <label class="labelsFormulariosAdm"
+                        for="descricaoProduto">Descrição</label>
+                    <textarea
+                        class="inputsFormulariosAdm textareaFormulariosAdm"
+                        name="descricaoProduto"
+                        placeholder="Digite a descrição detalhada do produto"></textarea>
+                </fieldset>
+
+                <fieldset aria-label="Imagens do produto">
+                    <legend class="legendsFormulariosAdm">Imagens</legend>
+
+                    <label class="labelsFormulariosAdm"
+                        for="imagensProduto">Adicionar Imagens</label>
+                    <input type="file" id="imagensProduto" name="imagensProduto"
+                        accept="image/*" multiple
+                        aria-describedby="instrucoesImagens" />
+
+                    <p class="textosFormulariosAdm">Selecione imagens JPG ou
+                        PNG</p>
+
+                    <output id="previsaoImagens">
+                        <p class="imagemSimulada">Imagem 1</p>
+                        <p class="imagemSimulada">Imagem 2</p>
+                        <p class="imagemSimulada">Imagem 3</p>
+                    </output>
+                </fieldset>
+
+                <!-- Botões Cancelar e Salvar -->
+                <nav class="navBotoesFormulariosAdm">
+                    <a href="produtosAdm.html"
+                        class="botoesFormulariosAdm botaoCancelarFormulariosAdm"
+                        aria-label="Cancelar">Cancelar</a>
+                    <a href="produtosAdm.html"
+                        class="botoesFormulariosAdm botaoSalvarFormulariosAdm"
+                        aria-label="Salvar produto">Salvar Produto</a>
+                </nav>
+            </form>
+        </main>
+    </body>
+</html>

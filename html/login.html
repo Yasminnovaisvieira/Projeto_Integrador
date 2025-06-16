@@ -7,19 +7,22 @@
         <link rel="stylesheet" href="../css/style.css" />
     </head>
     <body class="fundoLoginCadastro">
+        <!-- Header do Login e Cadastro (Voltar para Tela Inicial) -->
         <header>
-            <nav class="navMenu" aria-label="Menu Principal">
-                <a href="index.html" class="btnVoltar">Voltar para Página
+            <nav class="navMenu">
+                <a href="index.html" class="btnVoltar"
+                    aria-label="Voltar para Menu Principal">Voltar para Página
                     Inicial</a>
             </nav>
         </header>
 
+        <!-- Seção do Login -->
         <main class="containerPagina">
-            <section id="containerLogin">
+            <section id="containerLogin" aria-label="Formulário de Login">
                 <h1 class="logoSiteLoginCadastro">
                     <img
                         src="../imagens/imagem_logo.png"
-                        alt="Logo de um Rosto de Gato com Coroa Acima da Cabeça"
+                        alt="Logo do Site (Desenho de rosto de um gato preto com uma coroa)"
                         class="logoImagemLoginCadastro" />
                 </h1>
 
@@ -28,55 +31,62 @@
                         <legend class="tituloLoginCadastro">Acesse sua
                             conta</legend>
 
+                        <!-- Opções para entrar usando Google ou Apple -->
                         <section class="grupoSocial">
-                            <button type="button" class="btnGoogle">
-                                <img src="../imagens/icone_google.png" alt
+                            <button type="button" class="btnGoogle"
+                                aria-label="Botão para Logar com o Google">
+                                <img src="../imagens/icone_google.png"
+                                    alt="Logo do Google"
                                     aria-hidden="true" class="imagensLogin" />
                                 Entrar com Google
                             </button>
 
-                            <button type="button" class="btnApple">
-                                <img src="../imagens/icone_apple.png" alt
+                            <button type="button" class="btnApple"
+                                aria-label="Botão para Logar com a Apple">
+                                <img src="../imagens/icone_apple.png"
+                                    alt="Logo da Apple"
                                     aria-hidden="true" class="imagensLogin" />
                                 Entrar com Apple
                             </button>
                         </section>
 
-                        <hr class="divisaoLoginCadastro" />
- 
-                        <label for="email" id="emailLogin"
-                            class="camposLogin">Insira seu
+                        <hr class="divisaoLoginCadastro" aria-hidden="true" />
+
+                        <!-- Inserir dados -->
+                        <label for="email" class="labelsLogin">Insira seu
                             E-mail</label>
                         <input
                             type="email"
-                            id="email"
-                            placeholder="exemplo@email.com"
-                            required
-                            autocomplete="email" class="campo" />
+                            placeholder="exemplo@email.com" class="camposLogin"
+                            name="email" />
 
-                        <label for="password" class="camposLogin">Insira sua
+                        <label for="password" class="labelsLogin">Insira sua
                             Senha</label>
                         <input
                             type="password"
                             id="password"
-                            placeholder="••••••••"
-                            required
-                            autocomplete="current-password" class="campo" />
+                            placeholder="••••••••" class="camposLogin"
+                            name="password" />
                     </fieldset>
 
+                    <!-- Opções de Lembrar de Mim e Esqueceu Senha -->
                     <section class="opcoesFormulario"
-                        aria-label="Opções de Login">
-                        <label class="LembrarDeMim">
+                        aria-label="Opções de 'Esqueceu Senha' e 'Lembrar de Mim'">
+                        <label class="LembrarDeMim" for="LembrarDeMim">
                             <input type="checkbox" name="lembrar" />
                             <span class="checkmark"></span>
+                            <!-- Check-box personalizado -->
                             Lembrar de mim
                         </label>
                         <a href="#" class="esqueceuSenha">Esqueceu a senha?</a>
                     </section>
 
-                    <a href="finalizandoCompra.html" class="btnLogin">Entrar</a>
+                    <!-- Botão para Entrar na Conta -->
+                    <a href="finalizandoCompra.html" class="btnLogin"
+                        aria-label="Entrar em sua Conta">Entrar</a>
 
-                    <p class="registrarSe">
+                    <!-- Ir para Página de Cadastro -->
+                    <p class="registrarSe" aria-label="Opção de se Cadastrar">
                         Não tem conta?
                         <a href="cadastro.html">Crie uma agora</a>
                     </p>

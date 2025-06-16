@@ -7,13 +7,16 @@
         <link rel="stylesheet" href="../css/style.css" />
     </head>
     <body>
+        <!-- Carrossel para avisos de promoções -->
         <section
             class="avisoCarrossel"
             aria-label="Carrossel de avisos e promoções da plataforma">
+
             <button id="setaEsquerdaAviso" class="setasAviso"
                 aria-label="Aviso anterior">
                 ❮
             </button>
+
             <ul class="mensagens">
                 <li class="mensagem">
                     NOVO POR AQUI? USE O CUPOM 🐾PRIMEIRACOMPRA🐾
@@ -23,28 +26,36 @@
                 </li>
                 <li class="mensagem">CADASTRE-SE E GANHE 10% DE DESCONTO</li>
             </ul>
+
             <button id="setaDireitaAviso" class="setasAviso"
                 aria-label="Aviso seguinte">
                 ❯
             </button>
         </section>
+
+        <!-- Header do site -->
         <header class="headerSite">
             <h1 class="logoSite">
                 <a href="index.html" aria-label="Página inicial - Miaunarquia">
                     <img
                         src="../imagens/imagem_logo.png"
-                        alt="Logo de um Gato Preto com Coroa"
+                        alt="Logo do Site (Desenho de rosto de um gato preto com uma coroa)"
                         class="logoImagem" />
                     <span class="nomeLogo">Miaunarquia</span>
                 </a>
             </h1>
 
             <nav class="navMenu" aria-label="Menu Principal">
+                <!-- arial-label = Rotular elemento para descreve-lo e deixa-lo mais acessível -->
                 <ul>
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="catalogo.html">Catálogo</a></li>
-                    <li><a href="sobreNos.html#sobreNos">Sobre Nós</a></li>
-                    <li><a href="sobreNos.html#contato">Contato</a></li>
+                    <li><a href="index.html"
+                            aria-label="Ir para Início">Início</a></li>
+                    <li><a href="catalogo.html"
+                            aria-label="Ir para Catálogo">Catálogo</a></li>
+                    <li><a href="sobreNos.html"
+                            aria-label="Ir para Sobre Nós">Sobre Nós</a></li>
+                    <li><a href="contato.html"
+                            aria-label="Ir para Contato (Contate-nos)">Contato</a></li>
                 </ul>
             </nav>
 
@@ -64,7 +75,7 @@
                     </li>
 
                     <li>
-                        <a href="login.html" aria-label="Favoritos">
+                        <a href="#" aria-label="Ir para Favoritos">
                             <figure class="iconesNav">
                                 <img
                                     src="../imagens/icone_favoritos.png"
@@ -78,7 +89,7 @@
                     </li>
 
                     <li>
-                        <a href="login.html" aria-label="Perfil">
+                        <a href="#" aria-label="Ir para Perfil">
                             <figure class="iconesNav">
                                 <img
                                     src="../imagens/icone_usuario.png"
@@ -91,12 +102,13 @@
                     </li>
 
                     <li>
-                        <a href="carrinho.html" aria-label="Carrinho">
+                        <a href="carrinho.html" aria-label="Ir para Carrinho">
                             <figure class="iconesNav">
                                 <img
-                                    src="../imagens/icone_carrinho.png"
+                                    src="../imagens/icone_carrinhoSelecionado.png"
                                     alt="Ícone de Carrinho" />
-                                <figcaption class="legendasIcones">
+                                <figcaption id="figCarrinhoSelecionado"
+                                    class="legendasIcones">
                                     Carrinho
                                 </figcaption>
                             </figure>
@@ -106,163 +118,180 @@
             </nav>
         </header>
 
+        <!-- Carrinho -->
         <main id="mainCarrinho">
             <h2 id="tituloCarrinho">Seu Carrinho</h2>
 
+            <!-- Itens que estão no Carrinho -->
             <section class="itensCarrinho" aria-label="Itens no Carrinho">
+                <!-- Produto 1 -->
                 <article class="itemCarrinho">
                     <figure>
                         <img
-                            src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=80&q=80"
-                            alt="..."
+                            src="../imagens/imagem_roupa.png"
+                            alt="Gato com Fantasia de Dinossauro na cor Verde"
                             class="fotoProduto" />
                     </figure>
 
                     <section class="informacoesProduto">
-                        <p class="nomeProduto">Arranhador Luxo</p>
+                        <p class="nomeProduto">Fantasia de Dinoussauro -
+                            Verde</p>
                     </section>
 
                     <section class="QuantidadeERemover">
                         <div class="blocoQuantidade">
-                            <label class="labelQuantidade">Quantidade</label>
+                            <label class="labelQuantidade"
+                                for="quantidade">Quantidade</label>
                             <input type="number" id="QuantidadeProd1"
                                 class="quantidadeProduto" min="1" max="10"
-                                value="1" />
+                                value="2" name="quantidade" />
                         </div>
 
-                        <output class="subtotal">R$ 299,00</output>
+                        <output class="subtotal">R$ 313,38</output>
                         <button class="botaoRemover">Remover</button>
                     </section>
                 </article>
 
+                <!-- Produto 2 -->
                 <article class="itemCarrinho">
                     <figure>
                         <img
-                            src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=80&q=80"
-                            alt="..."
+                            src="../imagens/imagem_cama_rose.png"
+                            alt="Cama oval, com Bordas Altas em Tecido Preto e Base Almofadada na Cor Rosé para Gatos"
                             class="fotoProduto" />
                     </figure>
 
                     <section class="informacoesProduto">
-                        <p class="nomeProduto">Arranhador Luxo</p>
+                        <p class="nomeProduto">Cama Oval Almofadada – Rosé</p>
                     </section>
 
                     <section class="QuantidadeERemover">
                         <div class="blocoQuantidade">
-                            <label class="labelQuantidade">Quantidade</label>
+                            <label class="labelQuantidade"
+                                for="quantidade">Quantidade</label>
                             <input type="number" id="QuantidadeProd2"
                                 class="quantidadeProduto" min="1" max="10"
-                                value="1" />
+                                value="1" name="quantidade" />
                         </div>
 
-                        <output class="subtotal">R$ 299,00</output>
+                        <output class="subtotal">R$ 158,26</output>
                         <button class="botaoRemover">Remover</button>
                     </section>
                 </article>
 
+                <!-- Produto 3 -->
                 <article class="itemCarrinho">
                     <figure>
                         <img
-                            src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?auto=format&fit=crop&w=80&q=80"
-                            alt="..."
+                            src="../imagens/imagem_arranhador_bege.png"
+                            alt="Arranhador Chalesco na Cor Bege para Gatos"
                             class="fotoProduto" />
                     </figure>
 
                     <section class="informacoesProduto">
-                        <p class="nomeProduto">Comedouro Inteligente</p>
+                        <p class="nomeProduto">Arranhador - Chalesco</p>
                     </section>
 
                     <section class="QuantidadeERemover">
                         <div class="blocoQuantidade">
-                            <label class="labelQuantidade">Quantidade</label>
+                            <label class="labelQuantidade"
+                                for="quantidade">Quantidade</label>
                             <input type="number" id="QuantidadeProd3"
                                 class="quantidadeProduto" min="1" max="10"
-                                value="1" />
+                                value="1" name="quantidade" />
                         </div>
 
-                        <output class="subtotal">R$ 299,00</output>
+                        <output class="subtotal">R$ 63,90</output>
                         <button class="botaoRemover">Remover</button>
                     </section>
                 </article>
             </section>
 
+            <!-- Resumo do Carrinho -->
             <aside id="resumoCarrinho" aria-label="Resumo do Carrinho">
                 <h3 id="tituloResumoCarrinho">Resumo do pedido</h3>
                 <dl class="detalhesResumo">
                     <dt>Subtotal</dt>
-                    <dd class="informacoesSubtotal">R$ 697,00</dd>
+                    <dd class="informacoesSubtotal">R$ 535,54</dd>
                     <dt>Frete</dt>
                     <dd class="informacoesSubtotal">Grátis</dd>
                     <dt>Total</dt>
-                    <dd class="informacoesSubtotal">R$ 697,00</dd>
+                    <dd class="informacoesSubtotal">R$ 535,54</dd>
                 </dl>
 
-                <label id="labelDescontoCarrinho">Código de desconto:</label>
-                <input type="text" id="inputDesconto" placeholder="Digite o código de desconto aqui" />
-                <a class="botaoFinalizarCompra" href="login.html" aria-label="Finalizar Compra">Finalizar Compra</a>
+                <label id="labelDescontoCarrinho" for="codigoDesconto">Código de
+                    desconto:</label>
+                <input type="text" id="inputDesconto"
+                    placeholder="Digite o código de desconto aqui"
+                    name="codigoDesconto" />
+
+                <a class="botaoFinalizarCompra" href="login.html"
+                    aria-label="Finalizar Compra">Finalizar Compra</a>
             </aside>
         </main>
 
-        <footer id="rodape">
+        <!-- Rodapé do Site -->
+        <footer class="rodape">
             <img
                 src="../imagens/imagem_logo.png"
-                alt="Logo Miaunarquia"
+                alt="Logo do Site (Desenho de rosto de um gato preto com uma coroa)"
                 class="logo" />
 
-            <nav id="informacoes" aria-label="Informações da Plataforma">
+            <nav class="informacoesRodape"
+                aria-label="Informações da Plataforma">
                 <h2>Informações</h2>
                 <ul>
                     <li><a href="sobreNos.html">Sobre Nós</a></li>
                     <li><a href="sobreNos.html#termosECondicoes">Termos e
                             Condições de Uso</a></li>
-                    <li><a
-                            href="sobreNos.html#politicasPrivacidade">Política
-                            de
+                    <li><a href="sobreNos.html#politicasPrivacidade">Política de
                             Privacidade</a></li>
-                    <li><a href="   ">FAQ</a></li>
+                    <li><a href="sobreNos.html#secaoFaq">FAQ</a></li>
                 </ul>
             </nav>
 
-            <address id="contato">
+            <address class="contatoRodape" aria-label="Nossos Meios de Contato">
                 <h2>Contato</h2>
                 <p>
                     <a
                         href="mailto:contato@miauanarquia.com.br">contato@miauanarquia.com.br</a>
+                    <!-- mailto = Identificar como e-mail -->
                 </p>
             </address>
 
-            <nav id="redes" aria-label="Nos Siga">
+            <nav class="redesRodape" aria-label="Nossas Redes Sociais">
                 <h2>Nos siga</h2>
-                <ul id="listaRedesSociais">
+                <ul class="listaRedesSociaisRodape">
                     <li>
                         <a href="#"><img
                                 src="../imagens/icone_facebook.png"
-                                class="iconesRedesSociais"
+                                class="iconesRedesSociaisRodape"
                                 alt="Ícone do Facebook" />
                         </a>
                     </li>
                     <li>
                         <a href="#"><img
                                 src="../imagens/icone_instagram.png"
-                                class="iconesRedesSociais"
+                                class="iconesRedesSociaisRodape"
                                 alt="Ícone do Instagram" /></a>
                     </li>
                     <li>
                         <a href="#"><img
                                 src="../imagens/icone_linkedin.png"
-                                class="iconesRedesSociais"
+                                class="iconesRedesSociaisRodape"
                                 alt="Ícone do LinkedIn" /></a>
                     </li>
                     <li>
                         <a href="#"><img
                                 src="../imagens/icone_discord.png"
-                                class="iconesRedesSociais"
+                                class="iconesRedesSociaisRodape"
                                 alt="Ícone do Discord" /></a>
                     </li>
                 </ul>
             </nav>
 
-            <section id="pagamentos">
+            <section class="pagamentosRodape"
+                aria-label="Nossos Meios de Pagamentos">
                 <h2>Formas de pagamento:</h2>
                 <ul>
                     <li>
@@ -270,47 +299,56 @@
                             src="../imagens/icone_american_express.png"
                             alt="Ícone do American Express" />
                     </li>
+
                     <li>
                         <img
                             src="../imagens/icone_visa.png"
                             alt="Ícone do Visa" />
                     </li>
+
                     <li>
                         <img
                             src="../imagens/icone_mastercard.png"
                             alt="Ícone do Mastercard" />
                     </li>
+
                     <li>
                         <img
                             src="../imagens/icone_discover.png"
                             alt="Ícone do Discover" />
                     </li>
+
                     <li>
                         <img
                             src="../imagens/icone_elo.png"
                             alt="Ícone do Elo" />
                     </li>
+
                     <li>
                         <img
                             src="../imagens/icone_boleto.png"
                             alt="Ícone do Boleto bancário" />
                     </li>
+
                     <li>
                         <img
                             src="../imagens/icone_pix.png"
                             alt="Ícone do Pix" />
                     </li>
                 </ul>
-                <p class="seguro">
+
+                <p class="seguroRodape"
+                    aria-label="Informação que nossos meios de pagamentos são 100% seguros">
                     <img
                         src="../imagens/icone_seguranca_footer.png"
                         alt="Ícone que simboliza Segurança" />
                     PAGAMENTO 100% SEGURO
                 </p>
-                <ul id="copyright">
-                    <li id="copyrightTexto">
-                        &copy; 2025 Miaunarquia. Todos os direitos
-                        reservados.
+
+                <ul class="copyrightRodape"
+                    aria-label="CopyRight da Plataforma">
+                    <li class="copyrightTextoRodape">
+                        &copy; 2025 Miaunarquia. Todos os direitos reservados.
                     </li>
                 </ul>
             </section>

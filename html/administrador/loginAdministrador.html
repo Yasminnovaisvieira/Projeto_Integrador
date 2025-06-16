@@ -7,53 +7,66 @@
         <link rel="stylesheet" href="../../css/style.css" />
     </head>
     <body class="fundoLoginCadastro">
-        
+        <!-- Login Administrativo -->
         <main class="containerPagina">
-            <section id="containerLogin">
+            <section id="containerLogin"
+                aria-label="Formulário de Login Administrativo">
                 <h1 class="logoSiteLoginCadastro">
                     <img
                         src="../../imagens/imagem_logo.png"
-                        alt="Logo de um Rosto de Gato com Coroa Acima da Cabeça"
+                        alt="Logo do Site (Desenho de rosto de um gato preto com uma coroa)"
                         class="logoImagemLoginCadastro" />
                 </h1>
 
-                <form class="formularioLogin">
+                <form class="formularioLogin" novalidate>
                     <fieldset class="formularioGrupo">
-                        <legend class="tituloLoginCadastro">Olá, Administrador! Acesse sua
-                            conta</legend>
- 
-                        <label for="email" id="emailLogin"
-                            class="camposLogin">Insira seu
-                            E-mail</label>
+                        <legend class="tituloLoginCadastro">Acesso
+                            Administrativo</legend>
+
+                        <!-- Inserir dados -->
+                        <label for="email" class="labelsLogin">E-mail de
+                            administrador</label>
                         <input
                             type="email"
                             id="email"
-                            placeholder="exemplo@email.com"
+                            name="email"
+                            placeholder="admin@miaunarquia.com"
+                            class="camposLogin"
                             required
-                            autocomplete="email" class="campo" />
+                            autocomplete="username" />
 
-                        <label for="password" class="camposLogin">Insira sua
-                            Senha</label>
+                        <label for="password" class="labelsLogin">Senha</label>
                         <input
                             type="password"
                             id="password"
+                            name="password"
                             placeholder="••••••••"
+                            class="camposLogin"
                             required
-                            autocomplete="current-password" class="campo" />
+                            autocomplete="current-password" />
                     </fieldset>
 
+                    <!-- Opções -->
                     <section class="opcoesFormulario"
-                        aria-label="Opções de Login">
-                        <label class="LembrarDeMim">
-                            <input type="checkbox" name="lembrar" />
-                            <span class="checkmark"></span>
-                            Lembrar de mim
+                        aria-label="Opções de 'Lembrar de Mim'">
+                        <label class="lembrarDeMim" for="lembrarDeMim">
+                            <input type="checkbox" id="lembrarDeMim"
+                                name="lembrar" />
+                            <span class="checkmark"></span> Lembrar de mim
                         </label>
                         <a href="#" class="esqueceuSenha">Esqueceu a senha?</a>
                     </section>
 
-                    <a href="indexLogado.html" class="btnLogin">Entrar</a>
+                    <!-- Botão para entrar no painel -->
+                    <a href="dashboard.html" class="btnLogin"
+                        aria-label="Entrar em Painel">Entrar Painel</a>
 
+                    <!-- Link para suporte -->
+                    <p class="contatarSuporte"
+                        aria-label="Opção de suporte administrativo">
+                        Precisa de ajuda?
+                        <a href="#">Contato com o suporte</a>
+                    </p>
                 </form>
             </section>
         </main>

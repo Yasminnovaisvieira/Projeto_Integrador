@@ -8,12 +8,16 @@
     </head>
 
     <body>
-        <section class="avisoCarrossel"
+        <!-- Carrossel para avisos de promoções -->
+        <section
+            class="avisoCarrossel"
             aria-label="Carrossel de avisos e promoções da plataforma">
+
             <button id="setaEsquerdaAviso" class="setasAviso"
                 aria-label="Aviso anterior">
                 ❮
             </button>
+
             <ul class="mensagens">
                 <li class="mensagem">
                     NOVO POR AQUI? USE O CUPOM 🐾PRIMEIRACOMPRA🐾
@@ -23,28 +27,36 @@
                 </li>
                 <li class="mensagem">CADASTRE-SE E GANHE 10% DE DESCONTO</li>
             </ul>
+
             <button id="setaDireitaAviso" class="setasAviso"
                 aria-label="Aviso seguinte">
                 ❯
             </button>
         </section>
+
+        <!-- Header do site -->
         <header class="headerSite">
             <h1 class="logoSite">
                 <a href="index.html" aria-label="Página inicial - Miaunarquia">
-                    <img src="../imagens/imagem_logo.png"
-                        alt="Logo de um Gato Preto com Coroa"
+                    <img
+                        src="../imagens/imagem_logo.png"
+                        alt="Logo do Site (Desenho de rosto de um gato preto com uma coroa)"
                         class="logoImagem" />
                     <span class="nomeLogo">Miaunarquia</span>
                 </a>
             </h1>
 
             <nav class="navMenu" aria-label="Menu Principal">
+                <!-- arial-label = Rotular elemento para descreve-lo e deixa-lo mais acessível -->
                 <ul>
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="catalogo.html">Catálogo</a></li>
-                    <li><a href="sobreNos.html" id="SobreNosSelecionado">Sobre
-                            Nós</a></li>
-                    <li><a href="sobreNos.html#contato">Contato</a></li>
+                    <li><a href="index.html"
+                            aria-label="Ir para Início">Início</a></li>
+                    <li><a href="catalogo.html"
+                            aria-label="Ir para Catálogo">Catálogo</a></li>
+                    <li><a href="sobreNos.html" id="sobreNosSelecionado"
+                            aria-label="Ir para Sobre Nós">Sobre Nós</a></li>
+                    <li><a href="contato.html"
+                            aria-label="Ir para Contato (Contate-nos)">Contato</a></li>
                 </ul>
             </nav>
 
@@ -53,7 +65,8 @@
                     <li>
                         <a href="#" aria-label="Pesquisar">
                             <figure class="iconesNav">
-                                <img src="../imagens/icone_pesquisar.png"
+                                <img
+                                    src="../imagens/icone_pesquisar.png"
                                     alt="Ícone de Lupa" />
                                 <figcaption class="legendasIcones">
                                     Pesquisar
@@ -63,10 +76,12 @@
                     </li>
 
                     <li>
-                        <a href="login.html" aria-label="Favoritos">
+                        <a href="#" aria-label="Ir para Favoritos">
                             <figure class="iconesNav">
-                                <img src="../imagens/icone_favoritos.png"
-                                    alt="Ícone de Coração" aria-hidden="true" />
+                                <img
+                                    src="../imagens/icone_favoritos.png"
+                                    alt="Ícone de Coração"
+                                    aria-hidden="true" />
                                 <figcaption class="legendasIcones">
                                     Favoritos
                                 </figcaption>
@@ -75,9 +90,10 @@
                     </li>
 
                     <li>
-                        <a href="login.html" aria-label="Perfil">
+                        <a href="#" aria-label="Ir para Perfil">
                             <figure class="iconesNav">
-                                <img src="../imagens/icone_usuario.png"
+                                <img
+                                    src="../imagens/icone_usuario.png"
                                     alt="Ícone de Perfil" />
                                 <figcaption class="legendasIcones">
                                     Entrar
@@ -87,9 +103,10 @@
                     </li>
 
                     <li>
-                        <a href="carrinho.html" aria-label="Carrinho">
+                        <a href="carrinho.html" aria-label="Ir para Carrinho">
                             <figure class="iconesNav">
-                                <img src="../imagens/icone_carrinho.png"
+                                <img
+                                    src="../imagens/icone_carrinho.png"
                                     alt="Ícone de Carrinho" />
                                 <figcaption class="legendasIcones">
                                     Carrinho
@@ -101,13 +118,14 @@
             </nav>
         </header>
 
+        <!-- Sobre Nós -->
         <main id="mainSobreNos">
             <h2 id="tituloSobreNos">Sobre Nós</h2>
-            <section id="sobreNos">
+            <section id="sobreNos" aria-label="Sobre Nós">
                 <figure>
-                    <img src="../imagens/imagem_gatinho_pequeno.png" alt="..."
+                    <img src="../imagens/imagem_sobreNos.png"
+                        alt="Banner Roxo com Dois Gatos Abraçados"
                         id="imagemPrincipalSobreNos" />
-                    <!--ARRUMAR ALTTTTTTTTTTTTTTTTTTTT-->
                 </figure>
                 <p id="textoSobreNos">
                     A Miaunarquia nasceu da paixão por gatos e do desejo de
@@ -122,13 +140,14 @@
                 </p>
             </section>
 
+            <!-- Missão, Visão e Valores -->
             <section id="missaoVisaoValores"
                 aria-label="Missão, Visão e Valores">
                 <article class="blocosMvv">
                     <figure>
                         <img
-                            src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=800&q=80"
-                            alt="..." /> <!--ARRUMAR ALTTTTTTTTTTTTTTTTTTTT-->
+                            src="../imagens/imagem_missaoSobreNos.png"
+                            alt="Banner com gato branco de olhos azuis" />
                         <figcaption>
                             <h3 class="tituloMvv">Nossa Missão</h3>
                             <p class="textoMvv">
@@ -148,8 +167,8 @@
                 <article class="blocosMvv">
                     <figure>
                         <img
-                            src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=800&q=80"
-                            alt="..." /> <!--ARRUMAR ALTTTTTTTTTTTTTTTTTTTT-->
+                            src="../imagens/imagem_visaoSobreNos.png"
+                            alt="Banner com gato marrom e olhos castanhos" />
                         <figcaption>
                             <h3 class="tituloMvv">Nossa Visão</h3>
                             <p class="textoMvv">
@@ -169,8 +188,8 @@
                 <article class="blocosMvv">
                     <figure>
                         <img
-                            src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?auto=format&fit=crop&w=800&q=80"
-                            alt="..." /> <!--ARRUMAR ALTTTTTTTTTTTTTTTTTTTT-->
+                            src="../imagens/imagem_valoresSobreNos.png"
+                            alt="Banner com gato cinza e olhos castanhos" />
                         <figcaption>
                             <h3 class="tituloMvv">Nossos Valores</h3>
                             <p class="textoMvv">
@@ -185,52 +204,64 @@
                 </article>
             </section>
 
-            <hr class="divisao" />
+            <hr class="divisao" aria-hidden="true" />
 
+            <!-- Seção FAQ -->
             <section id="secaoFaq">
                 <h2 id="tituloFaq">Perguntas Frequentes</h2>
 
                 <details class="detailsFaq">
-                    <summary class="tituloPergunta">Quais tipos de produtos a Miaunarquia
+                    <summary class="tituloPergunta">Quais tipos de produtos a
+                        Miaunarquia
                         oferece?</summary>
-                    <p class="textoFaq">Oferecemos uma ampla variedade de produtos para gatos,
+                    <p class="textoFaq">Oferecemos uma ampla variedade de
+                        produtos para gatos,
                         incluindo alimentação, brinquedos, acessórios, camas,
                         arranhadores e produtos de higiene.</p>
                 </details>
 
                 <details class="detailsFaq">
-                    <summary class="tituloPergunta">Quais formas de pagamento são aceitas?</summary>
-                    <p class="textoFaq">Aceitamos cartões de crédito, débito, boleto bancário e
+                    <summary class="tituloPergunta">Quais formas de pagamento
+                        são aceitas?</summary>
+                    <p class="textoFaq">Aceitamos cartões de crédito, débito,
+                        boleto bancário e
                         outras opções de pagamento online. é possível consultar
                         as opções disponíveis no momento da compra.</p>
                 </details>
 
                 <details class="detailsFaq">
-                    <summary class="tituloPergunta">Quanto tempo leva para meu pedido ser
+                    <summary class="tituloPergunta">Quanto tempo leva para meu
+                        pedido ser
                         entregue?</summary>
-                    <p class="textoFaq">O prazo de entrega varia de acordo com a sua localização
+                    <p class="textoFaq">O prazo de entrega varia de acordo com a
+                        sua localização
                         e o método de envio escolhido. Geralmente, entregamos em
                         até 7 dias úteis após a confirmação do pagamento.</p>
                 </details>
 
                 <details class="detailsFaq">
-                    <summary class="tituloPergunta">Posso acompanhar o status do meu pedido?</summary>
-                    <p class="textoFaq">Sim, você receberá um código de rastreamento assim que
+                    <summary class="tituloPergunta">Posso acompanhar o status do
+                        meu pedido?</summary>
+                    <p class="textoFaq">Sim, você receberá um código de
+                        rastreamento assim que
                         seu pedido for enviado, permitindo acompanhar a entrega
                         pelo site ou pelos Correios.</p>
                 </details>
 
                 <details class="detailsFaq">
-                    <summary class="tituloPergunta">Há descontos ou promoções especiais?</summary>
-                    <p class="textoFaq">Sempre estamos com alguma promoção perfeita! Fique atento
+                    <summary class="tituloPergunta">Há descontos ou promoções
+                        especiais?</summary>
+                    <p class="textoFaq">Sempre estamos com alguma promoção
+                        perfeita! Fique atento
                         às nossas promoções na página inicial ou assine nossa
                         newsletter para receber novidades e ofertas
                         exclusivas.</p>
                 </details>
             </section>
 
-            <hr class="divisao" />
+            <hr class="divisao" aria-hidden="true" />
 
+            <!-- Termos e Condições de Uso -->
             <section id="termosECondicoes">
                 <h2 id="tituloTermosECondicoes">Termos e Condições de
                     Uso</h2>
@@ -293,8 +324,9 @@
                 </p>
             </section>
 
-            <hr class="divisao" />
+            <hr class="divisao" aria-hidden="true" />
 
+            <!-- Políticas de Privacidade -->
             <section id="politicasPrivacidade">
                 <h2 id="tituloPoliticasPrivacidade">Política de
                     Privacidade</h2>
@@ -365,99 +397,120 @@
                 </p>
             </section>
         </main>
-        <footer id="rodape">
-            <img src="../imagens/imagem_logo.png" alt="Logo Miaunarquia"
+
+        <!-- Rodapé do Site -->
+        <footer class="rodape">
+            <img
+                src="../imagens/imagem_logo.png"
+                alt="Logo do Site (Desenho de rosto de um gato preto com uma coroa)"
                 class="logo" />
 
-            <nav id="informacoes" aria-label="Informações da Plataforma">
+            <nav class="informacoesRodape"
+                aria-label="Informações da Plataforma">
                 <h2>Informações</h2>
                 <ul>
                     <li><a href="sobreNos.html">Sobre Nós</a></li>
                     <li><a href="sobreNos.html#termosECondicoes">Termos e
                             Condições de Uso</a></li>
-                    <li><a href="sobreNos.html#politicasPrivacidade">Política
-                            de
+                    <li><a href="sobreNos.html#politicasPrivacidade">Política de
                             Privacidade</a></li>
-                    <li><a href="   ">FAQ</a></li>
+                    <li><a href="sobreNos.html#secaoFaq">FAQ</a></li>
                 </ul>
             </nav>
 
-            <address id="contato">
+            <address class="contatoRodape" aria-label="Nossos Meios de Contato">
                 <h2>Contato</h2>
                 <p>
                     <a
                         href="mailto:contato@miauanarquia.com.br">contato@miauanarquia.com.br</a>
+                    <!-- mailto = Identificar como e-mail -->
                 </p>
             </address>
 
-            <nav id="redes" aria-label="Nos Siga">
+            <nav class="redesRodape" aria-label="Nossas Redes Sociais">
                 <h2>Nos siga</h2>
-                <ul id="listaRedesSociais">
+                <ul class="listaRedesSociaisRodape">
                     <li>
-                        <a href="#"><img src="../imagens/icone_facebook.png"
-                                class="iconesRedesSociais"
+                        <a href="#"><img
+                                src="../imagens/icone_facebook.png"
+                                class="iconesRedesSociaisRodape"
                                 alt="Ícone do Facebook" />
                         </a>
                     </li>
                     <li>
-                        <a href="#"><img src="../imagens/icone_instagram.png"
-                                class="iconesRedesSociais"
+                        <a href="#"><img
+                                src="../imagens/icone_instagram.png"
+                                class="iconesRedesSociaisRodape"
                                 alt="Ícone do Instagram" /></a>
                     </li>
                     <li>
-                        <a href="#"><img src="../imagens/icone_linkedin.png"
-                                class="iconesRedesSociais"
+                        <a href="#"><img
+                                src="../imagens/icone_linkedin.png"
+                                class="iconesRedesSociaisRodape"
                                 alt="Ícone do LinkedIn" /></a>
                     </li>
                     <li>
-                        <a href="#"><img src="../imagens/icone_discord.png"
-                                class="iconesRedesSociais"
+                        <a href="#"><img
+                                src="../imagens/icone_discord.png"
+                                class="iconesRedesSociaisRodape"
                                 alt="Ícone do Discord" /></a>
                     </li>
                 </ul>
             </nav>
 
-            <section id="pagamentos">
+            <section class="pagamentosRodape"
+                aria-label="Nossos Meios de Pagamentos">
                 <h2>Formas de pagamento:</h2>
                 <ul>
                     <li>
-                        <img src="../imagens/icone_american_express.png"
+                        <img
+                            src="../imagens/icone_american_express.png"
                             alt="Ícone do American Express" />
                     </li>
                     <li>
-                        <img src="../imagens/icone_visa.png"
+                        <img
+                            src="../imagens/icone_visa.png"
                             alt="Ícone do Visa" />
                     </li>
                     <li>
-                        <img src="../imagens/icone_mastercard.png"
+                        <img
+                            src="../imagens/icone_mastercard.png"
                             alt="Ícone do Mastercard" />
                     </li>
                     <li>
-                        <img src="../imagens/icone_discover.png"
+                        <img
+                            src="../imagens/icone_discover.png"
                             alt="Ícone do Discover" />
                     </li>
                     <li>
-                        <img src="../imagens/icone_elo.png"
+                        <img
+                            src="../imagens/icone_elo.png"
                             alt="Ícone do Elo" />
                     </li>
                     <li>
-                        <img src="../imagens/icone_boleto.png"
+                        <img
+                            src="../imagens/icone_boleto.png"
                             alt="Ícone do Boleto bancário" />
                     </li>
                     <li>
-                        <img src="../imagens/icone_pix.png"
+                        <img
+                            src="../imagens/icone_pix.png"
                             alt="Ícone do Pix" />
                     </li>
                 </ul>
-                <p class="seguro">
-                    <img src="../imagens/icone_seguranca_footer.png"
+
+                <p class="seguroRodape"
+                    aria-label="Informação que nossos meios de pagamentos são 100% seguros">
+                    <img
+                        src="../imagens/icone_seguranca_footer.png"
                         alt="Ícone que simboliza Segurança" />
                     PAGAMENTO 100% SEGURO
                 </p>
-                <ul id="copyright">
-                    <li id="copyrightTexto">
-                        &copy; 2025 Miaunarquia. Todos os direitos
-                        reservados.
+
+                <ul class="copyrightRodape"
+                    aria-label="CopyRight da Plataforma">
+                    <li class="copyrightTextoRodape">
+                        &copy; 2025 Miaunarquia. Todos os direitos reservados.
                     </li>
                 </ul>
             </section>

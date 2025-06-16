@@ -7,13 +7,16 @@
         <link rel="stylesheet" href="../css/style.css" />
     </head>
     <body>
+        <!-- Carrossel para avisos de promoções -->
         <section
             class="avisoCarrossel"
             aria-label="Carrossel de avisos e promoções da plataforma">
+
             <button id="setaEsquerdaAviso" class="setasAviso"
                 aria-label="Aviso anterior">
                 ❮
             </button>
+
             <ul class="mensagens">
                 <li class="mensagem">
                     NOVO POR AQUI? USE O CUPOM 🐾PRIMEIRACOMPRA🐾
@@ -23,29 +26,36 @@
                 </li>
                 <li class="mensagem">CADASTRE-SE E GANHE 10% DE DESCONTO</li>
             </ul>
+
             <button id="setaDireitaAviso" class="setasAviso"
                 aria-label="Aviso seguinte">
                 ❯
             </button>
         </section>
+
+        <!-- Header do site -->
         <header class="headerSite">
             <h1 class="logoSite">
                 <a href="index.html" aria-label="Página inicial - Miaunarquia">
                     <img
                         src="../imagens/imagem_logo.png"
-                        alt="Logo de um Gato Preto com Coroa"
+                        alt="Logo do Site (Desenho de rosto de um gato preto com uma coroa)"
                         class="logoImagem" />
                     <span class="nomeLogo">Miaunarquia</span>
                 </a>
             </h1>
 
             <nav class="navMenu" aria-label="Menu Principal">
+                <!-- arial-label = Rotular elemento para descreve-lo e deixa-lo mais acessível -->
                 <ul>
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="catalogo.html"
-                            id="catalogoSelecionado">Catálogo</a></li>
-                    <li><a href="sobreNos.html">Sobre Nós</a></li>
-                    <li><a href="sobreNos.html#contato">Contato</a></li>
+                    <li><a href="index.html"
+                            aria-label="Ir para Início">Início</a></li>
+                    <li><a href="catalogo.html" id="catalogoSelecionado"
+                            aria-label="Ir para Catálogo">Catálogo</a></li>
+                    <li><a href="sobreNos.html"
+                            aria-label="Ir para Sobre Nós">Sobre Nós</a></li>
+                    <li><a href="contato.html"
+                            aria-label="Ir para Contato (Contate-nos)">Contato</a></li>
                 </ul>
             </nav>
 
@@ -65,7 +75,7 @@
                     </li>
 
                     <li>
-                        <a href="login.html" aria-label="Favoritos">
+                        <a href="#" aria-label="Ir para Favoritos">
                             <figure class="iconesNav">
                                 <img
                                     src="../imagens/icone_favoritos.png"
@@ -79,7 +89,7 @@
                     </li>
 
                     <li>
-                        <a href="login.html" aria-label="Perfil">
+                        <a href="#" aria-label="Ir para Perfil">
                             <figure class="iconesNav">
                                 <img
                                     src="../imagens/icone_usuario.png"
@@ -92,7 +102,7 @@
                     </li>
 
                     <li>
-                        <a href="carrinho.html" aria-label="Carrinho">
+                        <a href="carrinho.html" aria-label="Ir para Carrinho">
                             <figure class="iconesNav">
                                 <img
                                     src="../imagens/icone_carrinho.png"
@@ -106,17 +116,21 @@
                 </ul>
             </nav>
         </header>
+
         <main>
             <h2 class="tituloProdutos">Nossos Produtos</h2>
+
+            <!-- Categorias do Catálogo -->
             <section
                 class="categoriasCatalogo"
-                aria-label="Categorias do Catálogo">
+                aria-label="Categorias do nosso Catálogo">
                 <ul class="listaCategorias">
                     <li>
-                        <a href="catalogo.html" class="linksCategorias">
+                        <a href="catalogo.html" class="linksCategorias"
+                            aria-label="Todos os Produtos do Nosso Catálogo">
                             <img
                                 src="../imagens/imagem_gatoLingua.png"
-                                alt="Gato lambendo seu nariz"
+                                alt="Gato lambendo seu próprio nariz"
                                 class="imagensCategoriasCatalogo" />
                             <p>Todos</p>
                         </a>
@@ -124,40 +138,44 @@
 
                     <li>
                         <a href="catalogoArranhadores.html"
-                            class="linksCategorias">
+                            class="linksCategorias"
+                            aria-label="Ir para Categoria de Arranhadores do Nosso Catálogo">
                             <img
                                 src="../imagens/imagem_arranhador.png"
-                                alt="Imagem de arranhador preto"
+                                alt="Arranhador preto para Gatos"
                                 class="imagensCategoriasCatalogo" />
                             <p>Arranhadores</p>
                         </a>
                     </li>
 
                     <li>
-                        <a href="catalogoCamas.html" class="linksCategorias">
+                        <a href="catalogoCamas.html" class="linksCategorias"
+                            aria-label="Ir para Categoria de Camas do Nosso Catálogo">
                             <img
                                 src="../imagens/imagem_cama.png"
-                                alt="Imagem de cama formato tubarão"
+                                alt="Cama em formato tubarão para Gatos"
                                 class="imagensCategoriasCatalogo" />
                             <p>Camas</p>
                         </a>
                     </li>
 
                     <li>
-                        <a href="catalogoHigiene.html" class="linksCategorias">
+                        <a href="catalogoHigiene.html" class="linksCategorias"
+                            aria-label="Ir para Categoria de Higiene e Limpeza do Nosso Catálogo">
                             <img
                                 src="../imagens/imagem_limpeza.png "
-                                alt="Imagem de Enzimac Gato com Embalagem Rosa"
+                                alt="Produto de Limpeza Enzimac para Gato com Embalagem Rosa"
                                 class="imagensCategoriasCatalogo" />
                             <p>Higiene e Limpeza</p>
                         </a>
                     </li>
 
                     <li>
-                        <a href="catalogoRoupas.html" class="linksCategorias">
+                        <a href="catalogoRoupas.html" class="linksCategorias"
+                            aria-label="Ir para Categoria de Roupas do Nosso Catálogo">
                             <img
                                 src="../imagens/imagem_roupa.png"
-                                alt="Imagem Gato com Fantasia de Dinossauro"
+                                alt="Gato com Fantasia de Dinossauro"
                                 class="imagensCategoriasCatalogo" />
                             <p>Roupas</p>
                         </a>
@@ -165,31 +183,36 @@
 
                     <li>
                         <a href="catalogoBrinquedos.html"
-                            class="linksCategorias">
+                            class="linksCategorias"
+                            aria-label="Ir para Categoria de Brinquedos do Nosso Catálogo">
                             <img
                                 src="../imagens/imagem_brinquedo.png"
-                                alt="Imagem de brinquedos"
+                                alt="Brinquedo para Gatos"
                                 class="imagensCategoriasCatalogo" />
                             <p>Brinquedos</p>
                         </a>
                     </li>
 
                     <li>
-                        <a href="#" class="linksCategorias">
+                        <a href="catalogoComedouros.html"
+                            class="linksCategorias"
+                            aria-label="Ir para Categoria de Comedouros e Bebedouros do Nosso Catálogo">
                             <img
                                 src="../imagens/imagem_comedouro.png"
-                                alt="Ícone de comedouros e bebedouros"
+                                alt="Comedouro com alimento para Gatos"
                                 class="imagensCategoriasCatalogo"
                                 id="comedourosSelecionado" />
-                            <p>Comedouros e Bebedouros</p>
+                            <p class="ParagrafosSelecionadosCatalogo">Comedouros
+                                e Bebedouros</p>
                         </a>
                     </li>
 
                     <li>
-                        <a href="catalogoPetiscos.html" class="linksCategorias">
+                        <a href="catalogoPetiscos.html" class="linksCategorias"
+                            aria-label="Ir para Categoria de Petiscos do Nosso Catálogo">
                             <img
                                 src="../imagens/imagem_petisco.png"
-                                alt="Ícone de petiscos"
+                                alt="Petisco PremieR de Embalagem  com Gato Cinza no Centro e na Cor Azul"
                                 class="imagensCategoriasCatalogo" />
                             <p>Petiscos</p>
                         </a>
@@ -197,20 +220,21 @@
                 </ul>
             </section>
 
-            <hr class="divisao" />
+            <hr class="divisao" aria-hidden="true" />
 
-            <article class="containerProdutos">
+            <!-- Lista de Produtos -->
+            <article class="containerProdutos" aria-label="Lista dos Produtos">
                 <ul class="listaProdutos">
                     <li class="cardProduto">
                         <a
-                                href="login.html"
-                                class="botaoFavoritoCards"
-                                aria-label="Adicionar aos favoritos"
-                                role="button">
-                                <img
-                                    src="../imagens/icone_favoritos.png"
-                                    alt="Ícone de Coração" />
-                            </a>
+                            href="#"
+                            class="botaoFavoritoCards"
+                            aria-label="Adicionar aos favoritos"
+                            role="button">
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração" />
+                        </a>
                         <img
                             src="../imagens/imagem_tigela_antiderrapante.png"
                             class="imagensCards"
@@ -222,19 +246,20 @@
                         <p>
                             <strong>R$ 159,75</strong>
                         </p>
-                        <a href="carrinho.html" class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
+                        <a href="carrinho.html"
+                            class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
                     </li>
 
                     <li class="cardProduto">
                         <a
-                                href="login.html"
-                                class="botaoFavoritoCards"
-                                aria-label="Adicionar aos favoritos"
-                                role="button">
-                                <img
-                                    src="../imagens/icone_favoritos.png"
-                                    alt="Ícone de Coração" />
-                            </a>
+                            href="#"
+                            class="botaoFavoritoCards"
+                            aria-label="Adicionar aos favoritos"
+                            role="button">
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração" />
+                        </a>
                         <img
                             src="../imagens/imagem_bebedouro.png"
                             class="imagensCards"
@@ -246,47 +271,24 @@
                         <p>
                             <strong>R$ 179,00</strong>
                         </p>
-                        <a href="carrinho.html" class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
+                        <a href="carrinho.html"
+                            class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
                     </li>
 
                     <li class="cardProduto">
                         <a
-                                href="login.html"
-                                class="botaoFavoritoCards"
-                                aria-label="Adicionar aos favoritos"
-                                role="button">
-                                <img
-                                    src="../imagens/icone_favoritos.png"
-                                    alt="Ícone de Coração" />
-                            </a>
-                        <img
-                            src="../imagens/imagem_comedouro_automaticoDuplo.png"
-                            class="imagensCards"
-                            alt="Comedouro e Bebedouro Automático nas cores Bege com Marrom, com Reservatório Transparente de Água, Recipiente para Ração e Bandeja com Dreno." />
-                        <h3>Comedouro Automático - 2 em 1</h3>
-                        <p aria-label="Avaliação: 5 de 5 estrelas">
-                            ★★★★★ <span>(134)</span>
-                        </p>
-                        <p>
-                            <strong>R$ 163,90</strong>
-                        </p>
-                        <a href="carrinho.html" class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
-                    </li>
-
-                    <li class="cardProduto">
-                        <a
-                                href="login.html"
-                                class="botaoFavoritoCards"
-                                aria-label="Adicionar aos favoritos"
-                                role="button">
-                                <img
-                                    src="../imagens/icone_favoritos.png"
-                                    alt="Ícone de Coração" />
-                            </a>
+                            href="#"
+                            class="botaoFavoritoCards"
+                            aria-label="Adicionar aos favoritos"
+                            role="button">
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração" />
+                        </a>
                         <img
                             src="../imagens/imagem_bebedouro_inox.png"
                             class="imagensCards"
-                            alt="Bebedouro Fonte de 2 litros com Filtro Silencioso em Inox" />
+                            alt="Bebedouro Fonte de 2 litros com Filtro Silencioso em Inox para Gatos" />
                         <h3>Bebedouro Fonte Água (2L) - Silencioso</h3>
                         <p aria-label="Avaliação: 5 de 5 estrelas">
                             ★★★★★ <span>(355)</span>
@@ -294,23 +296,49 @@
                         <p>
                             <strong>R$ 189,22</strong>
                         </p>
-                        <a href="carrinho.html" class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
+                        <a href="carrinho.html"
+                            class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
                     </li>
 
                     <li class="cardProduto">
                         <a
-                                href="login.html"
-                                class="botaoFavoritoCards"
-                                aria-label="Adicionar aos favoritos"
-                                role="button">
-                                <img
-                                    src="../imagens/icone_favoritos.png"
-                                    alt="Ícone de Coração" />
-                            </a>
+                            href="#"
+                            class="botaoFavoritoCards"
+                            aria-label="Adicionar aos favoritos"
+                            role="button">
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração" />
+                        </a>
+                        <img
+                            src="../imagens/imagem_comedouro_automaticoDuplo.png"
+                            class="imagensCards"
+                            alt="Comedouro e Bebedouro Automático nas cores Bege com Marrom, com Reservatório Transparente de Água, Recipiente para Ração e Bandeja com Dreno para Gatos" />
+                        <h3>Comedouro Automático - 2 em 1</h3>
+                        <p aria-label="Avaliação: 5 de 5 estrelas">
+                            ★★★★★ <span>(134)</span>
+                        </p>
+                        <p>
+                            <strong>R$ 163,90</strong>
+                        </p>
+                        <a href="carrinho.html"
+                            class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
+                    </li>
+
+                    <li class="cardProduto">
+                        <a
+                            href="#"
+                            class="botaoFavoritoCards"
+                            aria-label="Adicionar aos favoritos"
+                            role="button">
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração" />
+                        </a>
                         <img
                             src="../imagens/imagem_bebedoro_fonteAzul.png"
                             class="imagensCards"
-                            alt="Bebedouro Fonte na Cor Azul com Filtro Silencioso em Inox" />
+                            alt="Bebedouro Fonte na Cor Azul com Filtro Silencioso em Inox para Gatos" />
                         <h3>Bebedouro Fonte Filtro Silencioso</h3>
                         <p aria-label="Avaliação: 5 de 5 estrelas">
                             ★★★★★ <span>(54)</span>
@@ -318,23 +346,24 @@
                         <p>
                             <strong>R$ 111,44</strong>
                         </p>
-                        <a href="carrinho.html" class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
+                        <a href="carrinho.html"
+                            class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
                     </li>
 
                     <li class="cardProduto">
                         <a
-                                href="login.html"
-                                class="botaoFavoritoCards"
-                                aria-label="Adicionar aos favoritos"
-                                role="button">
-                                <img
-                                    src="../imagens/icone_favoritos.png"
-                                    alt="Ícone de Coração" />
-                            </a>
+                            href="#"
+                            class="botaoFavoritoCards"
+                            aria-label="Adicionar aos favoritos"
+                            role="button">
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração" />
+                        </a>
                         <img
                             src="../imagens/imagem_comedouro_kroco.png"
                             class="imagensCards"
-                            alt="Comedouro elevado com suporte branco de MDF e pote cerâmico branco. Laterais decoradas com recorte de pegadas de animal." />
+                            alt="Comedouro elevado com suporte branco de MDF e pote cerâmico branco. Laterais decoradas com recorte de pegadas de animal para Gatos" />
                         <h3>Comedouro Elevado com Pote de Cerâmica</h3>
                         <p aria-label="Avaliação: 5 de 5 estrelas">
                             ★★★★★ <span>(136)</span>
@@ -342,23 +371,24 @@
                         <p>
                             <strong>R$ 74,99</strong>
                         </p>
-                        <a href="carrinho.html" class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
+                        <a href="carrinho.html"
+                            class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
                     </li>
 
                     <li class="cardProduto">
                         <a
-                                href="login.html"
-                                class="botaoFavoritoCards"
-                                aria-label="Adicionar aos favoritos"
-                                role="button">
-                                <img
-                                    src="../imagens/icone_favoritos.png"
-                                    alt="Ícone de Coração" />
-                            </a>
+                            href="#"
+                            class="botaoFavoritoCards"
+                            aria-label="Adicionar aos favoritos"
+                            role="button">
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração" />
+                        </a>
                         <img
                             src="../imagens/imagem_bebedouro_ceramica.png"
                             class="imagensCards"
-                            alt="Fonte de Água Feita de Barro, com Bico de Metal Curvado" />
+                            alt="Fonte de Água Feita de Barro, com Bico de Metal Curvado para Gatos" />
                         <h3>Fonte de Água Feita de Barro</h3>
                         <p aria-label="Avaliação: 5 de 5 estrelas">
                             ★★★★★ <span>(55)</span>
@@ -366,23 +396,24 @@
                         <p>
                             <strong>R$ 46,99</strong>
                         </p>
-                        <a href="carrinho.html" class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
+                        <a href="carrinho.html"
+                            class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
                     </li>
 
                     <li class="cardProduto">
                         <a
-                                href="login.html"
-                                class="botaoFavoritoCards"
-                                aria-label="Adicionar aos favoritos"
-                                role="button">
-                                <img
-                                    src="../imagens/icone_favoritos.png"
-                                    alt="Ícone de Coração" />
-                            </a>
+                            href="#"
+                            class="botaoFavoritoCards"
+                            aria-label="Adicionar aos favoritos"
+                            role="button">
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração" />
+                        </a>
                         <img
                             src="../imagens/imagem_comedouro_duploMDF.png"
                             class="imagensCards"
-                            alt="Comedouro Duplo Elevado na Cor Preta e com Dois Potes de Inox." />
+                            alt="Comedouro Duplo Elevado na Cor Preta e com Dois Potes de Inox para Gatos" />
                         <h3>Comedouro Duplo Elevado - Preto</h3>
                         <p aria-label="Avaliação: 5 de 5 estrelas">
                             ★★★★★ <span>(114)</span>
@@ -390,19 +421,20 @@
                         <p>
                             <strong>R$ 84,44</strong>
                         </p>
-                        <a href="carrinho.html" class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
+                        <a href="carrinho.html"
+                            class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
                     </li>
 
                     <li class="cardProduto">
                         <a
-                                href="login.html"
-                                class="botaoFavoritoCards"
-                                aria-label="Adicionar aos favoritos"
-                                role="button">
-                                <img
-                                    src="../imagens/icone_favoritos.png"
-                                    alt="Ícone de Coração" />
-                            </a>
+                            href="#"
+                            class="botaoFavoritoCards"
+                            aria-label="Adicionar aos favoritos"
+                            role="button">
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração" />
+                        </a>
                         <img
                             src="../imagens/imagem_comedouro.png"
                             class="imagensCards"
@@ -414,23 +446,24 @@
                         <p>
                             <strong>R$ 41,26</strong>
                         </p>
-                        <a href="carrinho.html" class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
+                        <a href="carrinho.html"
+                            class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
                     </li>
 
                     <li class="cardProduto">
                         <a
-                                href="login.html"
-                                class="botaoFavoritoCards"
-                                aria-label="Adicionar aos favoritos"
-                                role="button">
-                                <img
-                                    src="../imagens/icone_favoritos.png"
-                                    alt="Ícone de Coração" />
-                            </a>
+                            href="#"
+                            class="botaoFavoritoCards"
+                            aria-label="Adicionar aos favoritos"
+                            role="button">
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração" />
+                        </a>
                         <img
                             src="../imagens/imagem_comedouroBebedouro_inox.png"
                             class="imagensCards"
-                            alt="Comedouro e Bebedouro com Fonte de Água em Formato de Margarida e na Cor Ciano" />
+                            alt="Comedouro e Bebedouro com Fonte de Água em Formato de Margarida e na Cor Ciano para Gatos" />
                         <h3>Comedouro Duplo de Flor - Ciano</h3>
                         <p aria-label="Avaliação: 5 de 5 estrelas">
                             ★★★★★ <span>(237)</span>
@@ -438,19 +471,20 @@
                         <p>
                             <strong>R$ 149,92</strong>
                         </p>
-                        <a href="carrinho.html" class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
+                        <a href="carrinho.html"
+                            class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
                     </li>
 
                     <li class="cardProduto">
                         <a
-                                href="login.html"
-                                class="botaoFavoritoCards"
-                                aria-label="Adicionar aos favoritos"
-                                role="button">
-                                <img
-                                    src="../imagens/icone_favoritos.png"
-                                    alt="Ícone de Coração" />
-                            </a>
+                            href="#"
+                            class="botaoFavoritoCards"
+                            aria-label="Adicionar aos favoritos"
+                            role="button">
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração" />
+                        </a>
                         <img
                             src="../imagens/imagem_bebedouro_automatico.png"
                             class="imagensCards"
@@ -462,23 +496,24 @@
                         <p>
                             <strong>R$ 63,87</strong>
                         </p>
-                        <a href="carrinho.html" class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
+                        <a href="carrinho.html"
+                            class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
                     </li>
 
                     <li class="cardProduto">
                         <a
-                                href="login.html"
-                                class="botaoFavoritoCards"
-                                aria-label="Adicionar aos favoritos"
-                                role="button">
-                                <img
-                                    src="../imagens/icone_favoritos.png"
-                                    alt="Ícone de Coração" />
-                            </a>
+                            href="#"
+                            class="botaoFavoritoCards"
+                            aria-label="Adicionar aos favoritos"
+                            role="button">
+                            <img
+                                src="../imagens/icone_favoritos.png"
+                                alt="Ícone de Coração" />
+                        </a>
                         <img
                             src="../imagens/imagem_comedouro_porcelana.png"
                             class="imagensCards"
-                            alt="Comedouro Duplo Preto com Potes de Cerâmica Brancos" />
+                            alt="Comedouro Duplo Preto com Potes de Cerâmica Brancos para Gatos" />
                         <h3>Comedouro Duplo de Cerâmica - Preto</h3>
                         <p aria-label="Avaliação: 5 de 5 estrelas">
                             ★★★★★ <span>(229)</span>
@@ -486,13 +521,16 @@
                         <p>
                             <strong>R$ 169,10</strong>
                         </p>
-                        <a href="carrinho.html" class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
+                        <a href="carrinho.html"
+                            class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
                     </li>
                 </ul>
             </article>
 
-            <section id="vantagens">
-                <ul id="listaVantagens">
+            <!-- Vantagens/Informações para Clientes -->
+            <section class="vantagensInformacoes"
+                aria-label="Vantagens/Informações para o Cliente que Consume Nossos Produtos">
+                <ul class="listaVantagens">
                     <li>
                         <img
                             src="../imagens/icone_gato.png"
@@ -538,13 +576,15 @@
             </section>
         </main>
 
-        <footer id="rodape">
+        <!-- Rodapé do Site -->
+        <footer class="rodape">
             <img
                 src="../imagens/imagem_logo.png"
-                alt="Logo Miaunarquia"
+                alt="Logo do Site (Desenho de rosto de um gato preto com uma coroa)"
                 class="logo" />
 
-            <nav id="informacoes" aria-label="Informações da Plataforma">
+            <nav class="informacoesRodape"
+                aria-label="Informações da Plataforma">
                 <h2>Informações</h2>
                 <ul>
                     <li><a href="sobreNos.html">Sobre Nós</a></li>
@@ -552,50 +592,52 @@
                             Condições de Uso</a></li>
                     <li><a href="sobreNos.html#politicasPrivacidade">Política de
                             Privacidade</a></li>
-                    <li><a href="   ">FAQ</a></li>
+                    <li><a href="sobreNos.html#secaoFaq">FAQ</a></li>
                 </ul>
             </nav>
 
-            <address id="contato">
+            <address class="contatoRodape" aria-label="Nossos Meios de Contato">
                 <h2>Contato</h2>
                 <p>
                     <a
                         href="mailto:contato@miauanarquia.com.br">contato@miauanarquia.com.br</a>
+                    <!-- mailto = Identificar como e-mail -->
                 </p>
             </address>
 
-            <nav id="redes" aria-label="Nos Siga">
+            <nav class="redesRodape" aria-label="Nossas Redes Sociais">
                 <h2>Nos siga</h2>
-                <ul id="listaRedesSociais">
+                <ul class="listaRedesSociaisRodape">
                     <li>
                         <a href="#"><img
                                 src="../imagens/icone_facebook.png"
-                                class="iconesRedesSociais"
+                                class="iconesRedesSociaisRodape"
                                 alt="Ícone do Facebook" />
                         </a>
                     </li>
                     <li>
                         <a href="#"><img
                                 src="../imagens/icone_instagram.png"
-                                class="iconesRedesSociais"
+                                class="iconesRedesSociaisRodape"
                                 alt="Ícone do Instagram" /></a>
                     </li>
                     <li>
                         <a href="#"><img
                                 src="../imagens/icone_linkedin.png"
-                                class="iconesRedesSociais"
+                                class="iconesRedesSociaisRodape"
                                 alt="Ícone do LinkedIn" /></a>
                     </li>
                     <li>
                         <a href="#"><img
                                 src="../imagens/icone_discord.png"
-                                class="iconesRedesSociais"
+                                class="iconesRedesSociaisRodape"
                                 alt="Ícone do Discord" /></a>
                     </li>
                 </ul>
             </nav>
 
-            <section id="pagamentos">
+            <section class="pagamentosRodape"
+                aria-label="Nossos Meios de Pagamentos">
                 <h2>Formas de pagamento:</h2>
                 <ul>
                     <li>
@@ -634,14 +676,18 @@
                             alt="Ícone do Pix" />
                     </li>
                 </ul>
-                <p class="seguro">
+
+                <p class="seguroRodape"
+                    aria-label="Informação que nossos meios de pagamentos são 100% seguros">
                     <img
                         src="../imagens/icone_seguranca_footer.png"
                         alt="Ícone que simboliza Segurança" />
                     PAGAMENTO 100% SEGURO
                 </p>
-                <ul id="copyright">
-                    <li id="copyrightTexto">
+
+                <ul class="copyrightRodape"
+                    aria-label="CopyRight da Plataforma">
+                    <li class="copyrightTextoRodape">
                         &copy; 2025 Miaunarquia. Todos os direitos reservados.
                     </li>
                 </ul>

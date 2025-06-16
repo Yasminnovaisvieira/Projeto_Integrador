@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Catálogo | Miaunarquia</title>
+        <link rel="stylesheet" href="../../css/style.css" />
+    </head>
+    <body class="bodysAdministrador">
+        <!-- Menu Lateral do Administrador -->
+        <nav class="menuLateralAdministrador"
+            aria-label="Menu principal do Painel Administrativo">
+            <h1 class="logoAdministrador"
+                aria-label="Logo do painel administrativo">
+                <img
+                    src="../../imagens/imagem_logo.png"
+                    alt="Logo do Site (Desenho de rosto de um gato preto com uma coroa)"
+                    class="logoImagemAdministrador" />
+                <span>Miaunarquia</span></h1>
+
+            <ul class="linksNavegacaoAdministrador">
+                <li><a href="dashboard.html">
+                        <img
+                            src="../../imagens/icone_dashboard.png"
+                            alt="Ícone de Dashboard"
+                            class="iconesMenuLateralAdm" />
+                        <p class="opcoesMenuLateralAdm">Dashboard</p>
+                    </a></li>
+
+                <li><a href="#">
+                        <img
+                            src="../../imagens/icone_produtos.png"
+                            alt="Ícone de Produtos"
+                            class="iconesMenuLateralAdm" />
+                        <p class="opcoesMenuLateralAdm">Produtos</p>
+                    </a></li>
+
+                <li><a href="pedidosAdm.html">
+                        <img
+                            src="../../imagens/icone_pedidos.png"
+                            alt="Ícone de Pedidos"
+                            class="iconesMenuLateralAdm" />
+                        <p class="opcoesMenuLateralAdm">Pedidos</p>
+                    </a></li>
+
+                <li><a href="usuariosAdm.html">
+                        <img
+                            src="../../imagens/icone_Grupousuarios.png"
+                            alt="Ícone de Usuários"
+                            class="iconesMenuLateralAdm" />
+                        <p class="opcoesMenuLateralAdm">Usuários</p>
+                    </a></li>
+
+                <li><a href="dashboard.html#usuariosAdmAdministradores">
+                        <img
+                            src="../../imagens/icone_administradores.png"
+                            alt="Ícone de Administradores"
+                            class="iconesMenuLateralAdm" />
+                        <p class="opcoesMenuLateralAdm">Administradores</p>
+                    </a></li>
+
+                <li><a href="feedbacksContato.html">
+                        <img
+                            src="../../imagens/icone_contato.png"
+                            alt="Ícone de Contato e Feedbacks"
+                            class="iconesMenuLateralAdm" />
+                        <p class="opcoesMenuLateralAdm">Feedbacks e Contato</p>
+                    </a></li>
+
+                <li><a href="loginAdministrador.html">
+                        <img
+                            src="../../imagens/icone_sair.png"
+                            alt="Ícone de Sair"
+                            class="iconesMenuLateralAdm" />
+                        <p class="opcoesMenuLateralAdm">Sair</p>
+                    </a></li>
+            </ul>
+        </nav>
+
+        <main class="conteudoPrincipal">
+            <!-- Produtos do Site -->
+            <section id="produtosAdministrador" aria-label="Lista de produtos">
+                <header class="cabecalhoPagina">
+                    <h2 class="titulosAdministrador">Gerenciar Produtos</h2>
+                    <nav class="actionsAdministrador">
+                        <a href="adicionarProduto.html"
+                            class="botoesSecoesDashboardAdm"
+                            aria-label="Adicionar novo produto">
+                            Adicionar Produto
+                        </a>
+                    </nav>
+                </header>
+
+                <form aria-label="Filtro de pesquisa de produtos">
+                    <label class="labelsDashboardAdm"
+                        for="procurarProduto">Buscar produtos:</label>
+                    <input type="text" id="procurarProdutoAdm"
+                        name="procurarProduto"
+                        placeholder="Nome ou código do produto" />
+                </form>
+
+                <!-- Tabela de Produtos Adicionados no Sistema-->
+                <table class="tabelasDashboardAdm"
+                    aria-label="Tabela de Produtos Adicionados no Sistema">
+                    <caption class="captionsDashboardAdm">Lista dos
+                        produtos cadastrados no sistema</caption>
+
+                    <thead aria-label="Colunas da Tabela">
+                        <tr>
+                            <th class="colunasProdutosAdm">ID</th>
+                            <th class="colunasProdutosAdm">Nome</th>
+                            <th class="colunasProdutosAdm">Preço</th>
+                            <th class="colunasProdutosAdm">Estoque</th>
+                            <th class="colunasProdutosAdm">Status</th>
+                            <th class="colunasProdutosAdm">Ações</th>
+                        </tr>
+                    </thead>
+
+                    <tbody aria-label="Produtos e suas Informações">
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#1001</td>
+                            <td class="inforTabelasDashboardAdm">Arranhador -
+                                Formato de Cacto</td>
+                            <td class="inforTabelasDashboardAdm">R$ 43,90</td>
+                            <td class="inforTabelasDashboardAdm">40</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <span
+                                    class="statusProdutoAdm ativo">Ativo</span></td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="editarProduto.html" class="botaoTabela"
+                                    aria-label="Editar Produto">Editar</a>
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir Produto">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#1002</td>
+                            <td class="inforTabelasDashboardAdm">Tigela
+                                Antiderrapante - Quadrada</td>
+                            <td class="inforTabelasDashboardAdm">R$ 159,75</td>
+                            <td class="inforTabelasDashboardAdm">20</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <span
+                                    class="statusProdutoAdm ativo">Ativo</span></td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="editarProduto.html" class="botaoTabela"
+                                    aria-label="Editar Produto">Editar</a>
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir Produto">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#1003</td>
+                            <td class="inforTabelasDashboardAdm">Asa De Morcego
+                                - Preto</td>
+                            <td class="inforTabelasDashboardAdm">R$ 87,45</td>
+                            <td class="inforTabelasDashboardAdm">50</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <span
+                                    class="statusProdutoAdm ativo">Ativo</span></td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="editarProduto.html" class="botaoTabela"
+                                    aria-label="Editar Produto">Editar</a>
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir Produto">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#1004</td>
+                            <td class="inforTabelasDashboardAdm">Cama em Formato
+                                de Tubarão - Cinza</td>
+                            <td class="inforTabelasDashboardAdm">R$ 119,55</td>
+                            <td class="inforTabelasDashboardAdm">35</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <span
+                                    class="statusProdutoAdm ativo">Ativo</span></td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="editarProduto.html" class="botaoTabela"
+                                    aria-label="Editar Produto">Editar</a>
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir Produto">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#1005</td>
+                            <td class="inforTabelasDashboardAdm">Petisco - Sabor
+                                Frango</td>
+                            <td class="inforTabelasDashboardAdm">R$ 34,25</td>
+                            <td class="inforTabelasDashboardAdm">70</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <span
+                                    class="statusProdutoAdm ativo">Ativo</span></td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="editarProduto.html" class="botaoTabela"
+                                    aria-label="Editar Produto">Editar</a>
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir Produto">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#1006</td>
+                            <td class="inforTabelasDashboardAdm">Brinquedo em
+                                Formato de Peixe</td>
+                            <td class="inforTabelasDashboardAdm">R$ 48,35</td>
+                            <td class="inforTabelasDashboardAdm">60</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <span
+                                    class="statusProdutoAdm ativo">Ativo</span></td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="editarProduto.html" class="botaoTabela"
+                                    aria-label="Editar Produto">Editar</a>
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir Produto">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#1007</td>
+                            <td class="inforTabelasDashboardAdm">Kit Higiene (3
+                                Peças) - Vermelho</td>
+                            <td class="inforTabelasDashboardAdm">R$ 132,16</td>
+                            <td class="inforTabelasDashboardAdm">25</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <span
+                                    class="statusProdutoAdm ativo">Ativo</span></td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="editarProduto.html" class="botaoTabela"
+                                    aria-label="Editar Produto">Editar</a>
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir Produto">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#1008</td>
+                            <td class="inforTabelasDashboardAdm">Cama em Formato
+                                de Toca - Rosa</td>
+                            <td class="inforTabelasDashboardAdm">R$ 163,87</td>
+                            <td class="inforTabelasDashboardAdm">18</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <span
+                                    class="statusProdutoAdm ativo">Ativo</span></td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="editarProduto.html" class="botaoTabela"
+                                    aria-label="Editar Produto">Editar</a>
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir Produto">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#1009</td>
+                            <td class="inforTabelasDashboardAdm">Toca Labirinto
+                                Cubo - 1 Cubo</td>
+                            <td class="inforTabelasDashboardAdm">R$ 39,99</td>
+                            <td class="inforTabelasDashboardAdm">40</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <span
+                                    class="statusProdutoAdm inativo">Inativo</span></td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="editarProduto.html" class="botaoTabela"
+                                    aria-label="Editar Produto">Editar</a>
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir Produto">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#1010</td>
+                            <td class="inforTabelasDashboardAdm">Bebedouro Fonte
+                                Água (3L) - Silencioso</td>
+                            <td class="inforTabelasDashboardAdm">R$ 179,00</td>
+                            <td class="inforTabelasDashboardAdm">28</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <span
+                                    class="statusProdutoAdm ativo">Ativo</span></td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="editarProduto.html" class="botaoTabela"
+                                    aria-label="Editar Produto">Editar</a>
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir Produto">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#1011</td>
+                            <td class="inforTabelasDashboardAdm">Arranhador -
+                                Chalesco</td>
+                            <td class="inforTabelasDashboardAdm">R$ 63,90</td>
+                            <td class="inforTabelasDashboardAdm">52</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <span
+                                    class="statusProdutoAdm ativo">Ativo</span></td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="editarProduto.html" class="botaoTabela"
+                                    aria-label="Editar Produto">Editar</a>
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir Produto">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#1012</td>
+                            <td class="inforTabelasDashboardAdm">Catnip Erva
+                                Natural - Formato Abacate</td>
+                            <td class="inforTabelasDashboardAdm">R$ 19,44</td>
+                            <td class="inforTabelasDashboardAdm">75</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <span
+                                    class="statusProdutoAdm inativo">Inativo</span></td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="editarProduto.html" class="botaoTabela"
+                                    aria-label="Editar Produto">Editar</a>
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir Produto">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#1013</td>
+                            <td class="inforTabelasDashboardAdm">Arranhador
+                                Poste com 4 Bolas - Preto</td>
+                            <td class="inforTabelasDashboardAdm">R$ 54,99</td>
+                            <td class="inforTabelasDashboardAdm">33</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <span
+                                    class="statusProdutoAdm inativo">Inativo</span></td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="editarProduto.html" class="botaoTabela"
+                                    aria-label="Editar Produto">Editar</a>
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir Produto">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#1014</td>
+                            <td class="inforTabelasDashboardAdm">Fantasia de
+                                Vaca com Touca</td>
+                            <td class="inforTabelasDashboardAdm">R$ 136,99</td>
+                            <td class="inforTabelasDashboardAdm">58</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <span
+                                    class="statusProdutoAdm inativo">Inativo</span></td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="editarProduto.html" class="botaoTabela"
+                                    aria-label="Editar Produto">Editar</a>
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir Produto">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#1015</td>
+                            <td class="inforTabelasDashboardAdm">Fantasia de
+                                Lagosta com Touca</td>
+                            <td class="inforTabelasDashboardAdm">R$ 134,44</td>
+                            <td class="inforTabelasDashboardAdm">72</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <span
+                                    class="statusProdutoAdm ativo">Ativo</span></td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="editarProduto.html" class="botaoTabela"
+                                    aria-label="Editar Produto">Editar</a>
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir Produto">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#1016</td>
+                            <td class="inforTabelasDashboardAdm">Petisco Whiskas
+                                Temptations - Adulto</td>
+                            <td class="inforTabelasDashboardAdm">R$ 11,26</td>
+                            <td class="inforTabelasDashboardAdm">198</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <span
+                                    class="statusProdutoAdm ativo">Ativo</span></td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="editarProduto.html" class="botaoTabela"
+                                    aria-label="Editar Produto">Editar</a>
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir Produto">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#1017</td>
+                            <td class="inforTabelasDashboardAdm">Cama Grande
+                                Redonda - Cinza</td>
+                            <td class="inforTabelasDashboardAdm">R$ 239,92</td>
+                            <td class="inforTabelasDashboardAdm">41</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <span
+                                    class="statusProdutoAdm ativo">Ativo</span></td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="editarProduto.html" class="botaoTabela"
+                                    aria-label="Editar Produto">Editar</a>
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir Produto">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#1018</td>
+                            <td class="inforTabelasDashboardAdm">Fantasia de
+                                Colegial com Saia</td>
+                            <td class="inforTabelasDashboardAdm">R$ 163,87</td>
+                            <td class="inforTabelasDashboardAdm">67</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <span
+                                    class="statusProdutoAdm ativo">Ativo</span></td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="editarProduto.html" class="botaoTabela"
+                                    aria-label="Editar Produto">Editar</a>
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir Produto">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#1019</td>
+                            <td class="inforTabelasDashboardAdm">Arranhador -
+                                Formato de Flor - 2 Andares/Flores</td>
+                            <td class="inforTabelasDashboardAdm">R$ 89,99</td>
+                            <td class="inforTabelasDashboardAdm">47</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <span
+                                    class="statusProdutoAdm ativo">Ativo</span></td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="editarProduto.html" class="botaoTabela"
+                                    aria-label="Editar Produto">Editar</a>
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir Produto">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#1020</td>
+                            <td class="inforTabelasDashboardAdm">Arranhador de
+                                Dois Andares com Brinquedo de Bolinha</td>
+                            <td class="inforTabelasDashboardAdm">R$ 78,55</td>
+                            <td class="inforTabelasDashboardAdm">48</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <span
+                                    class="statusProdutoAdm ativo">Ativo</span></td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="editarProduto.html" class="botaoTabela"
+                                    aria-label="Editar Produto">Editar</a>
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir Produto">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#1021</td>
+                            <td class="inforTabelasDashboardAdm">Arranhador com
+                                Brinquedo e Toca Redonda</td>
+                            <td class="inforTabelasDashboardAdm">R$ 52,16</td>
+                            <td class="inforTabelasDashboardAdm">46</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <span
+                                    class="statusProdutoAdm ativo">Ativo</span></td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="editarProduto.html" class="botaoTabela"
+                                    aria-label="Editar Produto">Editar</a>
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir Produto">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#1022</td>
+                            <td class="inforTabelasDashboardAdm">Arranhador com
+                                Brinquedo na Ponta com Pena</td>
+                            <td class="inforTabelasDashboardAdm">R$ 73,87</td>
+                            <td class="inforTabelasDashboardAdm">76</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <span
+                                    class="statusProdutoAdm ativo">Ativo</span></td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="editarProduto.html" class="botaoTabela"
+                                    aria-label="Editar Produto">Editar</a>
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir Produto">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#1023</td>
+                            <td class="inforTabelasDashboardAdm">Arranhador de
+                                Casa com Rede e Brinquedos</td>
+                            <td class="inforTabelasDashboardAdm">R$ 138,99</td>
+                            <td class="inforTabelasDashboardAdm">54</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <span
+                                    class="statusProdutoAdm ativo">Ativo</span></td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="editarProduto.html" class="botaoTabela"
+                                    aria-label="Editar Produto">Editar</a>
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir Produto">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#1024</td>
+                            <td class="inforTabelasDashboardAdm">Arranhador de
+                                Parede em Formato de Pino - Scar Marrom</td>
+                            <td class="inforTabelasDashboardAdm">R$ 149,00</td>
+                            <td class="inforTabelasDashboardAdm">33</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <span
+                                    class="statusProdutoAdm ativo">Ativo</span></td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="editarProduto.html" class="botaoTabela"
+                                    aria-label="Editar Produto">Editar</a>
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir Produto">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#1025</td>
+                            <td class="inforTabelasDashboardAdm">Bolinha de Lã -
+                                Colorida</td>
+                            <td class="inforTabelasDashboardAdm">R$ 35,45</td>
+                            <td class="inforTabelasDashboardAdm">29</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <span
+                                    class="statusProdutoAdm ativo">Ativo</span></td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="editarProduto.html" class="botaoTabela"
+                                    aria-label="Editar Produto">Editar</a>
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir Produto">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#1026</td>
+                            <td class="inforTabelasDashboardAdm">Kong Playgroud
+                                - Vermelho</td>
+                            <td class="inforTabelasDashboardAdm">R$ 35,90</td>
+                            <td class="inforTabelasDashboardAdm">34</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <span
+                                    class="statusProdutoAdm ativo">Ativo</span></td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="editarProduto.html" class="botaoTabela"
+                                    aria-label="Editar Produto">Editar</a>
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir Produto">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#1027</td>
+                            <td class="inforTabelasDashboardAdm">Labamba
+                                Interativo com Mola e Penas</td>
+                            <td class="inforTabelasDashboardAdm">R$ 26,05</td>
+                            <td class="inforTabelasDashboardAdm">13</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <span
+                                    class="statusProdutoAdm ativo">Ativo</span></td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="editarProduto.html" class="botaoTabela"
+                                    aria-label="Editar Produto">Editar</a>
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir Produto">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#1028</td>
+                            <td class="inforTabelasDashboardAdm">Bolinha/Rato -
+                                João Bobo com Pena</td>
+                            <td class="inforTabelasDashboardAdm">R$ 14,99</td>
+                            <td class="inforTabelasDashboardAdm">38</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <span
+                                    class="statusProdutoAdm ativo">Ativo</span></td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="editarProduto.html" class="botaoTabela"
+                                    aria-label="Editar Produto">Editar</a>
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir Produto">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#1029</td>
+                            <td class="inforTabelasDashboardAdm">Bola Dispenser
+                                Toy - Roxa</td>
+                            <td class="inforTabelasDashboardAdm">R$ 37,16</td>
+                            <td class="inforTabelasDashboardAdm">23</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <span
+                                    class="statusProdutoAdm ativo">Ativo</span></td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="editarProduto.html" class="botaoTabela"
+                                    aria-label="Editar Produto">Editar</a>
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir Produto">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">#1030</td>
+                            <td class="inforTabelasDashboardAdm">Coleira de
+                                Laser - Led de Infravermelho</td>
+                            <td class="inforTabelasDashboardAdm">R$ 44,87</td>
+                            <td class="inforTabelasDashboardAdm">65</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <span
+                                    class="statusProdutoAdm ativo">Ativo</span></td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="editarProduto.html" class="botaoTabela"
+                                    aria-label="Editar Produto">Editar</a>
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir Produto">Excluir</button>
+                            </td>
+                        </tr>
+                        <!-- Coloquei apenas esses como exemplos -->
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </body>
+</html>

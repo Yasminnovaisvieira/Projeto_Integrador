@@ -7,62 +7,77 @@
         <link rel="stylesheet" href="../css/style.css" />
     </head>
     <body class="fundoLoginCadastro">
+        <!-- Header do Login e Cadastro (Voltar para Tela Inicial) -->
         <header>
-            <nav class="navMenu" aria-label="Menu Principal">
-                <a href="index.html" class="btnVoltar">Voltar para Página
+            <nav class="navMenu">
+                <a href="index.html" class="btnVoltar"
+                    aria-label="Voltar para Menu Principal">Voltar para Página
                     Inicial</a>
             </nav>
         </header>
 
+        <!-- Seção do Cadastro -->
         <main class="containerPagina">
-            <section id="containerCadastro">
+            <section id="containerCadastro" aria-label="Formulário de Cadastro">
                 <h1 class="logoSiteLoginCadastro">
-                    <img src="../imagens/imagem_logo.png" alt="Logo Miaunarquia"
+                    <img src="../imagens/imagem_logo.png"
+                        alt="Logo do Site (Desenho de rosto de um gato preto com uma coroa)"
                         class="logoImagemLoginCadastro" />
                 </h1>
 
-                <form class="formularioCadastro" method="POST" action="indexLogado.html">
+                <form class="formularioCadastro" method="POST"
+                    action="indexLogado.html">
                     <fieldset class="grupoCampos">
                         <legend class="tituloLoginCadastro">Crie sua
                             conta</legend>
 
-                            <section class="grupoSocial">
-                            <button type="button" class="btnGoogle">
-                                <img src="../imagens/icone_google.png" alt
-                                    aria-hidden="true" class="imagensLogin" />
+                        <!-- Opções para cadastrar usando Google ou Apple -->
+                        <section class="grupoSocial">
+                            <button type="button" class="btnGoogle"
+                                aria-label="Botão para Cadastrar com o Google">
+                                <img src="../imagens/icone_google.png"
+                                    aria-hidden="true" alt="Logo do Google"
+                                    class="imagensLogin" />
                                 Criar com Google
                             </button>
 
-                            <button type="button" class="btnApple">
-                                <img src="../imagens/icone_apple.png" alt
-                                    aria-hidden="true" class="imagensLogin" />
+                            <button type="button" class="btnApple"
+                                aria-label="Botão para Cadastrar com a Apple">
+                                <img src="../imagens/icone_apple.png"
+                                    aria-hidden="true" alt="Logo da Apple"
+                                    class="imagensLogin" />
                                 Criar com Apple
                             </button>
                         </section>
 
-                        <hr class="divisaoLoginCadastro" />
+                        <hr class="divisaoLoginCadastro" aria-hidden="true" />
 
-                        <label for="nome" class="rotulo">Insira o Nome
+                        <!-- Inserir dados -->
+                        <label for="nome" class="rotuloCadastro">Insira o Nome
                             Completo</label>
-                        <input type="text" id="nome" name="nome" class="campo"/>
+                        <input type="text" name="nome"
+                            class="camposCadastro" />
 
-                        <label for="email" class="rotulo">Insira o
+                        <label for="email" class="rotuloCadastro">Insira o
                             E-mail</label>
-                        <input type="email" id="email" name="email"
-                            class="campo"/>
+                        <input type="email" name="email"
+                            class="camposCadastro" />
 
-                        <section class="linhaDupla">
+                        <section class="linhaDuplaCadastro">
                             <section class="campoContainer">
-                                <label for="nascimento" class="rotulo"> Insira a
+                                <label for="nascimento" class="rotuloCadastro">
+                                    Insira a
                                     Data de Nascimento</label>
                                 <input type="date" id="nascimento"
-                                    name="nascimento" class="campo" />
+                                    name="nascimento" class="camposCadastro" />
                             </section>
 
                             <section class="campoContainer">
-                                <label for="genero" class="rotulo">Selecione o
+                                <label for="genero"
+                                    class="rotuloCadastro">Selecione o
                                     Gênero</label>
-                                <select id="genero" name="genero" class="campo">
+                                <select id="genero" name="genero"
+                                    class="camposCadastro">
                                     <option value disabled
                                         selected>Selecione</option>
                                     <option value="feminino">Feminino</option>
@@ -74,25 +89,30 @@
                             </section>
                         </section>
 
-                        <section class="linhaDupla">
+                        <section class="linhaDuplaCadastro">
                             <section class="campoContainer">
-                                <label for="senha" class="rotulo">Insira a
+                                <label for="senha" class="rotuloCadastro">Insira
+                                    a
                                     Senha</label>
                                 <input type="password" id="senha" name="senha"
-                                    class="campo" />
+                                    class="camposCadastro" />
                             </section>
 
                             <section class="campoContainer">
-                                <label for="confirmar" class="rotulo">Confirme a
+                                <label for="confirmar"
+                                    class="rotuloCadastro">Confirme a
                                     Senha</label>
                                 <input type="password" id="confirmar"
-                                    name="confirmar" class="campo" />
+                                    name="confirmar" class="camposCadastro" />
                             </section>
                         </section>
 
-                        <a href="finalizandoCompra.html" class="btnLogin">Cadastrar</a>
+                        <!-- Botão para Cadastrar Conta -->
+                        <a href="finalizandoCompra.html"
+                            class="btnLogin">Cadastrar</a>
                     </fieldset>
 
+                    <!-- Ir para Página de Cadastro -->
                     <p class="linkLogin">
                         Já tem conta? <a href="login.html">Entre agora</a>
                     </p>

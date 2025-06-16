@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Cadastrar Administrador | Miaunarquia</title>
+        <link rel="stylesheet" href="../../css/style.css" />
+    </head>
+    <body class="fundoFormulariosAdm">
+        <!-- Formulário para Cadastrar novo Administrador -->
+        <main class="mainFormulariosAdm"
+            aria-label="Cadastrar novo administrador">
+            <h1 class="titulosFormulariosAdm">Cadastrar Administrador</h1>
+
+            <form novalidate>
+                <fieldset>
+                    <label class="labelsFormulariosAdm"
+                        for="nomeAdministrador">Nome Completo</label>
+                    <input class="inputsFormulariosAdm" type="text"
+                        name="nomeAdministrador"
+                        placeholder="Digite o nome completo" />
+                </fieldset>
+
+                <fieldset>
+                    <label class="labelsFormulariosAdm"
+                        for="emailAdministrador">Email</label>
+                    <input class="inputsFormulariosAdm" type="email"
+                        name="emailAdministrador"
+                        placeholder="email@exemplo.com" />
+                </fieldset>
+
+                <fieldset>
+                    <label class="labelsFormulariosAdm"
+                        for="numeroAdministrador">Telefone</label>
+                    <input class="inputsFormulariosAdm" type="tel"
+                        name="numeroAdministrador"
+                        placeholder="(xx) xxxxx-xxxx" />
+                </fieldset>
+
+                <fieldset>
+                    <label class="labelsFormulariosAdm"
+                        for="senhaAdministrador">Senha</label>
+                    <input class="inputsFormulariosAdm" type="password"
+                        name="senhaAdministrador"
+                        placeholder="Digite a senha" />
+                </fieldset>
+
+                <fieldset>
+                    <label class="labelsFormulariosAdm"
+                        for="funcaoAdministrador">Função</label>
+                    <select class="inputsFormulariosAdm"
+                        name="funcaoAdministrador">
+                        <option value disabled selected>Selecione a
+                            função</option>
+                        <option value="superadmin">Super Administrador</option>
+                        <option value="admin">Administrador</option>
+                    </select>
+                </fieldset>
+
+                <!-- Botões Cancelar e Cadastrar -->
+                <nav class="navBotoesFormulariosAdm">
+                    <a href="dashboard.html#usuariosAdmAdministrador"
+                        class="botoesFormulariosAdm botaoCancelarFormulariosAdm"
+                        aria-label="Cancelar">Cancelar</a>
+                    <a href="dashboard.html#usuariosAdmAdministrador"
+                        class="botoesFormulariosAdm botaoSalvarFormulariosAdm"
+                        aria-label="Cadastrar administrador">Cadastrar
+                        Administrador</a>
+                </nav>
+            </form>
+        </main>
+    </body>
+</html>

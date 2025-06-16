@@ -1,3 +1,5 @@
+/* CONFIGURAÇÕES GERAIS */
+
 @import url("https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 
@@ -12,27 +14,35 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
+    user-select: none;
+    /* Não deixa copiar texto da tela */
 }
 
 body {
     font-family: "Outfit", sans-serif;
     background-color: #e6e6fa;
     font-size: 18px;
+    overflow-x: hidden;
+    /* Corta o que estiver ultrapassando a largura 100% da página */
 }
 
-
-
-
-
-/* HOME */
+.divisao {
+    border-color: #bbadff;
+    opacity: 0.1;
+}
 
 :root {
     --duracao: 12s;
     /* Variável que decreta que todas as mensagens serão mostradas dentro de 12 segundos */
 }
 
+
+
+
+
+/* CARROSSEL DE AVISOS */
+
 .avisoCarrossel {
-    /* Carrossel de avisos */
     font-family: "Outfit", sans-serif;
     background-color: #0e0129;
     color: #fff;
@@ -115,6 +125,12 @@ body {
     background-color: rgba(0, 0, 0, 0.6);
 }
 
+
+
+
+
+/* HEADER */
+
 .headerSite {
     font-family: "Cal Sans", sans-serif;
     display: flex;
@@ -178,10 +194,6 @@ body {
     outline: none;
 }
 
-#inicioSelecionado {
-    color: #3b2994;
-}
-
 .navUsuario li a {
     color: #222;
     font-size: 1.1rem;
@@ -191,6 +203,10 @@ body {
     justify-content: center;
     transition: transform 0.2s, color 0.3s;
     text-decoration: none;
+}
+
+.inicioSelecionado {
+    color: #3b2994 !important;
 }
 
 .iconesNav {
@@ -213,10 +229,130 @@ body {
 }
 
 .legendasIcones {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     font-family: "Cal Sans", sans-serif;
 }
+
+
+
+
+
+/* RODAPÉ */
+
+.rodape {
+    background-color: #bbadff;
+    font-family: "Outfit", sans-serif;
+    color: #333;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    gap: 3rem;
+    text-align: left;
+    padding-top: 3rem;
+    justify-content: center;
+}
+
+.rodape img.logo {
+    width: 260px;
+    margin-left: 80px;
+    margin-top: -30px;
+}
+
+.rodape h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #222;
+}
+
+.rodape ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.rodape li {
+    margin-bottom: 0.5rem;
+}
+
+.rodape a {
+    text-decoration: none;
+    color: #333;
+}
+
+.rodape a:hover {
+    text-decoration: underline 1.5px;
+}
+
+.contatoRodape {
+    font-style: normal;
+}
+
+.iconesRedesSociaisRodape {
+    width: 40px;
+    height: auto;
+}
+
+.listaRedesSociaisRodape {
+    display: grid;
+    grid-template-columns: repeat(2, 40px);
+    gap: 0.5rem 1rem;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.pagamentosRodape {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-top: -12rem;
+}
+
+.pagamentosRodape ul {
+    /* Listas dos meios de pagamentos */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.pagamentosRodape li img {
+    /* Imagem dos meios de pagamentos */
+    height: 30px;
+}
+
+.pagamentosRodape .seguroRodape {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.pagamentosRodape .seguroRodape img {
+    height: 25px;
+}
+
+.copyrightRodape {
+    color: #0e0129;
+    background-color: #9383e0;
+    font-size: 0.9rem;
+    text-align: center;
+    font-family: "Outfit", sans-serif;
+}
+
+.copyrightTextoRodape {
+    padding: 0.5rem;
+}
+
+
+
+
+
+/* PÁGINA HOME */
 
 .carrossel {
     position: relative;
@@ -342,11 +478,6 @@ body {
     }
 }
 
-.divisao {
-    border-color: #bbadff;
-    opacity: 0.1;
-}
-
 .tituloCategorias {
     font-family: "Outfit", sans-serif;
     margin-top: 15px;
@@ -397,13 +528,13 @@ body {
     background-color: #6958c0;
 }
 
-#produtosLancamentos {
+.produtosLancamentos {
     position: relative;
     padding: 2rem 0;
     overflow: hidden;
 }
 
-#tituloLancamentos {
+.tituloLancamentos {
     font-family: "Outfit", sans-serif;
     margin-top: -5px;
     margin-left: 30px;
@@ -411,12 +542,12 @@ body {
     color: #222;
 }
 
-#containerCarrosselLancamentos {
+.containerCarrosselLancamentos {
     overflow: hidden;
     margin: 0 6rem;
 }
 
-#carrosselLancamentos {
+.carrosselLancamentos {
     display: flex;
     gap: 1.8rem;
     list-style: none;
@@ -472,7 +603,7 @@ body {
 }
 
 .produtosLancamentos span {
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .botaoCarrinho {
@@ -491,7 +622,7 @@ body {
     text-align: center;
     text-decoration: none;
     transition: background-color 0.3s ease;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .setasLancamento {
@@ -613,18 +744,18 @@ body {
     }
 }
 
-#carrosselLancamentos {
+.carrosselLancamentos {
     animation: moverCarrosselProdutos 40s infinite;
     transition: transform 0.6s ease-in-out;
 }
 
-#produtosMaisVendidos {
+.produtosMaisVendidos {
     position: relative;
     padding: 2rem 0;
     overflow: hidden;
 }
 
-#tituloMaisVendidos {
+.tituloMaisVendidos {
     font-family: "Outfit", sans-serif;
     margin-top: -5px;
     margin-left: 30px;
@@ -632,12 +763,12 @@ body {
     color: #222;
 }
 
-#containerCarrosselMaisVendidos {
+.containerCarrosselMaisVendidos {
     overflow: hidden;
     margin: 0 6rem;
 }
 
-#carrosselMaisVendidos {
+.carrosselMaisVendidos {
     display: flex;
     gap: 1.8rem;
     list-style: none;
@@ -648,7 +779,7 @@ body {
 }
 
 .produtosMaisVendidos span {
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .setasMaisVendidos {
@@ -680,14 +811,14 @@ body {
     background-color: rgba(0, 0, 0, 0.6);
 }
 
-#carrosselFeedbacks {
+.carrosselFeedbacks {
     font-family: "Outfit", sans-serif;
     text-align: center;
     position: relative;
     padding: 3rem 1rem 5rem;
 }
 
-#tituloFeedbacks {
+.tituloFeedbacks {
     margin-bottom: 4.5rem;
     margin-left: 1.5rem;
     color: #111;
@@ -897,7 +1028,7 @@ body {
     animation-delay: 54s;
 }
 
-#receberNovidades {
+.receberNovidades {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -906,51 +1037,51 @@ body {
     margin: auto;
 }
 
-#LogoReceberNovidades {
+.LogoReceberNovidades {
     width: 260px;
     height: auto;
 }
 
-#tituloReceberNovidades {
+.tituloReceberNovidades {
     font-family: "Outfit", sans-serif;
     margin-bottom: 30px;
     text-align: center;
 }
 
-#containerReceberNovidades {
+.containerReceberNovidades {
     max-width: 500px;
     text-align: justify;
     color: #333;
 }
 
-#descricaoReceberNovidades {
+.descricaoReceberNovidades {
     font-family: "Outfit", sans-serif;
     margin-bottom: 1.5rem;
 }
 
-#formReceberNovidades {
+.formReceberNovidades {
     display: flex;
 }
 
-#emailReceberNovidades {
+.emailReceberNovidades {
     flex: 1;
     /*Ocupar todo o espaço*/
     padding: 1rem;
     font-size: 1rem;
     border: 1px solid #ffffff;
-    border-radius: 0.5rem 0 0 0.5rem;
+    border-radius: 0.5rem 0 0 0.5rem !important;
     outline: none;
     transition: border-color 0.5s ease;
     background-color: #ffffff;
     color: #333;
 }
 
-#emailReceberNovidades:focus {
+.emailReceberNovidades:focus {
     /*Ao label ser clicado*/
     border-color: #bbadff;
 }
 
-#botaoReceberNovidades {
+.botaoReceberNovidades {
     padding: 0.75rem 2rem;
     background-color: #9383e0;
     color: #ffffff;
@@ -965,18 +1096,18 @@ body {
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-#botaoReceberNovidades:hover {
+.botaoReceberNovidades:hover {
     background-color: #6958c0;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
-#vantagens {
+.vantagensInformacoes {
     background-color: #9383e0;
     padding: 2rem 1rem;
     font-family: "Outfit", sans-serif;
 }
 
-#listaVantagens {
+.listaVantagens {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -989,7 +1120,7 @@ body {
     align-items: stretch;
 }
 
-#listaVantagens li {
+.listaVantagens li {
     flex: 1 1 150px;
     text-align: center;
     color: #222;
@@ -997,134 +1128,26 @@ body {
     padding: 0 1rem;
 }
 
-#listaVantagens li:first-child {
+.listaVantagens li:first-child {
     border-left: none;
 }
 
-#listaVantagens img {
+.listaVantagens img {
     width: 40px;
     height: auto;
     margin-bottom: 0.5rem;
 }
 
-#listaVantagens p {
+.listaVantagens p {
     font-size: 0.95rem;
     line-height: 1.4;
 }
 
-#rodape {
-    background-color: #bbadff;
-    font-family: "Outfit", sans-serif;
-    color: #333;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
-    gap: 3rem;
-    text-align: left;
-    padding-top: 3rem;
-    justify-content: center;
-}
-
-#rodape img.logo {
-    width: 260px;
-    margin-left: 80px;
-    margin-top: -30px;
-}
-
-#rodape h2 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-    color: #222;
-}
-
-#rodape ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-#rodape li {
-    margin-bottom: 0.5rem;
-}
-
-#rodape a {
-    text-decoration: none;
-    color: #333;
-}
-
-#rodape a:hover {
-    text-decoration: underline 1.5px;
-}
-
-#contato {
-    font-style: normal;
-}
-
-.iconesRedesSociais {
-    width: 40px;
-    height: auto;
-}
-
-#listaRedesSociais {
-    display: grid;
-    grid-template-columns: repeat(2, 40px);
-    gap: 0.5rem 1rem;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
-
-#pagamentos {
-    grid-column: 1 / -1;
-    text-align: center;
-    margin-top: -12rem;
-}
-
-#pagamentos ul {
-    /* Listas dos meios de pagamentos */
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-top: 1.5rem;
-}
-
-#pagamentos li img {
-    /* Imagem dos meios de pagamentos */
-    height: 30px;
-}
-
-#pagamentos .seguro {
-    margin-top: 1rem;
-    font-size: 0.9rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.3rem;
-    color: #333;
-    font-weight: bold;
-}
-
-#pagamentos .seguro img {
-    height: 20px;
-}
-
-#copyright {
-    color: #0e0129;
-    background-color: #9383e0;
-    font-size: 0.9rem;
-    text-align: center;
-    font-family: "Outfit", sans-serif;
-}
-
-#copyrightTexto {
-    padding: 0.5rem;
-}
 
 
 
 
-
-/*CATÁLOGO E VARIANTES*/
+/*PÁGINAS - CATÁLOGO E VARIANTES*/
 
 #catalogoSelecionado {
     color: #3b2994;
@@ -1138,6 +1161,7 @@ body {
     font-size: 35px;
 }
 
+/* Coloquei dessa maneira por causa que o CSS não está puxando quando coloco como Class */
 #todosSelecionado,
 #arranhadoresSelecionado,
 #brinquedosSelecionado,
@@ -1145,9 +1169,11 @@ body {
 #comedourosSelecionado,
 #higieneSelecionado,
 #petiscosSelecionado,
-#roupasSelecionado,
-#sobreNosSelecionado,
-#contatoSelecionado {
+#roupasSelecionado {
+    background-color: #48398f;
+}
+
+.ParagrafosSelecionadosCatalogo {
     color: #48398f;
 }
 
@@ -1188,6 +1214,9 @@ body {
 .fundoLoginCadastro {
     min-height: 100vh;
     background: linear-gradient(to top, #3b2994, #48398f, #9383e0);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .containerPagina {
@@ -1252,68 +1281,12 @@ body {
     border: 0;
 }
 
-.camposLogin {
+.labelsLogin {
     display: block;
     font-size: 1.1rem;
     margin-bottom: 0.5rem;
     color: #222;
     font-weight: 600;
-}
-
-#emailLogin {
-    margin-bottom: 10px;
-}
-
-input[type="email"],
-input[type="password"],
-input[type="text"],
-input[type="tel"],
-select,
-textarea {
-    font-family: "Outfit", sans-serif;
-    width: 100%;
-    padding: 0.9rem;
-    font-size: 1rem;
-    border-radius: 0.8rem;
-    color: #222;
-    outline: none;
-    transition: border-color 0.5s ease;
-}
-
-input[type="text"],
-input[type="tel"],
-select,
-textarea,
-#emailContato {
-    border: 2px solid #6958c0;
-}
-
-input[type="email"],
-input[type="password"] {
-    border: 2px solid #bbadff;
-}
-
-input[type="number"] {
-    font-family: "Outfit", sans-serif;
-    width: 70%;
-    padding: 0.5rem;
-    font-size: 1rem;
-    background-color: #ffffff;
-    border: 2px solid #6958c0;
-    border-radius: 0.8rem;
-    color: #222;
-    outline: none;
-    transition: border-color 0.5s ease;
-}
-
-input[type="email"]:focus,
-input[type="password"]:focus,
-input[type="text"]:focus,
-textarea:focus,
-input[type="tel"]:focus,
-input[type="number"]:focus,
-select:focus {
-    border-color: #48398f;
 }
 
 .opcoesFormulario {
@@ -1327,7 +1300,7 @@ select:focus {
     color: #190c58;
     text-decoration: none;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .esqueceuSenha:hover {
@@ -1357,7 +1330,7 @@ select:focus {
 .registrarSe {
     text-align: center;
     margin-top: 1.5rem;
-    font-size: 16px;
+    font-size: 18px;
     color: #222;
     font-weight: 600;
 }
@@ -1393,8 +1366,8 @@ select:focus {
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    height: 18px;
-    width: 18px;
+    height: 24px;
+    width: 24px;
     background-color: #f1ecff;
     border: 2px solid #3b2994;
     border-radius: 4px;
@@ -1418,10 +1391,6 @@ select:focus {
     background-color: #e6ddff;
 }
 
-#email {
-    margin-bottom: 15px;
-}
-
 #containerCadastro {
     max-width: 600px;
     padding: 2rem 3rem;
@@ -1437,16 +1406,28 @@ select:focus {
     flex-direction: column;
 }
 
-.rotulo {
+.rotuloCadastro {
     font-weight: 600;
     color: #222;
     margin-bottom: 0.2rem;
 }
 
-.campo {
+.camposLogin {
     padding: 0.8rem;
     border-radius: 0.6rem;
-    border: 2px solid #bbadff;
+    border: 2px solid #6958c0;
+    background-color: #ffffff;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+    font-family: "Outfit", sans-serif;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.camposCadastro {
+    padding: 0.8rem;
+    border-radius: 0.6rem;
+    border: 2px solid #6958c0;
     background-color: #ffffff;
     font-size: 1rem;
     transition: border-color 0.3s;
@@ -1454,12 +1435,17 @@ select:focus {
     margin-bottom: 10px;
 }
 
-.campo:focus {
-    border-color: #6958c0;
+.camposCadastro:focus {
+    border-color: #3b2994;
     outline: none;
 }
 
-.linhaDupla {
+.camposLogin:focus {
+    border-color: #3b2994;
+    outline: none;
+}
+
+.linhaDuplaCadastro {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
@@ -1565,6 +1551,10 @@ select:focus {
 
 /* SOBRE NÓS*/
 
+#sobreNosSelecionado {
+    color: #3b2994;
+}
+
 #mainSobreNos {
     max-width: 1200px;
     margin: 2rem auto 4rem auto;
@@ -1577,7 +1567,6 @@ select:focus {
 #tituloSobreNos {
     color: #333;
     margin-top: -15px;
-    margin-bottom: 15px;
     text-align: center;
     font-size: 35px;
 }
@@ -1609,30 +1598,23 @@ select:focus {
     max-width: 1200px;
     margin: 0 auto;
     text-align: justify;
+    margin-top: -3.5rem;
 }
 
 #imagemPrincipalSobreNos {
-    width: 300px;
+    width: 1200px;
     text-align: center;
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 3rem;
-}
-
-#secaoHistoria p {
-    font-size: 1.1rem;
-    color: #4b3d77;
-    background-color: #fff;
-    padding: 1.5rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 15px;
 }
 
 #textoSobreNos {
-    font-size: 1.3rem;
-    color: #4b3d77;
-    background-color: #fff;
+    font-size: 1.2rem;
+    color: #222;
+    background-color: #f9fafb;
     padding: 1.5rem;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -1648,11 +1630,12 @@ select:focus {
 .blocosMvv {
     flex: 1 1 320px;
     max-width: 360px;
-    background-color: #fff;
+    background-color: #f9fafb;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.07);
     transition: transform 0.3s ease;
+    text-align: justify;
 }
 
 .blocosMvv:hover {
@@ -1731,7 +1714,7 @@ select:focus {
 }
 
 .textoFaq {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #333;
     line-height: 1.6;
     margin-top: 0.5rem;
@@ -1745,7 +1728,7 @@ select:focus {
     border-radius: 0.75rem;
     box-shadow: 0 4px 12px rgb(0 0 0 / 0.05);
     padding: 3rem 3rem;
-    color: #444;
+    color: #222;
     font-size: 18px;
     line-height: 1.6;
     font-weight: 400;
@@ -1767,6 +1750,10 @@ select:focus {
 
 
 /* CARRINHO */
+
+#figCarrinhoSelecionado {
+    color: #3b2994;
+}
 
 #mainCarrinho {
     max-width: 1400px;
@@ -1849,17 +1836,19 @@ select:focus {
 
 .quantidadeProduto {
     width: 60px;
-    border: 1.5px solid #999;
+    border: 2px solid #6958c0;
     border-radius: 0.75rem;
     text-align: center;
     font-size: 1rem;
     color: #333;
     padding: 0.4rem 0;
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
 }
 
 .quantidadeProduto:focus {
     outline: none;
-    border-color: #48398f;
+    border: 2px solid #48398f;
 }
 
 .botaoRemover {
@@ -1929,6 +1918,22 @@ select:focus {
     margin-bottom: -24px;
 }
 
+#inputDesconto {
+    font-family: "Outfit", sans-serif;
+    width: 100%;
+    padding: 0.9rem;
+    font-size: 1rem;
+    border-radius: 0.8rem;
+    color: #222;
+    outline: none;
+    transition: border-color 0.5s ease;
+    border: 2px solid #6958c0;
+}
+
+#inputDesconto:focus {
+    border-color: #48398f;
+}
+
 .botaoFinalizarCompra {
     display: inline-block;
     text-align: center;
@@ -1958,6 +1963,10 @@ select:focus {
 
 /* CONTATO */
 
+#contatoSelecionado {
+    color: #3b2994;
+}
+
 #mainContato {
     max-width: 900px;
     width: 100%;
@@ -1966,7 +1975,7 @@ select:focus {
     flex-direction: column;
     gap: 2.5rem;
     margin: 0 auto;
-    background-color: #ffffff;
+    background-color: #f9fafb;
     padding: 35px;
     margin-top: 40px;
     margin-bottom: 40px;
@@ -2024,13 +2033,13 @@ select:focus {
 
 .legendContato {
     font-weight: 600;
-    font-size: 16px;
-    color: #444;
+    font-size: 18px;
+    color: #28177c;
 }
 
 .labelContato {
-    font-size: 16px;
-    color: #555;
+    font-size: 18px;
+    color: #444;
 }
 
 #mensagemContato {
@@ -2057,6 +2066,23 @@ select:focus {
     background-color: #48398f;
     outline: none;
 }
+
+.inputsContato {
+    font-family: "Outfit", sans-serif;
+    width: 100%;
+    padding: 0.9rem;
+    font-size: 1rem;
+    border-radius: 0.8rem;
+    color: #222;
+    outline: none;
+    transition: border-color 0.5s ease;
+    border: 2px solid #6958c0;
+}
+
+.inputsContato:focus {
+    border-color: #48398f;
+}
+
 
 
 
@@ -2188,6 +2214,22 @@ fieldset {
     gap: 1.5rem;
     flex-wrap: wrap;
     margin-top: 15px;
+}
+
+.inputsFinalizandoCompra {
+    font-family: "Outfit", sans-serif;
+    width: 100%;
+    padding: 0.9rem;
+    font-size: 1rem;
+    border-radius: 0.8rem;
+    color: #222;
+    outline: none;
+    transition: border-color 0.5s ease;
+    border: 2px solid #6958c0;
+}
+
+.inputsFinalizandoCompra:focus {
+    border-color: #48398f;
 }
 
 
@@ -2583,49 +2625,7 @@ fieldset {
     display: block;
 }
 
-
-
-
-
-/* EDIÇÃO DE PERFIL */
-
-#bodyEditarPerfil {
-    margin: 0;
-    font-size: 18px;
-    line-height: 1.6;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-#mainEditarPerfil {
-    flex-grow: 1;
-    max-width: 820px;
-    margin: 2rem auto 4rem;
-    padding: 2rem 2rem;
-    width: 100%;
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
-    background-color: #f9fafb;
-    border-radius: 1rem;
-}
-
-#tituloEditarPerfil {
-    font-weight: 700;
-    font-size: 2.7rem;
-    color: #333;
-    margin-bottom: -1rem;
-    text-align: center;
-}
-
-#formularioEditarPerfil {
-    border-radius: 0.75rem;
-    padding: 3rem;
-}
-
-#mainEditarPerfil input[type="password"],
-#mainEditarPerfil input[type="text"],
-#mainEditarPerfil input[type="date"],
-#mainEditarPerfil input[type="email"] {
+#inputNumCartao {
     font-family: "Outfit", sans-serif;
     width: 100%;
     padding: 0.9rem;
@@ -2637,65 +2637,14 @@ fieldset {
     border: 2px solid #6958c0;
 }
 
-#mainEditarPerfil input[type="password"]:focus,
-#mainEditarPerfil input[type="text"]:focus {
+#inputNumCartao:focus {
     border-color: #48398f;
 }
 
-#mainEditarPerfil fieldset {
-  border: none;
-}
-
-.legendsEditarPerfil {
-  font-weight: 700;
-  font-size: 1.7rem;
-  color: #444;
-}
-
-.labelsEditarPerfil {
-  display: block;
-  font-weight: 600;
-  font-size: 1rem;
-  color: #555;
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
-}
-
-.divisaoEditarPerfil {
-    border-color: #bbadff;
-    opacity: 0.1;
-    margin-bottom: 1rem;
-}
-
-#botaoEditarPerfil {
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
-    background-color: #6958c0;
-    color: #ffffff;
-    border: none;
-    border-radius: 12px;
-    padding: 1rem 0;
-    font-size: 1.5rem;
-    font-weight: 500;
-    cursor: pointer;
-    box-shadow: 0 8px 24px rgba(17, 24, 39, 0.25);
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    font-family: "Outfit", sans-serif;
-    width: 100%;
-}
-
-#botaoEditarPerfil:hover,
-#botaoEditarPerfil:focus {
-    background-color: #48398f;
-    outline: none;
-}
 
 
 
-
-
-/* PRODUTOS ESPECÍFICOS - 1, 2, 3 */
+/* PRODUTOS ESPECÍFICOS - 1, 2 */
 
 .mainProdutos {
     display: grid;
@@ -2734,7 +2683,8 @@ fieldset {
     justify-content: center;
 }
 
-.setas:focus, .setas:hover {
+.setas:focus,
+.setas:hover {
     background: #6958c0;
 }
 
@@ -2776,13 +2726,14 @@ fieldset {
 .codigoProduto {
     margin: 1rem 0;
     font-size: 1.4rem;
-    color: #333;    
+    color: #333;
 }
 
-.corProduto, tamanhoProduto {
+.corProduto,
+tamanhoProduto {
     font-size: 1.2rem;
     margin-top: 1rem;
-    color: #333; 
+    color: #333;
 }
 
 .circulo {
@@ -2816,7 +2767,7 @@ fieldset {
     background: #f9a8d4;
 }
 
-.cores input:checked + .circulo {
+.cores input:checked+.circulo {
     border-color: #3b2994;
 }
 
@@ -2874,7 +2825,7 @@ fieldset {
     margin-top: 7px;
 }
 
-.iconeFavoritosProduto:focus, 
+.iconeFavoritosProduto:focus,
 .iconeFavoritosProduto:hover {
     background-color: #48398f;
 }
@@ -2935,7 +2886,7 @@ fieldset {
     margin-top: 1rem;
 }
 
-.labelTamanhos{
+.labelTamanhos {
     cursor: pointer;
     position: relative;
 }
@@ -2955,7 +2906,8 @@ fieldset {
     transition: all 0.3s ease;
 }
 
-.etiqueta:focus, .etiqueta:hover {
+.etiqueta:focus,
+.etiqueta:hover {
     border: 2px solid #48398f;
 }
 
@@ -2963,7 +2915,7 @@ fieldset {
     font-size: 1.2rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
-    color: #333;  
+    color: #333;
 }
 
 .QuantidadeProdutoEspecifico input[type="number"] {
@@ -2989,10 +2941,792 @@ fieldset {
 
 
 
+/* #################### ADMINISTRADOR  ####################*/
 
+/* DASHBOARD - COM TODOS OS TÓPICOS DENTRO */
 
+.bodysAdministrador {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
 
+.bodysAdministrador ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
+.bodysAdministrador td {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #333;
+}
 
-/* ADMINISTRADOR */
+.divisaoAdministrador {
+    border-color: #bbadff;
+    opacity: 0.1;
+    margin-bottom: 1rem;
+}
 
+.logoImagemAdministrador {
+    width: 130px;
+    margin: 0 auto;
+    margin-top: -35px;
+    display: flex;
+}
+
+.menuLateralAdministrador {
+    width: 280px;
+    background: linear-gradient(180deg, #bbadff, #9383e0);
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2rem;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    box-shadow: 3px 0 6px rgba(0, 0, 0, 0.15);
+}
+
+.logoAdministrador {
+    font-weight: 900;
+    font-size: 1.6rem;
+    letter-spacing: 3px;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    color: #222;
+    border-bottom: 2px solid #4e3b8d;
+    padding-bottom: 1rem;
+}
+
+.opcoesMenuLateralAdm {
+    color: #333;
+    margin-top: 5px;
+}
+
+.iconesMenuLateralAdm {
+    width: 28px;
+}
+
+.linksNavegacaoAdministrador {
+    flex-grow: 1;
+}
+
+.linksNavegacaoAdministrador a {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 1.5rem 0.8rem;
+    font-weight: 600;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+    transition: background-color 0.3s ease;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.linksNavegacaoAdministrador a:hover,
+.linksNavegacaoAdministrador a.active {
+    background-color: #6958c028;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.conteudoPrincipal {
+    flex-grow: 1;
+    padding: 2rem 3rem;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #e6ddff;
+}
+
+.conteudoPrincipal>section {
+    margin-bottom: 3rem;
+}
+
+.cabecalhoPagina {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    justify-content: space-between;
+}
+
+.actionsAdministrador {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.titulosAdministrador {
+    font-size: 35px;
+    font-weight: 700;
+    color: #28177c;
+    margin: 0 0 0.5rem 0;
+}
+
+.informacoesPainel {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2rem;
+}
+
+.cartaoInforAdministrador {
+    background: linear-gradient(180deg, #9383e0, #6958c0);
+    border-radius: 16px;
+    box-shadow: 0 6px 12px rgba(101, 67, 33, 0.2);
+    color: #f9fafb;
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.cartaoInforAdministrador:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 25px rgba(101, 67, 33, 0.2);
+}
+
+.titulosInforPainelAdm {
+    font-size: 1.7rem;
+    margin-bottom: 0.5rem;
+}
+
+.dadosInforPainelAdm {
+    font-weight: 700;
+    font-size: 2.8rem;
+    letter-spacing: 1.2px;
+}
+
+.botoesSecoesDashboardAdm {
+    font-family: "Outfit", sans-serif;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    padding: 0.5em 1.2em;
+    background-image: linear-gradient(135deg, #6958c0, #4e3b8d);
+    color: #f9fafb;
+    box-shadow: 0 6px 12px rgba(101, 67, 33, 0.2);
+    transition: background-image 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+}
+
+.botoesSecoesDashboardAdm:hover,
+.botoesSecoesDashboardAdm:focus {
+    outline: none;
+    background-image: linear-gradient(180deg, #6958c0, #3f3275);
+    box-shadow: 0 15px 25px rgba(101, 67, 33, 0.2);
+}
+
+.labelsDashboardAdm {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: 600;
+    color: #3b2994;
+}
+
+#procurarProdutoAdm {
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.5em 0.8em;
+    border-radius: 8px;
+    border: 2px solid #6958c0;
+    color: #4b3621;
+    background-color: #fff7f2;
+    transition: border-color 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+}
+
+#procurarProdutoAdm:focus {
+    border-color: #4e3b8d;
+    outline: none;
+}
+
+.colunasProdutosAdm {
+    font-size: 1.2rem;
+    color: #4e3b8d;
+    text-align: left;
+    padding: 12px 16px;
+    font-weight: 600;
+    border-bottom: 2px solid #6958c0;
+}
+
+.captionsDashboardAdm {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #3f3275;
+    margin-bottom: 20px;
+}
+
+.tabelasDashboardAdm {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 12px;
+    font-size: 1rem;
+}
+
+.fundoElementosTabelaAdm {
+    background: #fff7f0;
+    box-shadow: 0 4px 8px rgba(101, 67, 33, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.fundoElementosTabelaAdm:hover {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.inforTabelasDashboardAdm {
+    padding: 15px 16px;
+    vertical-align: middle;
+}
+
+.botaoTabela {
+    background-image: linear-gradient(105deg, #9383e0, #6958c0);
+    color: #f7f3f0;
+    font-weight: 600;
+    padding: 0.7em 1.2em;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-shadow: 0 2px 5px rgba(101, 67, 33, 0.3);
+    transition: background-color 0.3s ease;
+    border: none;
+    font-family: "Outfit", sans-serif;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+.botaoTabela:hover,
+.botaoTabela:focus {
+    background-image: linear-gradient(105deg, #6958c0, #3f3275);
+    outline: none;
+    cursor: pointer;
+}
+
+.navVerMaisProdutosAdm {
+    display: flex;
+    justify-content: center;
+}
+
+.botaoMaisProdutosAdm {
+    font-family: "Outfit", sans-serif;
+    font-size: 1.1rem;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+    border-radius: 12px;
+    padding: 0.4em 1.2em;
+    background-image: linear-gradient(135deg, #6958c0, #4e3b8d);
+    color: #f9fafb;
+    box-shadow: 0 6px 12px rgba(101, 67, 33, 0.2);
+    transition: background-image 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 20px;
+}
+
+.navVerMaisPedidosAdm {
+    display: flex;
+    justify-content: center;
+}
+
+.botaoMaisPedidosAdm {
+    font-family: "Outfit", sans-serif;
+    font-size: 1.1rem;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+    border-radius: 12px;
+    padding: 0.4em 1.2em;
+    background-image: linear-gradient(135deg, #6958c0, #4e3b8d);
+    color: #f9fafb;
+    box-shadow: 0 6px 12px rgba(101, 67, 33, 0.2);
+    transition: background-image 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 20px;
+}
+
+.statusPedidoAdm {
+    font-weight: 500;
+    padding-left: 20px;
+    border-radius: 12px;
+    width: 110px;
+    text-align: center;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.statusPedidoAdm.pendente {
+    background-color: #444;
+    padding: 0.5rem;
+}
+
+.statusPedidoAdm.concluido {
+    background-color: #177c1c;
+    padding: 0.5rem;
+}
+
+.statusPedidoAdm.cancelado {
+    background-color: #8a0500;
+    padding: 0.5rem;
+}
+
+.statusPedidoAdm.processando {
+    background-color: #c25705;
+    padding: 0.5rem;
+}
+
+.statusPedidoAdm.aprovado {
+    background-color: #6958c0;
+    padding: 0.5rem;
+}
+
+.statusProdutoAdm {
+    font-weight: 500;
+    padding-left: 20px;
+    border-radius: 12px;
+    width: 110px;
+    text-align: center;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.statusProdutoAdm.ativo {
+    background-color: #177c1c;
+    padding: 0.5rem;
+}
+
+.statusProdutoAdm.inativo {
+    background-color: #8a0500;
+    padding: 0.5rem;
+}
+
+.botaoTabelaExcluir {
+    background-image: linear-gradient(105deg, #c53530, #8a0500);
+    color: #f7f3f0;
+    font-weight: 600;
+    padding: 0.7em 1.2em;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-shadow: 0 2px 5px rgba(101, 67, 33, 0.3);
+    transition: background-color 0.3s ease;
+    border: none;
+    font-family: "Outfit", sans-serif;
+    margin-right: 5px;
+}
+
+.botaoTabelaExcluir:hover,
+.botaoTabelaExcluir:focus {
+    background-image: linear-gradient(105deg, #8a0500, #7a0501);
+    outline: none;
+    cursor: pointer;
+}
+
+.tipoAdministrador {
+    font-weight: 500;
+    padding-left: 20px;
+    border-radius: 12px;
+    width: 110px;
+    text-align: center;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #222;
+    padding: 0.5rem;
+}
+
+.navMaisFeedbacksAdm {
+    display: flex;
+    justify-content: center;
+}
+
+.botaoMaisFeedbacksAdm {
+    font-family: "Outfit", sans-serif;
+    font-size: 1.1rem;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+    border-radius: 12px;
+    padding: 0.4em 1.2em;
+    background-image: linear-gradient(135deg, #6958c0, #4e3b8d);
+    color: #f9fafb;
+    box-shadow: 0 6px 12px rgba(101, 67, 33, 0.2);
+    transition: background-image 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 20px;
+}
+
+/* FORMULÁRIOS */
+
+.fundoFormulariosAdm {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem 1rem;
+    min-height: 100vh;
+    background: linear-gradient(to top, #4e3b8d, #6958c0);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.mainFormulariosAdm {
+    background: #e6ddff;
+    padding: 2.5rem;
+    border-radius: 24px;
+    box-shadow: 0 10px 38px rgba(101, 67, 33, 0.2);
+    width: 100%;
+    max-width: 700px;
+    font-family: "Outfit", sans-serif;
+}
+
+.titulosFormulariosAdm {
+    font-size: 2.6rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #4e3b8d;
+    font-weight: 700;
+}
+
+.mainFormulariosAdm fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.legendsFormulariosAdm {
+    font-weight: 600;
+    color: #3f3275;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.labelsFormulariosAdm {
+    font-weight: 600;
+    color: #3b2994;
+    margin-top: 10px;
+    margin-bottom: -5px;
+}
+
+.inputsFormulariosAdm {
+    font-family: "Outfit", sans-serif;
+    font-size: 1rem;
+    padding: 0.6em 0.8em;
+    border-radius: 12px;
+    border: 2px solid #6958c0;
+    background-color: #ffffff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    font-weight: 500;
+    color: #333;
+}
+
+.inputsDesabilitados {
+    background-color: #dfdfdf;
+}
+
+.inputsFormulariosAdm:focus {
+    border-color: #4e3b8d;
+    box-shadow: 0 0 8px rgba(101, 67, 33, 0.3);
+    outline: none;
+}
+
+.textareaFormulariosAdm {
+    min-height: 120px;
+    resize: vertical;
+}
+
+#imagensProduto {
+    display: none;
+}
+
+label[for="imagensProduto"] {
+    cursor: pointer;
+    padding: 0.8em 1.2em;
+    border: 2px dashed #6958c0;
+    border-radius: 12px;
+    color: #3f3275;
+    text-align: center;
+    background-color: #f9f7ff;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+label[for="imagensProduto"]:hover,
+label[for="imagensProduto"]:focus {
+    background-color: #e6ddff;
+    border-color: #4e3b8d;
+}
+
+#previsaoImagens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.textosFormulariosAdm {
+    color: #333;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.imagemSimulada {
+    width: 110px;
+    height: 110px;
+    border-radius: 12px;
+    background: #9383e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 1.4rem;
+    border: 2px solid #6958c0;
+}
+
+.navBotoesFormulariosAdm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+}
+
+.botoesFormulariosAdm {
+    font-family: "Outfit", sans-serif;
+    width: 48%;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0.9em 1.6em;
+    border: none;
+    border-radius: 16px;
+    color: #f9fafb;
+    cursor: pointer;
+    box-shadow: 0 8px 25px rgba(101, 67, 33, 0.3);
+    align-self: center;
+    transition: background-image 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+}
+
+.botaoCancelarFormulariosAdm {
+    background-image: linear-gradient(135deg, #ad1510, #7a0501);
+}
+
+.botaoCancelarFormulariosAdm:hover {
+    background-image: linear-gradient(180deg, #8a0500, #7a0501);
+}
+
+.botaoSalvarFormulariosAdm {
+    background-image: linear-gradient(135deg, #6958c0, #4e3b8d);
+}
+
+.botaoSalvarFormulariosAdm:hover {
+    background-image: linear-gradient(180deg, #6958c0, #4e3b8d);
+}
+
+.titulosSecundariosFormulariosAdm {
+    font-size: 1.5rem;
+    color: #28177c;
+    border-bottom: 2px solid #3b2994;
+    padding-bottom: 0.3rem;
+    margin-bottom: 1rem;
+}
+
+#infoPedido,
+#infoEntrega {
+    margin-bottom: 2.8rem;
+}
+
+.listasFormulariosAdm {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.7rem 4rem;
+    font-size: 1.1rem;
+    color: #222;
+}
+
+.ddListasFormulariosAdm {
+    color: #333;
+    font-weight: 500;
+}
+
+.dtListasFormulariosAdm {
+    color: #222;
+    font-weight: 700;
+}
+
+#tituloListaProdutos {
+    font-size: 1.5rem;
+    color: #28177c;
+    border-bottom: 2px solid #3b2994;
+    padding-bottom: 0.3rem;
+    text-align: center;
+    margin-bottom: -15px;
+}
+
+.captionsFormulariosAdm {
+    padding: 0.8em 1.2em;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    color: #222;
+    text-align: center;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    font-weight: 600;
+}
+
+.tabelasFormulariosAdm {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 1rem;
+    color: #222;
+    background-color: #faf7ff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(166, 123, 255, 0.15);
+    margin-bottom: 2rem;
+}
+
+.captionsFormulariosAdm {
+    caption-side: top;
+    padding: 0.75rem 1rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #4b2c6f;
+    text-align: center;
+}
+
+.trsTabelasFormulariosAdm {
+    background-image: linear-gradient(135deg, #6958c0, #4e3b8d);
+    color: #f3f0ff;
+    font-weight: 700;
+    text-align: left;
+    user-select: none;
+}
+
+.colunasTabelaFormularioAdm:first-child {
+    padding: 12px 16px;
+    border-radius: 16px 0 0 0;
+}
+
+.colunasTabelaFormularioAdm:last-child {
+    padding: 12px 16px;
+    border-radius: 0 16px 0 0;
+}
+
+.linhasTabelasFormulariosAdm {
+    background-color: #f3f0ff;
+    transition: background-color 0.3s ease;
+    color: #4b2c6f;
+    font-weight: 600;
+}
+
+.linhasTabelasFormulariosAdm:hover {
+    background-color: #dcd2ff;
+}
+
+.conteudoFormulariosAdm {
+    padding: 1rem 1.2rem;
+    vertical-align: middle;
+    font-weight: 600;
+    color: #4b2c6f;
+    user-select: text;
+    user-select: none;
+}
+
+.footerTabelasFormulariosAdm {
+    background-image: linear-gradient(135deg, #6958c0, #4e3b8d);
+    color: #f3f0ff;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.footerTabelasFormulariosAdm th {
+    padding: 12px 16px;
+    text-align: right;
+    border-top: 2px solid rgba(255, 255, 255, 0.3);
+    user-select: none;
+}
+
+.acoesRodape {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.botoesFormularioPedidoAdm {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(135deg, #6958c0, #4e3b8d);
+    color: #f3f0ff;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(105, 88, 192, 0.4);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    user-select: none;
+    text-align: center;
+    width: 48%;
+}
+
+.botoesFormularioPedidoAdm:hover,
+.botoesFormularioPedidoAdm:focus {
+    background: linear-gradient(135deg, #7e6bd8, #6352b5);
+    box-shadow: 0 6px 18px rgba(126, 107, 216, 0.6);
+    outline: none;
+}
+
+.botoesFormularioPedidoAdm.botaoCancelarFormulariosAdm {
+    background-image: linear-gradient(135deg, #ad1510, #7a0501);
+}
+
+.botoesFormularioPedidoAdm.botaoCancelarFormulariosAdm:hover {
+    background-image: linear-gradient(180deg, #8a0500, #7a0501);
+}
+
+.botoesFormularioPedidoAdm.botaoProcessamentoFormulariosAdm {
+    background-image: linear-gradient(135deg, #c25705, #ac530f);
+}
+
+.botoesFormularioPedidoAdm.botaoProcessamentoFormulariosAdm:hover {
+    background-image: linear-gradient(180deg, #ac530f, #833c05);
+}
+
+.botoesFormularioPedidoAdm.botaoRegistrarFormulariosAdm {
+    background-image: linear-gradient(135deg, #1c00aa, #160669);
+}
+
+.botoesFormularioPedidoAdm.botaoRegistrarFormulariosAdm:hover {
+    background-image: linear-gradient(180deg, #160669, #0e0247);
+}
+
+.botoesFormularioPedidoAdm.botaoEmitirFormulariosAdm {
+    background-image: linear-gradient(135deg, #177c1c, #0a4d0d);
+}
+
+.botoesFormularioPedidoAdm.botaoEmitirFormulariosAdm:hover {
+    background-image: linear-gradient(180deg, #0a4d0d, #053007);
+}
+
+.contatarSuporte {
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 18px;
+    color: #222;
+    font-weight: 600;
+}
+
+.contatarSuporte a {
+    color: #28177c;
+    text-decoration: none;
+}
+
+.contatarSuporte a:hover {
+    text-decoration: underline 1.5px;
+}

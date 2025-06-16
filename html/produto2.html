@@ -7,23 +7,55 @@
         <link rel="stylesheet" href="../css/style.css" />
     </head>
     <body>
+        <!-- Carrossel para avisos de promoções -->
+        <section
+            class="avisoCarrossel"
+            aria-label="Carrossel de avisos e promoções da plataforma">
+
+            <button id="setaEsquerdaAviso" class="setasAviso"
+                aria-label="Aviso anterior">
+                ❮
+            </button>
+
+            <ul class="mensagens">
+                <li class="mensagem">
+                    NOVO POR AQUI? USE O CUPOM 🐾PRIMEIRACOMPRA🐾
+                </li>
+                <li class="mensagem">
+                    FRETE GRÁTIS ACIMA DE R$199 PARA TODO O BRASIL
+                </li>
+                <li class="mensagem">CADASTRE-SE E GANHE 10% DE DESCONTO</li>
+            </ul>
+
+            <button id="setaDireitaAviso" class="setasAviso"
+                aria-label="Aviso seguinte">
+                ❯
+            </button>
+        </section>
+
+        <!-- Header do site -->
         <header class="headerSite">
             <h1 class="logoSite">
                 <a href="index.html" aria-label="Página inicial - Miaunarquia">
                     <img
                         src="../imagens/imagem_logo.png"
-                        alt="Logo de um Gato Preto com Coroa"
+                        alt="Logo do Site (Desenho de rosto de um gato preto com uma coroa)"
                         class="logoImagem" />
                     <span class="nomeLogo">Miaunarquia</span>
                 </a>
             </h1>
 
             <nav class="navMenu" aria-label="Menu Principal">
+                <!-- arial-label = Rotular elemento para descreve-lo e deixa-lo mais acessível -->
                 <ul>
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="catalogo.html">Catálogo</a></li>
-                    <li><a href="sobreNos.html">Sobre Nós</a></li>
-                    <li><a href="sobreNos.html#contato">Contato</a></li>
+                    <li><a href="index.html"
+                            aria-label="Ir para Início">Início</a></li>
+                    <li><a href="catalogo.html"
+                            aria-label="Ir para Catálogo">Catálogo</a></li>
+                    <li><a href="sobreNos.html"
+                            aria-label="Ir para Sobre Nós">Sobre Nós</a></li>
+                    <li><a href="contato.html"
+                            aria-label="Ir para Contato (Contate-nos)">Contato</a></li>
                 </ul>
             </nav>
 
@@ -43,7 +75,7 @@
                     </li>
 
                     <li>
-                        <a href="login.html" aria-label="Favoritos">
+                        <a href="#" aria-label="Ir para Favoritos">
                             <figure class="iconesNav">
                                 <img
                                     src="../imagens/icone_favoritos.png"
@@ -57,7 +89,7 @@
                     </li>
 
                     <li>
-                        <a href="login.html" aria-label="Perfil">
+                        <a href="#" aria-label="Ir para Perfil">
                             <figure class="iconesNav">
                                 <img
                                     src="../imagens/icone_usuario.png"
@@ -70,7 +102,7 @@
                     </li>
 
                     <li>
-                        <a href="carrinho.html" aria-label="Carrinho">
+                        <a href="carrinho.html" aria-label="Ir para Carrinho">
                             <figure class="iconesNav">
                                 <img
                                     src="../imagens/icone_carrinho.png"
@@ -85,6 +117,7 @@
             </nav>
         </header>
 
+        <!-- Opção de Voltar para o Catálogo-->
         <section class="voltarCatalogo">
             <nav class="navMenu" aria-label="Voltar para Catálogo">
                 <a href="catalogo.html"
@@ -93,6 +126,7 @@
             </nav>
         </section>
 
+        <!-- Produto e suas Informações -->
         <main class="mainProdutos">
 
             <figure class="imagensProduto">
@@ -122,49 +156,52 @@
                 </figcaption>
             </figure>
 
+            <!-- Informações do Produto -->
             <article class="produto">
                 <h2 class="nomeProdutoEspecifico">Fantasia de Dinossauro</h2>
 
                 <p class="codigoProduto"><strong>Código:</strong> AJGYY276H</p>
 
-                    <section>
-                        <p class="tamanhoProduto">Selecione a opção de
-                            <strong>Tamanho</strong>:</p>
-                        <form class="tamanhos">
-                            <label class="labelTamanhos">
-                                <input type="radio" name="tamanho"
-                                    class="opcaoTamanho" />
-                                <span class="etiqueta">PP</span>
-                            </label>
-                            <label class="labelTamanhos">
-                                <input type="radio" name="tamanho"
-                                    class="opcaoTamanho" />
-                                <span class="etiqueta">P</span>
-                            </label>
-                            <label class="labelTamanhos">
-                                <input type="radio" name="tamanho"
-                                    class="opcaoTamanho" />
-                                <span class="etiqueta">G</span>
-                            </label>
-                            <label class="labelTamanhos">
-                                <input type="radio" name="tamanho"
-                                    class="opcaoTamanho" />
-                                <span class="etiqueta">GG</span>
-                            </label>
-                        </form>
-                    </section>
+                <section>
+                    <p class="tamanhoProduto">Selecione a opção de
+                        <strong>Tamanho</strong>:</p>
+                    <form class="tamanhos">
+                        <label class="labelTamanhos">
+                            <input type="radio" name="tamanho"
+                                class="opcaoTamanho" />
+                            <span class="etiqueta">PP</span>
+                        </label>
+                        <label class="labelTamanhos">
+                            <input type="radio" name="tamanho"
+                                class="opcaoTamanho" />
+                            <span class="etiqueta">P</span>
+                        </label>
+                        <label class="labelTamanhos">
+                            <input type="radio" name="tamanho"
+                                class="opcaoTamanho" />
+                            <span class="etiqueta">G</span>
+                        </label>
+                        <label class="labelTamanhos">
+                            <input type="radio" name="tamanho"
+                                class="opcaoTamanho" />
+                            <span class="etiqueta">GG</span>
+                        </label>
+                    </form>
+                </section>
 
-                    <section class="QuantidadeProdutoEspecifico">
-                        <div class="blocoQuantidadeProdutoEspecifico">
-                            <p class="tituloQuantidadeProdutoEspecifico">Selecione a <strong>Quantidade</strong>:</p>
-                            <input type="number" min="1" max="10"
-                                value="1" />
-                        </div>
-                    </section>
+                <section class="QuantidadeProdutoEspecifico">
+                    <div class="blocoQuantidadeProdutoEspecifico">
+                        <p class="tituloQuantidadeProdutoEspecifico">Selecione a
+                            <strong>Quantidade</strong>:</p>
+                        <input type="number" min="1" max="10"
+                            value="1" />
+                    </div>
+                </section>
 
                 <p class="precoProdutoEspecifico">R$ 143,90</p>
                 <p class="precoParcelar">3x sem juros de R$ 47,96</p>
 
+                <!-- Quantidade do Produto -->
                 <section class="botoesCarrinhoFavoritos">
                     <a class="botaoAdicionarCarrinho" href="carrinho.html"
                         aria-label="Adicionar Produto ao Carrinho">ADICIONAR AO
@@ -177,6 +214,7 @@
 
                 <hr class="divisaoProdutoEspecifico" />
 
+                <!-- Botões de Adicionar ao Carrinho e Favoritos -->
                 <details class="detailsProduto">
                     <summary class="summaryProduto">DETALHES DO
                         PRODUTO</summary>
@@ -190,13 +228,15 @@
             </article>
         </main>
 
-        <footer id="rodape">
+        <!-- Rodapé do Site -->
+        <footer class="rodape">
             <img
                 src="../imagens/imagem_logo.png"
-                alt="Logo Miaunarquia"
+                alt="Logo do Site (Desenho de rosto de um gato preto com uma coroa)"
                 class="logo" />
 
-            <nav id="informacoes" aria-label="Informações da Plataforma">
+            <nav class="informacoesRodape"
+                aria-label="Informações da Plataforma">
                 <h2>Informações</h2>
                 <ul>
                     <li><a href="sobreNos.html">Sobre Nós</a></li>
@@ -204,50 +244,52 @@
                             Condições de Uso</a></li>
                     <li><a href="sobreNos.html#politicasPrivacidade">Política de
                             Privacidade</a></li>
-                    <li><a href="   ">FAQ</a></li>
+                    <li><a href="sobreNos.html#secaoFaq">FAQ</a></li>
                 </ul>
             </nav>
 
-            <address id="contato">
+            <address class="contatoRodape" aria-label="Nossos Meios de Contato">
                 <h2>Contato</h2>
                 <p>
                     <a
                         href="mailto:contato@miauanarquia.com.br">contato@miauanarquia.com.br</a>
+                    <!-- mailto = Identificar como e-mail -->
                 </p>
             </address>
 
-            <nav id="redes" aria-label="Nos Siga">
+            <nav class="redesRodape" aria-label="Nossas Redes Sociais">
                 <h2>Nos siga</h2>
-                <ul id="listaRedesSociais">
+                <ul class="listaRedesSociaisRodape">
                     <li>
                         <a href="#"><img
                                 src="../imagens/icone_facebook.png"
-                                class="iconesRedesSociais"
+                                class="iconesRedesSociaisRodape"
                                 alt="Ícone do Facebook" />
                         </a>
                     </li>
                     <li>
                         <a href="#"><img
                                 src="../imagens/icone_instagram.png"
-                                class="iconesRedesSociais"
+                                class="iconesRedesSociaisRodape"
                                 alt="Ícone do Instagram" /></a>
                     </li>
                     <li>
                         <a href="#"><img
                                 src="../imagens/icone_linkedin.png"
-                                class="iconesRedesSociais"
+                                class="iconesRedesSociaisRodape"
                                 alt="Ícone do LinkedIn" /></a>
                     </li>
                     <li>
                         <a href="#"><img
                                 src="../imagens/icone_discord.png"
-                                class="iconesRedesSociais"
+                                class="iconesRedesSociaisRodape"
                                 alt="Ícone do Discord" /></a>
                     </li>
                 </ul>
             </nav>
 
-            <section id="pagamentos">
+            <section class="pagamentosRodape"
+                aria-label="Nossos Meios de Pagamentos">
                 <h2>Formas de pagamento:</h2>
                 <ul>
                     <li>
@@ -286,14 +328,18 @@
                             alt="Ícone do Pix" />
                     </li>
                 </ul>
-                <p class="seguro">
+
+                <p class="seguroRodape"
+                    aria-label="Informação que nossos meios de pagamentos são 100% seguros">
                     <img
                         src="../imagens/icone_seguranca_footer.png"
                         alt="Ícone que simboliza Segurança" />
                     PAGAMENTO 100% SEGURO
                 </p>
-                <ul id="copyright">
-                    <li id="copyrightTexto">
+
+                <ul class="copyrightRodape"
+                    aria-label="CopyRight da Plataforma">
+                    <li class="copyrightTextoRodape">
                         &copy; 2025 Miaunarquia. Todos os direitos reservados.
                     </li>
                 </ul>

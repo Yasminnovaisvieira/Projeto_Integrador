@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Feedbacks | Miaunarquia</title>
+        <link rel="stylesheet" href="../../css/style.css" />
+    </head>
+    <body class="bodysAdministrador">
+        <!-- Menu Lateral do Administrador -->
+        <nav class="menuLateralAdministrador"
+            aria-label="Menu principal do Painel Administrativo">
+            <h1 class="logoAdministrador"
+                aria-label="Logo do painel administrativo">
+                <img
+                    src="../../imagens/imagem_logo.png"
+                    alt="Logo do Site (Desenho de rosto de um gato preto com uma coroa)"
+                    class="logoImagemAdministrador" />
+                <span>Miaunarquia</span></h1>
+
+            <ul class="linksNavegacaoAdministrador">
+                <li><a href="dashboard.html">
+                        <img
+                            src="../../imagens/icone_dashboard.png"
+                            alt="Ícone de Dashboard"
+                            class="iconesMenuLateralAdm" />
+                        <p class="opcoesMenuLateralAdm">Dashboard</p>
+                    </a></li>
+
+                <li><a href="produtosAdm.html">
+                        <img
+                            src="../../imagens/icone_produtos.png"
+                            alt="Ícone de Produtos"
+                            class="iconesMenuLateralAdm" />
+                        <p class="opcoesMenuLateralAdm">Produtos</p>
+                    </a></li>
+
+                <li><a href="pedidosAdm.html">
+                        <img
+                            src="../../imagens/icone_pedidos.png"
+                            alt="Ícone de Pedidos"
+                            class="iconesMenuLateralAdm" />
+                        <p class="opcoesMenuLateralAdm">Pedidos</p>
+                    </a></li>
+
+                <li><a href="usuariosAdm.html">
+                        <img
+                            src="../../imagens/icone_Grupousuarios.png"
+                            alt="Ícone de Usuários"
+                            class="iconesMenuLateralAdm" />
+                        <p class="opcoesMenuLateralAdm">Usuários</p>
+                    </a></li>
+
+                <li><a href="dashboard.html#usuariosAdmAdministrador">
+                        <img
+                            src="../../imagens/icone_administradores.png"
+                            alt="Ícone de Administradores"
+                            class="iconesMenuLateralAdm" />
+                        <p class="opcoesMenuLateralAdm">Administradores</p>
+                    </a></li>
+
+                <li><a href="#">
+                        <img
+                            src="../../imagens/icone_contato.png"
+                            alt="Ícone de Contato e Feedbacks"
+                            class="iconesMenuLateralAdm" />
+                        <p class="opcoesMenuLateralAdm">Feedbacks e Contato</p>
+                    </a></li>
+                
+                <li><a href="loginAdministrador.html">
+                        <img
+                            src="../../imagens/icone_sair.png"
+                            alt="Ícone de Sair"
+                            class="iconesMenuLateralAdm" />
+                        <p class="opcoesMenuLateralAdm">Sair</p>
+                    </a></li>
+            </ul>
+        </nav>
+
+        <main class="conteudoPrincipal">
+            <!-- Feedbacks e Tentativas de Contato dos Clientes -->
+            <section id="feedbacksContatoAdministrador"
+                aria-label="Lista de feedbacks e contatos dos clientes">
+                <header class="cabecalhoPagina">
+                    <h2 class="titulosAdministrador">Gerenciar Feedbacks e
+                        Contato</h2>
+                    <nav class="actionsAdministrador">
+                        <button type="button" class="botoesSecoesDashboardAdm"
+                            aria-label="Atualizar lista de feedback dos clientes">Atualizar</button>
+                    </nav>
+                </header>
+                <header class="cabecalhoPagina">
+                    <h2 class="titulosAdministrador"></h2>
+                </header>
+
+                <!-- Tabela de Feedbacks e Mensagem Recentes dos Clientes -->
+                <table class="tabelasDashboardAdm">
+                    <caption class="captionsDashboardAdm">
+                        Lista dos feedbacks e mensagens enviados pelos clientes
+                    </caption>
+
+                    <thead aria-label="Colunas da Tabela">
+                        <tr>
+                            <th class="colunasProdutosAdm">Cliente</th>
+                            <th class="colunasProdutosAdm">Email</th>
+                            <th class="colunasProdutosAdm">Mensagem</th>
+                            <th class="colunasProdutosAdm">Data</th>
+                            <th class="colunasProdutosAdm">Ações</th>
+                        </tr>
+                    </thead>
+
+                    <tbody
+                        aria-label="Feedbacks dos Usuários e suas Informações">
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">Ana Souza</td>
+                            <td
+                                class="inforTabelasDashboardAdm">ana.souza@email.com</td>
+                            <td class="inforTabelasDashboardAdm">Adorei a
+                                qualidade dos produtos!</td>
+                            <td class="inforTabelasDashboardAdm">12/06/2025</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="responderFeedback.html"
+                                    class="botaoTabela"
+                                    aria-label="Responder Usuário">Responder</a>
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir feedback do Usuário">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">Pedro Lima</td>
+                            <td
+                                class="inforTabelasDashboardAdm">pedro.lima@email.com</td>
+                            <td class="inforTabelasDashboardAdm">O pedido chegou
+                                com atraso.</td>
+                            <td class="inforTabelasDashboardAdm">11/06/2025</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="responderFeedback.html"
+                                    class="botaoTabela"
+                                    aria-label="Responder Usuário">Responder</a>
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir feedback do Usuário">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">Juliana
+                                Castro</td>
+                            <td
+                                class="inforTabelasDashboardAdm">juliana.castro@email.com</td>
+                            <td class="inforTabelasDashboardAdm">Atendimento
+                                excelente! Parabéns!</td>
+                            <td class="inforTabelasDashboardAdm">10/06/2025</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="responderFeedback.html"
+                                    class="botaoTabela"
+                                    aria-label="Responder Usuário">Responder</a>
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir feedback do Usuário">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">Marcos
+                                Oliveira</td>
+                            <td
+                                class="inforTabelasDashboardAdm">marcos.oliveira@email.com</td>
+                            <td class="inforTabelasDashboardAdm">Produto veio
+                                com uma peça faltando.</td>
+                            <td class="inforTabelasDashboardAdm">08/06/2025</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="responderFeedback.html"
+                                    class="botaoTabela"
+                                    aria-label="Responder Usuário">Responder</a>
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir feedback do Usuário">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">Renata
+                                Dias</td>
+                            <td
+                                class="inforTabelasDashboardAdm">renata.dias@email.com</td>
+                            <td class="inforTabelasDashboardAdm">Entrega rápida,
+                                gostei muito!</td>
+                            <td class="inforTabelasDashboardAdm">07/06/2025</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="responderFeedback.html"
+                                    class="botaoTabela"
+                                    aria-label="Responder Usuário">Responder</a>
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir feedback do Usuário">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">Felipe
+                                Martins</td>
+                            <td
+                                class="inforTabelasDashboardAdm">felipe.martins@email.com</td>
+                            <td class="inforTabelasDashboardAdm">A embalagem
+                                estava danificada.</td>
+                            <td class="inforTabelasDashboardAdm">06/06/2025</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="responderFeedback.html"
+                                    class="botaoTabela"
+                                    aria-label="Responder Usuário">Responder</a>
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir feedback do Usuário">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">Carla
+                                Mendes</td>
+                            <td
+                                class="inforTabelasDashboardAdm">carla.mendes@email.com</td>
+                            <td class="inforTabelasDashboardAdm">Tudo perfeito!
+                                Comprarei novamente.</td>
+                            <td class="inforTabelasDashboardAdm">05/06/2025</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="responderFeedback.html"
+                                    class="botaoTabela"
+                                    aria-label="Responder Usuário">Responder</a>
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir feedback do Usuário">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">Eduardo
+                                Silva</td>
+                            <td
+                                class="inforTabelasDashboardAdm">eduardo.silva@email.com</td>
+                            <td class="inforTabelasDashboardAdm">Produto
+                                diferente do anunciado.</td>
+                            <td class="inforTabelasDashboardAdm">03/06/2025</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="responderFeedback.html"
+                                    class="botaoTabela"
+                                    aria-label="Responder Usuário">Responder</a>
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir feedback do Usuário">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">Tatiane
+                                Moreira</td>
+                            <td
+                                class="inforTabelasDashboardAdm">tatiane.moreira@email.com</td>
+                            <td class="inforTabelasDashboardAdm">Muito
+                                satisfeita com o atendimento.</td>
+                            <td class="inforTabelasDashboardAdm">01/06/2025</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="responderFeedback.html"
+                                    class="botaoTabela"
+                                    aria-label="Responder Usuário">Responder</a>
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir feedback do Usuário">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">Roberto
+                                Nunes</td>
+                            <td
+                                class="inforTabelasDashboardAdm">roberto.nunes@email.com</td>
+                            <td class="inforTabelasDashboardAdm">O rastreio não
+                                estava funcionando.</td>
+                            <td class="inforTabelasDashboardAdm">31/05/2025</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="responderFeedback.html"
+                                    class="botaoTabela"
+                                    aria-label="Responder Usuário">Responder</a>
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir feedback do Usuário">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">Camila
+                                Rocha</td>
+                            <td
+                                class="inforTabelasDashboardAdm">camila.rocha@email.com</td>
+                            <td class="inforTabelasDashboardAdm">Recomendo!
+                                Produtos de alta qualidade.</td>
+                            <td class="inforTabelasDashboardAdm">30/05/2025</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="responderFeedback.html"
+                                    class="botaoTabela"
+                                    aria-label="Responder Usuário">Responder</a>
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir feedback do Usuário">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">Leandro
+                                Costa</td>
+                            <td
+                                class="inforTabelasDashboardAdm">leandro.costa@email.com</td>
+                            <td class="inforTabelasDashboardAdm">Minha dúvida
+                                foi respondida rapidamente.</td>
+                            <td class="inforTabelasDashboardAdm">29/05/2025</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="responderFeedback.html"
+                                    class="botaoTabela"
+                                    aria-label="Responder Usuário">Responder</a>
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir feedback do Usuário">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">Paula
+                                Ribeiro</td>
+                            <td
+                                class="inforTabelasDashboardAdm">paula.ribeiro@email.com</td>
+                            <td class="inforTabelasDashboardAdm">Gostei da
+                                variedade de produtos.</td>
+                            <td class="inforTabelasDashboardAdm">27/05/2025</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="responderFeedback.html"
+                                    class="botaoTabela"
+                                    aria-label="Responder Usuário">Responder</a>
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir feedback do Usuário">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">Rodrigo
+                                Farias</td>
+                            <td
+                                class="inforTabelasDashboardAdm">rodrigo.farias@email.com</td>
+                            <td class="inforTabelasDashboardAdm">Tive problemas
+                                com o pagamento.</td>
+                            <td class="inforTabelasDashboardAdm">26/05/2025</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="responderFeedback.html"
+                                    class="botaoTabela"
+                                    aria-label="Responder Usuário">Responder</a>
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir feedback do Usuário">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">Simone
+                                Freitas</td>
+                            <td
+                                class="inforTabelasDashboardAdm">simone.freitas@email.com</td>
+                            <td class="inforTabelasDashboardAdm">Tudo certo com
+                                a compra, obrigada!</td>
+                            <td class="inforTabelasDashboardAdm">25/05/2025</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="responderFeedback.html"
+                                    class="botaoTabela"
+                                    aria-label="Responder Usuário">Responder</a>
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir feedback do Usuário">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">Gustavo
+                                Lima</td>
+                            <td
+                                class="inforTabelasDashboardAdm">gustavo.lima@email.com</td>
+                            <td class="inforTabelasDashboardAdm">Demorou pra
+                                encontrar o produto no site.</td>
+                            <td class="inforTabelasDashboardAdm">23/05/2025</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="responderFeedback.html"
+                                    class="botaoTabela"
+                                    aria-label="Responder Usuário">Responder</a>
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir feedback do Usuário">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">Daniela
+                                Souza</td>
+                            <td
+                                class="inforTabelasDashboardAdm">daniela.souza@email.com</td>
+                            <td class="inforTabelasDashboardAdm">Gostei da
+                                experiência, recomendo!</td>
+                            <td class="inforTabelasDashboardAdm">22/05/2025</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="responderFeedback.html"
+                                    class="botaoTabela"
+                                    aria-label="Responder Usuário">Responder</a>
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir feedback do Usuário">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">Bruno
+                                Oliveira</td>
+                            <td
+                                class="inforTabelasDashboardAdm">bruno.oliveira@email.com</td>
+                            <td class="inforTabelasDashboardAdm">O chat de
+                                suporte demorou muito.</td>
+                            <td class="inforTabelasDashboardAdm">21/05/2025</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="responderFeedback.html"
+                                    class="botaoTabela"
+                                    aria-label="Responder Usuário">Responder</a>
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir feedback do Usuário">Excluir</button>
+                            </td>
+                        </tr>
+
+                        <tr class="fundoElementosTabelaAdm">
+                            <td class="inforTabelasDashboardAdm">Luciana
+                                Barreto</td>
+                            <td
+                                class="inforTabelasDashboardAdm">luciana.barreto@email.com</td>
+                            <td class="inforTabelasDashboardAdm">Fácil de
+                                navegar pelo site. Parabéns!</td>
+                            <td class="inforTabelasDashboardAdm">19/05/2025</td>
+                            <td class="inforTabelasDashboardAdm">
+                                <a href="responderFeedback.html"
+                                    class="botaoTabela"
+                                    aria-label="Responder Usuário">Responder</a>
+                                <button class="botaoTabelaExcluir"
+                                    aria-label="Excluir feedback do Usuário">Excluir</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </body>
+</html>

@@ -8,47 +8,56 @@
         <link rel="stylesheet" href="../css/style.css" />
     </head>
     <body id="bodyRevisarCompra">
-
+        <!-- "Formulário" para revisar dados inseridos e pedido como um todo -->
         <main id="mainRevisarCompra" aria-label="Revisão do Pedido">
             <img src="../imagens/imagem_logo.png" alt="Logo Miaunarquia"
                 id="logoImagemFinalizandoCompra" />
             <h2 id="tituloRevisarCompra">Revise seu pedido</h2>
 
-            <section class="sectionsRevisar">
+            <section class="sectionsRevisar"
+                aria-label="Itens do pedido Escolhidos">
                 <h3 class="subtitulosRevisar">Itens</h3>
                 <ul id="listaItensPedidoRevisar">
+                    <!-- Produto 1 -->
                     <li class="itemPedido">
                         <img
-                            src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=80&q=80"
-                            alt="Tênis Esportivo Masculino"
+                            src="../imagens/imagem_roupa.png"
+                            alt="Gato com Fantasia de Dinossauro na cor Verde"
                             class="fotoProdutoRevisar" />
-                        <p class="nomePedidoRevisar">Arranhador Luxo</p>
+                        <p class="nomePedidoRevisar">Fantasia de Dinoussauro -
+                            Verde</p>
                         <p class="quantidadePedidoRevisar">2x</p>
-                        <p class="precoPedidoRevisar">R$ 199,90</p>
+                        <p class="precoPedidoRevisar">R$ 313,38</p>
                     </li>
+
+                    <!-- Produto 2 -->
                     <li class="itemPedido">
                         <img
-                            src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=80&q=80"
-                            alt="Camiseta Casual Feminina"
+                            src="../imagens/imagem_cama_rose.png"
+                            alt="Cama oval, com Bordas Altas em Tecido Preto e Base Almofadada na Cor Rosé para Gatos"
                             class="fotoProdutoRevisar" />
-                        <p class="nomePedidoRevisar">Camiseta Casual
-                            Feminina</p>
+                        <p class="nomePedidoRevisar">Cama Oval Almofadada –
+                            Rosé</p>
                         <p class="quantidadePedidoRevisar">1x</p>
-                        <p class="precoPedidoRevisar">R$ 89,90</p>
+                        <p class="precoPedidoRevisar">R$ 158,26</p>
                     </li>
+
+                    <!-- Produto 3 -->
                     <li class="itemPedido">
                         <img
-                            src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=80&q=80"
-                            alt="Mochila de Viagem"
+                            src="../imagens/imagem_arranhador_bege.png"
+                            alt="Arranhador Chalesco na Cor Bege para Gatos"
                             class="fotoProdutoRevisar" />
-                        <p class="nomePedidoRevisar">Mochila de Viagem</p>
+                        <p class="nomePedidoRevisar">Arranhador - Chalesco</p>
                         <p class="quantidadePedidoRevisar">1x</p>
-                        <p class="precoPedidoRevisar">R$ 249,90</p>
+                        <p class="precoPedidoRevisar">R$ 63,90</p>
                     </li>
                 </ul>
             </section>
 
-            <section class="sectionsRevisar">
+            <!-- Informações de entrega e contato -->
+            <section class="sectionsRevisar"
+                aria-label="Informações de entrega e contato Inseridos">
                 <h3 class="subtitulosRevisar">Informações de entrega e
                     contato</h3>
                 <dl id="dlRevisar">
@@ -71,13 +80,16 @@
                 </dl>
             </section>
 
-            <section class="sectionsRevisar" id="secaoPagamento">
+            <!-- Método de Pagamento -->
+            <section class="sectionsRevisar" id="secaoPagamento"
+                aria-label="Método de Pagamento Escolhido">
                 <h2 class="subtitulosRevisar"
                     id="subtituloPagamentoRevisar">Método de Pagamento</h2>
 
                 <figure id="colunaImagemPagamento">
                     <img src="../imagens/imagem_cartao.png"
-                        alt="Cartão de Crédito" id="ImagemPagamentoRevisar" />
+                        alt="Cartão de Crédito Roxo"
+                        id="ImagemPagamentoRevisar" />
                 </figure>
 
                 <ul id="colunaDadosPagamento">
@@ -95,16 +107,22 @@
                 </ul>
             </section>
 
-            <section class="sectionsRevisar" id="sectionRevisarResumo">
+            <!-- Resumo de Valores -->
+            <section class="sectionsRevisar" id="sectionRevisarResumo"
+                aria-label="Resumo dos Valores descontados e Total">
                 <p class="infoResumoRevisar">Frete: Grátis</p>
                 <p class="infoResumoRevisar">Descontos/Cupons: R$ 15,00</p>
                 <p class="infoResumoRevisar" id="totalResumoRevisar">Total: R$
-                    539,69</p>
+                    520,54</p>
             </section>
 
+            <!-- Botões para Cancelar e Finalizar Compra -->
             <section id="sectionBotoesRevisar">
-                <a href="carrinho.html" id="botaoCancelarRevisar">Cancelar</a>
-                <a href="indexLogado.html" id="botaoConfirmarRevisar">Confirmar Pedido</a>
+                <a href="carrinho.html" id="botaoCancelarRevisar"
+                    aria-label="Botão para Cancelar Pedido">Cancelar</a>
+                <a href="indexLogado.html" id="botaoConfirmarRevisar"
+                    aria-label="Botão para Finalizar Pedido">Confirmar
+                    Pedido</a>
             </section>
 
         </main>

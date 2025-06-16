@@ -7,13 +7,16 @@
         <link rel="stylesheet" href="../css/style.css" />
     </head>
     <body>
+        <!-- Carrossel para avisos de promoções -->
         <section
             class="avisoCarrossel"
             aria-label="Carrossel de avisos e promoções da plataforma">
+
             <button id="setaEsquerdaAviso" class="setasAviso"
                 aria-label="Aviso anterior">
                 ❮
             </button>
+
             <ul class="mensagens">
                 <li class="mensagem">
                     NOVO POR AQUI? USE O CUPOM 🐾PRIMEIRACOMPRA🐾
@@ -23,11 +26,14 @@
                 </li>
                 <li class="mensagem">CADASTRE-SE E GANHE 10% DE DESCONTO</li>
             </ul>
+
             <button id="setaDireitaAviso" class="setasAviso"
                 aria-label="Aviso seguinte">
                 ❯
             </button>
         </section>
+
+        <!-- Header do site -->
         <header class="headerSite">
             <h1 class="logoSite">
                 <a href="index.html" aria-label="Página inicial - Miaunarquia">
@@ -40,12 +46,16 @@
             </h1>
 
             <nav class="navMenu" aria-label="Menu Principal">
+                <!-- arial-label = Rotular elemento para descreve-lo e deixa-lo mais acessível -->
                 <ul>
-                    <li><a href="index.html">Início</a></li>
-                    <li><a href="catalogo.html"
-                            id="catalogoSelecionado">Catálogo</a></li>
-                    <li><a href="sobreNos.html">Sobre Nós</a></li>
-                    <li><a href="sobreNos.html#contato">Contato</a></li>
+                    <li><a href="index.html"
+                            aria-label="Ir para Início">Início</a></li>
+                    <li><a href="catalogo.html" id="catalogoSelecionado"
+                            aria-label="Ir para Catálogo">Catálogo</a></li>
+                    <li><a href="sobreNos.html"
+                            aria-label="Ir para Sobre Nós">Sobre Nós</a></li>
+                    <li><a href="contato.html"
+                            aria-label="Ir para Contato (Contate-nos)">Contato</a></li>
                 </ul>
             </nav>
 
@@ -65,7 +75,7 @@
                     </li>
 
                     <li>
-                        <a href="login.html" aria-label="Favoritos">
+                        <a href="#" aria-label="Ir para Favoritos">
                             <figure class="iconesNav">
                                 <img
                                     src="../imagens/icone_favoritos.png"
@@ -79,7 +89,7 @@
                     </li>
 
                     <li>
-                        <a href="login.html" aria-label="Perfil">
+                        <a href="#" aria-label="Ir para Perfil">
                             <figure class="iconesNav">
                                 <img
                                     src="../imagens/icone_usuario.png"
@@ -92,7 +102,7 @@
                     </li>
 
                     <li>
-                        <a href="carrinho.html" aria-label="Carrinho">
+                        <a href="carrinho.html" aria-label="Ir para Carrinho">
                             <figure class="iconesNav">
                                 <img
                                     src="../imagens/icone_carrinho.png"
@@ -106,17 +116,21 @@
                 </ul>
             </nav>
         </header>
+
         <main>
             <h2 class="tituloProdutos">Nossos Produtos</h2>
+
+            <!-- Categorias do Catálogo -->
             <section
                 class="categoriasCatalogo"
-                aria-label="Categorias do Catálogo">
+                aria-label="Categorias do nosso Catálogo">
                 <ul class="listaCategorias">
                     <li>
-                        <a href="catalogo.html" class="linksCategorias">
+                        <a href="catalogo.html" class="linksCategorias"
+                            aria-label="Todos os Produtos do Nosso Catálogo">
                             <img
                                 src="../imagens/imagem_gatoLingua.png"
-                                alt="Gato lambendo seu nariz"
+                                alt="Gato lambendo seu próprio nariz"
                                 class="imagensCategoriasCatalogo" />
                             <p>Todos</p>
                         </a>
@@ -124,72 +138,81 @@
 
                     <li>
                         <a href="catalogoArranhadores.html"
-                            class="linksCategorias">
+                            class="linksCategorias"
+                            aria-label="Ir para Categoria de Arranhadores do Nosso Catálogo">
                             <img
                                 src="../imagens/imagem_arranhador.png"
-                                alt="Imagem de arranhador preto"
+                                alt="Arranhador preto para Gatos"
                                 class="imagensCategoriasCatalogo" />
                             <p>Arranhadores</p>
                         </a>
                     </li>
 
                     <li>
-                        <a href="catalogoCamas.html" class="linksCategorias">
+                        <a href="catalogoCamas.html" class="linksCategorias"
+                            aria-label="Ir para Categoria de Camas do Nosso Catálogo">
                             <img
                                 src="../imagens/imagem_cama.png"
-                                alt="Imagem de cama formato tubarão"
+                                alt="Cama em formato tubarão para Gatos"
                                 class="imagensCategoriasCatalogo" />
                             <p>Camas</p>
                         </a>
                     </li>
 
                     <li>
-                        <a href="catalogoHigiene.html" class="linksCategorias">
+                        <a href="catalogoHigiene.html" class="linksCategorias"
+                            aria-label="Ir para Categoria de Higiene e Limpeza do Nosso Catálogo">
                             <img
                                 src="../imagens/imagem_limpeza.png "
-                                alt="Imagem de Enzimac Gato com Embalagem Rosa"
+                                alt="Produto de Limpeza Enzimac para Gato com Embalagem Rosa"
                                 class="imagensCategoriasCatalogo" />
                             <p>Higiene e Limpeza</p>
                         </a>
                     </li>
 
                     <li>
-                        <a href="catalogoRoupas.html" class="linksCategorias">
+                        <a href="catalogoRoupas.html" class="linksCategorias"
+                            aria-label="Ir para Categoria de Roupas do Nosso Catálogo">
                             <img
                                 src="../imagens/imagem_roupa.png"
-                                alt="Imagem Gato com Fantasia de Dinossauro"
+                                alt="Gato com Fantasia de Dinossauro"
                                 class="imagensCategoriasCatalogo" />
                             <p>Roupas</p>
                         </a>
                     </li>
 
                     <li>
-                        <a href="#" class="linksCategorias">
+                        <a href="catalogoBrinquedos.html"
+                            class="linksCategorias"
+                            aria-label="Ir para Categoria de Brinquedos do Nosso Catálogo">
                             <img
                                 src="../imagens/imagem_brinquedo.png"
-                                alt="Imagem de brinquedos"
+                                alt="Brinquedo para Gatos"
                                 class="imagensCategoriasCatalogo"
                                 id="brinquedosSelecionado" />
-                            <p>Brinquedos</p>
+                            <p
+                                class="ParagrafosSelecionadosCatalogo">Brinquedos</p>
                         </a>
                     </li>
 
                     <li>
                         <a href="catalogoComedouros.html"
-                            class="linksCategorias">
+                            class="linksCategorias"
+                            aria-label="Ir para Categoria de Comedouros e Bebedouros do Nosso Catálogo">
                             <img
                                 src="../imagens/imagem_comedouro.png"
-                                alt="Ícone de comedouros e bebedouros"
+                                alt="Comedouro com alimento para Gatos"
                                 class="imagensCategoriasCatalogo" />
                             <p>Comedouros e Bebedouros</p>
                         </a>
                     </li>
 
                     <li>
-                        <a href="catalogoPetiscos.html" class="linksCategorias">
+                        <a href="catalogoPetiscos.html" class="linksCategorias"
+                            aria-label="Ir para Categoria de Petiscos do Nosso Catálogo">
                             <img
                                 src="../imagens/imagem_petisco.png"
-                                alt="Ícone de petiscos"
+                                alt="Petisco PremieR de Embalagem  com Gato Cinza no Centro e na Cor Azul"
                                 class="imagensCategoriasCatalogo" />
                             <p>Petiscos</p>
                         </a>
@@ -197,13 +220,14 @@
                 </ul>
             </section>
 
-            <hr class="divisao" />
+            <hr class="divisao" aria-hidden="true" />
 
-            <article class="containerProdutos">
+            <!-- Lista de Produtos -->
+            <article class="containerProdutos" aria-label="Lista dos Produtos">
                 <ul class="listaProdutos">
                     <li class="cardProduto">
                         <a
-                            href="login.html"
+                            href="#"
                             class="botaoFavoritoCards"
                             aria-label="Adicionar aos favoritos"
                             role="button">
@@ -214,7 +238,7 @@
                         <img
                             src="../imagens/imagem_brinquedo_peixe.png"
                             class="imagensCards"
-                            alt="Brinquedo em Formato de Peixe" />
+                            alt="Brinquedo em Formato de Peixe para Gatos" />
                         <h3>Brinquedo em Formato de Peixe</h3>
                         <p aria-label="Avaliação: 4 de 5 estrelas">
                             ★★★★☆ <span>(67)</span>
@@ -222,13 +246,13 @@
                         <p>
                             <strong>R$ 48,35</strong>
                         </p>
-                        <a href="carrinho.html" class="botaoCarrinho">ADICIONAR
-                            AO CARRINHO</a>
+                        <a href="carrinho.html"
+                            class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
                     </li>
 
                     <li class="cardProduto">
                         <a
-                            href="login.html"
+                            href="#"
                             class="botaoFavoritoCards"
                             aria-label="Adicionar aos favoritos"
                             role="button">
@@ -239,7 +263,7 @@
                         <img
                             src="../imagens/imagem_abacate_catnip.png"
                             class="imagensCards"
-                            alt="Brinquedo Catnip em Formato de Abacate" />
+                            alt="Brinquedo Catnip em Formato de Abacate para Gatos" />
                         <h3>Catnip Erva Natural - Formato Abacate</h3>
                         <p aria-label="Avaliação: 5 de 5 estrelas">
                             ★★★★★ <span>(424)</span>
@@ -247,13 +271,13 @@
                         <p>
                             <strong>R$ 19,44</strong>
                         </p>
-                        <a href="carrinho.html" class="botaoCarrinho">ADICIONAR
-                            AO CARRINHO</a>
+                        <a href="carrinho.html"
+                            class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
                     </li>
 
                     <li class="cardProduto">
                         <a
-                            href="login.html"
+                            href="#"
                             class="botaoFavoritoCards"
                             aria-label="Adicionar aos favoritos"
                             role="button">
@@ -264,7 +288,7 @@
                         <img
                             src="../imagens/imagem_brinquedo_bolaLa.png"
                             class="imagensCards"
-                            alt="Bola de Lã Colorida" />
+                            alt="Bola de Lã Colorida para Gatos" />
                         <h3>Bolinha de Lã - Colorida</h3>
                         <p aria-label="Avaliação: 4 de 5 estrelas">
                             ★★★★☆ <span>(29)</span>
@@ -272,13 +296,13 @@
                         <p>
                             <strong>R$ 35,45</strong>
                         </p>
-                        <a href="carrinho.html" class="botaoCarrinho">ADICIONAR
-                            AO CARRINHO</a>
+                        <a href="carrinho.html"
+                            class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
                     </li>
 
                     <li class="cardProduto">
                         <a
-                            href="login.html"
+                            href="#"
                             class="botaoFavoritoCards"
                             aria-label="Adicionar aos favoritos"
                             role="button">
@@ -289,7 +313,7 @@
                         <img
                             src="../imagens/imagem_brinquedo.png"
                             class="imagensCards"
-                            alt="Kong Playgroud na cor Vermelha com Rato de Pelúcia para Gatos." />
+                            alt="Kong Playgroud na cor Vermelha com Rato de Pelúcia para Gatos" />
                         <h3>Kong Playgroud - Vermelho</h3>
                         <p aria-label="Avaliação: 5 de 5 estrelas">
                             ★★★★★ <span>(34)</span>
@@ -297,13 +321,13 @@
                         <p>
                             <strong>R$ 35,90</strong>
                         </p>
-                        <a href="carrinho.html" class="botaoCarrinho">ADICIONAR
-                            AO CARRINHO</a>
+                        <a href="carrinho.html"
+                            class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
                     </li>
 
                     <li class="cardProduto">
                         <a
-                            href="login.html"
+                            href="#"
                             class="botaoFavoritoCards"
                             aria-label="Adicionar aos favoritos"
                             role="button">
@@ -314,7 +338,7 @@
                         <img
                             src="../imagens/imagem_brinquedo_disco.png"
                             class="imagensCards"
-                            alt="Brinquedo Lambada na Cor Vermelho com Pena na Ponta" />
+                            alt="Brinquedo Lambada na Cor Vermelho com Pena na Ponta para Gatos" />
                         <h3>Labamba Interativo com Mola e Penas</h3>
                         <p aria-label="Avaliação: 4 de 5 estrelas">
                             ★★★★☆ <span>(13)</span>
@@ -322,13 +346,13 @@
                         <p>
                             <strong>R$ 26,05</strong>
                         </p>
-                        <a href="carrinho.html" class="botaoCarrinho">ADICIONAR
-                            AO CARRINHO</a>
+                        <a href="carrinho.html"
+                            class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
                     </li>
 
                     <li class="cardProduto">
                         <a
-                            href="login.html"
+                            href="#"
                             class="botaoFavoritoCards"
                             aria-label="Adicionar aos favoritos"
                             role="button">
@@ -339,7 +363,7 @@
                         <img
                             src="../imagens/imagem_brinquedo_joaoBobo.png"
                             class="imagensCards"
-                            alt="Bolinha com Rato em Formato de João Bobo com Pena" />
+                            alt="Bolinha com Rato em Formato de João Bobo com Pena para Gatos" />
                         <h3>Bolinha/Rato - João Bobo com Pena</h3>
                         <p aria-label="Avaliação: 4 de 5 estrelas">
                             ★★★★☆ <span>(38)</span>
@@ -347,13 +371,13 @@
                         <p>
                             <strong>R$ 14,99</strong>
                         </p>
-                        <a href="carrinho.html" class="botaoCarrinho">ADICIONAR
-                            AO CARRINHO</a>
+                        <a href="carrinho.html"
+                            class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
                     </li>
 
                     <li class="cardProduto">
                         <a
-                            href="login.html"
+                            href="#"
                             class="botaoFavoritoCards"
                             aria-label="Adicionar aos favoritos"
                             role="button">
@@ -364,7 +388,7 @@
                         <img
                             src="../imagens/imagem_brinquedo_bolinha2.png"
                             class="imagensCards"
-                            alt="Bola Dispenser Toy em Tons de Roxo " />
+                            alt="Bola Dispenser Toy em Tons de Roxo para Gatos" />
                         <h3>Bola Dispenser Toy - Roxa</h3>
                         <p aria-label="Avaliação: 5 de 5 estrelas">
                             ★★★★★ <span>(23)</span>
@@ -372,13 +396,13 @@
                         <p>
                             <strong>R$ 37,16</strong>
                         </p>
-                        <a href="carrinho.html" class="botaoCarrinho">ADICIONAR
-                            AO CARRINHO</a>
+                        <a href="carrinho.html"
+                            class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
                     </li>
 
                     <li class="cardProduto">
                         <a
-                            href="login.html"
+                            href="#"
                             class="botaoFavoritoCards"
                             aria-label="Adicionar aos favoritos"
                             role="button">
@@ -389,7 +413,7 @@
                         <img
                             src="../imagens/imagem_brinquedo_lazer.png"
                             class="imagensCards"
-                            alt="Coleira de Laser - Led de Infravermelho" />
+                            alt="Coleira de Laser/Led de Infravermelho para Gatos" />
                         <h3>Coleira de Laser - Led de Infravermelho</h3>
                         <p aria-label="Avaliação: 4 de 5 estrelas">
                             ★★★★☆ <span>(65)</span>
@@ -397,13 +421,13 @@
                         <p>
                             <strong>R$ 44,87</strong>
                         </p>
-                        <a href="carrinho.html" class="botaoCarrinho">ADICIONAR
-                            AO CARRINHO</a>
+                        <a href="carrinho.html"
+                            class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
                     </li>
 
                     <li class="cardProduto">
                         <a
-                            href="login.html"
+                            href="#"
                             class="botaoFavoritoCards"
                             aria-label="Adicionar aos favoritos"
                             role="button">
@@ -414,7 +438,7 @@
                         <img
                             src="../imagens/imagem_brinquedo_vacaPeruana.png"
                             class="imagensCards"
-                            alt="Brinquedo de Pelúcia de uma Vaca Peruana" />
+                            alt="Brinquedo de Pelúcia de uma Vaca Peruana para Gatos" />
                         <h3>Pelúcia - Vaca Peruana</h3>
                         <p aria-label="Avaliação: 4 de 5 estrelas">
                             ★★★★☆ <span>(24)</span>
@@ -422,8 +446,8 @@
                         <p>
                             <strong>R$ 32,21</strong>
                         </p>
-                        <a href="carrinho.html" class="botaoCarrinho">ADICIONAR
-                            AO CARRINHO</a>
+                        <a href="carrinho.html"
+                            class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
                     </li>
 
                     <li class="cardProduto">
@@ -439,7 +463,7 @@
                         <img
                             src="../imagens/imagem_caixa_papelao2.png"
                             class="imagensCards"
-                            alt="Caixa de Papelão Labirinto em formato de CuboArranhador em Formato de Cacto" />
+                            alt="Caixa de Papelão Labirinto em formato de Cubo para Gatos" />
                         <h3>Toca Labirinto Cubo - 1 Cubo</h3>
                         <p aria-label="Avaliação: 4 de 5 estrelas">
                             ★★★★☆ <span>(29)</span>
@@ -453,7 +477,7 @@
 
                     <li class="cardProduto">
                         <a
-                            href="login.html"
+                            href="#"
                             class="botaoFavoritoCards"
                             aria-label="Adicionar aos favoritos"
                             role="button">
@@ -464,7 +488,7 @@
                         <img
                             src="../imagens/imagem_brinquedo_giracat.png"
                             class="imagensCards"
-                            alt="Brinquedo Giratório Jambo na Cor Azul" />
+                            alt="Brinquedo Giratório Jambo na Cor Azul para Gatos" />
                         <h3>Brinquedo Giratório Jambo - Azul</h3>
                         <p aria-label="Avaliação: 5 de 5 estrelas">
                             ★★★★★ <span>(109)</span>
@@ -472,13 +496,13 @@
                         <p>
                             <strong>R$ 83,90</strong>
                         </p>
-                        <a href="carrinho.html" class="botaoCarrinho">ADICIONAR
-                            AO CARRINHO</a>
+                        <a href="carrinho.html"
+                            class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
                     </li>
 
                     <li class="cardProduto">
                         <a
-                            href="login.html"
+                            href="#"
                             class="botaoFavoritoCards"
                             aria-label="Adicionar aos favoritos"
                             role="button">
@@ -489,7 +513,7 @@
                         <img
                             src="../imagens/imagem_brinquedo_ratoRoxo.png"
                             class="imagensCards"
-                            alt="Rato de Crochê nas Cores Roxo e Branco" />
+                            alt="Rato de Crochê nas Cores Roxo e Branco para Gatos" />
                         <h3>Rato de Crochê - Roxo e Branco</h3>
                         <p aria-label="Avaliação: 5 de 5 estrelas">
                             ★★★★★ <span>(126)</span>
@@ -497,15 +521,16 @@
                         <p>
                             <strong>R$ 44,99</strong>
                         </p>
-                        <a href="carrinho.html" class="botaoCarrinho">ADICIONAR
-                            AO CARRINHO</a>
+                        <a href="carrinho.html"
+                            class="botaoCarrinho">ADICIONAR AO CARRINHO</a>
                     </li>
-
                 </ul>
             </article>
 
-            <section id="vantagens">
-                <ul id="listaVantagens">
+            <!-- Vantagens/Informações para Clientes -->
+            <section class="vantagensInformacoes"
+                aria-label="Vantagens/Informações para o Cliente que Consume Nossos Produtos">
+                <ul class="listaVantagens">
                     <li>
                         <img
                             src="../imagens/icone_gato.png"
@@ -551,13 +576,15 @@
             </section>
         </main>
 
-        <footer id="rodape">
+        <!-- Rodapé do Site -->
+        <footer class="rodape">
             <img
                 src="../imagens/imagem_logo.png"
-                alt="Logo Miaunarquia"
+                alt="Logo do Site (Desenho de rosto de um gato preto com uma coroa)"
                 class="logo" />
 
-            <nav id="informacoes" aria-label="Informações da Plataforma">
+            <nav class="informacoesRodape"
+                aria-label="Informações da Plataforma">
                 <h2>Informações</h2>
                 <ul>
                     <li><a href="sobreNos.html">Sobre Nós</a></li>
@@ -565,50 +592,52 @@
                             Condições de Uso</a></li>
                     <li><a href="sobreNos.html#politicasPrivacidade">Política de
                             Privacidade</a></li>
-                    <li><a href="   ">FAQ</a></li>
+                    <li><a href="sobreNos.html#secaoFaq">FAQ</a></li>
                 </ul>
             </nav>
 
-            <address id="contato">
+            <address class="contatoRodape" aria-label="Nossos Meios de Contato">
                 <h2>Contato</h2>
                 <p>
                     <a
                         href="mailto:contato@miauanarquia.com.br">contato@miauanarquia.com.br</a>
+                    <!-- mailto = Identificar como e-mail -->
                 </p>
             </address>
 
-            <nav id="redes" aria-label="Nos Siga">
+            <nav class="redesRodape" aria-label="Nossas Redes Sociais">
                 <h2>Nos siga</h2>
-                <ul id="listaRedesSociais">
+                <ul class="listaRedesSociaisRodape">
                     <li>
                         <a href="#"><img
                                 src="../imagens/icone_facebook.png"
-                                class="iconesRedesSociais"
+                                class="iconesRedesSociaisRodape"
                                 alt="Ícone do Facebook" />
                         </a>
                     </li>
                     <li>
                         <a href="#"><img
                                 src="../imagens/icone_instagram.png"
-                                class="iconesRedesSociais"
+                                class="iconesRedesSociaisRodape"
                                 alt="Ícone do Instagram" /></a>
                     </li>
                     <li>
                         <a href="#"><img
                                 src="../imagens/icone_linkedin.png"
-                                class="iconesRedesSociais"
+                                class="iconesRedesSociaisRodape"
                                 alt="Ícone do LinkedIn" /></a>
                     </li>
                     <li>
                         <a href="#"><img
                                 src="../imagens/icone_discord.png"
-                                class="iconesRedesSociais"
+                                class="iconesRedesSociaisRodape"
                                 alt="Ícone do Discord" /></a>
                     </li>
                 </ul>
             </nav>
 
-            <section id="pagamentos">
+            <section class="pagamentosRodape"
+                aria-label="Nossos Meios de Pagamentos">
                 <h2>Formas de pagamento:</h2>
                 <ul>
                     <li>
@@ -647,14 +676,18 @@
                             alt="Ícone do Pix" />
                     </li>
                 </ul>
-                <p class="seguro">
+
+                <p class="seguroRodape"
+                    aria-label="Informação que nossos meios de pagamentos são 100% seguros">
                     <img
                         src="../imagens/icone_seguranca_footer.png"
                         alt="Ícone que simboliza Segurança" />
                     PAGAMENTO 100% SEGURO
                 </p>
-                <ul id="copyright">
-                    <li id="copyrightTexto">
+
+                <ul class="copyrightRodape"
+                    aria-label="CopyRight da Plataforma">
+                    <li class="copyrightTextoRodape">
                         &copy; 2025 Miaunarquia. Todos os direitos reservados.
                     </li>
                 </ul>
