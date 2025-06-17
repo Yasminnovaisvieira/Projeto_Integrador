@@ -45,7 +45,7 @@ body {
 .avisoCarrossel {
     font-family: "Outfit", sans-serif;
     background-color: #0e0129;
-    color: #fff;
+    color: #ffffff;
     height: 40px;
     display: flex;
     align-items: center;
@@ -156,7 +156,7 @@ body {
     align-items: center;
     gap: 0.5rem;
     text-decoration: none;
-    color: #222;
+    color: #222222;
 }
 
 .logoImagem {
@@ -168,7 +168,7 @@ body {
     font-size: 2.5rem;
     /*18 X 1.5 (Ficar maior que a fonte normal)*/
     font-weight: bold;
-    color: #222;
+    color: #222222;
     text-decoration: none;
 }
 
@@ -183,7 +183,7 @@ body {
 
 .navMenu a {
     text-decoration: none;
-    color: #222;
+    color: #222222;
     font-weight: 500;
     transition: color 0.3s;
     display: inline-block;
@@ -195,7 +195,7 @@ body {
 }
 
 .navUsuario li a {
-    color: #222;
+    color: #222222;
     font-size: 1.1rem;
     display: flex;
     flex-direction: column;
@@ -243,7 +243,7 @@ body {
 .rodape {
     background-color: #bbadff;
     font-family: "Outfit", sans-serif;
-    color: #333;
+    color: #333333;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
     gap: 3rem;
@@ -261,7 +261,7 @@ body {
 .rodape h2 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
-    color: #222;
+    color: #222222;
 }
 
 .rodape ul {
@@ -276,7 +276,7 @@ body {
 
 .rodape a {
     text-decoration: none;
-    color: #333;
+    color: #333333;
 }
 
 .rodape a:hover {
@@ -328,7 +328,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 0.3rem;
-    color: #333;
+    color: #333333;
     font-weight: bold;
 }
 
@@ -446,7 +446,7 @@ body {
 .bolinha {
     width: 12px;
     height: 12px;
-    background-color: #222;
+    background-color: #222222;
     border-radius: 50%;
     display: inline-block;
     animation: bolinhaAtiva 15s infinite;
@@ -482,7 +482,7 @@ body {
     font-family: "Outfit", sans-serif;
     margin-top: 15px;
     margin-left: 30px;
-    color: #222;
+    color: #222222;
 }
 
 .listaCategorias {
@@ -504,7 +504,7 @@ body {
     flex-direction: column;
     align-items: center;
     text-decoration: none;
-    color: #222;
+    color: #222222;
     font-family: "Outfit", sans-serif;
     font-weight: 600;
     transition: transform 0.2s;
@@ -539,7 +539,7 @@ body {
     margin-top: -5px;
     margin-left: 30px;
     margin-bottom: 15px;
-    color: #222;
+    color: #222222;
 }
 
 .containerCarrosselLancamentos {
@@ -575,7 +575,7 @@ body {
     cursor: pointer;
 }
 
-.cardProduto:hover>.botaoCarrinho {
+.cardProduto:hover .botaoCarrinho {
     background-color: #6958c0;
 }
 
@@ -694,13 +694,13 @@ body {
 .retangulo {
     width: 25px;
     height: 4px;
-    background-color: #222;
+    background-color: #222222;
     border-radius: 20%;
     display: inline-block;
     animation: retanguloAtivo 15s infinite;
     width: 25px;
     height: 4px;
-    background-color: #222;
+    background-color: #222222;
     border-radius: 20%;
     display: inline-block;
     animation: retanguloAtivo 15s infinite;
@@ -730,7 +730,7 @@ body {
 
     33.34%,
     100% {
-        background-color: #222;
+        background-color: #222222;
     }
 
     0%,
@@ -740,7 +740,7 @@ body {
 
     33.34%,
     100% {
-        background-color: #222;
+        background-color: #222222;
     }
 }
 
@@ -760,7 +760,7 @@ body {
     margin-top: -5px;
     margin-left: 30px;
     margin-bottom: 15px;
-    color: #222;
+    color: #222222;
 }
 
 .containerCarrosselMaisVendidos {
@@ -821,7 +821,7 @@ body {
 .tituloFeedbacks {
     margin-bottom: 4.5rem;
     margin-left: 1.5rem;
-    color: #111;
+    color: #111111;
     text-align: left;
     font-weight: 700;
     font-size: 2rem;
@@ -858,7 +858,7 @@ body {
 .autorFeedback {
     font-weight: 600;
     font-style: normal;
-    color: #111;
+    color: #111111;
     margin-top: 0.5rem;
 }
 
@@ -970,7 +970,7 @@ body {
 .bolinhaFeedbacks {
     width: 12px;
     height: 12px;
-    background-color: #222;
+    background-color: #222222;
     border-radius: 50%;
     animation: destaqueBolinhas 60s infinite;
 }
@@ -1051,7 +1051,7 @@ body {
 .containerReceberNovidades {
     max-width: 500px;
     text-align: justify;
-    color: #333;
+    color: #333333;
 }
 
 .descricaoReceberNovidades {
@@ -1073,7 +1073,7 @@ body {
     outline: none;
     transition: border-color 0.5s ease;
     background-color: #ffffff;
-    color: #333;
+    color: #333333;
 }
 
 .emailReceberNovidades:focus {
@@ -1123,8 +1123,8 @@ body {
 .listaVantagens li {
     flex: 1 1 150px;
     text-align: center;
-    color: #222;
-    border-left: 1px solid #333;
+    color: #222222;
+    border-left: 1px solid #333333;
     padding: 0 1rem;
 }
 
@@ -1154,7 +1154,7 @@ body {
 }
 
 .tituloProdutos {
-    color: #333;
+    color: #333333;
     margin-top: 25px;
     margin-bottom: 20px;
     text-align: center;
@@ -1175,6 +1175,11 @@ body {
 
 .ParagrafosSelecionadosCatalogo {
     color: #48398f;
+}
+
+.linkCardProduto {
+    text-decoration: none;
+    color: #000000;
 }
 
 .imagensCategoriasCatalogo {
@@ -1271,7 +1276,7 @@ body {
 .tituloLoginCadastro {
     font-size: 2rem;
     font-weight: bold;
-    color: #222;
+    color: #222222;
     margin-bottom: 2rem;
     text-align: center;
 }
@@ -1285,7 +1290,7 @@ body {
     display: block;
     font-size: 1.1rem;
     margin-bottom: 0.5rem;
-    color: #222;
+    color: #222222;
     font-weight: 600;
 }
 
@@ -1331,7 +1336,7 @@ body {
     text-align: center;
     margin-top: 1.5rem;
     font-size: 18px;
-    color: #222;
+    color: #222222;
     font-weight: 600;
 }
 
@@ -1349,7 +1354,7 @@ body {
     align-items: center;
     cursor: pointer;
     font-size: 0.95rem;
-    color: #222;
+    color: #222222;
     position: relative;
     padding-left: 30px;
     font-weight: 600;
@@ -1368,7 +1373,7 @@ body {
     transform: translateY(-50%);
     height: 24px;
     width: 24px;
-    background-color: #f1ecff;
+    background-color: #ffffff;
     border: 2px solid #3b2994;
     border-radius: 4px;
     transition: background-color 0.3s, border-color 0.3s;
@@ -1408,7 +1413,7 @@ body {
 
 .rotuloCadastro {
     font-weight: 600;
-    color: #222;
+    color: #222222;
     margin-bottom: 0.2rem;
 }
 
@@ -1461,7 +1466,7 @@ body {
 .btnCadastrar {
     margin-top: 1rem;
     background-color: #28177c;
-    color: white;
+    color: #ffffff;
     padding: 1rem;
     font-size: 1.2rem;
     font-weight: 500;
@@ -1481,7 +1486,7 @@ body {
     text-align: center;
     margin-top: 1.5rem;
     font-weight: 600;
-    color: #222;
+    color: #222222;
 }
 
 .linkLogin a {
@@ -1527,7 +1532,7 @@ body {
 }
 
 .btnApple {
-    background-color: #1a1a1a;
+    background-color: #111111;
     color: #ffffff;
 }
 
@@ -1565,14 +1570,14 @@ body {
 }
 
 #tituloSobreNos {
-    color: #333;
+    color: #333333;
     margin-top: -15px;
     text-align: center;
     font-size: 35px;
 }
 
 #tituloFaq {
-    color: #333;
+    color: #333333;
     margin-top: -45px;
     margin-bottom: 45px;
     text-align: center;
@@ -1613,8 +1618,8 @@ body {
 
 #textoSobreNos {
     font-size: 1.2rem;
-    color: #222;
-    background-color: #f9fafb;
+    color: #222222;
+    background-color: #ffffff;
     padding: 1.5rem;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -1630,7 +1635,7 @@ body {
 .blocosMvv {
     flex: 1 1 320px;
     max-width: 360px;
-    background-color: #f9fafb;
+    background-color: #ffffff;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.07);
@@ -1667,7 +1672,7 @@ body {
 }
 
 #tituloFaq {
-    color: #333;
+    color: #333333;
     margin-bottom: 40px;
     margin-top: -35px;
     text-align: center;
@@ -1685,7 +1690,7 @@ body {
 }
 
 .detailsFaq [open] {
-    background-color: #f0ebff;
+    background-color: #ffffff;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
 }
 
@@ -1715,7 +1720,7 @@ body {
 
 .textoFaq {
     font-size: 1.1rem;
-    color: #333;
+    color: #333333;
     line-height: 1.6;
     margin-top: 0.5rem;
     text-align: justify;
@@ -1728,7 +1733,7 @@ body {
     border-radius: 0.75rem;
     box-shadow: 0 4px 12px rgb(0 0 0 / 0.05);
     padding: 3rem 3rem;
-    color: #222;
+    color: #222222;
     font-size: 18px;
     line-height: 1.6;
     font-weight: 400;
@@ -1768,7 +1773,7 @@ body {
 }
 
 #tituloCarrinho {
-    color: #333;
+    color: #333333;
     margin-top: -15px;
     margin-bottom: -5px;
     text-align: center;
@@ -1785,7 +1790,7 @@ body {
 .itemCarrinho {
     display: flex;
     align-items: center;
-    background: #f9fafb;
+    background: #ffffff;
     border-radius: 0.75rem;
     padding: 1.25rem;
     box-shadow: 0 6px 20px rgb(125 81 176 / 0.1);
@@ -1812,7 +1817,7 @@ body {
 .nomeProduto {
     font-weight: 600;
     font-size: 1.25rem;
-    color: #222;
+    color: #222222;
 }
 
 .QuantidadeERemover {
@@ -1831,7 +1836,7 @@ body {
 .labelQuantidade {
     font-size: 1.1rem;
     font-weight: 500;
-    color: #333;
+    color: #333333;
 }
 
 .quantidadeProduto {
@@ -1840,7 +1845,7 @@ body {
     border-radius: 0.75rem;
     text-align: center;
     font-size: 1rem;
-    color: #333;
+    color: #333333;
     padding: 0.4rem 0;
     font-family: "Outfit", sans-serif;
     font-weight: 500;
@@ -1853,7 +1858,7 @@ body {
 
 .botaoRemover {
     background-color: #ad1510;
-    color: #ffff;
+    color: #ffffff;
     border: none;
     padding: 0.5rem 0.8rem;
     font-size: 1rem;
@@ -1878,7 +1883,7 @@ body {
 }
 
 #resumoCarrinho {
-    background: #f9fafb;
+    background: #ffffff;
     border-radius: 0.75rem;
     padding: 2rem 2.5rem;
     box-shadow: 0 6px 20px rgb(125 81 176 / 0.1);
@@ -1891,7 +1896,7 @@ body {
 #tituloResumoCarrinho {
     font-size: 1.75rem;
     font-weight: 700;
-    color: #333;
+    color: #333333;
     border-bottom: 2px solid #6958c0;
     padding-bottom: 0.5rem;
 }
@@ -1901,7 +1906,7 @@ body {
     grid-template-columns: 1fr auto;
     gap: 1rem 1.5rem;
     font-size: 1.1rem;
-    color: #444;
+    color: #444444;
     font-weight: 600;
 }
 
@@ -1913,7 +1918,7 @@ body {
 }
 
 #labelDescontoCarrinho {
-    color: #333;
+    color: #333333;
     font-weight: 600;
     margin-bottom: -24px;
 }
@@ -1924,7 +1929,7 @@ body {
     padding: 0.9rem;
     font-size: 1rem;
     border-radius: 0.8rem;
-    color: #222;
+    color: #222222;
     outline: none;
     transition: border-color 0.5s ease;
     border: 2px solid #6958c0;
@@ -1975,7 +1980,7 @@ body {
     flex-direction: column;
     gap: 2.5rem;
     margin: 0 auto;
-    background-color: #f9fafb;
+    background-color: #ffffff;
     padding: 35px;
     margin-top: 40px;
     margin-bottom: 40px;
@@ -1983,7 +1988,7 @@ body {
 }
 
 #tituloContato {
-    color: #333;
+    color: #333333;
     margin-top: -15px;
     margin-bottom: -5px;
     text-align: center;
@@ -1992,7 +1997,7 @@ body {
 
 #descricaoContato {
     font-size: 18px;
-    color: #444;
+    color: #444444;
     text-align: center;
     max-width: 820px;
     margin: 0 auto;
@@ -2000,7 +2005,7 @@ body {
 
 #SugestaoContatarEmail {
     font-size: 18px;
-    color: #444;
+    color: #444444;
     text-align: center;
     max-width: 520px;
     margin: 0 auto;
@@ -2009,7 +2014,7 @@ body {
 
 #contatoFormulario {
     font-size: 18px;
-    color: #444;
+    color: #444444;
     text-align: center;
     max-width: 520px;
     margin: 0 auto;
@@ -2039,7 +2044,7 @@ body {
 
 .labelContato {
     font-size: 18px;
-    color: #444;
+    color: #444444;
 }
 
 #mensagemContato {
@@ -2073,7 +2078,7 @@ body {
     padding: 0.9rem;
     font-size: 1rem;
     border-radius: 0.8rem;
-    color: #222;
+    color: #222222;
     outline: none;
     transition: border-color 0.5s ease;
     border: 2px solid #6958c0;
@@ -2119,7 +2124,7 @@ body {
 
 #tituloFinalizandoCompra,
 #tituloRevisarCompra {
-    color: #333;
+    color: #333333;
     margin-bottom: 25px;
     text-align: center;
     font-size: 35px;
@@ -2138,7 +2143,7 @@ fieldset {
 
 .legendsFinalizandoCompra {
     font-weight: 600;
-    color: #333;
+    color: #333333;
     font-size: 1.6rem;
     margin-bottom: 0.5rem;
 }
@@ -2146,7 +2151,7 @@ fieldset {
 .labelFinalizandoCompra {
     display: block;
     font-weight: 600;
-    color: #333;
+    color: #333333;
     font-size: 1.1rem;
     margin-bottom: 0.5rem;
     margin-top: 1rem;
@@ -2161,7 +2166,7 @@ fieldset {
 #textoMetodoPagamento {
     display: block;
     font-weight: 600;
-    color: #333;
+    color: #333333;
     font-size: 1.1rem;
 }
 
@@ -2171,11 +2176,11 @@ fieldset {
     gap: 0.5rem;
     cursor: pointer;
     font-weight: 500;
-    color: #333;
+    color: #333333;
 }
 
 .opcaoRadio input[type="radio"] {
-    accent-color: #222;
+    accent-color: #222222;
     cursor: pointer;
     width: 1.2rem;
     height: 1.2rem;
@@ -2222,7 +2227,7 @@ fieldset {
     padding: 0.9rem;
     font-size: 1rem;
     border-radius: 0.8rem;
-    color: #222;
+    color: #222222;
     outline: none;
     transition: border-color 0.5s ease;
     border: 2px solid #6958c0;
@@ -2274,7 +2279,7 @@ fieldset {
 
 .sectionsRevisar {
     margin-top: 3rem;
-    background-color: #f9fafb;
+    background-color: #ffffff;
     padding: 1rem 1rem;
     border-radius: 12px;
 }
@@ -2308,13 +2313,13 @@ fieldset {
     flex: 2;
     margin-left: 10px;
     margin-top: 3px;
-    color: #111;
+    color: #111111;
 }
 
 .quantidadePedidoRevisar {
     flex: 1;
     text-align: center;
-    color: #444;
+    color: #444444;
     font-weight: normal;
 }
 
@@ -2338,7 +2343,7 @@ fieldset {
 
 .ddRevisar {
     margin: 0;
-    color: #666;
+    color: #666666;
 }
 
 #secaoPagamento {
@@ -2380,7 +2385,7 @@ fieldset {
 
 .liDadosPagamentoRevisar {
     font-size: 18px;
-    color: #666;
+    color: #666666;
     list-style: none;
 }
 
@@ -2406,14 +2411,14 @@ fieldset {
     justify-content: space-between;
     font-size: 1.3rem;
     margin: 0.5rem 0;
-    color: #555;
+    color: #555555;
     font-weight: 500;
 }
 
 .infoResumoRevisar:last-child {
     font-size: 1.5rem;
     font-weight: 650;
-    color: #333;
+    color: #333333;
     border-top: 1px solid #d8d0ff;
     padding-top: 0.75rem;
     margin-top: 1rem;
@@ -2521,7 +2526,7 @@ fieldset {
 #tituloDadosCartaoCredito {
     font-weight: 700;
     font-size: 2.7rem;
-    color: #333;
+    color: #333333;
     margin-bottom: 2rem;
     text-align: center;
 }
@@ -2548,7 +2553,7 @@ fieldset {
     padding: 0.9rem;
     font-size: 1rem;
     border-radius: 0.8rem;
-    color: #222;
+    color: #222222;
     outline: none;
     transition: border-color 0.5s ease;
     border: 2px solid #6958c0;
@@ -2631,7 +2636,7 @@ fieldset {
     padding: 0.9rem;
     font-size: 1rem;
     border-radius: 0.8rem;
-    color: #222;
+    color: #222222;
     outline: none;
     transition: border-color 0.5s ease;
     border: 2px solid #6958c0;
@@ -2720,20 +2725,20 @@ fieldset {
     font-size: 3.35rem;
     font-weight: bold;
     margin-bottom: 2.5rem;
-    color: #222;
+    color: #222222;
 }
 
 .codigoProduto {
     margin: 1rem 0;
     font-size: 1.4rem;
-    color: #333;
+    color: #333333;
 }
 
 .corProduto,
-tamanhoProduto {
+.tamanhoProduto {
     font-size: 1.2rem;
     margin-top: 1rem;
-    color: #333;
+    color: #333333;
 }
 
 .circulo {
@@ -2756,7 +2761,7 @@ tamanhoProduto {
 }
 
 .branco {
-    background: #fff;
+    background: #ffffff;
 }
 
 .cinza {
@@ -2782,7 +2787,7 @@ tamanhoProduto {
 .precoParcelar {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #555;
+    color: #555555;
     margin-bottom: 1rem;
 }
 
@@ -2838,7 +2843,7 @@ tamanhoProduto {
 .detailsProduto {
     padding-top: 1rem;
     margin-top: 1rem;
-    color: #333;
+    color: #333333;
 }
 
 .summaryProduto {
@@ -2851,7 +2856,7 @@ tamanhoProduto {
     content: '+';
     position: absolute;
     right: 0;
-    color: #333;
+    color: #333333;
 }
 
 .detailsProduto[open] .summaryProduto::after {
@@ -2915,7 +2920,7 @@ tamanhoProduto {
     font-size: 1.2rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
-    color: #333;
+    color: #333333;
 }
 
 .QuantidadeProdutoEspecifico input[type="number"] {
@@ -2926,7 +2931,7 @@ tamanhoProduto {
     background-color: #ffffff;
     border: 2px solid #6958c0;
     border-radius: 0.8rem;
-    color: #222;
+    color: #222222;
     outline: none;
     text-align: center;
     transition: border-color 0.5s ease;
@@ -2962,7 +2967,7 @@ tamanhoProduto {
 .bodysAdministrador td {
     font-weight: 600;
     font-size: 1rem;
-    color: #333;
+    color: #333333;
 }
 
 .divisaoAdministrador {
@@ -2981,7 +2986,7 @@ tamanhoProduto {
 .menuLateralAdministrador {
     width: 280px;
     background: linear-gradient(180deg, #bbadff, #9383e0);
-    color: #222;
+    color: #222222;
     display: flex;
     flex-direction: column;
     padding: 2rem 2rem;
@@ -2997,13 +3002,13 @@ tamanhoProduto {
     letter-spacing: 3px;
     margin-bottom: 1rem;
     text-transform: uppercase;
-    color: #222;
+    color: #222222;
     border-bottom: 2px solid #4e3b8d;
     padding-bottom: 1rem;
 }
 
 .opcoesMenuLateralAdm {
-    color: #333;
+    color: #333333;
     margin-top: 5px;
 }
 
@@ -3031,7 +3036,7 @@ tamanhoProduto {
 
 .linksNavegacaoAdministrador a:hover,
 .linksNavegacaoAdministrador a.active {
-    background-color: #6958c028;
+    background-color: #bbadff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
@@ -3077,7 +3082,7 @@ tamanhoProduto {
     background: linear-gradient(180deg, #9383e0, #6958c0);
     border-radius: 16px;
     box-shadow: 0 6px 12px rgba(101, 67, 33, 0.2);
-    color: #f9fafb;
+    color: #ffffff;
     padding: 2rem 2rem;
     display: flex;
     flex-direction: column;
@@ -3110,7 +3115,7 @@ tamanhoProduto {
     border-radius: 12px;
     padding: 0.5em 1.2em;
     background-image: linear-gradient(135deg, #6958c0, #4e3b8d);
-    color: #f9fafb;
+    color: #ffffff;
     box-shadow: 0 6px 12px rgba(101, 67, 33, 0.2);
     transition: background-image 0.3s ease, box-shadow 0.3s ease;
     text-decoration: none;
@@ -3137,7 +3142,7 @@ tamanhoProduto {
     border-radius: 8px;
     border: 2px solid #6958c0;
     color: #4b3621;
-    background-color: #fff7f2;
+    background-color: #ffffff;
     transition: border-color 0.3s ease;
     width: 100%;
     max-width: 300px;
@@ -3172,7 +3177,7 @@ tamanhoProduto {
 }
 
 .fundoElementosTabelaAdm {
-    background: #fff7f0;
+    background: #ffffff;
     box-shadow: 0 4px 8px rgba(101, 67, 33, 0.1);
     transition: background-color 0.3s ease;
 }
@@ -3188,7 +3193,7 @@ tamanhoProduto {
 
 .botaoTabela {
     background-image: linear-gradient(105deg, #9383e0, #6958c0);
-    color: #f7f3f0;
+    color: #ffffff;
     font-weight: 600;
     padding: 0.7em 1.2em;
     border-radius: 8px;
@@ -3222,7 +3227,7 @@ tamanhoProduto {
     border-radius: 12px;
     padding: 0.4em 1.2em;
     background-image: linear-gradient(135deg, #6958c0, #4e3b8d);
-    color: #f9fafb;
+    color: #ffffff;
     box-shadow: 0 6px 12px rgba(101, 67, 33, 0.2);
     transition: background-image 0.3s ease, box-shadow 0.3s ease;
     margin-top: 20px;
@@ -3242,7 +3247,7 @@ tamanhoProduto {
     border-radius: 12px;
     padding: 0.4em 1.2em;
     background-image: linear-gradient(135deg, #6958c0, #4e3b8d);
-    color: #f9fafb;
+    color: #ffffff;
     box-shadow: 0 6px 12px rgba(101, 67, 33, 0.2);
     transition: background-image 0.3s ease, box-shadow 0.3s ease;
     margin-top: 20px;
@@ -3259,7 +3264,7 @@ tamanhoProduto {
 }
 
 .statusPedidoAdm.pendente {
-    background-color: #444;
+    background-color: #444444;
     padding: 0.5rem;
 }
 
@@ -3305,7 +3310,7 @@ tamanhoProduto {
 
 .botaoTabelaExcluir {
     background-image: linear-gradient(105deg, #c53530, #8a0500);
-    color: #f7f3f0;
+    color: #ffffff;
     font-weight: 600;
     padding: 0.7em 1.2em;
     border-radius: 8px;
@@ -3331,8 +3336,8 @@ tamanhoProduto {
     width: 110px;
     text-align: center;
     font-size: 1rem;
-    color: #fff;
-    background-color: #222;
+    color: #ffffff;
+    background-color: #222222;
     padding: 0.5rem;
 }
 
@@ -3350,7 +3355,7 @@ tamanhoProduto {
     border-radius: 12px;
     padding: 0.4em 1.2em;
     background-image: linear-gradient(135deg, #6958c0, #4e3b8d);
-    color: #f9fafb;
+    color: #ffffff;
     box-shadow: 0 6px 12px rgba(101, 67, 33, 0.2);
     transition: background-image 0.3s ease, box-shadow 0.3s ease;
     margin-top: 20px;
@@ -3418,7 +3423,7 @@ tamanhoProduto {
     background-color: #ffffff;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
     font-weight: 500;
-    color: #333;
+    color: #333333;
 }
 
 .inputsDesabilitados {
@@ -3447,7 +3452,7 @@ label[for="imagensProduto"] {
     border-radius: 12px;
     color: #3f3275;
     text-align: center;
-    background-color: #f9f7ff;
+    background-color: #ffffff;
     transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
@@ -3466,7 +3471,7 @@ label[for="imagensProduto"]:focus {
 }
 
 .textosFormulariosAdm {
-    color: #333;
+    color: #333333;
     font-weight: 600;
     margin-top: 10px;
 }
@@ -3502,7 +3507,7 @@ label[for="imagensProduto"]:focus {
     padding: 0.9em 1.6em;
     border: none;
     border-radius: 16px;
-    color: #f9fafb;
+    color: #ffffff;
     cursor: pointer;
     box-shadow: 0 8px 25px rgba(101, 67, 33, 0.3);
     align-self: center;
@@ -3544,16 +3549,16 @@ label[for="imagensProduto"]:focus {
     grid-template-columns: auto 1fr;
     gap: 0.7rem 4rem;
     font-size: 1.1rem;
-    color: #222;
+    color: #222222;
 }
 
 .ddListasFormulariosAdm {
-    color: #333;
+    color: #333333;
     font-weight: 500;
 }
 
 .dtListasFormulariosAdm {
-    color: #222;
+    color: #222222;
     font-weight: 700;
 }
 
@@ -3570,7 +3575,7 @@ label[for="imagensProduto"]:focus {
     padding: 0.8em 1.2em;
     font-size: 1.2rem;
     border-radius: 12px;
-    color: #222;
+    color: #222222;
     text-align: center;
     transition: background-color 0.3s ease, border-color 0.3s ease;
     font-weight: 600;
@@ -3581,8 +3586,8 @@ label[for="imagensProduto"]:focus {
     border-collapse: separate;
     border-spacing: 0;
     font-size: 1rem;
-    color: #222;
-    background-color: #faf7ff;
+    color: #222222;
+    background-color: #ffffff;
     border-radius: 16px;
     overflow: hidden;
     box-shadow: 0 6px 18px rgba(166, 123, 255, 0.15);
@@ -3594,13 +3599,13 @@ label[for="imagensProduto"]:focus {
     padding: 0.75rem 1rem;
     font-weight: 600;
     font-size: 1.1rem;
-    color: #4b2c6f;
+    color: #48398f;
     text-align: center;
 }
 
 .trsTabelasFormulariosAdm {
     background-image: linear-gradient(135deg, #6958c0, #4e3b8d);
-    color: #f3f0ff;
+    color: #ffffff;
     font-weight: 700;
     text-align: left;
     user-select: none;
@@ -3617,9 +3622,9 @@ label[for="imagensProduto"]:focus {
 }
 
 .linhasTabelasFormulariosAdm {
-    background-color: #f3f0ff;
+    background-color: #ffffff;
     transition: background-color 0.3s ease;
-    color: #4b2c6f;
+    color: #48398f;
     font-weight: 600;
 }
 
@@ -3631,14 +3636,14 @@ label[for="imagensProduto"]:focus {
     padding: 1rem 1.2rem;
     vertical-align: middle;
     font-weight: 600;
-    color: #4b2c6f;
+    color: #48398f;
     user-select: text;
     user-select: none;
 }
 
 .footerTabelasFormulariosAdm {
     background-image: linear-gradient(135deg, #6958c0, #4e3b8d);
-    color: #f3f0ff;
+    color: #ffffff;
     font-weight: 700;
     font-size: 1rem;
 }
@@ -3663,7 +3668,7 @@ label[for="imagensProduto"]:focus {
     display: inline-block;
     padding: 0.75rem 1.5rem;
     background: linear-gradient(135deg, #6958c0, #4e3b8d);
-    color: #f3f0ff;
+    color: #ffffff;
     font-weight: 600;
     font-size: 1rem;
     text-decoration: none;
@@ -3718,7 +3723,7 @@ label[for="imagensProduto"]:focus {
     text-align: center;
     margin-top: 1.5rem;
     font-size: 18px;
-    color: #222;
+    color: #222222;
     font-weight: 600;
 }
 
