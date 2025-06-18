@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -35,7 +35,7 @@
 
         <!-- Header do site -->
         <header class="headerSite">
-            <h1 class="logoSite">
+            <p class="logoSite">
                 <a href="index.html" aria-label="Página inicial - Miaunarquia">
                     <img
                         src="../imagens/imagem_logo.png"
@@ -43,7 +43,7 @@
                         class="logoImagem" />
                     <span class="nomeLogo">Miaunarquia</span>
                 </a>
-            </h1>
+            </p>
 
             <nav class="navMenu" aria-label="Menu Principal">
                 <!-- arial-label = Rotular elemento para descreve-lo e deixa-lo mais acessível -->
@@ -79,8 +79,7 @@
                             <figure class="iconesNav">
                                 <img
                                     src="../imagens/icone_favoritos.png"
-                                    alt="Ícone de Coração"
-                                    aria-hidden="true" />
+                                    alt="Ícone de Coração" />
                                 <figcaption class="legendasIcones">
                                     Favoritos
                                 </figcaption>
@@ -128,7 +127,6 @@
 
         <!-- Produto e suas Informações -->
         <main class="mainProdutos">
-
             <figure class="imagensProduto">
                 <button aria-label="Imagem Anterior"
                     class="setas setaAnterior">‹</button>
@@ -143,26 +141,28 @@
                 <figcaption class="fotosPequenas">
                     <img
                         src="../imagens/imagem_arranhador_cacto.png"
-                        alt class="imagemSelecionada fotosProduto" />
+                        alt="Arranhador em Formato de Cacto para Gatos"
+                        class="imagemSelecionada fotosProduto" />
+
                     <img
                         src="../imagens/imagem_arranhador_cacto2.png"
-                        alt class="fotosProduto" />
+                        alt="" class="fotosProduto" />
                     <img
                         src="../imagens/imagem_arranhador_cacto3.png"
-                        alt class="fotosProduto" />
+                        alt="" class="fotosProduto" />
                     <img
                         src="../imagens/imagem_arranhador_cacto4.png"
-                        alt class="fotosProduto" />
+                        alt="" class="fotosProduto" />
                 </figcaption>
             </figure>
 
-            <!-- Informações do Produto -->
             <article class="produto">
-                <h2 class="nomeProdutoEspecifico">Arranhador - Formato de
-                    Cacto</h2>
+                <h1 class="nomeProdutoEspecifico">Arranhador - Formato de
+                    Cacto</h1>
 
                 <p class="codigoProduto"><strong>Código:</strong> DJFVC743D</p>
 
+                <!-- Quantidade de Produtos -->
                 <section class="QuantidadeProdutoEspecifico">
                     <div class="blocoQuantidadeProdutoEspecifico">
                         <p class="tituloQuantidadeProdutoEspecifico">Selecione a
@@ -175,33 +175,36 @@
                 <p class="precoProdutoEspecifico">R$ 43,90</p>
                 <p class="precoParcelar">2x sem juros de R$ 21,95</p>
 
-                <!-- Quantidade do Produto -->
+                <!-- Botões Carrinho e Favoritos -->
                 <section class="botoesCarrinhoFavoritos">
                     <a class="botaoAdicionarCarrinho" href="carrinho.html"
                         aria-label="Adicionar Produto ao Carrinho">ADICIONAR AO
                         CARRINHO</a>
                     <a class="botaoAdicionarFavoritos" href="#"
-                        aria-label="Adicionar Produto aos Favoritos"><img
-                            src="../imagens/icone_favoritos_branco.png" alt
-                            class="iconeFavoritosProduto"></a>
+                        aria-label="Adicionar Produto aos Favoritos">
+                        <img src="../imagens/icone_favoritos_branco.png" alt
+                            class="iconeFavoritosProduto" />
+                    </a>
                 </section>
 
                 <hr class="divisaoProdutoEspecifico" />
 
-                <!-- Botões de Adicionar ao Carrinho e Favoritos -->
+                <!-- Detalhes do Produto -->
                 <details class="detailsProduto">
                     <summary class="summaryProduto">DETALHES DO
                         PRODUTO</summary>
                     <p class="detalhesProduto">Arranhador para
                         gatos, em formato de cacto, que combina funcionalidade e
-                        design divertido. Tem uma base redonda e a sua parte superior está em
+                        design divertido. Tem uma base redonda e a sua parte
+                        superior está em
                         forma de braços de cacto são revestidas com um material
                         macio e felpudo em tons de verde oliva, ideal para o
                         descanso e para que o seu felino possa afiar as unhas. O
                         tronco central é envolto em sisal resistente de um verde
                         vibrante, proporcionando uma superfície perfeita para
                         arranhar e alongar. Um pequeno pompom pendurado adiciona
-                        um elemento interativo, convidando o gato à brincadeira.</p>
+                        um elemento interativo, convidando o gato à
+                        brincadeira.</p>
                 </details>
             </article>
         </main>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -83,8 +83,8 @@
             <!-- Método de Pagamento -->
             <section class="sectionsRevisar" id="secaoPagamento"
                 aria-label="Método de Pagamento Escolhido">
-                <h2 class="subtitulosRevisar"
-                    id="subtituloPagamentoRevisar">Método de Pagamento</h2>
+                <h3 class="subtitulosRevisar"
+                    id="subtituloPagamentoRevisar">Método de Pagamento</h3>
 
                 <figure id="colunaImagemPagamento">
                     <img src="../imagens/imagem_cartao.png"
@@ -110,10 +110,14 @@
             <!-- Resumo de Valores -->
             <section class="sectionsRevisar" id="sectionRevisarResumo"
                 aria-label="Resumo dos Valores descontados e Total">
-                <p class="infoResumoRevisar">Frete: Grátis</p>
-                <p class="infoResumoRevisar">Descontos/Cupons: R$ 15,00</p>
-                <p class="infoResumoRevisar" id="totalResumoRevisar">Total: R$
-                    520,54</p>
+                <dl>
+                    <dt>Frete:</dt>
+                    <dd>Grátis</dd>
+                    <dt>Descontos/Cupons:</dt>
+                    <dd>R$ 15,00</dd>
+                    <dt id="totalResumoRevisar">Total:</dt>
+                    <dd>R$ 520,54</dd>
+                </dl>
             </section>
 
             <!-- Botões para Cancelar e Finalizar Compra -->
