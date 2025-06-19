@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Catálogo | Miaunarquia</title>
         <link rel="stylesheet" href="../../css/style.css" />
     </head>
@@ -10,13 +10,13 @@
         <!-- Menu Lateral do Administrador -->
         <nav class="menuLateralAdministrador"
             aria-label="Menu principal do Painel Administrativo">
-            <h1 class="logoAdministrador"
+            <p class="logoAdministrador"
                 aria-label="Logo do painel administrativo">
                 <img
                     src="../../imagens/imagem_logo.png"
                     alt="Logo do Site (Desenho de rosto de um gato preto com uma coroa)"
                     class="logoImagemAdministrador" />
-                <span>Miaunarquia</span></h1>
+                <span>Miaunarquia</span></p>
 
             <ul class="linksNavegacaoAdministrador">
                 <li><a href="dashboard.html">
@@ -81,7 +81,7 @@
             <!-- Produtos do Site -->
             <section id="produtosAdministrador" aria-label="Lista de produtos">
                 <header class="cabecalhoPagina">
-                    <h2 class="titulosAdministrador">Gerenciar Produtos</h2>
+                    <h1 class="titulosAdministrador">Gerenciar Produtos</h1>
                     <nav class="actionsAdministrador">
                         <a href="adicionarProduto.html"
                             class="botoesSecoesDashboardAdm"
@@ -91,12 +91,49 @@
                     </nav>
                 </header>
 
+                <!-- Buscar Produtos -->
                 <form aria-label="Filtro de pesquisa de produtos">
                     <label class="labelsDashboardAdm"
-                        for="procurarProduto">Buscar produtos:</label>
+                        for="procurarProdutoAdm">Buscar produtos:</label>
                     <input type="text" id="procurarProdutoAdm"
                         name="procurarProduto"
                         placeholder="Nome ou código do produto" />
+                    <button class="botaoBuscaAdm">Buscar</button>
+                </form>
+
+                <!-- Filtrar Produtos por Categoria -->
+                <form class="formFiltrosAdm"
+                    aria-label="Filtro de pesquisa de produtos">
+                    <section class="grupoInput">
+                        <label for="filtroCategoria"
+                            class="labelsFiltroProdutos labelsDashboardAdm">Categoria:</label>
+                        <select id="filtroCategoria" name="filtroCategoria"
+                            class="filtroSelecao">
+                            <option value>Todas</option>
+                            <option value="arranhadores">Arranhadores</option>
+                            <option value="camas">Camas</option>
+                            <option value="higieneLimpeza">Higiene e
+                                Limpeza</option>
+                            <option value="roupas">Roupas</option>
+                            <option value="brinquedos">Brinquedos</option>
+                            <option value="comedourosBrinquedos">Comedouros e
+                                Bebedouros</option>
+                            <option value="petiscos">Petiscos</option>
+                        </select>
+                    </section>
+
+                    <!-- Filtrar Produtos por Status -->
+                    <section class="grupoInput">
+                        <label for="filtroStatus"
+                            class="labelsFiltroProdutos labelsDashboardAdm">Status:</label>
+                        <select id="filtroStatus" name="filtroStatus"
+                            class="filtroSelecao">
+                            <option value>Todos</option>
+                            <option value="ativo">Ativo</option>
+                            <option value="inativo">Inativo</option>
+                        </select>
+                    </section>
+                    <button class="botaoBuscaAdm">Filtrar</button>
                 </form>
 
                 <!-- Tabela de Produtos Adicionados no Sistema-->
@@ -105,18 +142,22 @@
                     <caption class="captionsDashboardAdm">Lista dos
                         produtos cadastrados no sistema</caption>
 
-                    <thead aria-label="Colunas da Tabela">
+                    <thead>
                         <tr>
-                            <th class="colunasProdutosAdm">ID</th>
-                            <th class="colunasProdutosAdm">Nome</th>
-                            <th class="colunasProdutosAdm">Preço</th>
-                            <th class="colunasProdutosAdm">Estoque</th>
-                            <th class="colunasProdutosAdm">Status</th>
-                            <th class="colunasProdutosAdm">Ações</th>
+                            <th class="colunasProdutosAdm" scope="col">ID</th>
+                            <th class="colunasProdutosAdm" scope="col">Nome</th>
+                            <th class="colunasProdutosAdm"
+                                scope="col">Preço</th>
+                            <th class="colunasProdutosAdm"
+                                scope="col">Estoque</th>
+                            <th class="colunasProdutosAdm"
+                                scope="col">Status</th>
+                            <th class="colunasProdutosAdm"
+                                scope="col">Ações</th>
                         </tr>
                     </thead>
 
-                    <tbody aria-label="Produtos e suas Informações">
+                    <tbody>
                         <tr class="fundoElementosTabelaAdm">
                             <td class="inforTabelasDashboardAdm">#1001</td>
                             <td class="inforTabelasDashboardAdm">Arranhador -

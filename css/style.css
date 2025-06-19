@@ -433,32 +433,39 @@ body {
 }
 
 .indicadoresCarrossel {
-    display: flex;
-    justify-content: center;
-    gap: 0.8rem;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
 }
 
+.indicadoresCarrossel ul {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+    padding: 0;
+    list-style: none;
+}
+
 .bolinha {
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: block;
     width: 12px;
     height: 12px;
     background-color: #222222;
     border-radius: 50%;
-    display: inline-block;
     animation: bolinhaAtiva 15s infinite;
 }
 
-.bolinha:nth-child(1) {
-    /* Quanto tempo as bolinhas ficarão 'animadas'*/
+.indicadoresCarrossel li:nth-child(1) .bolinha {
     animation-delay: 0s;
 }
 
-.bolinha:nth-child(2) {
+.indicadoresCarrossel li:nth-child(2) .bolinha {
     animation-delay: 5s;
 }
 
-.bolinha:nth-child(3) {
+.indicadoresCarrossel li:nth-child(3) .bolinha {
     animation-delay: 10s;
 }
 
@@ -689,26 +696,26 @@ body {
 }
 
 .retangulo {
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    background-color: #222222;
+    display: block;
     width: 25px;
     height: 4px;
-    background-color: #222222;
     border-radius: 20%;
-    display: inline-block;
     animation: retanguloAtivo 15s infinite;
 }
 
-.retangulo:nth-child(1) {
-    animation-delay: 0s;
+.indicadoresCarrossel li:nth-child(1) .retangulo {
     animation-delay: 0s;
 }
 
-.retangulo:nth-child(2) {
-    animation-delay: 5s;
+.indicadoresCarrossel li:nth-child(2) .retangulo {
     animation-delay: 5s;
 }
 
-.retangulo:nth-child(3) {
-    animation-delay: 10s;
+.indicadoresCarrossel li:nth-child(3) .retangulo {
     animation-delay: 10s;
 }
 
@@ -819,16 +826,16 @@ body {
     height: 180px;
 }
 
-.aspas {
-    font-size: 3rem;
-    color: #0e0129;
-    line-height: 1;
-    margin-bottom: 0.5rem;
-    margin-top: 0.5rem;
-    display: block;
+li.feedback blockquote {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.feedback p {
+li.feedback blockquote p:not(.aspas) {
     font-size: 1.2rem;
     color: #000000;
     padding: 0 1rem;
@@ -836,11 +843,24 @@ body {
     text-align: center;
 }
 
-.autorFeedback {
+li.feedback blockquote footer {
     font-weight: 600;
     font-style: normal;
     color: #111111;
     margin-top: 0.5rem;
+}
+
+li.feedback blockquote footer cite {
+    font-style: inherit;
+}
+
+.aspas {
+    font-size: 3rem;
+    color: #0e0129;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    display: block;
 }
 
 .feedback {
@@ -948,7 +968,20 @@ body {
     margin-top: 2rem;
 }
 
+.indicadoresFeedbacks ul {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
 .bolinhaFeedbacks {
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: block;
     width: 12px;
     height: 12px;
     background-color: #222222;
@@ -969,43 +1002,43 @@ body {
     }
 }
 
-.bolinhaFeedbacks:nth-child(1) {
+.indicadoresFeedbacks li:nth-child(1) .bolinhaFeedbacks {
     animation-delay: 0s;
 }
 
-.bolinhaFeedbacks:nth-child(2) {
+.indicadoresFeedbacks li:nth-child(2) .bolinhaFeedbacks {
     animation-delay: 6s;
 }
 
-.bolinhaFeedbacks:nth-child(3) {
+.indicadoresFeedbacks li:nth-child(3) .bolinhaFeedbacks {
     animation-delay: 12s;
 }
 
-.bolinhaFeedbacks:nth-child(4) {
+.indicadoresFeedbacks li:nth-child(4) .bolinhaFeedbacks {
     animation-delay: 18s;
 }
 
-.bolinhaFeedbacks:nth-child(5) {
+.indicadoresFeedbacks li:nth-child(5) .bolinhaFeedbacks {
     animation-delay: 24s;
 }
 
-.bolinhaFeedbacks:nth-child(6) {
+.indicadoresFeedbacks li:nth-child(6) .bolinhaFeedbacks {
     animation-delay: 30s;
 }
 
-.bolinhaFeedbacks:nth-child(7) {
+.indicadoresFeedbacks li:nth-child(7) .bolinhaFeedbacks {
     animation-delay: 36s;
 }
 
-.bolinhaFeedbacks:nth-child(8) {
+.indicadoresFeedbacks li:nth-child(8) .bolinhaFeedbacks {
     animation-delay: 42s;
 }
 
-.bolinhaFeedbacks:nth-child(9) {
+.indicadoresFeedbacks li:nth-child(9) .bolinhaFeedbacks {
     animation-delay: 48s;
 }
 
-.bolinhaFeedbacks:nth-child(10) {
+.indicadoresFeedbacks li:nth-child(10) .bolinhaFeedbacks {
     animation-delay: 54s;
 }
 
@@ -1051,7 +1084,6 @@ body {
     font-size: 1rem;
     border: 1px solid #ffffff;
     border-radius: 0.5rem 0 0 0.5rem !important;
-    outline: 2px solid #3b2994;
     transition: border-color 0.5s ease;
     background-color: #ffffff;
     color: #333333;
@@ -1060,6 +1092,7 @@ body {
 .emailReceberNovidades:focus {
     /*Ao label ser clicado*/
     border-color: #bbadff;
+    outline: 2px solid #48398f;
 }
 
 .botaoReceberNovidades {
@@ -1080,6 +1113,7 @@ body {
 .botaoReceberNovidades:hover {
     background-color: #6958c0;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    outline: 2px solid #48398f;
 }
 
 .vantagensInformacoes {
@@ -1904,7 +1938,7 @@ body {
     margin-bottom: -24px;
 }
 
-#inputDesconto {
+#codigoDesconto {
     font-family: "Outfit", sans-serif;
     width: 100%;
     padding: 0.9rem;
@@ -1916,7 +1950,7 @@ body {
     border: 2px solid #6958c0;
 }
 
-#inputDesconto:focus {
+#codigoDesconto:focus {
     border-color: #48398f;
 }
 
@@ -2060,13 +2094,13 @@ body {
     font-size: 1rem;
     border-radius: 0.8rem;
     color: #222222;
-    outline: 2px solid #3b2994;
     transition: border-color 0.5s ease;
     border: 2px solid #6958c0;
 }
 
 .inputsContato:focus {
     border-color: #48398f;
+    outline: 2px solid #48398f;
 }
 
 
@@ -2209,13 +2243,13 @@ fieldset {
     font-size: 1rem;
     border-radius: 0.8rem;
     color: #222222;
-    outline: 2px solid #3b2994;
     transition: border-color 0.5s ease;
     border: 2px solid #6958c0;
 }
 
 .inputsFinalizandoCompra:focus {
     border-color: #48398f;
+    outline: 2px solid #48398f;
 }
 
 
@@ -2566,7 +2600,6 @@ fieldset {
     font-size: 1rem;
     border-radius: 0.8rem;
     color: #222222;
-    outline: 2px solid #3b2994;
     transition: border-color 0.5s ease;
     border: 2px solid #6958c0;
 }
@@ -2574,6 +2607,7 @@ fieldset {
 #mainCartaoCredito input[type="password"]:focus,
 #mainCartaoCredito input[type="text"]:focus {
     border-color: #48398f;
+    outline: 2px solid #3b2994;
 }
 
 #legendCartaoCredito {
@@ -2642,20 +2676,20 @@ fieldset {
     display: block;
 }
 
-#inputNumCartao {
+#numeroCartao {
     font-family: "Outfit", sans-serif;
     width: 100%;
     padding: 0.9rem;
     font-size: 1rem;
     border-radius: 0.8rem;
     color: #222222;
-    outline: 2px solid #3b2994;
     transition: border-color 0.5s ease;
     border: 2px solid #6958c0;
 }
 
-#inputNumCartao:focus {
+#numeroCartao:focus {
     border-color: #48398f;
+    outline: 2px solid #3b2994;
 }
 
 
@@ -2944,7 +2978,6 @@ fieldset {
     border: 2px solid #6958c0;
     border-radius: 0.8rem;
     color: #222222;
-    outline: 2px solid #3b2994;
     text-align: center;
     transition: border-color 0.5s ease;
 }
@@ -3135,7 +3168,7 @@ fieldset {
 
 .botoesSecoesDashboardAdm:hover,
 .botoesSecoesDashboardAdm:focus {
-    outline: 2px solid #3b2994;
+    outline: 2px solid #3f3275;
     background-image: linear-gradient(180deg, #6958c0, #3f3275);
     box-shadow: 0 15px 25px rgba(101, 67, 33, 0.2);
 }
@@ -3145,6 +3178,56 @@ fieldset {
     margin-bottom: 0.4rem;
     font-weight: 600;
     color: #3b2994;
+    font-size: 1.2rem;
+}
+
+.feedAtividades {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.feedAtividades .titulosInforPainelAdm {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1rem;
+    color: #28177c;
+}
+
+.listaAtividades {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #222222;
+}
+
+.itemAtividade {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.itemAtividade:not(:last-child) {
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.iconeAtividade {
+    width: 24px;
+    height: 24px;
+    margin-top: 4px;
+}
+
+.descricaoAtividade p {
+    margin: 0 0 0.25rem 0;
+}
+
+.descricaoAtividade time {
+    font-size: 0.8rem;
+    color: #6c757d;
 }
 
 #procurarProdutoAdm {
@@ -3153,7 +3236,7 @@ fieldset {
     padding: 0.5em 0.8em;
     border-radius: 8px;
     border: 2px solid #6958c0;
-    color: #4b3621;
+    color: #222222;
     background-color: #ffffff;
     transition: border-color 0.3s ease;
     width: 100%;
@@ -3337,7 +3420,7 @@ fieldset {
 .botaoTabelaExcluir:hover,
 .botaoTabelaExcluir:focus {
     background-image: linear-gradient(105deg, #8a0500, #7a0501);
-    outline: 2px solid #3b2994;
+    outline: 2px solid #7a0501;
     cursor: pointer;
 }
 
@@ -3371,6 +3454,180 @@ fieldset {
     box-shadow: 0 6px 12px rgba(101, 67, 33, 0.2);
     transition: background-image 0.3s ease, box-shadow 0.3s ease;
     margin-top: 20px;
+}
+
+.campoBusca {
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.5em 0.8em;
+    border-radius: 8px;
+    border: 2px solid #6958c0;
+    color: #222222;
+    background-color: #ffffff;
+    transition: border-color 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+}
+
+.campoBusca:focus,
+.campoBusca:hover {
+    border-color: #4e3b8d;
+    outline: 2px solid #4e3b8d;
+}
+
+.botaoBuscaAdm {
+    padding: 0.5em 1.2em;
+    border: none;
+    border-radius: 8px;
+    background-image: linear-gradient(135deg, #6958c0, #4e3b8d);
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "Outfit", sans-serif;
+}
+
+.botaoBuscaAdm:hover,
+.botaoBuscaAdm:focus {
+    background-image: linear-gradient(180deg, #6958c0, #3f3275);
+}
+
+.adicionarAtualizarUsuarios {
+    gap: 20px;
+}
+
+#responderFeedbackLegend {
+    text-align: center;
+}
+
+#tituloAcoesAdministrativasFeedback {
+    text-align: center;
+    color: #48398f;
+}
+
+.formFiltrosAdm {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+
+}
+
+.grupoInput {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.campoBusca,
+.filtroSelecao {
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.5em 0.8em;
+    border-radius: 8px;
+    border: 2px solid #6958c0;
+}
+
+.grupoFiltrarAdm {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+    margin-top: 1.5rem;
+}
+
+.filtroSelecao {
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.5em 0.8em;
+    border-radius: 8px;
+    border: 2px solid #6958c0;
+    color: #222222;
+    background-color: #ffffff;
+    transition: border-color 0.3s ease;
+    width: 300px;
+}
+
+.filtroSelecao:focus {
+    border-color: #4e3b8d;
+    outline: none;
+}
+
+.labelsFiltroProdutos,
+.labelsFiltroFeedbacks {
+    margin-bottom: -3px;
+}
+
+#procurarPedidosAdm {
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.5em 0.8em;
+    border-radius: 8px;
+    border: 2px solid #6958c0;
+    color: #222222;
+    background-color: #ffffff;
+    transition: border-color 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+}
+
+#procurarPedidosAdm:focus {
+    border-color: #4e3b8d;
+    outline: 2px solid #3b2994;
+}
+
+#botaoFiltrarPedidosAdm {
+    margin-left: -20px;
+}
+
+.statusFeedbackAdm {
+    font-weight: 500;
+    padding-left: 20px;
+    border-radius: 12px;
+    width: 110px;
+    text-align: center;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.statusFeedbackAdm.novo {
+    background-color: #444444;
+    padding: 0.5rem;
+}
+
+.statusFeedbackAdm.lido {
+    background-color: #1a09b3;
+    padding: 0.5rem;
+}
+
+.statusFeedbackAdm.respondido {
+    background-color: #177c1c;
+    padding: 0.5rem;
+}
+
+#procurarFeedbackAdm {
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.5em 0.8em;
+    border-radius: 8px;
+    border: 2px solid #6958c0;
+    color: #222222;
+    background-color: #ffffff;
+    transition: border-color 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+}
+
+#procurarFeedbackAdm:focus {
+    border-color: #4e3b8d;
+    outline: 2px solid #3b2994;
+}
+
+#botaoFiltrarFeedbacksAdm {
+    margin-left: -20px;
 }
 
 /* FORMULÁRIOS */
@@ -3742,4 +3999,73 @@ label[for="imagensProduto"]:focus {
 
 .contatarSuporte a:hover {
     text-decoration: underline 1.5px;
+}
+
+.grupoRespostaPronta {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.grupoRespostaPronta select {
+    flex-grow: 1;
+}
+
+.botaoInserirResposta {
+    padding: 0.5em 1.2em;
+    border: none;
+    border-radius: 8px;
+    background-image: linear-gradient(135deg, #1a09b3, #0f0477);
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "Outfit", sans-serif;
+}
+
+.botaoInserirResposta:hover {
+    background-image: linear-gradient(180deg, #0f0477, rgb(35, 12, 128));
+}
+
+.blocoVariacao {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    background-color: #fafafa;
+}
+
+.tituloVariacao {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: #333;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 0.5rem;
+}
+
+.camposVariacao {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.campoIndividualVariacao {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    flex: 1;
+    min-width: 150px;
+}
+
+.campoIndividualVariacao .inputsFormulariosAdm {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#instrucoesTags {
+    margin-top: -10px;
+    margin-bottom: 15px;
+    color: #333333;
+    font-size: 1rem;
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,48 +10,42 @@
         <!-- Formulário para Editar Administrador -->
         <main class="mainFormulariosAdm"
             aria-label="Editar informações de um administrador">
-            <h1 class="titulosFormulariosAdm">Editar Administrador</h1>
-
             <form novalidate>
                 <fieldset>
+                    <legend>
+                        <h1 class="titulosFormulariosAdm">Editar
+                            Administrador</h1>
+                    </legend>
                     <label class="labelsFormulariosAdm"
                         for="nomeAdministrador">Nome Completo</label>
                     <input class="inputsFormulariosAdm" type="text"
-                        name="nomeAdministrador"
+                        name="nomeAdministrador" id="nomeAdministrador"
                         placeholder="Digite o nome completo"
                         value="Yasmin Vieira" />
-                </fieldset>
 
-                <fieldset>
                     <label class="labelsFormulariosAdm"
                         for="emailAdministrador">Email</label>
                     <input class="inputsFormulariosAdm" type="email"
-                        name="emailAdministrador"
+                        name="emailAdministrador" id="emailAdministrador"
                         placeholder="email@exemplo.com"
                         value="yasmin.miaunarquia@gmail.com" />
-                </fieldset>
 
-                <fieldset>
                     <label class="labelsFormulariosAdm"
                         for="numeroAdministrador">Telefone</label>
                     <input class="inputsFormulariosAdm" type="tel"
-                        name="numeroAdministrador"
+                        name="numeroAdministrador" id="numeroAdministrador"
                         placeholder="(xx) xxxxx-xxxx" value="(12) 34567-8912" />
-                </fieldset>
 
-                <fieldset>
                     <label class="labelsFormulariosAdm"
                         for="senhaAdministrador">Senha</label>
                     <input class="inputsFormulariosAdm" type="password"
-                        name="senhaAdministrador"
+                        name="senhaAdministrador" id="senhaAdministrador"
                         placeholder="Digite a nova senha" />
-                </fieldset>
 
-                <fieldset>
                     <label class="labelsFormulariosAdm"
                         for="funcaoAdministrador">Função</label>
                     <select class="inputsFormulariosAdm"
-                        name="funcaoAdministrador">
+                        name="funcaoAdministrador" id="funcaoAdministrador">
                         <option value disabled selected>Selecione a
                             função</option>
                         <option value="superadmin" selected>Super

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Finalizando Compra | Miaunarquia</title>
-        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/style.css" />
     </head>
     <body id="bodyFinalizandoCompra">
         <!-- Header do Login e Cadastro (Voltar para Tela Inicial) -->
@@ -22,7 +22,7 @@
             <img src="../imagens/imagem_logo.png"
                 alt="Logo do Site (Desenho de rosto de um gato preto com uma coroa)"
                 id="logoImagemFinalizandoCompra" />
-            <h2 id="tituloFinalizandoCompra"> Finalizando Compra </h2>
+            <h1 id="tituloFinalizandoCompra"> Finalizando Compra </h1>
 
             <!-- Formulário para Inserir dados a fim de Finalizar Compra-->
             <form novalidate id="formularioFinalizandoCompra">
@@ -30,28 +30,33 @@
                 <fieldset aria-label="Dados para Entrega">
                     <legend class="legendsFinalizandoCompra">Dados para
                         entrega</legend>
+
                     <label for="cep" class="labelFinalizandoCompra">CEP</label>
                     <input type="text" placeholder="Ex: 12345-678"
-                        class="inputsFinalizandoCompra" name="cep" />
+                        class="inputsFinalizandoCompra" name="cep" id="cep" />
 
                     <label for="endereco"
                         class="labelFinalizandoCompra">Endereço</label>
                     <input type="text" placeholder="Ex: Rua das Flores, 234"
-                        class="inputsFinalizandoCompra" name="endereco" />
+                        class="inputsFinalizandoCompra" name="endereco"
+                        id="endereco" />
 
                     <label for="bairro"
                         class="labelFinalizandoCompra">Bairro</label>
                     <input type="text" placeholder="Ex: Boa Vista"
-                        class="inputsFinalizandoCompra" name="bairro" />
+                        class="inputsFinalizandoCompra" name="bairro"
+                        id="bairro" />
 
                     <label for="cidade"
                         class="labelFinalizandoCompra">Cidade</label>
                     <input type="text" placeholder="Ex: Campinas"
-                        class="inputsFinalizandoCompra" name="cidade" />
+                        class="inputsFinalizandoCompra" name="cidade"
+                        id="cidade" />
 
                     <label for="estado"
                         class="labelFinalizandoCompra">Estado</label>
-                    <select class="inputsFinalizandoCompra" name="estado">
+                    <select class="inputsFinalizandoCompra" name="estado"
+                        id="estado">
                         <option value disabled selected>Selecione o
                             Estado</option>
                         <option value="AC">Acre</option>
@@ -94,17 +99,15 @@
                         <p id="textoMetodoEntrega">Selecione o método de
                             entrega:</p>
 
-                        <label class="opcaoRadio" for="opcaoEntrega">
-                            <input type="radio" value="padrao" checked
-                                class="inputsFinalizandoCompra"
-                                name="meiosEntrega" />
+                        <label class="opcaoRadio" for="entregaPadrao">
+                            <input type="radio" id="entregaPadrao"
+                                value="padrao" name="meiosEntrega" checked />
                             Padrão (5-7 dias) - Grátis
                         </label>
 
-                        <label class="opcaoRadio" for="opcaoEntrega">
-                            <input type="radio" value="expressa"
-                                class="inputsFinalizandoCompra"
-                                name="meiosEntrega" />
+                        <label class="opcaoRadio" for="entregaExpressa">
+                            <input type="radio" id="entregaExpressa"
+                                value="expressa" name="meiosEntrega" />
                             Expresso (1-3 dias) - R$ 9,99
                         </label>
                     </div>
@@ -116,28 +119,31 @@
                 <fieldset aria-label="Métodos de Pagamentos">
                     <legend class="legendsFinalizandoCompra">Métodos de
                         Pagamento</legend>
-
                     <p id="textoMetodoPagamento">Selecione o método de
                         pagamento:</p>
 
                     <div class="blocoPagamento">
-                        <label class="opcaoRadio" for="opcaoPagamento">
-                            <input type="radio" checked name="opcaoPagamento" />
+                        <label class="opcaoRadio" for="pagamentoCredito">
+                            <input type="radio" id="pagamentoCredito"
+                                name="opcaoPagamento" checked />
                             Cartão de Crédito
                         </label>
 
-                        <label class="opcaoRadio" for="opcaoPagamento">
-                            <input type="radio" name="opcaoPagamento" />
+                        <label class="opcaoRadio" for="pagamentoDebito">
+                            <input type="radio" id="pagamentoDebito"
+                                name="opcaoPagamento" />
                             Cartão de Débito
                         </label>
 
-                        <label class="opcaoRadio" for="opcaoPagamento">
-                            <input type="radio" name="opcaoPagamento" />
+                        <label class="opcaoRadio" for="pagamentoBoleto">
+                            <input type="radio" id="pagamentoBoleto"
+                                name="opcaoPagamento" />
                             Boleto Bancário
                         </label>
 
-                        <label class="opcaoRadio" for="opcaoPagamento">
-                            <input type="radio" name="opcaoPagamento" />
+                        <label class="opcaoRadio" for="pagamentoPix">
+                            <input type="radio" id="pagamentoPix"
+                                name="opcaoPagamento" />
                             PIX
                         </label>
                     </div>
@@ -152,12 +158,13 @@
                     <label class="labelFinalizandoCompra" for="nome">Nome
                         completo</label>
                     <input type="text" placeholder="Ex: Yasmin Vieira"
-                        class="inputsFinalizandoCompra" name="nome" />
+                        class="inputsFinalizandoCompra" name="nome" id="nome" />
 
                     <label class="labelFinalizandoCompra"
                         for="telefone">Telefone</label>
                     <input type="tel" placeholder="(12) 34567-8912"
-                        class="inputsFinalizandoCompra" name="telefone" />
+                        class="inputsFinalizandoCompra" name="telefone"
+                        id="telefone" />
                 </fieldset>
 
                 <!-- Botão para Cadastrar Cartão -->

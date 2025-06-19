@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -35,7 +35,7 @@
 
         <!-- Header do site -->
         <header class="headerSite">
-            <h1 class="logoSite">
+            <p class="logoSite">
                 <a href="index.html" aria-label="Página inicial - Miaunarquia">
                     <img
                         src="../imagens/imagem_logo.png"
@@ -43,7 +43,7 @@
                         class="logoImagem" />
                     <span class="nomeLogo">Miaunarquia</span>
                 </a>
-            </h1>
+            </p>
 
             <nav class="navMenu" aria-label="Menu Principal">
                 <!-- arial-label = Rotular elemento para descreve-lo e deixa-lo mais acessível -->
@@ -79,8 +79,7 @@
                             <figure class="iconesNav">
                                 <img
                                     src="../imagens/icone_favoritos.png"
-                                    alt="Ícone de Coração"
-                                    aria-hidden="true" />
+                                    alt="Ícone de Coração" />
                                 <figcaption class="legendasIcones">
                                     Favoritos
                                 </figcaption>
@@ -119,7 +118,7 @@
 
         <!-- Formulário de Contato -->
         <main id="mainContato" aria-label="Formulário de Contato">
-            <h2 id="tituloContato">Contato</h1>
+            <h1 id="tituloContato">Contato</h1>
 
             <p id="descricaoContato">Tem alguma dúvida ou quer falar conosco?
                 Envie sua mensagem preenchendo o formulário abaixo.</p>
@@ -141,26 +140,24 @@
                 <!-- Curiosidade: Esse tipo de formulário desativa a validação padrão (se os dados estão corretos)-->
                 <fieldset class="fieldsetsContato">
                     <legend class="legendContato">Nome</legend>
-                    <label class="labelContato" for="nome">Seu nome
+                    <label for="nome" class="labelContato">Seu nome
                         completo</label>
-                    <input type="text" placeholder="Ex: Yasmin Vieira"
-                        name="nome" class="inputsContato" />
+                    <input type="text" name="nome" id="nome"
+                        class="inputsContato" placeholder="Ex: Yasmin Vieira" />
                 </fieldset>
 
                 <fieldset class="fieldsetsContato">
                     <legend class="legendContato">Email</legend>
-                    <label class="labelContato" for="email">Seu endereço de
+                    <label for="email" class="labelContato">Seu endereço de
                         email</label>
-                    <input type="email" id="emailContato"
-                        placeholder="exemplo@email.com" name="email"
-                        class="inputsContato" />
+                    <input type="email" id="email"
+                        placeholder="exemplo@email.com" class="inputsContato" />
                 </fieldset>
 
                 <fieldset class="fieldsetsContato">
                     <legend class="legendContato">Mensagem</legend>
-                    <label class="labelContato" for="mensagem">Sua
-                        mensagem</label>
-                    <textarea id="mensagemContato"
+                    <label for="mensagem" class="labelContato">...</label>
+                    <textarea id="mensagem"
                         placeholder="Escreva sua mensagem aqui..."
                         class="inputsContato" name="mensagem"></textarea>
                 </fieldset>

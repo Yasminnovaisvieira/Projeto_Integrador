@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Página Inicial | Miaunarquia</title>
-        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/style.css" />
     </head>
     <body>
         <!-- Carrossel para avisos de promoções -->
@@ -35,7 +35,7 @@
 
         <!-- Header do site -->
         <header class="headerSite">
-            <h1 class="logoSite">
+            <p class="logoSite">
                 <a href="index.html" aria-label="Página inicial - Miaunarquia">
                     <img
                         src="../imagens/imagem_logo.png"
@@ -43,7 +43,7 @@
                         class="logoImagem" />
                     <span class="nomeLogo">Miaunarquia</span>
                 </a>
-            </h1>
+            </p>
 
             <nav class="navMenu" aria-label="Menu Principal">
                 <!-- arial-label = Rotular elemento para descreve-lo e deixa-lo mais acessível -->
@@ -79,8 +79,7 @@
                             <figure class="iconesNav">
                                 <img
                                     src="../imagens/icone_favoritos.png"
-                                    alt="Ícone de Coração"
-                                    aria-hidden="true" />
+                                    alt="Ícone de Coração" />
                                 <figcaption class="legendasIcones">
                                     Favoritos
                                 </figcaption>
@@ -159,11 +158,15 @@
                     ❯
                 </button>
 
-                <nav class="indicadoresCarrossel"
-                    aria-label="Indicadores do carrossel de imagens">
-                    <p class="bolinha"></p>
-                    <p class="bolinha"></p>
-                    <p class="bolinha"></p>
+                <nav class="indicadoresCarrossel">
+                    <ul>
+                        <li><button aria-label="Ir para o slide 1"
+                                class="bolinha"></button></li>
+                        <li><button aria-label="Ir para o slide 2"
+                                class="bolinha"></button></li>
+                        <li><button aria-label="Ir para o slide 3"
+                                class="bolinha"></button></li>
+                    </ul>
                 </nav>
             </section>
 
@@ -522,12 +525,16 @@
                     ❯
                 </button>
 
-                <nav
-                    class="indicadoresCarrossel"
+                <nav class="indicadoresCarrossel"
                     aria-label="Indicadores do carrossel de produtos">
-                    <p class="retangulo"></p>
-                    <p class="retangulo"></p>
-                    <p class="retangulo"></p>
+                    <ul>
+                        <li><button aria-label="Ir para o slide 1"
+                                class="retangulo"></button></li>
+                        <li><button aria-label="Ir para o slide 2"
+                                class="retangulo"></button></li>
+                        <li><button aria-label="Ir para o slide 3"
+                                class="retangulo"></button></li>
+                    </ul>
                 </nav>
             </section>
 
@@ -793,12 +800,16 @@
                     ❯
                 </button>
 
-                <nav
-                    class="indicadoresCarrossel"
+                <nav class="indicadoresCarrossel"
                     aria-label="Indicadores do carrossel de produtos">
-                    <p class="retangulo"></p>
-                    <p class="retangulo"></p>
-                    <p class="retangulo"></p>
+                    <ul>
+                        <li><button aria-label="Ir para o slide 1"
+                                class="retangulo"></button></li>
+                        <li><button aria-label="Ir para o slide 2"
+                                class="retangulo"></button></li>
+                        <li><button aria-label="Ir para o slide 3"
+                                class="retangulo"></button></li>
+                    </ul>
                 </nav>
             </section>
 
@@ -816,80 +827,96 @@
 
                 <ul class="feedbacks">
                     <li class="feedback">
-                        <p class="aspas">“</p>
-                        <p>Produtos excelentes, meu gato adorou!</p>
-                        <p class="autorFeedback">Ana, RJ</p>
-                        <p class="aspas">“</p>
+                        <blockquote>
+                            <p class="aspas">“</p>
+                            <p>Produtos excelentes, meu gato adorou!</p>
+                            <footer>— <cite>Ana, RJ</cite></footer>
+                            <p class="aspas">“</p>
+                        </blockquote>
                     </li>
 
                     <li class="feedback">
-                        <p class="aspas">“</p>
-                        <p>Entrega rápida e produtos de qualidade.</p>
-                        <p class="autorFeedback">Carlos, SP</p>
-                        <p class="aspas">“</p>
+                        <blockquote>
+                            <p class="aspas">“</p>
+                            <p>Entrega rápida e produtos de qualidade.</p>
+                            <footer>— <cite>Carlos, SP</cite></footer>
+                            <p class="aspas">“</p>
+                        </blockquote>
                     </li>
 
                     <li class="feedback">
-                        <p class="aspas">“</p>
-                        <p>Atendimento impecável e entrega rápida!</p>
-                        <p class="autorFeedback">Marina, MG</p>
-                        <p class="aspas">“</p>
+                        <blockquote>
+                            <p class="aspas">“</p>
+                            <p>Atendimento impecável e entrega rápida!</p>
+                            <footer>— <cite>Marina, MG</cite></footer>
+                            <p class="aspas">“</p>
+                        </blockquote>
                     </li>
 
                     <li class="feedback">
-                        <p class="aspas">“</p>
-                        <p>Melhor site para quem ama gatos!</p>
-                        <p class="autorFeedback">Yasmin, SP</p>
-                        <p class="aspas">“</p>
+                        <blockquote>
+                            <p class="aspas">“</p>
+                            <p>Melhor site para quem ama gatos!</p>
+                            <footer>— <cite>Yasmin, SP</cite></footer>
+                            <p class="aspas">“</p>
+                        </blockquote>
                     </li>
 
                     <li class="feedback">
-                        <p class="aspas">“</p>
-                        <p>
-                            Amo os produtos da Miaunarquia. Sempre vêm com
-                            qualidade!
-                        </p>
-                        <p class="autorFeedback">Solange, PA</p>
-                        <p class="aspas">“</p>
+                        <blockquote>
+                            <p class="aspas">“</p>
+                            <p>Amo os produtos da Miaunarquia. Sempre vêm com
+                                qualidade!</p>
+                            <footer>— <cite>Solange, PA</cite></footer>
+                            <p class="aspas">“</p>
+                        </blockquote>
                     </li>
 
                     <li class="feedback">
-                        <p class="aspas">“</p>
-                        <p>Meu gato já virou cliente fiel KKKKK</p>
-                        <p class="autorFeedback">Larissa, BA</p>
-                        <p class="aspas">“</p>
+                        <blockquote>
+                            <p class="aspas">“</p>
+                            <p>Meu gato já virou cliente fiel KKKKK</p>
+                            <footer>— <cite>Larissa, BA</cite></footer>
+                            <p class="aspas">“</p>
+                        </blockquote>
                     </li>
 
                     <li class="feedback">
-                        <p class="aspas">“</p>
-                        <p>
-                            O Fumaça amou os produtos da Miaunarquia que comprei
-                            para ele!
-                        </p>
-                        <p class="autorFeedback">Daniel, SO</p>
-                        <p class="aspas">“</p>
+                        <blockquote>
+                            <p class="aspas">“</p>
+                            <p>O Fumaça amou os produtos da Miaunarquia que
+                                comprei para ele!</p>
+                            <footer>— <cite>Daniel, SO</cite></footer>
+                            <p class="aspas">“</p>
+                        </blockquote>
                     </li>
 
                     <li class="feedback">
-                        <p class="aspas">“</p>
-                        <p>Não tenho reclamações, apenas elogios!</p>
-                        <p class="autorFeedback">José, TO</p>
-                        <p class="aspas">“</p>
+                        <blockquote>
+                            <p class="aspas">“</p>
+                            <p>Não tenho reclamações, apenas elogios!</p>
+                            <footer>— <cite>José, TO</cite></footer>
+                            <p class="aspas">“</p>
+                        </blockquote>
                     </li>
 
                     <li class="feedback">
-                        <p class="aspas">“</p>
-                        <p>Produtos de ótima qualidade!</p>
-                        <p class="autorFeedback">Maria, SP</p>
-                        <p class="aspas">“</p>
+                        <blockquote>
+                            <p class="aspas">“</p>
+                            <p>Produtos de ótima qualidade!</p>
+                            <footer>— <cite>Maria, SP</cite></footer>
+                            <p class="aspas">“</p>
+                        </blockquote>
                     </li>
 
                     <li class="feedback">
-                        <p class="aspas">“</p>
-                        <p>Recomendo sempre a Miaunarquia. Nunca me
-                            decepcionou!</p>
-                        <p class="autorFeedback">Heber, GO</p>
-                        <p class="aspas">“</p>
+                        <blockquote>
+                            <p class="aspas">“</p>
+                            <p>Recomendo sempre a Miaunarquia. Nunca me
+                                decepcionou!</p>
+                            <footer>— <cite>Heber, GO</cite></footer>
+                            <p class="aspas">“</p>
+                        </blockquote>
                     </li>
                 </ul>
 
@@ -898,19 +925,29 @@
                     ❯
                 </button>
 
-                <nav
-                    class="indicadoresFeedbacks"
-                    aria-label="Indicadores do carrossel de feedbacks">
-                    <p class="bolinhaFeedbacks"></p>
-                    <p class="bolinhaFeedbacks"></p>
-                    <p class="bolinhaFeedbacks"></p>
-                    <p class="bolinhaFeedbacks"></p>
-                    <p class="bolinhaFeedbacks"></p>
-                    <p class="bolinhaFeedbacks"></p>
-                    <p class="bolinhaFeedbacks"></p>
-                    <p class="bolinhaFeedbacks"></p>
-                    <p class="bolinhaFeedbacks"></p>
-                    <p class="bolinhaFeedbacks"></p>
+                <nav class="indicadoresFeedbacks">
+                    <ul>
+                        <li><button aria-label="Ir para o feedback 1"
+                                class="bolinhaFeedbacks"></button></li>
+                        <li><button aria-label="Ir para o feedback 2"
+                                class="bolinhaFeedbacks"></button></li>
+                        <li><button aria-label="Ir para o feedback 3"
+                                class="bolinhaFeedbacks"></button></li>
+                        <li><button aria-label="Ir para o feedback 4"
+                                class="bolinhaFeedbacks"></button></li>
+                        <li><button aria-label="Ir para o feedback 5"
+                                class="bolinhaFeedbacks"></button></li>
+                        <li><button aria-label="Ir para o feedback 6"
+                                class="bolinhaFeedbacks"></button></li>
+                        <li><button aria-label="Ir para o feedback 7"
+                                class="bolinhaFeedbacks"></button></li>
+                        <li><button aria-label="Ir para o feedback 8"
+                                class="bolinhaFeedbacks"></button></li>
+                        <li><button aria-label="Ir para o feedback 9"
+                                class="bolinhaFeedbacks"></button></li>
+                        <li><button aria-label="Ir para o feedback 10"
+                                class="bolinhaFeedbacks"></button></li>
+                    </ul>
                 </nav>
             </section>
 

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Usuários Cadastrados | Miaunarquia</title>
         <link rel="stylesheet" href="../../css/style.css" />
     </head>
@@ -10,13 +10,13 @@
         <!-- Menu Lateral do Administrador -->
         <nav class="menuLateralAdministrador"
             aria-label="Menu principal do Painel Administrativo">
-            <h1 class="logoAdministrador"
+            <p class="logoAdministrador"
                 aria-label="Logo do painel administrativo">
                 <img
                     src="../../imagens/imagem_logo.png"
                     alt="Logo do Site (Desenho de rosto de um gato preto com uma coroa)"
                     class="logoImagemAdministrador" />
-                <span>Miaunarquia</span></h1>
+                <span>Miaunarquia</span></p>
 
             <ul class="linksNavegacaoAdministrador">
                 <li><a href="dashboard.html">
@@ -81,28 +81,46 @@
             <!-- Usuários Cadastrados no Sistema -->
             <section id="usuariosAdministrador" aria-label="Lista de usuários">
                 <header class="cabecalhoPagina">
-                    <h2 class="titulosAdministrador">Gerenciar Usuários</h2>
-                    <nav class="actionsAdministrador">
+                    <h1 class="titulosAdministrador">Gerenciar Usuários</h1>
+                    <nav
+                        class="adicionarAtualizarUsuarios actionsAdministrador">
+                        <a href="adicionarUsuario.html"
+                            class="botoesSecoesDashboardAdm">Adicionar Novo</a>
                         <button type="button" class="botoesSecoesDashboardAdm"
                             aria-label="Atualizar lista de usuários">Atualizar</button>
                     </nav>
                 </header>
 
+                <form
+                    aria-label="Filtro de pesquisa de usuários cadastrados"
+                    class="formBusca">
+                    <label class="labelsDashboardAdm"
+                        for="procurarUsuario">Buscar usuários:</label>
+                    <input type="text" class="campoBusca"
+                        name="procurarUsuario"
+                        placeholder="Nome ou ID do usuário"
+                        id="procurarUsuario" />
+                    <button class="botaoBuscaAdm">Buscar</button>
+                </form>
+
                 <table class="tabelasDashboardAdm"
                     aria-label="Tabela de Usuários Cadastrados Recentemente no Sistema">
                     <caption class="captionsDashboardAdm">Lista dos
                         usuários registrados</caption>
-                    <thead aria-label="Colunas da Tabela">
+                    <thead>
                         <tr>
-                            <th class="colunasProdutosAdm">ID</th>
-                            <th class="colunasProdutosAdm">Nome</th>
-                            <th class="colunasProdutosAdm">Email</th>
-                            <th class="colunasProdutosAdm">Telefone</th>
-                            <th class="colunasProdutosAdm">Ações</th>
+                            <th class="colunasProdutosAdm" scope="col">ID</th>
+                            <th class="colunasProdutosAdm" scope="col">Nome</th>
+                            <th class="colunasProdutosAdm"
+                                scope="col">Email</th>
+                            <th class="colunasProdutosAdm"
+                                scope="col">Telefone</th>
+                            <th class="colunasProdutosAdm"
+                                scope="col">Ações</th>
                         </tr>
                     </thead>
 
-                    <tbody aria-label="Usuários Cadastrados e suas Informações">
+                    <tbody>
                         <tr class="fundoElementosTabelaAdm">
                             <td class="inforTabelasDashboardAdm">#501</td>
                             <td class="inforTabelasDashboardAdm">Lucas
@@ -112,6 +130,9 @@
                             <td class="inforTabelasDashboardAdm">(11)
                                 99999-1234</td>
                             <td class="inforTabelasDashboardAdm">
+                                <a href="editarUsuario.html"
+                                    class="botaoTabela"
+                                    aria-label="Editar Usuário">Editar</a>
                                 <button class="botaoTabelaExcluir"
                                     aria-label="Excluir Usuário">Excluir</button>
                             </td>
@@ -126,6 +147,9 @@
                             <td class="inforTabelasDashboardAdm">(21)
                                 98888-4321</td>
                             <td class="inforTabelasDashboardAdm">
+                                <a href="editarUsuario.html"
+                                    class="botaoTabela"
+                                    aria-label="Editar Usuário">Editar</a>
                                 <button class="botaoTabelaExcluir"
                                     aria-label="Excluir Usuário">Excluir</button>
                             </td>
@@ -140,6 +164,9 @@
                             <td class="inforTabelasDashboardAdm">(31)
                                 97777-5678</td>
                             <td class="inforTabelasDashboardAdm">
+                                <a href="editarUsuario.html"
+                                    class="botaoTabela"
+                                    aria-label="Editar Usuário">Editar</a>
                                 <button class="botaoTabelaExcluir"
                                     aria-label="Excluir Usuário">Excluir</button>
                             </td>
@@ -154,6 +181,9 @@
                             <td class="inforTabelasDashboardAdm">(41)
                                 96666-1122</td>
                             <td class="inforTabelasDashboardAdm">
+                                <a href="editarUsuario.html"
+                                    class="botaoTabela"
+                                    aria-label="Editar Usuário">Editar</a>
                                 <button class="botaoTabelaExcluir"
                                     aria-label="Excluir Usuário">Excluir</button>
                             </td>
@@ -168,6 +198,9 @@
                             <td class="inforTabelasDashboardAdm">(81)
                                 95555-7788</td>
                             <td class="inforTabelasDashboardAdm">
+                                <a href="editarUsuario.html"
+                                    class="botaoTabela"
+                                    aria-label="Editar Usuário">Editar</a>
                                 <button class="botaoTabelaExcluir"
                                     aria-label="Excluir Usuário">Excluir</button>
                             </td>
@@ -182,6 +215,9 @@
                             <td class="inforTabelasDashboardAdm">(51)
                                 94444-3333</td>
                             <td class="inforTabelasDashboardAdm">
+                                <a href="editarUsuario.html"
+                                    class="botaoTabela"
+                                    aria-label="Editar Usuário">Editar</a>
                                 <button class="botaoTabelaExcluir"
                                     aria-label="Excluir Usuário">Excluir</button>
                             </td>
@@ -196,6 +232,9 @@
                             <td class="inforTabelasDashboardAdm">(61)
                                 92222-8899</td>
                             <td class="inforTabelasDashboardAdm">
+                                <a href="editarUsuario.html"
+                                    class="botaoTabela"
+                                    aria-label="Editar Usuário">Editar</a>
                                 <button class="botaoTabelaExcluir"
                                     aria-label="Excluir Usuário">Excluir</button>
                             </td>
@@ -210,6 +249,9 @@
                             <td class="inforTabelasDashboardAdm">(85)
                                 93333-6677</td>
                             <td class="inforTabelasDashboardAdm">
+                                <a href="editarUsuario.html"
+                                    class="botaoTabela"
+                                    aria-label="Editar Usuário">Editar</a>
                                 <button class="botaoTabelaExcluir"
                                     aria-label="Excluir Usuário">Excluir</button>
                             </td>
@@ -224,6 +266,9 @@
                             <td class="inforTabelasDashboardAdm">(91)
                                 90000-1234</td>
                             <td class="inforTabelasDashboardAdm">
+                                <a href="editarUsuario.html"
+                                    class="botaoTabela"
+                                    aria-label="Editar Usuário">Editar</a>
                                 <button class="botaoTabelaExcluir"
                                     aria-label="Excluir Usuário">Excluir</button>
                             </td>
@@ -238,6 +283,9 @@
                             <td class="inforTabelasDashboardAdm">(71)
                                 98888-4455</td>
                             <td class="inforTabelasDashboardAdm">
+                                <a href="editarUsuario.html"
+                                    class="botaoTabela"
+                                    aria-label="Editar Usuário">Editar</a>
                                 <button class="botaoTabelaExcluir"
                                     aria-label="Excluir Usuário">Excluir</button>
                             </td>
@@ -252,6 +300,9 @@
                             <td class="inforTabelasDashboardAdm">(31)
                                 97777-8899</td>
                             <td class="inforTabelasDashboardAdm">
+                                <a href="editarUsuario.html"
+                                    class="botaoTabela"
+                                    aria-label="Editar Usuário">Editar</a>
                                 <button class="botaoTabelaExcluir"
                                     aria-label="Excluir Usuário">Excluir</button>
                             </td>
@@ -266,6 +317,9 @@
                             <td class="inforTabelasDashboardAdm">(19)
                                 96666-7788</td>
                             <td class="inforTabelasDashboardAdm">
+                                <a href="editarUsuario.html"
+                                    class="botaoTabela"
+                                    aria-label="Editar Usuário">Editar</a>
                                 <button class="botaoTabelaExcluir"
                                     aria-label="Excluir Usuário">Excluir</button>
                             </td>
@@ -280,6 +334,9 @@
                             <td class="inforTabelasDashboardAdm">(62)
                                 98888-6677</td>
                             <td class="inforTabelasDashboardAdm">
+                                <a href="editarUsuario.html"
+                                    class="botaoTabela"
+                                    aria-label="Editar Usuário">Editar</a>
                                 <button class="botaoTabelaExcluir"
                                     aria-label="Excluir Usuário">Excluir</button>
                             </td>
@@ -294,6 +351,9 @@
                             <td class="inforTabelasDashboardAdm">(27)
                                 94444-2211</td>
                             <td class="inforTabelasDashboardAdm">
+                                <a href="editarUsuario.html"
+                                    class="botaoTabela"
+                                    aria-label="Editar Usuário">Editar</a>
                                 <button class="botaoTabelaExcluir"
                                     aria-label="Excluir Usuário">Excluir</button>
                             </td>
@@ -308,6 +368,9 @@
                             <td class="inforTabelasDashboardAdm">(95)
                                 97777-3344</td>
                             <td class="inforTabelasDashboardAdm">
+                                <a href="editarUsuario.html"
+                                    class="botaoTabela"
+                                    aria-label="Editar Usuário">Editar</a>
                                 <button class="botaoTabelaExcluir"
                                     aria-label="Excluir Usuário">Excluir</button>
                             </td>
@@ -322,6 +385,9 @@
                             <td class="inforTabelasDashboardAdm">(67)
                                 98888-5566</td>
                             <td class="inforTabelasDashboardAdm">
+                                <a href="editarUsuario.html"
+                                    class="botaoTabela"
+                                    aria-label="Editar Usuário">Editar</a>
                                 <button class="botaoTabelaExcluir"
                                     aria-label="Excluir Usuário">Excluir</button>
                             </td>
@@ -336,6 +402,9 @@
                             <td class="inforTabelasDashboardAdm">(51)
                                 95555-6677</td>
                             <td class="inforTabelasDashboardAdm">
+                                <a href="editarUsuario.html"
+                                    class="botaoTabela"
+                                    aria-label="Editar Usuário">Editar</a>
                                 <button class="botaoTabelaExcluir"
                                     aria-label="Excluir Usuário">Excluir</button>
                             </td>
@@ -350,6 +419,9 @@
                             <td class="inforTabelasDashboardAdm">(63)
                                 91111-7788</td>
                             <td class="inforTabelasDashboardAdm">
+                                <a href="editarUsuario.html"
+                                    class="botaoTabela"
+                                    aria-label="Editar Usuário">Editar</a>
                                 <button class="botaoTabelaExcluir"
                                     aria-label="Excluir Usuário">Excluir</button>
                             </td>
@@ -364,6 +436,9 @@
                             <td class="inforTabelasDashboardAdm">(85)
                                 92222-3344</td>
                             <td class="inforTabelasDashboardAdm">
+                                <a href="editarUsuario.html"
+                                    class="botaoTabela"
+                                    aria-label="Editar Usuário">Editar</a>
                                 <button class="botaoTabelaExcluir"
                                     aria-label="Excluir Usuário">Excluir</button>
                             </td>
@@ -378,6 +453,9 @@
                             <td class="inforTabelasDashboardAdm">(11)
                                 93333-4455</td>
                             <td class="inforTabelasDashboardAdm">
+                                <a href="editarUsuario.html"
+                                    class="botaoTabela"
+                                    aria-label="Editar Usuário">Editar</a>
                                 <button class="botaoTabelaExcluir"
                                     aria-label="Excluir Usuário">Excluir</button>
                             </td>

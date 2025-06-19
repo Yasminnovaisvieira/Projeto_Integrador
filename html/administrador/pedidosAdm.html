@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Pedidos | Miaunarquia</title>
         <link rel="stylesheet" href="../../css/style.css" />
     </head>
@@ -10,13 +10,13 @@
         <!-- Menu Lateral do Administrador -->
         <nav class="menuLateralAdministrador"
             aria-label="Menu principal do Painel Administrativo">
-            <h1 class="logoAdministrador"
+            <p class="logoAdministrador"
                 aria-label="Logo do painel administrativo">
                 <img
                     src="../../imagens/imagem_logo.png"
                     alt="Logo do Site (Desenho de rosto de um gato preto com uma coroa)"
                     class="logoImagemAdministrador" />
-                <span>Miaunarquia</span></h1>
+                <span>Miaunarquia</span></p>
 
             <ul class="linksNavegacaoAdministrador">
                 <li><a href="dashboard.html">
@@ -81,12 +81,42 @@
             <!-- Pedidos de Clientes -->
             <section id="pedidosAdministrador" aria-label="Lista de pedidos">
                 <header class="cabecalhoPagina">
-                    <h2 class="titulosAdministrador">Gerenciar Pedidos</h2>
+                    <h1 class="titulosAdministrador">Gerenciar Pedidos</h1>
                     <nav class="actionsAdministrador">
                         <button type="button" class="botoesSecoesDashboardAdm"
                             aria-label="Atualizar lista de pedidos">Atualizar</button>
                     </nav>
                 </header>
+
+                <!-- Buscar Pedidos -->
+                <form aria-label="Filtro de pesquisa de pedidos dos usuários">
+                    <label class="labelsDashboardAdm"
+                        for="procurarPedidosAdm">Buscar pedidos:</label>
+                    <input type="text" id="procurarPedidosAdm"
+                        name="procurarProduto"
+                        placeholder="Nome do usuário ou código do pedido" />
+                    <button class="botaoBuscaAdm">Buscar</button>
+                </form>
+
+                <!-- Filtrar Pedidos por Categoria -->
+                <form class="formFiltrosAdm"
+                    aria-label="Filtro de pesquisa de produtos">
+                    <!-- Filtrar Produtos por Status -->
+                    <section class="grupoInput">
+                        <label for="filtroStatus"
+                            class="labelsFiltroProdutos labelsDashboardAdm">Status:</label>
+                        <select id="filtroStatus" name="filtroStatus"
+                            class="filtroSelecao">
+                            <option value>Todos</option>
+                            <option value="pendente">Pendente</option>
+                            <option value="processando">Processando</option>
+                            <option value="concluido">Concluído</option>
+                            <option value="cancelado">Cancelado</option>
+                        </select>
+                    </section>
+                    <button id="botaoFiltrarPedidosAdm"
+                        class="botaoBuscaAdm">Filtrar</button>
+                </form>
 
                 <!-- Tabela de Pedidos Realizados no Sistema -->
                 <table class="tabelasDashboardAdm"

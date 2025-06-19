@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,17 +19,20 @@
         <!-- Seção do Cadastro -->
         <main class="containerPagina">
             <section id="containerCadastro" aria-label="Formulário de Cadastro">
-                <h1 class="logoSiteLoginCadastro">
+                <p class="logoSiteLoginCadastro">
                     <img src="../imagens/imagem_logo.png"
                         alt="Logo do Site (Desenho de rosto de um gato preto com uma coroa)"
                         class="logoImagemLoginCadastro" />
-                </h1>
+                </p>
 
                 <form class="formularioCadastro" method="POST"
                     action="indexLogado.html">
                     <fieldset class="grupoCampos">
-                        <legend class="tituloLoginCadastro">Crie sua
-                            conta</legend>
+                        <legend class="tituloLoginCadastro">
+                            <h1>
+                                Crie sua conta
+                            </h1>
+                        </legend>
 
                         <!-- Opções para cadastrar usando Google ou Apple -->
                         <section class="grupoSocial">
@@ -56,12 +59,12 @@
                         <label for="nome" class="rotuloCadastro">Insira o Nome
                             Completo</label>
                         <input type="text" name="nome"
-                            class="camposCadastro" />
+                            class="camposCadastro" id="nome" />
 
                         <label for="email" class="rotuloCadastro">Insira o
                             E-mail</label>
                         <input type="email" name="email"
-                            class="camposCadastro" />
+                            class="camposCadastro" id="email" />
 
                         <section class="linhaDuplaCadastro">
                             <section class="campoContainer">

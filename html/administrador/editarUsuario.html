@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Editar Usuário | Miaunarquia</title>
+        <link rel="stylesheet" href="../../css/style.css" />
+    </head>
+    <body class="fundoFormulariosAdm">
+        <main class="mainFormulariosAdm"
+            aria-label="Formulário de edição de usuário">
+            <form novalidate>
+                <!-- Editar Informações Pessoais do Usuário -->
+                <fieldset>
+                    <legend>
+                        <h1 class="titulosFormulariosAdm">Editar Usuário</h1>
+                    </legend>
+
+                    <label class="labelsFormulariosAdm" for="nomeUsuario">Nome
+                        Completo</label>
+                    <input class="inputsFormulariosAdm" type="text"
+                        name="nomeUsuario" id="nomeUsuario"
+                        value="Lucas Martins" />
+
+                    <label class="labelsFormulariosAdm"
+                        for="emailUsuario">Email</label>
+                    <input class="inputsFormulariosAdm" type="email"
+                        name="emailUsuario" id="emailUsuario"
+                        value="lucas.martins@email.com" />
+
+                    <label class="labelsFormulariosAdm"
+                        for="telefoneUsuario">Telefone</label>
+                    <input class="inputsFormulariosAdm" type="tel"
+                        name="telefoneUsuario" id="telefoneUsuario"
+                        value="(11) 99999-1234" />
+
+                    <hr class="divisaoAdministrador" aria-hidden="true" />
+
+                    <h2 class="legendsFormulariosAdm">Alterar Senha</h2>
+
+                    <label class="labelsFormulariosAdm" for="novaSenha">Nova
+                        Senha</label>
+                    <input class="inputsFormulariosAdm" type="password"
+                        name="novaSenha" id="novaSenha"
+                        placeholder="Deixe em branco para não alterar" />
+
+                    <label class="labelsFormulariosAdm"
+                        for="confirmarSenha">Confirmar Nova Senha</label>
+                    <input class="inputsFormulariosAdm" type="password"
+                        name="confirmarSenha" id="confirmarSenha"
+                        placeholder="Repita a nova senha" />
+                </fieldset>
+
+                <hr class="divisaoAdministrador" aria-hidden="true" />
+
+                <!-- Editar Endereço do Usuário -->
+                <fieldset>
+                    <legend class="legendsFormulariosAdm">Endereço
+                        Principal</legend>
+
+                    <label class="labelsFormulariosAdm"
+                        for="cepUsuario">CEP</label>
+                    <input class="inputsFormulariosAdm" type="text"
+                        name="cepUsuario" id="cepUsuario" value="12345-678" />
+
+                    <label class="labelsFormulariosAdm"
+                        for="enderecoUsuario">Endereço</label>
+                    <input class="inputsFormulariosAdm" type="text"
+                        name="enderecoUsuario" id="enderecoUsuario"
+                        value="Rua das Flores, 123" />
+
+                    <label class="labelsFormulariosAdm"
+                        for="complementoUsuario">Complemento</label>
+                    <input class="inputsFormulariosAdm" type="text"
+                        name="complementoUsuario" id="complementoUsuario"
+                        value="Apto 45" />
+
+                    <label class="labelsFormulariosAdm"
+                        for="cidadeUsuario">Cidade</label>
+                    <input class="inputsFormulariosAdm" type="text"
+                        name="cidadeUsuario" id="cidadeUsuario"
+                        value="Hortolândia" />
+
+                    <label class="labelsFormulariosAdm"
+                        for="estadoUsuario">Estado</label>
+                    <input class="inputsFormulariosAdm" type="text"
+                        name="estadoUsuario" id="estadoUsuario" value="SP" />
+                </fieldset>
+
+                <hr class="divisaoAdministrador" aria-hidden="true" />
+
+                <!-- Histórico de Compras do Usuário -->
+                <fieldset>
+                    <legend class="legendsFormulariosAdm">Histórico de
+                        Compras</legend>
+
+                    <label class="labelsFormulariosAdm" for="totalPedidos">Total
+                        de Pedidos</label>
+                    <input class="inputsFormulariosAdm inputsDesabilitados"
+                        type="text" name="totalPedidos" id="totalPedidos"
+                        value="12" disabled />
+
+                    <label class="labelsFormulariosAdm" for="gastoTotal">Valor
+                        Gasto Total (R$)</label>
+                    <input class="inputsFormulariosAdm inputsDesabilitados"
+                        type="text" name="gastoTotal" id="gastoTotal"
+                        value="R$ 2.450,50" disabled />
+
+                    <label class="labelsFormulariosAdm" for="ultimoPedido">Data
+                        do Último Pedido</label>
+                    <input class="inputsFormulariosAdm inputsDesabilitados"
+                        type="text" name="ultimoPedido" id="ultimoPedido"
+                        value="18/04/2024" disabled />
+                </fieldset>
+
+                <!-- Botões para Cancelar e Salvar Edição -->
+                <nav class="navBotoesFormulariosAdm">
+                    <a href="usuariosAdm.html"
+                        class="botoesFormulariosAdm botaoCancelarFormulariosAdm"
+                        aria-label="Cancelar">Cancelar</a>
+                    <button type="submit"
+                        class="botoesFormulariosAdm botaoSalvarFormulariosAdm"
+                        aria-label="Salvar alterações do usuário">Salvar
+                        Alterações</button>
+                </nav>
+            </form>
+        </main>
+    </body>
+</html>

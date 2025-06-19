@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -35,7 +35,7 @@
 
         <!-- Header do site -->
         <header class="headerSite">
-            <h1 class="logoSite">
+            <p class="logoSite">
                 <a href="index.html" aria-label="Página inicial - Miaunarquia">
                     <img
                         src="../imagens/imagem_logo.png"
@@ -43,7 +43,7 @@
                         class="logoImagem" />
                     <span class="nomeLogo">Miaunarquia</span>
                 </a>
-            </h1>
+            </p>
 
             <nav class="navMenu" aria-label="Menu Principal">
                 <!-- arial-label = Rotular elemento para descreve-lo e deixa-lo mais acessível -->
@@ -79,8 +79,7 @@
                             <figure class="iconesNav">
                                 <img
                                     src="../imagens/icone_favoritos.png"
-                                    alt="Ícone de Coração"
-                                    aria-hidden="true" />
+                                    alt="Ícone de Coração" />
                                 <figcaption class="legendasIcones">
                                     Favoritos
                                 </figcaption>
@@ -120,7 +119,7 @@
 
         <!-- Carrinho -->
         <main id="mainCarrinho">
-            <h2 id="tituloCarrinho">Seu Carrinho</h2>
+            <h1 id="tituloCarrinho">Seu Carrinho</h1>
 
             <!-- Itens que estão no Carrinho -->
             <section class="itensCarrinho" aria-label="Itens no Carrinho">
@@ -141,10 +140,11 @@
                     <section class="QuantidadeERemover">
                         <div class="blocoQuantidade">
                             <label class="labelQuantidade"
-                                for="quantidade">Quantidade</label>
+                                for="QuantidadeProd1">Quantidade</label>
                             <input type="number" id="QuantidadeProd1"
                                 class="quantidadeProduto" min="1" max="10"
-                                value="2" name="quantidade" />
+                                value="2" name="quantidade"
+                                itemid="quantidade" />
                         </div>
 
                         <output class="subtotal">R$ 313,38</output>
@@ -168,7 +168,7 @@
                     <section class="QuantidadeERemover">
                         <div class="blocoQuantidade">
                             <label class="labelQuantidade"
-                                for="quantidade">Quantidade</label>
+                                for="QuantidadeProd2">Quantidade</label>
                             <input type="number" id="QuantidadeProd2"
                                 class="quantidadeProduto" min="1" max="10"
                                 value="1" name="quantidade" />
@@ -195,7 +195,7 @@
                     <section class="QuantidadeERemover">
                         <div class="blocoQuantidade">
                             <label class="labelQuantidade"
-                                for="quantidade">Quantidade</label>
+                                for="QuantidadeProd3">Quantidade</label>
                             <input type="number" id="QuantidadeProd3"
                                 class="quantidadeProduto" min="1" max="10"
                                 value="1" name="quantidade" />
@@ -221,7 +221,7 @@
 
                 <label id="labelDescontoCarrinho" for="codigoDesconto">Código de
                     desconto:</label>
-                <input type="text" id="inputDesconto"
+                <input type="text" id="codigoDesconto"
                     placeholder="Digite o código de desconto aqui"
                     name="codigoDesconto" />
 

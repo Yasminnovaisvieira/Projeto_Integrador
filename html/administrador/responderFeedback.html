@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,44 +11,88 @@
         <!-- Formulário para responder feedacks de clientes -->
         <main class="mainFormulariosAdm"
             aria-label="Formulário de resposta ao feedback">
-            <h1 class="titulosFormulariosAdm">Responder Feedback</h1>
-
             <form>
                 <fieldset>
+                    <legend id="responderFeedbackLegend">
+                        <h1 class="titulosFormulariosAdm">
+                            Responder Feedback
+                        </h1>
+                    </legend>
+
                     <label class="labelsFormulariosAdm" for="nomeCliente">Nome
                         do Cliente</label>
                     <input class="inputsFormulariosAdm inputsDesabilitados"
                         type="text" name="nomeCliente"
-                        value="João Silva" disabled />
-                </fieldset>
+                        value="João Silva" id="nomeCliente" disabled />
 
-                <fieldset>
                     <label class="labelsFormulariosAdm"
                         for="emailCliente">Email</label>
                     <input class="inputsFormulariosAdm inputsDesabilitados"
                         type="email" id="emailCliente" name="emailCliente"
                         value="joao@email.com" disabled />
-                </fieldset>
 
-                <fieldset>
                     <label class="labelsFormulariosAdm"
                         for="mensagemFeedback">Mensagem Recebida</label>
                     <textarea
                         class="inputsFormulariosAdm inputsDesabilitados textareaFormulariosAdm"
-                        name="mensagemFeedback"
+                        name="mensagemFeedback" id="mensagemFeedback"
                         disabled>Gostei muito do atendimento, mas achei a entrega um pouco demorada.</textarea>
-                </fieldset>
 
-                <fieldset>
                     <label class="labelsFormulariosAdm"
                         for="respostaFeedback">Sua Resposta</label>
                     <textarea
                         class="inputsFormulariosAdm textareaFormulariosAdm"
-                        name="respostaFeedback"
+                        name="respostaFeedback" id="respostaFeedback"
                         placeholder="Escreva sua resposta para o cliente aqui..."
                         required aria-required="true"></textarea>
                 </fieldset>
 
+                <hr class="divisaoAdministrador" aria-hidden="true" />
+
+                <!-- Parte para facilitar na hora de responder os feedbacks e criar notas para a comunicação entre os administradores -->
+                <fieldset>
+                    <legend id="tituloAcoesAdministrativasFeedback">
+                        <h2>
+                            Ações Administrativas
+                        </h2>
+                    </legend>
+
+                    <label class="labelsFormulariosAdm"
+                        for="statusFeedback">Mudar Status</label>
+                    <select class="inputsFormulariosAdm" id="statusFeedback"
+                        name="statusFeedback">
+                        <option value="aberto">Aberto</option>
+                        <option value="respondido">Respondido</option>
+                        <option value="resolvido">Resolvido</option>
+                    </select>
+
+                    <label class="labelsFormulariosAdm"
+                        for="notasInternas">Notas Internas (não visível para o
+                        cliente)</label>
+                    <textarea
+                        class="inputsFormulariosAdm textareaFormulariosAdm"
+                        id="notasInternas"
+                        name="notasInternas"
+                        placeholder="Adicione uma nota interna sobre este contato..."></textarea>
+
+                    <label class="labelsFormulariosAdm"
+                        for="respostasProntas">Usar Resposta Pronta</label>
+                    <div class="grupoRespostaPronta">
+                        <select class="inputsFormulariosAdm"
+                            id="respostasProntas" name="respostasProntas">
+                            <option value>Selecione uma resposta...</option>
+                            <option
+                                value="Agradecemos o contato! Sua sugestão foi anotada.">Agradecimento</option>
+                            <option
+                                value="Lamentamos pelo ocorrido e já estamos verificando seu caso.">Problema
+                                (Geral)</option>
+                        </select>
+                        <button type="button"
+                            class="botaoInserirResposta">Inserir</button>
+                    </div>
+                </fieldset>
+
+                <!-- Botões para Cancelar e Enviar Resposta -->
                 <nav class="navBotoesFormulariosAdm">
                     <a href="feedbacksContato.html"
                         class="botoesFormulariosAdm botaoCancelarFormulariosAdm"

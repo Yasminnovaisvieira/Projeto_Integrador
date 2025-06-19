@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,24 +21,41 @@
                     <input class="inputsFormulariosAdm" type="text"
                         name="nomeProduto"
                         placeholder="Digite o nome do produto"
-                        value="Fantasia de Dinoussauro - Azul" />
+                        value="Fantasia de Dinoussauro - Azul"
+                        id="nomeProduto" />
 
                     <label class="labelsFormulariosAdm" for="precoProduto">Preço
                         (R$)</label>
                     <input class="inputsFormulariosAdm" type="number"
                         name="precoProduto" placeholder="0.00" step="0.01"
-                        min="0" value="72.16" />
+                        min="0" value="72.16" id="precoProduto" />
 
                     <label class="labelsFormulariosAdm"
                         for="estoqueProduto">Estoque</label>
                     <input class="inputsFormulariosAdm" type="number"
                         name="estoqueProduto"
                         placeholder="Digite a quantidade disponível" min="0"
-                        value="36" />
+                        value="36" id="estoqueProduto" />
+
+                    <label class="labelsFormulariosAdm"
+                        for="categoriaProduto">Categoria</label>
+                    <select class="inputsFormulariosAdm"
+                        name="categoriaProduto" id="categoriaProduto">
+                        <option value="roupas">Roupas</option>
+                        <option value="arranhadores">Arranhadores</option>
+                        <option value="camas">Camas</option>
+                        <option value="higieneLimpeza">Higiene e
+                            Limpeza</option>
+                        <option value="brinquedos">Brinquedos</option>
+                        <option value="comedourosBrinquedos">Comedouros e
+                            Bebedouros</option>
+                        <option value="petiscos">Petiscos</option>
+                    </select>
 
                     <label class="labelsFormulariosAdm"
                         for="statusProduto">Status</label>
-                    <select class="inputsFormulariosAdm" name="statusProduto">
+                    <select class="inputsFormulariosAdm" name="statusProduto"
+                        id="statusProduto">
                         <option value="ativo" selected>Ativo</option>
                         <option value="inativo">Inativo</option>
                     </select>
@@ -48,9 +65,114 @@
                     <textarea
                         class="inputsFormulariosAdm textareaFormulariosAdm"
                         name="descricaoProduto"
-                        placeholder="Digite a descrição detalhada do produto">Deixe seu gatinho ainda mais encantador com a Fantasia de Dinossauro Azul! Confeccionada em tecido macio e leve, ela garante conforto e liberdade de movimentos, sem causar incômodos. Com fechamento em velcro ajustável e detalhes que simulam escamas e espinhos, é perfeita para transformar seu pet em um pequeno dinossauro em festas, datas comemorativas ou sessões de fotos divertidas.</textarea>
+                        placeholder="Digite a descrição detalhada do produto"
+                        id="descricaoProduto">Deixe seu gatinho ainda mais encantador com a Fantasia de Dinossauro Azul! Confeccionada em tecido macio e leve, ela garante conforto e liberdade de movimentos, sem causar incômodos. Com fechamento em velcro ajustável e detalhes que simulam escamas e espinhos, é perfeita para transformar seu pet em um pequeno dinossauro em festas, datas comemorativas ou sessões de fotos divertidas.</textarea>
+
+                    <label class="labelsFormulariosAdm" for="tagsProduto">Tags /
+                        Palavras-chave</label>
+                    <input class="inputsFormulariosAdm" type="text"
+                        name="tagsProduto" id="tagsProduto"
+                        value="fantasia, dinossauro, roupa" />
+                    <p id="instrucoesTags" class="textosFormulariosAdm">
+                        Separe as tags por vírgula.
+                    </p>
                 </fieldset>
 
+                <!-- Variações do Produto (Tamanhos, Cores e etc) -->
+                <fieldset>
+                    <legend class="legendsFormulariosAdm">Variações do
+                        Produto</legend>
+
+                    <article class="blocoVariacao">
+                        <h4 class="tituloVariacao">Variação 1</h4>
+                        <div class="camposVariacao">
+                            <div class="campoIndividualVariacao">
+                                <label class="labelsFormulariosAdm"
+                                    for="variacaoTamanho1">Tamanho</label>
+                                <input class="inputsFormulariosAdm" type="text"
+                                    id="variacaoTamanho1"
+                                    name="variacaoTamanho1" value="Pequeno" />
+                            </div>
+                            <div class="campoIndividualVariacao">
+                                <label class="labelsFormulariosAdm"
+                                    for="variacaoEstoque1">Estoque da
+                                    Variação</label>
+                                <input class="inputsFormulariosAdm"
+                                    type="number" id="variacaoEstoque1"
+                                    name="variacaoEstoque1" value="15" />
+                            </div>
+                            <div class="campoIndividualVariacao">
+                                <label class="labelsFormulariosAdm"
+                                    for="variacaoSku1">SKU</label>
+                                <input class="inputsFormulariosAdm" type="text"
+                                    id="variacaoSku1" name="variacaoSku1"
+                                    value="FANT-DINO-AZ-P" />
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blocoVariacao">
+                        <h4 class="tituloVariacao">Variação 2</h4>
+                        <div class="camposVariacao">
+                            <div class="campoIndividualVariacao">
+                                <label class="labelsFormulariosAdm"
+                                    for="variacaoTamanho2">Tamanho</label>
+                                <input class="inputsFormulariosAdm" type="text"
+                                    id="variacaoTamanho2"
+                                    name="variacaoTamanho2" value="Médio" />
+                            </div>
+                            <div class="campoIndividualVariacao">
+                                <label class="labelsFormulariosAdm"
+                                    for="variacaoEstoque2">Estoque da
+                                    Variação</label>
+                                <input class="inputsFormulariosAdm"
+                                    type="number" id="variacaoEstoque2"
+                                    name="variacaoEstoque2" value="25" />
+                            </div>
+                            <div class="campoIndividualVariacao">
+                                <label class="labelsFormulariosAdm"
+                                    for="variacaoSku2">SKU</label>
+                                <input class="inputsFormulariosAdm" type="text"
+                                    id="variacaoSku2" name="variacaoSku2"
+                                    value="FANT-DINO-AZ-M" />
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blocoVariacao">
+                        <h4 class="tituloVariacao">Variação 3</h4>
+                        <div class="camposVariacao">
+                            <div class="campoIndividualVariacao">
+                                <label class="labelsFormulariosAdm"
+                                    for="variacaoTamanho3">Tamanho</label>
+                                <input class="inputsFormulariosAdm" type="text"
+                                    id="variacaoTamanho3"
+                                    name="variacaoTamanho3" value="Grande" />
+                            </div>
+                            <div class="campoIndividualVariacao">
+                                <label class="labelsFormulariosAdm"
+                                    for="variacaoEstoque3">Estoque da
+                                    Variação</label>
+                                <input class="inputsFormulariosAdm"
+                                    type="number" id="variacaoEstoque3"
+                                    name="variacaoEstoque2" value="35" />
+                            </div>
+                            <div class="campoIndividualVariacao">
+                                <label class="labelsFormulariosAdm"
+                                    for="variacaoSku3">SKU</label>
+                                <input class="inputsFormulariosAdm" type="text"
+                                    id="variacaoSku3" name="variacaoSku2"
+                                    value="FANT-DINO-AZ-G" />
+                            </div>
+                        </div>
+                    </article>
+
+                    <button type="button" class="botoesSecoesDashboardAdm"
+                        style="margin-top: 1rem;">+ Adicionar Nova
+                        Variação</button>
+                </fieldset>
+
+                <!-- Imagens do Produto -->
                 <fieldset aria-label="Imagens do produto">
                     <legend class="legendsFormulariosAdm">Imagens</legend>
 
