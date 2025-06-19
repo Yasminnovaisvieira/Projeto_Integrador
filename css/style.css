@@ -2094,7 +2094,7 @@ li.feedback blockquote footer cite {
 #botaoEnviarContato:hover,
 #botaoEnviarContato:focus {
     background-color: #48398f;
-    outline: 2px solid #3b2994;
+    outline: 2px solid #3f3275;
 }
 
 .inputsContato {
@@ -2617,7 +2617,7 @@ fieldset {
 #mainCartaoCredito input[type="password"]:focus,
 #mainCartaoCredito input[type="text"]:focus {
     border-color: #48398f;
-    outline: 2px solid #3b2994;
+    outline: 2px solid #48398f;
 }
 
 #legendCartaoCredito {
@@ -2699,7 +2699,7 @@ fieldset {
 
 #numeroCartao:focus {
     border-color: #48398f;
-    outline: 2px solid #3b2994;
+    outline: 2px solid #48398f;
 }
 
 
@@ -2868,7 +2868,7 @@ fieldset {
 .botaoAdicionarCarrinho:hover,
 .botaoAdicionarCarrinho:focus {
     background-color: #48398f;
-    outline: 2px solid #3b2994;
+    outline: 2px solid #3f3275;
 }
 
 .detalhesProduto {
@@ -2994,7 +2994,7 @@ fieldset {
 }
 
 .QuantidadeProdutoEspecifico input[type="number"]:focus {
-    outline: 2px solid #3b2994;
+    outline: 2px solid #48398f;
     border-color: #48398f;
 }
 
@@ -3256,7 +3256,7 @@ fieldset {
 
 #procurarProdutoAdm:focus {
     border-color: #4e3b8d;
-    outline: 2px solid #3b2994;
+    outline: 2px solid #4e3b8d;
 }
 
 .colunasProdutosAdm {
@@ -3587,7 +3587,7 @@ fieldset {
 
 #procurarPedidosAdm:focus {
     border-color: #4e3b8d;
-    outline: 2px solid #3b2994;
+    outline: 2px solid #4e3b8d;
 }
 
 #botaoFiltrarPedidosAdm {
@@ -3634,7 +3634,7 @@ fieldset {
 
 #procurarFeedbackAdm:focus {
     border-color: #4e3b8d;
-    outline: 2px solid #3b2994;
+    outline: 2px solid #4e3b8d;
 }
 
 #botaoFiltrarFeedbacksAdm {
@@ -3713,7 +3713,7 @@ fieldset {
 .inputsFormulariosAdm:focus {
     border-color: #4e3b8d;
     box-shadow: 0 0 8px rgba(101, 67, 33, 0.3);
-    outline: 2px solid #3b2994;
+    outline: 2px solid #4e3b8d;
 }
 
 .textareaFormulariosAdm {
