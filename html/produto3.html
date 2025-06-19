@@ -3,7 +3,11 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name=description content="produto3" />
         <title>Arranhador - Formato de Cacto | Miaunarquia</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Outfit:wght@100..900&display=swap"
+            rel="stylesheet" />
         <link rel="stylesheet" href="../css/style.css" />
     </head>
     <body>
@@ -146,13 +150,13 @@
 
                     <img
                         src="../imagens/imagem_arranhador_cacto2.png"
-                        alt="" class="fotosProduto" />
+                        alt class="fotosProduto" />
                     <img
                         src="../imagens/imagem_arranhador_cacto3.png"
-                        alt="" class="fotosProduto" />
+                        alt class="fotosProduto" />
                     <img
                         src="../imagens/imagem_arranhador_cacto4.png"
-                        alt="" class="fotosProduto" />
+                        alt class="fotosProduto" />
                 </figcaption>
             </figure>
 
@@ -162,13 +166,16 @@
 
                 <p class="codigoProduto"><strong>Código:</strong> DJFVC743D</p>
 
-                <!-- Quantidade de Produtos -->
+                <!-- Quantidade do Produto -->
                 <section class="QuantidadeProdutoEspecifico">
                     <div class="blocoQuantidadeProdutoEspecifico">
-                        <p class="tituloQuantidadeProdutoEspecifico">Selecione a
-                            <strong>Quantidade</strong>:</p>
+                        <label for="quantidadeProduto"
+                            class="tituloQuantidadeProdutoEspecifico">Selecione
+                            a
+                            <strong>Quantidade</strong>:
+                        </label>
                         <input type="number" min="1" max="10"
-                            value="1" />
+                            value="1" id="quantidadeProduto" />
                     </div>
                 </section>
 

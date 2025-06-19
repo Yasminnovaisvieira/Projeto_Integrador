@@ -3,7 +3,11 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name=description content="editarProduto" />
         <title>Editar Produto | Miaunarquia</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Outfit:wght@100..900&display=swap"
+            rel="stylesheet" />
         <link rel="stylesheet" href="../../css/style.css" />
     </head>
     <body class="fundoFormulariosAdm">
@@ -84,7 +88,7 @@
                         Produto</legend>
 
                     <article class="blocoVariacao">
-                        <h4 class="tituloVariacao">Variação 1</h4>
+                        <h2 class="tituloVariacao">Variação 1</h2>
                         <div class="camposVariacao">
                             <div class="campoIndividualVariacao">
                                 <label class="labelsFormulariosAdm"
@@ -112,7 +116,7 @@
                     </article>
 
                     <article class="blocoVariacao">
-                        <h4 class="tituloVariacao">Variação 2</h4>
+                        <h2 class="tituloVariacao">Variação 2</h2>
                         <div class="camposVariacao">
                             <div class="campoIndividualVariacao">
                                 <label class="labelsFormulariosAdm"
@@ -140,7 +144,7 @@
                     </article>
 
                     <article class="blocoVariacao">
-                        <h4 class="tituloVariacao">Variação 3</h4>
+                        <h2 class="tituloVariacao">Variação 3</h2>
                         <div class="camposVariacao">
                             <div class="campoIndividualVariacao">
                                 <label class="labelsFormulariosAdm"
@@ -167,8 +171,8 @@
                         </div>
                     </article>
 
-                    <button type="button" class="botoesSecoesDashboardAdm"
-                        style="margin-top: 1rem;">+ Adicionar Nova
+                    <button type="button" class="botoesSecoesDashboardAdm">+
+                        Adicionar Nova
                         Variação</button>
                 </fieldset>
 
@@ -182,7 +186,8 @@
                         accept="image/*" multiple
                         aria-describedby="instrucoesImagens" />
 
-                    <p class="textosFormulariosAdm">Selecione imagens JPG ou
+                    <p id="instrucoesImagens"
+                        class="textosFormulariosAdm">Selecione imagens JPG ou
                         PNG</p>
 
                     <output id="previsaoImagens">

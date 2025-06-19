@@ -3,7 +3,11 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name=description content="produto2" />
         <title>Fantasia de Dinossauro | Miaunarquia</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Outfit:wght@100..900&display=swap"
+            rel="stylesheet" />
         <link rel="stylesheet" href="../css/style.css" />
     </head>
     <body>
@@ -146,13 +150,13 @@
                         class="imagemSelecionada fotosProduto" />
                     <img
                         src="../imagens/imagem_fantasiaDinossauro_produto2_2.png"
-                        alt="" class="fotosProduto" />
+                        alt class="fotosProduto" />
                     <img
                         src="../imagens/imagem_fantasiaDinossauro_produto2_3.png"
-                        alt="" class="fotosProduto" />
+                        alt class="fotosProduto" />
                     <img
                         src="../imagens/imagem_fantasiaDinossauro_produto2_4.png"
-                        alt="" class="fotosProduto" />
+                        alt class="fotosProduto" />
                 </figcaption>
             </figure>
 
@@ -190,13 +194,16 @@
                     </form>
                 </section>
 
-                <!-- Quantidade de Produtos -->
+                <!-- Quantidade do Produto -->
                 <section class="QuantidadeProdutoEspecifico">
                     <div class="blocoQuantidadeProdutoEspecifico">
-                        <p class="tituloQuantidadeProdutoEspecifico">Selecione a
-                            <strong>Quantidade</strong>:</p>
+                        <label for="quantidadeProduto"
+                            class="tituloQuantidadeProdutoEspecifico">Selecione
+                            a
+                            <strong>Quantidade</strong>:
+                        </label>
                         <input type="number" min="1" max="10"
-                            value="1" />
+                            value="1" id="quantidadeProduto" />
                     </div>
                 </section>
 

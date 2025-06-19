@@ -3,7 +3,11 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name=description content="index" />
         <title>Página Inicial | Miaunarquia</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Outfit:wght@100..900&display=swap"
+            rel="stylesheet" />
         <link rel="stylesheet" href="../css/style.css" />
     </head>
     <body>
@@ -35,7 +39,7 @@
 
         <!-- Header do site -->
         <header class="headerSite">
-            <p class="logoSite">
+            <h1 class="logoSite">
                 <a href="index.html" aria-label="Página inicial - Miaunarquia">
                     <img
                         src="../imagens/imagem_logo.png"
@@ -43,7 +47,7 @@
                         class="logoImagem" />
                     <span class="nomeLogo">Miaunarquia</span>
                 </a>
-            </p>
+            </h1>
 
             <nav class="navMenu" aria-label="Menu Principal">
                 <!-- arial-label = Rotular elemento para descreve-lo e deixa-lo mais acessível -->
@@ -970,8 +974,11 @@
                     </p>
 
                     <form class="formReceberNovidades">
+                        <label for="emailNovidades"
+                            class="visualmenteOculto">Digite seu email para
+                            receber novidades</label>
                         <input type="email"
-                            name="email"
+                            name="email" id="email"
                             class="emailReceberNovidades"
                             placeholder="Digite seu email aqui" />
                         <button type="submit"

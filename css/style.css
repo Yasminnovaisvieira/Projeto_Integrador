@@ -1,8 +1,4 @@
 /* CONFIGURAÇÕES GERAIS */
-
-@import url("https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
-
 * {
     margin: 0;
     padding: 0;
@@ -217,6 +213,9 @@ body {
 .navUsuario a:hover,
 .navUsuario a:focus {
     transform: scale(1.05);
+}
+
+.navUsuario a:focus {
     outline: 2px solid #3b2994;
 }
 
@@ -612,7 +611,7 @@ body {
 
 .botaoCarrinho {
     display: block;
-    background-color: #9383e0;
+    background-color: #7e6bd8;
     color: #ffffff;
     font-weight: bold;
     font-family: "Outfit", sans-serif;
@@ -1049,6 +1048,17 @@ li.feedback blockquote footer cite {
     gap: 2rem;
     padding: 2rem;
     margin: auto;
+}
+
+.visualmenteOculto {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 
 .LogoReceberNovidades {
@@ -1867,7 +1877,7 @@ li.feedback blockquote footer cite {
 }
 
 .quantidadeProduto:focus {
-    outline: 2px solid #3b2994;
+    outline: 2px solid #48398f;
     border: 2px solid #48398f;
 }
 
@@ -1887,7 +1897,7 @@ li.feedback blockquote footer cite {
 .botaoRemover:hover,
 .botaoRemover:focus {
     background-color: #8a0500;
-    outline: 2px solid #3b2994;
+    outline: 2px solid #8a0500;
 }
 
 .subtotal {
@@ -1945,13 +1955,13 @@ li.feedback blockquote footer cite {
     font-size: 1rem;
     border-radius: 0.8rem;
     color: #222222;
-    outline: 2px solid #3b2994;
     transition: border-color 0.5s ease;
     border: 2px solid #6958c0;
 }
 
 #codigoDesconto:focus {
     border-color: #48398f;
+        outline: 2px solid #48398f;
 }
 
 .botaoFinalizarCompra {
@@ -2670,7 +2680,7 @@ fieldset {
 
 
 #InsiraNumeroCartaoCredito {
-    color: #6b7280;
+    color: #555555;
     font-size: 1rem;
     margin-top: -0.5rem;
     display: block;
@@ -2967,6 +2977,7 @@ fieldset {
     margin-top: 2rem;
     margin-bottom: 1rem;
     color: #333333;
+    display: block;
 }
 
 .QuantidadeProdutoEspecifico input[type="number"] {
@@ -3749,13 +3760,13 @@ label[for="imagensProduto"]:focus {
     width: 110px;
     height: 110px;
     border-radius: 12px;
-    background: #9383e0;
+    background: #6958c0;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #ffffff;
     font-size: 1.4rem;
-    border: 2px solid #6958c0;
+    border: 2px solid #6352b5;
 }
 
 .navBotoesFormulariosAdm {
