@@ -1418,7 +1418,7 @@ li.feedback blockquote footer cite {
 }
 
 .LembrarDeMim:hover .checkmark {
-    background-color: #e6ddff;
+    background-color: #e6e6fa;
 }
 
 #containerCadastro {
@@ -1548,7 +1548,7 @@ li.feedback blockquote footer cite {
 }
 
 .btnGoogle {
-    background-color: #ebe7ff;
+    background-color: #e6e6fa;
     color: #000000;
 }
 
@@ -1937,7 +1937,7 @@ li.feedback blockquote footer cite {
 
 .informacoesSubtotal {
     font-weight: 700;
-    color: #4e3b8d;
+    color: #48398f;
     text-align: right;
     white-space: nowrap;
 }
@@ -2133,7 +2133,7 @@ li.feedback blockquote footer cite {
 #mainFinalizandoCompra {
     max-width: 900px;
     width: 100%;
-    background: #ebe7ff;
+    background: #e6e6fa;
     border-radius: 0.75rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     padding: 2rem 2rem;
@@ -2279,7 +2279,7 @@ fieldset {
 #mainRevisarCompra {
     max-width: 900px;
     width: 100%;
-    background: #ebe7ff;
+    background: #E6DDFF;
     border-radius: 0.75rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     padding: 2rem 2rem;
@@ -2325,7 +2325,7 @@ fieldset {
     display: flex;
     justify-content: space-between;
     padding: 0.5rem 0;
-    border-bottom: 1px solid #ebe7ff;
+    border-bottom: 1px solid #e6e6fa;
     font-weight: 500;
 }
 
@@ -2790,46 +2790,10 @@ fieldset {
     color: #333333;
 }
 
-.corProduto,
 .tamanhoProduto {
     font-size: 1.2rem;
     margin-top: 1rem;
     color: #333333;
-}
-
-.circulo {
-    display: inline-block;
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
-    border: 2px solid #d8d0ff;
-    cursor: pointer;
-}
-
-.cores {
-    display: flex;
-    gap: 1rem;
-    margin: 1rem 0;
-}
-
-.bolinhasCores {
-    display: none;
-}
-
-.branco {
-    background: #ffffff;
-}
-
-.cinza {
-    background: #6b7280;
-}
-
-.rosa {
-    background: #f9a8d4;
-}
-
-.cores input:checked+.circulo {
-    border-color: #3b2994;
 }
 
 .precoProdutoEspecifico {
@@ -2938,7 +2902,7 @@ fieldset {
 }
 
 .btnVoltarProdutoEspecifico:hover {
-    background-color: #4e3b8d;
+    background-color: #48398f;
 }
 
 .tamanhos {
@@ -2962,7 +2926,7 @@ fieldset {
     border: 2px solid #6958c0;
     border-radius: 0.5rem;
     font-weight: bold;
-    color: #4e3b8d;
+    color: #48398f;
     background-color: #ffffff;
     transition: all 0.3s ease;
 }
@@ -3059,7 +3023,7 @@ fieldset {
     margin-bottom: 1rem;
     text-transform: uppercase;
     color: #222222;
-    border-bottom: 2px solid #4e3b8d;
+    border-bottom: 2px solid #48398f;
     padding-bottom: 1rem;
 }
 
@@ -3102,7 +3066,7 @@ fieldset {
     overflow-y: auto;
     display: flex;
     flex-direction: column;
-    background-color: #e6ddff;
+    background-color: #e6e6fa;
 }
 
 .conteudoPrincipal>section {
@@ -3170,7 +3134,7 @@ fieldset {
     border: none;
     border-radius: 12px;
     padding: 0.5em 1.2em;
-    background-image: linear-gradient(135deg, #6958c0, #4e3b8d);
+    background-image: linear-gradient(135deg, #6958c0, #48398f);
     color: #ffffff;
     box-shadow: 0 6px 12px rgba(101, 67, 33, 0.2);
     transition: background-image 0.3s ease, box-shadow 0.3s ease;
@@ -3202,7 +3166,7 @@ fieldset {
 .feedAtividades .titulosInforPainelAdm {
     margin-top: 0;
     margin-bottom: 1.5rem;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #ffffff;
     padding-bottom: 1rem;
     color: #28177c;
 }
@@ -3221,7 +3185,7 @@ fieldset {
 }
 
 .itemAtividade:not(:last-child) {
-    border-bottom: 1px solid #f0f0f0;
+    border-bottom: 1px solid #ffffff;
     padding-bottom: 1rem;
     margin-bottom: 1rem;
 }
@@ -3238,7 +3202,7 @@ fieldset {
 
 .descricaoAtividade time {
     font-size: 0.8rem;
-    color: #6c757d;
+    color: #555555;
 }
 
 #procurarProdutoAdm {
@@ -3255,13 +3219,13 @@ fieldset {
 }
 
 #procurarProdutoAdm:focus {
-    border-color: #4e3b8d;
-    outline: 2px solid #4e3b8d;
+    border-color: #48398f;
+    outline: 2px solid #48398f;
 }
 
 .colunasProdutosAdm {
     font-size: 1.2rem;
-    color: #4e3b8d;
+    color: #48398f;
     text-align: left;
     padding: 12px 16px;
     font-weight: 600;
@@ -3482,8 +3446,8 @@ fieldset {
 
 .campoBusca:focus,
 .campoBusca:hover {
-    border-color: #4e3b8d;
-    outline: 2px solid #4e3b8d;
+    border-color: #48398f;
+    outline: 2px solid #48398f;
 }
 
 .botaoBuscaAdm {
@@ -3491,7 +3455,7 @@ fieldset {
     border: none;
     border-radius: 8px;
     background-image: linear-gradient(135deg, #6958c0, #4e3b8d);
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 1.1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -3563,7 +3527,7 @@ fieldset {
 }
 
 .filtroSelecao:focus {
-    border-color: #4e3b8d;
+    border-color: #48398f;
     outline: none;
 }
 
@@ -3586,8 +3550,8 @@ fieldset {
 }
 
 #procurarPedidosAdm:focus {
-    border-color: #4e3b8d;
-    outline: 2px solid #4e3b8d;
+    border-color: #48398f;
+    outline: 2px solid #48398f;
 }
 
 #botaoFiltrarPedidosAdm {
@@ -3633,8 +3597,8 @@ fieldset {
 }
 
 #procurarFeedbackAdm:focus {
-    border-color: #4e3b8d;
-    outline: 2px solid #4e3b8d;
+    border-color: #48398f;
+    outline: 2px solid #48398f;
 }
 
 #botaoFiltrarFeedbacksAdm {
@@ -3656,7 +3620,7 @@ fieldset {
 }
 
 .mainFormulariosAdm {
-    background: #e6ddff;
+    background: #E6DDFF;
     padding: 2.5rem;
     border-radius: 24px;
     box-shadow: 0 10px 38px rgba(101, 67, 33, 0.2);
@@ -3669,7 +3633,7 @@ fieldset {
     font-size: 2.6rem;
     margin-bottom: 2rem;
     text-align: center;
-    color: #4e3b8d;
+    color: #48398f;
     font-weight: 700;
 }
 
@@ -3711,9 +3675,9 @@ fieldset {
 }
 
 .inputsFormulariosAdm:focus {
-    border-color: #4e3b8d;
+    border-color: #48398f;
     box-shadow: 0 0 8px rgba(101, 67, 33, 0.3);
-    outline: 2px solid #4e3b8d;
+    outline: 2px solid #48398f;
 }
 
 .textareaFormulariosAdm {
@@ -3738,8 +3702,8 @@ label[for="imagensProduto"] {
 
 label[for="imagensProduto"]:hover,
 label[for="imagensProduto"]:focus {
-    background-color: #e6ddff;
-    border-color: #4e3b8d;
+    background-color: #e6e6fa;
+    border-color: #48398f
 }
 
 #previsaoImagens {
@@ -4039,11 +4003,11 @@ label[for="imagensProduto"]:focus {
 }
 
 .blocoVariacao {
-    border: 1px solid #e0e0e0;
+    border: 1px solid #ffffff;
     border-radius: 8px;
     padding: 1rem;
     margin-bottom: 1.5rem;
-    background-color: #fafafa;
+    background-color: #e6e6fa;
 }
 
 .tituloVariacao {
@@ -4051,7 +4015,7 @@ label[for="imagensProduto"]:focus {
     margin-bottom: 1rem;
     font-size: 1.1rem;
     color: #333;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid #ffffff;
     padding-bottom: 0.5rem;
 }
 

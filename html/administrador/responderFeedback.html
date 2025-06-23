@@ -40,14 +40,6 @@
                         class="inputsFormulariosAdm inputsDesabilitados textareaFormulariosAdm"
                         name="mensagemFeedback" id="mensagemFeedback"
                         disabled>Gostei muito do atendimento, mas achei a entrega um pouco demorada.</textarea>
-
-                    <label class="labelsFormulariosAdm"
-                        for="respostaFeedback">Sua Resposta</label>
-                    <textarea
-                        class="inputsFormulariosAdm textareaFormulariosAdm"
-                        name="respostaFeedback" id="respostaFeedback"
-                        placeholder="Escreva sua resposta para o cliente aqui..."
-                        required aria-required="true"></textarea>
                 </fieldset>
 
                 <hr class="divisaoAdministrador" aria-hidden="true" />
@@ -59,6 +51,30 @@
                             Ações Administrativas
                         </h2>
                     </legend>
+
+                    <label class="labelsFormulariosAdm"
+                        for="respostaFeedback">Resposta</label>
+                    <textarea
+                        class="inputsFormulariosAdm textareaFormulariosAdm"
+                        name="respostaFeedback" id="respostaFeedback"
+                        placeholder="Escreva sua resposta para o cliente aqui..."
+                        required aria-required="true"></textarea>
+
+                    <label class="labelsFormulariosAdm"
+                        for="respostasProntas">Usar Resposta Pronta</label>
+                    <div class="grupoRespostaPronta">
+                        <select class="inputsFormulariosAdm"
+                            id="respostasProntas" name="respostasProntas">
+                            <option value>Selecione uma resposta...</option>
+                            <option
+                                value="Agradecemos o contato! Sua sugestão foi anotada.">Agradecimento</option>
+                            <option
+                                value="Lamentamos pelo ocorrido e já estamos verificando seu caso.">Problema
+                                (Geral)</option>
+                        </select>
+                        <button type="button"
+                            class="botaoInserirResposta">Inserir</button>
+                    </div>
 
                     <label class="labelsFormulariosAdm"
                         for="statusFeedback">Mudar Status</label>
@@ -78,21 +94,6 @@
                         name="notasInternas"
                         placeholder="Adicione uma nota interna sobre este contato..."></textarea>
 
-                    <label class="labelsFormulariosAdm"
-                        for="respostasProntas">Usar Resposta Pronta</label>
-                    <div class="grupoRespostaPronta">
-                        <select class="inputsFormulariosAdm"
-                            id="respostasProntas" name="respostasProntas">
-                            <option value>Selecione uma resposta...</option>
-                            <option
-                                value="Agradecemos o contato! Sua sugestão foi anotada.">Agradecimento</option>
-                            <option
-                                value="Lamentamos pelo ocorrido e já estamos verificando seu caso.">Problema
-                                (Geral)</option>
-                        </select>
-                        <button type="button"
-                            class="botaoInserirResposta">Inserir</button>
-                    </div>
                 </fieldset>
 
                 <!-- Botões para Cancelar e Enviar Resposta -->
