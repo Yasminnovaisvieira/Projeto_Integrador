@@ -38,7 +38,7 @@
 
 ## 📸 Protótipo
 
-Confira o layout no Figma: [Clique aqui](https://www.figma.com/design/Ibo7Jgcr3XFdxKtuA28vqD/Projeto-Integrador---1%C2%BA-Semestre--DS---SENAI-?node-id=2-4&t=Jpy5wqMKUqAKqg3n-1)
+Confira o layout no Figma: [Acesse](https://www.figma.com/design/Ibo7Jgcr3XFdxKtuA28vqD/Projeto-Integrador---1%C2%BA-Semestre--DS---SENAI-?node-id=2-4&t=Jpy5wqMKUqAKqg3n-1)
 
 ---
 
