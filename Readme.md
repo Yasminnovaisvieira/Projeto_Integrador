@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="caminho/para/imagem.jpg" alt="Texto alternativo" width="300">
+  <img src="imagens/imagem_logo.png" alt="Logo" width="300">
 </p>
 
 # 🐾 Introdução
