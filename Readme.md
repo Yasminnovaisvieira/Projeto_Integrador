@@ -32,7 +32,7 @@
 
 - HTML5
 - CSS3
-- Figma (Protipagem)
+- Figma (Prototipagem)
 
 ---
 
